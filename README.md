@@ -18,7 +18,7 @@ Même si je choisis les articles que je rédige en fonction de mes propres centr
 
 Depuis quelques semaines, je me suis lancé dans un projet que j'envisage depuis des années : la rédaction d'un cours en C++ "moderne". Ce cours est encore en cours de rédaction, mais il y a une vingtaine de chapitres déjà écrit et le PDF fait 200 pages. Il faudra encore quelques mois pour avoir la version finale, il manque en particulier les exercices d'application.
 
-* [programmez_avec_le_langage_c](http://guillaume.belz.free.fr/doku.php?id=programmez_avec_le_langage_c)
+* [Débuter en C++ moderne](cppbook/index.md)
 * Tome 2 - C++ avancé, méta programmation et performances
 * Tome 3 - Programmation multi-plateforme avec Qt 5
 * Tome 4 - GPU computing
