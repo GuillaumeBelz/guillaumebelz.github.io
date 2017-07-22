@@ -1,0 +1,43 @@
+
+# Installation et premiers pas avec Qt 5.9.1
+
+Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
+régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
+idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
+l'installation de Qt.
+
+Cette serie de tutoriels sera régulièrement mis-à-jour, en fonction des sorties des nouvelles versions de Qt. 
+Les tutoriels sont bases sur la version 5.9 de Qt, qui est une version LTS (Long Terme Support, support a long terme).
+
+La première partie est consacrée à l'installation de Qt et la création de projets par défaut, pour vérifier
+que l'installation s'est bien passée.
+
+Dans la seconde partie, j'explique un peu plus en détail le fonctionnement de Qt et de son installation, pour 
+aider ceux qui rencontrent des problèmes lors de l'installation.
+
+Pour terminer, je décris comment utiliser la documentation de Qt, qui est très bien faite et très riche. En 
+particulier, il existe des codes d'exemple pour la majorité des fonctionnalités de Qt. Quand vous souhaitez 
+réaliser quelque chose, la première chose à faire est probablement d'étudier ces codes d'exemple.
+
+- [Désinstaller proprement Qt et Qt Creator](uninstall.md)
+- Télécharger l'installateur de Qt 5.8
+- Installer le compilateur C++
+- Installer Qt 5.8
+- Installer Qt 5.5 sous Windows
+- Installer Qt 5.5 sous Linux
+- Installer Qt 5.5 sous Mac OS X
+- Installer Qt 5.5 pour Android
+- Installer Qt 5.5 pour iOS
+- Tester l'installation de Qt 5.5
+- Configurer Qt Creator 3.4.2 pour Qt 5.5
+- Mettre à jour Qt 5.5
+- Déployer une application Qt
+- Savoir utiliser la documentation de Qt 5.5
+
+Ce tutoriel est une reprise et une mise à jour des vidéos que j'avais faites pour 
+[mon livre](http://www.d-booker.fr/110-qt-5-les-essentiels.html) sur la chaîne YouTube 
+de mon éditeur, D-Booker, à l'occasion de la sortie de Qt 5.0 :
+[Installer le framework Qt 5](https://www.youtube.com/watch?v=rYU4ONnyChc&list=PLJ0RWFYCJZYF1pxD5FlAFqQVYkmebeTUY). C'est également 
+une reprise des vidéos que j'avais faites à l'occasion de la sortie de Qt 5.2, sur ma chaîne YouTube : 
+"Installation et premier pas avec Qt 5.2 sur Windows" et "Savoir utiliser la documentation de Qt" (videos supprimées). Je préfère 
+passer au format tutoriel classique, pour faciliter les mises à jour.
