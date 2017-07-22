@@ -1,6 +1,8 @@
 
 # Installation et premiers pas avec Qt 5.9.1
 
+> Dernière mise à jour : 22 juillet 2017.
+
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
 idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
@@ -20,7 +22,7 @@ particulier, il existe des codes d'exemple pour la majorité des fonctionnalité
 réaliser quelque chose, la première chose à faire est probablement d'étudier ces codes d'exemple.
 
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
-- Télécharger l'installateur de Qt 5.8
+- [Télécharger l'installateur de Qt](download.md)
 - Installer le compilateur C++
 - Installer Qt 5.8
 - Installer Qt 5.5 sous Windows
