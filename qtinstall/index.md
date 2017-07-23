@@ -1,7 +1,7 @@
 
 # Installation et premiers pas avec Qt 5.9.1
 
-> Dernière mise à jour : 22 juillet 2017.
+> Dernière mise à jour : 23 juillet 2017.
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
@@ -10,6 +10,17 @@ l'installation de Qt.
 
 Cette serie de tutoriels sera régulièrement mis-à-jour, en fonction des sorties des nouvelles versions de Qt. 
 Les tutoriels sont bases sur la version 5.9 de Qt, qui est une version LTS (Long Terme Support, support a long terme).
+
+## Version courte
+
+- suivez le lien suivant : [https://www.qt.io/download-open-source/](Download Qt Open Source).
+- cliquez sur `Download Now` pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
+- lancez l'installateur.
+- suivez la procédure.
+- le telechargement et l'installation est automatique. (Cette étape peut etre tres longue).
+- lancez Qt Creator, creez un projet par defaut et lancez le. Cela devrait fonctionner.
+
+## Version detaillée
 
 La première partie est consacrée à l'installation de Qt et la création de projets par défaut, pour vérifier
 que l'installation s'est bien passée.
@@ -35,6 +46,8 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - Mettre à jour Qt 5.5
 - Déployer une application Qt
 - Savoir utiliser la documentation de Qt 5.5
+
+## Notes
 
 Ce tutoriel est une reprise et une mise à jour des vidéos que j'avais faites pour 
 [mon livre](http://www.d-booker.fr/110-qt-5-les-essentiels.html) sur la chaîne YouTube 
