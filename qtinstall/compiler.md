@@ -1,5 +1,7 @@
 # Installer un compilateur C++
 
+> Dernière mise à jour : 26 juillet 2017.
+
 Pour écrire des programmes en C++ avec Qt, il est nécessaire d'installer différents outils. Dans de nombreux cas, 
 l'installation de Qt permet d'installer tous les outils de base, mais il faudra parfois installer des outils 
 supplémentaires.
