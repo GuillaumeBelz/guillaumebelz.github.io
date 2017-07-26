@@ -1,6 +1,8 @@
 # Comprendre les versions de Qt
 
-Dernière mise à jour : 26 juillet 2017.
+> Dernière mise à jour : 26 juillet 2017.
+
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 
 Cette serie de tutoriels sera régulièrement mis-à-jour, en fonction des sorties des nouvelles versions de Qt.
 
