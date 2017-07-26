@@ -1,7 +1,7 @@
 
 # Installation et premiers pas avec Qt 5.9.1
 
-> Dernière mise à jour : 23 juillet 2017.
+> Dernière mise à jour : 26 juillet 2017.
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
