@@ -1,5 +1,7 @@
 # Comprendre les versions de Qt
 
+Dernière mise à jour : 26 juillet 2017.
+
 Cette serie de tutoriels sera régulièrement mis-à-jour, en fonction des sorties des nouvelles versions de Qt.
 
 Une version de Qt est indiquee grace a une serie de trois chiffres :
