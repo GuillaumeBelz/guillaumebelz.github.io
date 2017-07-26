@@ -55,6 +55,9 @@ Si vous souhaitez ameliorer ce tutoriel, vous pouvez :
 - consulter et modifier les sources Markdown sur [GitHub](https://github.com/GuillaumeBelz/guillaumebelz.github.io/tree/master/qtinstall) ;
 - creer un [rapport de bug](https://github.com/GuillaumeBelz/guillaumebelz.github.io/issues/new).
 
+Si vous avez des questions sur l'installation de Qt, n'hesitez pas a les poser sur 
+[le forum d'OpenClassRoom](https://openclassrooms.com/forum/categorie/langage-c-1).
+
 ## Licence
 
 Ce tutoriel est sous licence [Creative Common Attribution-Noncommercial-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) (CC BY-NC-SA 3.0).
