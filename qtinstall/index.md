@@ -56,7 +56,7 @@ Si vous souhaitez ameliorer ce tutoriel, vous pouvez :
 - creer un [rapport de bug](https://github.com/GuillaumeBelz/guillaumebelz.github.io/issues/new).
 
 Si vous avez des questions sur l'installation de Qt, n'hesitez pas a les poser sur 
-[le forum d'OpenClassRoom](https://openclassrooms.com/forum/categorie/langage-c-1).
+[le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
 
 ## Licence
 
