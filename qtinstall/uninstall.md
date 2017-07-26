@@ -3,6 +3,8 @@
 
 > Dernière mise à jour : 22 juillet 2017.
 
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+
 Il peut sembler étrange de commencer un tutoriel sur l'installation de Qt en expliquant comment désinstaller.
 La raison est que beaucoup ont tenté d'installer Qt avant de lire ce tutoriel et il est dans ce cas nécessaire 
 de bien désinstaller Qt avant de le réinstaller.
