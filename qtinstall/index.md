@@ -42,11 +42,22 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - Configurer Qt Creator 3.4.2 pour Qt 5.5
 - Mettre à jour Qt 5.5
 
-Pour aller plus loin :
+## Aller plus loin
 
 - [Comprendre les versions de Qt](qtversions.md)
 - Déployer une application Qt
 - Savoir utiliser la documentation de Qt 5.5
+
+## Contributions
+
+Si vous souhaitez ameliorer ce tutoriel, vous pouvez :
+
+- consulter et modifier les sources Markdown sur [GitHub](https://github.com/GuillaumeBelz/guillaumebelz.github.io/tree/master/qtinstall) ;
+- creer un [rapport de bug](https://github.com/GuillaumeBelz/guillaumebelz.github.io/issues/new).
+
+## Licence
+
+Ce tutoriel est sous licence [Creative Common Attribution-Noncommercial-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) (CC BY-NC-SA 3.0).
 
 ## Notes
 
