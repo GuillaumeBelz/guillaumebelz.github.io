@@ -2,6 +2,8 @@
 
 > Dernière mise à jour : 26 juillet 2017.
 
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+
 Qt est une bibliotheque C++, ce qui signifie que vous devez installer les outils de développement nécessaire pour
 compiler un programme C++. L'installation de ces outils depend du systeme et parfois plusieurs outils sont possibles.
 La procedure d'installation des principaux outils est detaillee.
