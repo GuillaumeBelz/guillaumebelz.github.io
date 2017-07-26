@@ -70,8 +70,7 @@ Vous pouvez également installer manuellement MingW. Pour cela, vous pouvez suiv
 OpenClassRoom : Mettre à jour le MinGW GCC de Code::Blocks. Je vous recommande d'installer la version de 
 https://nuwen.net/mingw.html.
 
-
-### Clang
+### Clang
 
 L'installation et la configuration de Clang sur Windows est un peu complexe et ne sera pas detailee ici. Sachez 
 simplement que vous pouvez télécharger ce compilateur sur le site officiel du projet LLVM : 
