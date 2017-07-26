@@ -8,7 +8,16 @@ régulièrement des problèmes. Le processus est relativement simple et automati
 idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
 l'installation de Qt.
 
-## Les versions de Qt
+## Version courte du tutoriel d'installation
+
+- suivez le lien suivant : [Download Qt Open Source](https://www.qt.io/download-open-source/).
+- cliquez sur `Download Now` pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
+- lancez l'installateur.
+- suivez la procédure.
+- le telechargement et l'installation est automatique. (Cette étape peut etre tres longue).
+- lancez Qt Creator, creez un projet par defaut et lancez le. Cela devrait fonctionner.
+
+## Comprendre les versions de Qt
 
 Cette serie de tutoriels sera régulièrement mis-à-jour, en fonction des sorties des nouvelles versions de Qt.
 
@@ -44,16 +53,6 @@ Les versions LTS de Qt sont actuellement :
 - Qt 4.8.3
 - Qt 5.6.3
 - Qt 5.9.1
-
-
-## Version courte du tutoriel d'installation
-
-- suivez le lien suivant : [Download Qt Open Source](https://www.qt.io/download-open-source/).
-- cliquez sur `Download Now` pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
-- lancez l'installateur.
-- suivez la procédure.
-- le telechargement et l'installation est automatique. (Cette étape peut etre tres longue).
-- lancez Qt Creator, creez un projet par defaut et lancez le. Cela devrait fonctionner.
 
 ## Version detaillée du tutoriel d'installation
 
