@@ -1,70 +1,65 @@
 
 # Télécharger l'installateur de Qt 5
 
-> Dernière mise à jour : 23 juillet 2017.
+> Dernière mise à jour : 13 aout 2017.
 
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 
+_Attention : evitez de telecharger des fichiers, en particulier des applications, sur des sites non-officiels, 
+pour minimiser le risque d'installer des logiciels malveillants._
+
 ## Le site officiel de Qt
 
-### La page de telechagement
+### La page de telechagement 
 
-Le téléchargement de Qt se fait sur le site du projet Qt : http://www.qt.io/. Si vous avez des doutes sur la version 
-de Qt a utiliser (licence commerciale ou libre), vous pouvez cliquer sur le bouton “FREE TRIAL” en haut a droite et 
-répondre aux questions. (Pensez a désactiver vos bloqueurs de publicités si nécessaire).
+Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). Le site est concu pour aider
+les utilisateurs a choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
+ce qui le rend un peu complexe au premier abord. Dans ce tutoriel, nous allons installer la version
+open-source de Qt, donc nous n'allons pas detailler le site de Qt.
 
-Dans ce tutoriel, nous allons utiliser la version open-source de Qt, le plus simple est donc d'aller directement 
-sur la page de telechargement correspondante : https://www.qt.io/download-open-source/ et de cliquer sur le 
-bouton “Download Now” en bas a droite. Le téléchargement de l'installateur correspondant à votre système démarre 
-directement.
+_Note pour ceux qui possedent une licence commerciale de Qt : il est possible d'entrer votre numero de licence, 
+meme si vous telecharger la version open-source. Et je trouve qu'il est plus facile de mettre a jour Qt si
+vous installez la version open-source, donc je vous conseille de faire cela, meme si vous avez une licence._
+
+Pour telecharger la version open-source de Qt, le plus simple est  d'aller directement 
+sur la [page de telechargement](https://www.qt.io/download-open-source/) et de cliquer sur le 
+bouton "Download Now" en bas a droite. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
+correspond est proposé par defaut.
 
 Le nom de l'installateur dépend du système. Notez que le nom du fichier contient un numero de version et que 
 celui-ci peut changer. 
 
-- pour Windows : qt-unified-windows-x86-3.0.0-online.exe ;
-- pour Linux 32 bits : qt-unified-linux-x86-3.0.0-online.run ;
-- pour Linux 64 bits : qt-unified-linux-x64-3.0.0-online.run ;
-- pour Mac : qt-unified-mac-x64-3.0.0-online.dmg.
+- pour Windows : `qt-unified-windows-x86-3.0.0-online.exe` ;
+- pour Linux 32 bits : `qt-unified-linux-x86-3.0.0-online.run` ;
+- pour Linux 64 bits : `qt-unified-linux-x64-3.0.0-online.run` ;
+- pour Mac : `qt-unified-mac-x64-3.0.0-online.dmg`.
 
 Une fois que le téléchargement est terminé (c'est rapide, le fichier ne fait que quelques Mo), vous pouvez 
 lancer l'installateur.
 
 ### Autres liens utiles
 
-Vous trouverez sur le site http://www.qt.io/ d'autres liens interessants :
+Vous trouverez sur le [site officiel de Qt](http://www.qt.io/) d'autres liens interessants :
 
-- la documentation de Qt (qui est accessible également dans Qt Creator en appuyant sur F1) : http://doc.qt.io/ ;
-- le blog de Qt, pour suivre les nouvelles : http://blog.qt.io/dev/ ;
-- le wiki de Qt, qui contient de nombreuses informations complementaires : http://wiki.qt.io/Main ;
-- le forum de Qt (en anglais) : https://forum.qt.io/.
+- la [documentation de Qt](http://doc.qt.io/), qui est accessible également dans Qt Creator en appuyant sur 
+la touche `F1` ;
+- le [blog officiel de Qt](http://blog.qt.io/dev/) et les [blogs partenaires de Qt](http://planet.qt.io/) ;
+- le [wiki officiel de Qt](http://wiki.qt.io/Main), qui contient de nombreuses informations complementaires a la documentation ;
+- le [forum officiel de Qt](https://forum.qt.io/), en anglais.
 
 ## Installateurs online et offline
 
-Le téléchargement, le choix des outils et versions, l'installation et la mise à jour de Qt utilise un outil
-dédié, le `Qt Maintenance Tool`.
-
-L'installateur de Qt permet de :
-
-- choisir les versions de Qt à installer ;
-- choisir les outils supplémentaires à installer (en particulier les compilateurs si besoin) ;
-- télécharger et installer ce que vous aurez sélectionné ;
-- faire les mises à jour.
-
-Cet outil peut fonctionner selon deux modes :
-
-- la version en ligne (online), qui contient uniquement l'installateur. Tous les outils seront installés 
-  après téléchargement en ligne ;
-- la version hors ligne (offline), qui contient l'installateur et une seule de version de Qt. Le fichier à 
-  télécharger est plus important, mais permet ensuite d'installer une version de Qt sans avoir de connexion Internet.
-
-Dans tous les cas, une fois que vous avez installé une première fois Qt, vous pouvez installer d'autres versions 
-de Qt ou mettre à jour les outils en lançant le “Qt Maintenance Tool”, qui se trouve dans le répertoire d'installation 
-de Qt.
-
+Lors de l'installation de Qt, l'outil `Qt Maintenance Tool` est installe dans le repertoire d'installation de Qt. 
 Par défaut, cet outil se trouve :
 
 - pour Windows : dans `C:\Qt\maintenancetool.exe` ;
 - pour Linux et Mac : dans `~/Qt/MaintenanceTool`.
+
+Cet outil permet de :
+
+- choisir les versions de Qt à installer ;
+- choisir les outils supplémentaires à installer (en particulier les compilateurs si besoin) ;
+- faire les mises à jour.
 
 ## Autres téléchargements possibles
 
