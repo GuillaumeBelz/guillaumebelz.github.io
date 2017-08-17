@@ -1,6 +1,6 @@
 # Installer un compilateur C++
 
-> Dernière mise à jour : 26 juillet 2017.
+> Dernière mise à jour : 17 aout 2017.
 
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 
@@ -13,17 +13,19 @@ l'editeur Qt Creator. Pour cette raison, il est preferable d'installer ces outil
 autrement, pas d'inquietude, vous pouvez configurer n'importe quand Qt Creator. La configuration de Qt Creator
 est detaillee dans le chapitre [Configurer Qt Creator](config.md).
 
-Le premier (et seul) outil à installer pour programmer en C++ est un compilateur C++. Un compilateur est un outil 
-qui prend du code C++ dans des fichiers textes et produit des binaires.
+Le minimum a installer pour programmer en C++ est un compilateur C++. Un compilateur C++ est un outil 
+qui prend du code C++ dans des fichiers textes et produit des binaires. En complement du compilateur,
+il est aussi interessant d'installer d'autres outils, en particulier un debogueur. Un debogueur
+est un outil qui aide a trouver et corriger les erreurs dans le code.
 
 Certains compilateurs sont disponibles sur plusieurs systèmes, alors que d'autres compilateurs sont spécifique 
 d'un système. Pour les plus connus sur Desktop :
 
 - GCC : multi-plateforme (pour Windows, Linux, Android) ;
 - Clang : multi-plateforme (pour Windows, Mac, Linux, Android, iOS) ;
-- Microsoft Visual Studio (souvent appelle “MSVC”, pour Windows).
+- Microsoft Visual Studio (souvent appelle "MSVC", pour Windows).
 
-Dans le cas des mobiles (Android, iOS), la compilation est un peu particulière. Il s'agit d'une cross-compilation, 
+Dans le cas des mobiles (Android et iOS), la compilation est un peu particulière. Il s'agit d'une cross-compilation, 
 c'est-à-dire que le programme est compilé sur un système hôte (sur Desktop) différent du système cible (sur mobile). 
 Par exemple, il est possible de compiler une programme pour Android sur Windows. Il faut donc installer un environnement 
 de compilation spécifique.
@@ -32,10 +34,15 @@ de compilation spécifique.
 
 ### Microsoft Visual Studio (MSVC)
 
-Visual Studio est l'outil de développement conçu par Microsoft (“MSVC” signifie “Microsoft Visual C++”). C'est donc 
+Visual Studio est l'outil de développement conçu par Microsoft ("MSVC" signifie "Microsoft Visual C++"). C'est donc 
 naturellement l'outil conseillé pour compiler sur Windows. De nombreuses bibliothèques logicielles ne sont disponibles 
 sur Windows uniquement pour Visual Studio. C'est en particulier le cas du module WebEngine de Qt, qui permet d'afficher 
 des pages internet en utilisant le moteur de Chromium.
+
+Pour etre precis, "Visual Studio" designe plusieurs choses en fait :
+
+- un editeur de code ;
+- un compilateur
 
 Il est important d'installer la version de Visual Studio correspondant a la version de Qt que vous souhaitez installer. 
 Il existe différentes versions de Visual Studio, identifiées par :
