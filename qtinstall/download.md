@@ -1,7 +1,7 @@
 
 # Télécharger l'installateur de Qt 5
 
-> Dernière mise à jour : 13 aout 2017.
+> Dernière mise à jour : 19 aout 2017.
 
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 
@@ -49,17 +49,18 @@ la touche `F1` ;
 
 ## Installateurs online et offline
 
+Il existe deux versions de l'installateur : `online` et `offline`. Les deux versions installe l'outil
+`Qt Maintenance Tool`, qui permet d'installer, desinstaller et mettre a jour Qt. La version `online` ne
+contient que cet outil, et c'est celui-ci qui va installer Qt. La version `offline` contient tout
+ce qui est necessaire pour installer une version complete de Qt, sans avoir besoin d'etre connecte
+a internet _pendant l'installation_. Naturellement, l'installateur `offline` est plus volumineuse que 
+l'installateur `online`.
+
 Lors de l'installation de Qt, l'outil `Qt Maintenance Tool` est installe dans le repertoire d'installation de Qt. 
 Par défaut, cet outil se trouve :
 
 - pour Windows : dans `C:\Qt\maintenancetool.exe` ;
 - pour Linux et Mac : dans `~/Qt/MaintenanceTool`.
-
-Cet outil permet de :
-
-- choisir les versions de Qt à installer ;
-- choisir les outils supplémentaires à installer (en particulier les compilateurs si besoin) ;
-- faire les mises à jour.
 
 ## Autres téléchargements possibles
 
