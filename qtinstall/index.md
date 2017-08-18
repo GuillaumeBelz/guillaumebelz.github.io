@@ -42,6 +42,12 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - Configurer Qt Creator 3.4.2 pour Qt 5.5
 - Mettre à jour Qt 5.5
 
+Installer framework:
+
+- documentation: http://doc.qt.io/qtinstallerframework/index.html
+- binaries: https://download.qt.io/official_releases/qt-installer-framework/2.0.1/
+
+
 ## Aller plus loin
 
 - [Comprendre les versions de Qt](qtversions.md)
