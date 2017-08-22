@@ -30,21 +30,14 @@ c'est-à-dire que le programme est compilé sur un système hôte (sur Desktop) 
 Par exemple, il est possible de compiler une programme pour Android sur Windows. Il faut donc installer un environnement 
 de compilation spécifique.
 
-## Pour Windows
-
-### Microsoft Visual Studio (MSVC)
+## Microsoft Visual Studio (MSVC)
 
 Visual Studio est l'outil de développement conçu par Microsoft ("MSVC" signifie "Microsoft Visual C++"). C'est donc 
-naturellement l'outil conseillé pour compiler sur Windows. De nombreuses bibliothèques logicielles ne sont disponibles 
-sur Windows uniquement pour Visual Studio. C'est en particulier le cas du module WebEngine de Qt, qui permet d'afficher 
+naturellement l'outil conseillé sur Windows. De nombreuses bibliothèques logicielles ne sont disponibles 
+sur Windows que pour Visual Studio. C'est en particulier le cas du module WebEngine de Qt, qui permet d'afficher 
 des pages internet en utilisant le moteur de Chromium.
 
-Pour etre precis, "Visual Studio" designe plusieurs choses en fait :
-
-- un editeur de code ;
-- un compilateur
-
-Il est important d'installer la version de Visual Studio correspondant a la version de Qt que vous souhaitez installer. 
+Il est important d'installer la version de Visual Studio correspondante a la version de Qt que vous souhaitez installer. 
 Il existe différentes versions de Visual Studio, identifiées par :
 
 - la date de sortie : 2008, 2010, 2013, 2015, 2017 ;
@@ -59,13 +52,16 @@ Le lien direct pour telecharger Visual Studio sur le [site officiel de Microsoft
 lien ne fonctionne pas (Microsoft change souvent les liens de telechargement), vous trouverez facilement sur internet le 
 lien de telechargement. (Prenez bien le site officiel de Microsoft).
 
-installation + screenshot…
+Apres avoir telecharger l'installateur, lancez le et suivez les instructions. Lors de l'etape de selection 
 
-### Mingw32 (GCC)
+_Visual Studio utilise deux systemes de numeration des versions : avec l'annee (2013, 2015, 2017, etc.) ou un 
+numero de version (12.0, 14.0, 16.0). Ne soyez donc pas surpris par les numeros de version._
 
-A l'origine, le compilateur GCC a été conçu pour Linux. Il existe des versions pour Windows (par exemple 
-http://www.equation.com/servlet/equation.cmd?fa=fortran), mais on prefere souvent utiliser un compilateur 
-dérivée de GCC pour Windows : MingW.
+## GCC et Mingw32
+
+GCC (GNU Compiler Collection) est le compilateur historique sur GNU/Linux, mais il est maintenant disponible
+pour iOS et Android. MingW est le portage de GCC sur Windows. 
+
 
 Le plus simple pour installer MingW sur Windows est de sélectionner cet outil dans l'installateur de Qt.
 
