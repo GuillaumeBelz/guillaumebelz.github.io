@@ -33,16 +33,15 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Télécharger l'installateur de Qt](download.md)
 - [Installer un compilateur C++](compiler.md)
 - [Installer Qt 5.9.1](install.md)
-- Tester l'installation de Qt 5.5
-- Configurer Qt Creator 3.4.2 pour Qt 5.5
-- Mettre à jour Qt 5.5
-- [Deployer une application Qt](deploy.md)
+- Tester l'installation de Qt 5.9.1
+- Configurer Qt Creator 4 pour Qt 5.9.1
+- Mettre à jour Qt 5.9.1
 
 ## Aller plus loin
 
 - [Comprendre les versions de Qt](qtversions.md)
-- Déployer une application Qt
-- Savoir utiliser la documentation de Qt 5.5
+- [Deployer une application Qt](deploy.md)
+- Savoir utiliser la documentation de Qt 5.9.1
 
 ## Contributions
 
