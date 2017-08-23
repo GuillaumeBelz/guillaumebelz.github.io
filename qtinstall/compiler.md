@@ -1,6 +1,6 @@
 # Installer un compilateur C++
 
-> Dernière mise à jour : 17 aout 2017.
+> Dernière mise à jour : 24 aout 2017.
 
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 
@@ -59,42 +59,69 @@ numero de version (12.0, 14.0, 16.0). Ne soyez donc pas surpris par les numeros 
 
 ## GCC et Mingw32
 
-GCC (GNU Compiler Collection) est le compilateur historique sur GNU/Linux, mais il est maintenant disponible
-pour iOS et Android. MingW est le portage de GCC sur Windows. 
+### Sur Linux
 
+GCC (GNU Compiler Collection) est la suite historique de compilation sur GNU/Linux, mais elle est également disponible
+pour iOS et Android. Le compilateur `g++` est le compilateur C++ de la suite GCC. Pour l'installation, GCC est  
+géneralement disponible dans les depôts des distributions Linux. Pour l'installer, il vous suffit de rechercher `g++` 
+dans les dépôts (par exemple dans le logiciel `Synaptic` sur Ubuntu) ou d'utiliser la ligne de commande suivante :
 
-Le plus simple pour installer MingW sur Windows est de sélectionner cet outil dans l'installateur de Qt.
+```
+sudo apt-get install g++
+```
 
+### Sur Windows
 
-
-
-Faites attention à prendre la version de MingW correspondant a la version de Qt que vous souhaitez installer. 
-Pour la dernière version de Qt (la version 5.8), il faut installer MingW 4.9.2.
+MingW est le portage de GCC sur Windows. Le plus simple pour installer MingW sur Windows est de sélectionner cet 
+outil dans l'installateur de Qt. Il est disponible dans la partie `Tools`. Chaque version de Qt peut utiliser
+une version differente de MingW, il est donc nécessaire de sélectionner la version de MingW correspondant
+à la version de Qt que vous souhaitez installer. Pour la version actuelle de Qt (Qt 5.9.1), il faut
+installer MingW 5.3.
 
 Vous pouvez également installer manuellement MingW. Pour cela, vous pouvez suivre le tutoriel de int21h sur 
-OpenClassRoom : Mettre à jour le MinGW GCC de Code::Blocks. Je vous recommande d'installer la version de 
-https://nuwen.net/mingw.html.
+OpenClassRoom : [Mettre à jour le MinGW GCC de 
+Code::Blocks](https://openclassrooms.com/forum/sujet/mettre-a-jour-le-mingw-gcc-de-code-blocks).
+Je vous recommande d'installer la version de [nuwen.net](https://nuwen.net/mingw.html).
+
+### Pour Android
+
+L'installation de GCC pour Android est un peu particulier. Il n'est pas possible de compiler les applications
+directement sur un periphérique Android. Il faut compiler sur un ordinateur avec des outils de compilation
+specifique pour Android puis transferer l'application sur Android. Cette technique s'appelle une 
+cross-compilation. Le systeme sur lequel on compile est le systeme hôte (Windows, Linux ou MacOS X), le
+systeme cible est Android.
+
+La compilation d'une application Qt pour Android nécessite deux outils :
+
+- le_ Android SDK_ (_Software Developement Kit_) est le kit de développement en Java pour Android et contient 
+  les outils de base pour travailler avec Android ;
+- le _Android NDK_ (_Native Devlopement Kit_) est le kit de développement en C++ pour Android.
+
+Ces deux outils sont nécessaires pour utiliser Qt sur Android, vous devez installer le SDK même si vous n'utilisez
+pas le Java (Qt utilise en interne une activités Java sur Android).
+
+Pour télécharger le SDK, allez sur la page officielle : [Android Studio](https://developer.android.com/studio/index.html)
+et cliquez sur `Download Android Studio`. Une fois le téléchargement fini, lancez l'installateur et suivez les
+étapes.
+
+Pour télécharger le NDK, allez sur la page officiel [Android NDK](https://developer.android.com/ndk/downloads/index.html)
+et cliquez sur le fichier `zip` correspondant à votre système hôte. Il n'y a pas d'installation à faire, 
+décompressez simplement l'archive dans un dossier de travail pour Android.
 
 ### Clang
 
-L'installation et la configuration de Clang sur Windows est un peu complexe et ne sera pas detailee ici. Sachez 
-simplement que vous pouvez télécharger ce compilateur sur le site officiel du projet LLVM : 
-http://releases.llvm.org/download.html#3.9.1
+Clang est le compilateur le plus récent sur les trois proposés dans ce tutoriel. C'est un projet lancé initialement
+par Apple pour compiler sur MacOS X et sur iOS, en C++ et en Objective-C, mais cet outil est egalement disponible
+sur Linux, Android et Windows. Cependant, Qt ne supporte pas encore Clang sur Android et Windows, l'installation
+de Clang sur ces systemes ne sera pas détailleé ici.
 
+Pour MacOS X, le compilateur Clang est fourni dans l'outil de développement officiel d'Apple : XCode. Ce logiciel
+est gratuit, il vous suffit donc d'aller dans l'App Store (cliquez sur la pomme de la barre de menu, puis selectionnez
+`App store...`) et d'installer XCode.
 
-## Pour Linux
+Pour Linux, la procedure d'installation est identique à celle pour GCC : recherchez "clang" dans un logiciel
+d'installation de logiciels (par exemple Synaptic) ou utiliser la ligne de commande suivante :
 
-installation via les depots : clang et gcc
-
-
-## Pour Mac et iOS
-
-installation via XCode. Permet d'installer Clang et outils pour iOS
-
-
-## Pour Android
-
-cross compile, sur windows, linux et mac. Necessite 2 outils :
-
-Android SDK pour programmer sur Android
-Android NDK pour ecrire des programmes C++
+```
+sudo apt-get install clang
+```
