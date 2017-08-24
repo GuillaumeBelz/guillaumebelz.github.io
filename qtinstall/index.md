@@ -30,8 +30,8 @@ particulier, il existe des codes d'exemple pour la majorité des fonctionnalité
 réaliser quelque chose, la première chose à faire est probablement d'étudier ces codes d'exemple.
 
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
-- [Télécharger l'installateur de Qt](download.md)
 - [Installer un compilateur C++](compiler.md)
+- [Télécharger l'installateur de Qt](download.md)
 - [Installer Qt 5.9.1](install.md)
 - Tester l'installation de Qt 5.9.1
 - Configurer Qt Creator 4 pour Qt 5.9.1
