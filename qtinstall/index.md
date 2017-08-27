@@ -1,7 +1,7 @@
 
 # Installation et premiers pas avec Qt 5.9.1
 
-> Dernière mise à jour : 19 aout 2017.
+> Dernière mise à jour : 27 aout 2017.
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
@@ -33,15 +33,15 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
 - [Installer et mettre a jour Qt](install.md)
-- Tester l'installation de Qt 5.9.1
-- Configurer Qt Creator 4 pour Qt 5.9.1
-- Mettre à jour Qt 5.9.1
+- [Tester l'installation de Qt 5.9.1](test.md)
+- [Mettre à jour Qt 5.9.1](update.md)
 
 ## Aller plus loin
 
 - [Comprendre les versions de Qt](qtversions.md)
+- [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
-- Savoir utiliser la documentation de Qt 5.9.1
+- [Savoir utiliser la documentation de Qt 5.9.1](documentation.md)
 
 ## Contributions
 
