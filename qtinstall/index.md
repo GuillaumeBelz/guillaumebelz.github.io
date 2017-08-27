@@ -42,6 +42,7 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
 - [Savoir utiliser la documentation de Qt 5.9.1](documentation.md)
+- le plugin MSVC, installation et tests
 
 ## Contributions
 
