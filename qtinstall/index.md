@@ -38,7 +38,7 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 
 ## Aller plus loin
 
-- [Comprendre les versions de Qt](qtversions.md)
+- [Comprendre les versions de Qt](version.md)
 - [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
 - [Savoir utiliser la documentation de Qt 5.9.1](documentation.md)
