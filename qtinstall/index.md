@@ -32,7 +32,7 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
-- [Installer et mettre a jour Qt](install.md)
+- [Installer Qt 5.9.1](install.md)
 - [Tester l'installation de Qt 5.9.1](test.md)
 - [Mettre à jour Qt 5.9.1](update.md)
 
