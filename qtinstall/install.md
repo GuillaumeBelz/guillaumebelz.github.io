@@ -1,8 +1,9 @@
 # Installer Qt 5.9.1
 
 > Dernière mise à jour : 27 aout 2017.
-
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+> Chapitre precedent : [Télécharger l'installateur de Qt](download.md)
+> Chapitre suivant : [Tester l'installation de Qt 5.9.1](test.md)
 
 Pour installer ou mettre des versions de Qt, lancez l'installateur que vous avez telecharge a l'etape precedente, si 
 vous installez Qt pour la premiere fois. Ou lancez l'outil `Qt Maintenance Tool` qui se trouve dans le repertoire 
