@@ -31,6 +31,17 @@ le programme sera encore fonctionnel.
 Le numero de patch correspond a des mises a jour de correction de bugs. Il est conseille de toujours
 installer la derniere version de patch.
 
+Pour etre plus concret :
+
+- si vous avez ecrit un code pour Qt4 et que vous souhaitez le compiler avec Qt5, vous devrez modifier
+votre code pour le rendre compatible.
+- si vous avez ecrit un code par exemple pour Qt 5.6, ce code fonctionnera encore avec Qt 5.7. Par contre,
+votre code aura ete ecrit sans les fonctionnalites de Qt 5.7, donc pour utiliser ces nouvelles fonctionnalites,
+vous devrez modifier votre code.
+- si vous avez ecrit  un code par exemple pour Qt 5.6.0, ce code fonctionnera encore avec Qt 5.6.1. Et comme
+cette nouvelle version ne contient aucune fonctionnalite, mais que des corrections de bugs, vous n'avez pas
+a modifier votre code.
+
 Par defaut, lorsqu'une nouvelle version de Qt sort, les versions precedentes ne sont plus maintenues, 
 sauf les versions LTS (Long Terme Support), qui sont garantie d'etre mise a jour pendant plusieurs annees. 
 Les versions LTS de Qt sont actuellement :
