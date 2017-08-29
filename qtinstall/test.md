@@ -19,13 +19,13 @@ Lorsque vous lancez l'éditeur Qt Creator, vous arrivez sur la page d'accueil su
 Quelques éléments de vocabulaire relatifs à Qt Creator, pour bien comprendre les choses. Les icônes à gauche 
 en haut permettent de choisir le mode : 
 
-  * "Accueil", la page actuelle ;
-  * "Éditer", lorsque vous éditerez un fichier ;
-  * "Design", pour les éditeurs graphiques de Qt ;
-  * "Débogage", pour corriger les programmes ;
-  * "Projet", pour éditer les paramètres de compilation et d'exécution des projets ;
-  * "Analyse", pour les outils d'analyse de performances ;
-  * "Aide", pour les pages d'aide de Qt.
+  * `Accueil`, la page actuelle ;
+  * `Éditer`, lorsque vous éditerez un fichier ;
+  * `Design`, pour les éditeurs graphiques de Qt ;
+  * `Débogage`, pour corriger les programmes ;
+  * `Projet`, pour éditer les paramètres de compilation et d'exécution des projets ;
+  * `Analyse`, pour les outils d'analyse de performances ;
+  * `Aide`, pour les pages d'aide de Qt.
 
 En dessous des icônes de mode (toujours dans la barre à gauche), une série d'icônes (actuellement grisée, 
 puisqu'aucun projet n'est ouvert) permettent, de haut en bas :
@@ -67,10 +67,10 @@ Pour les plus importants :
   * `Projet non Qt` puis `Projet C++` pour les applications C++ sans Qt ;
   * `Importer un projet` pour créer un clone d'un projet existant dans un gestionnaire de versions (CVS, SVN, Git, etc.).
 
-Choisissez "Application Qt avec widgets" pour ce premier test.
+Choisissez `Application Qt avec widgets` pour ce premier test.
 
 La page suivante permet de choisir le nom du projet que l'on souhaite créer et l'emplacement sur le disque. 
-Remarque : ne mettez pas vos projets dans "C:\Qt", créez un répertoire dédié pour cela, par exemple dans vos 
+Remarque : ne mettez pas vos projets dans `C:\Qt`, créez un répertoire dédié pour cela, par exemple dans vos 
 documents ou votre répertoire de travail.
 
 ![Page d'acceuil](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_12.png)
@@ -78,7 +78,7 @@ documents ou votre répertoire de travail.
 La page suivante permet de sélectionner les kits à utiliser pour compiler le programme. Il est possible de 
 sélectionner plusieurs kits (voir la suite de ce tutoriel pour les explications sur les kits), pour le moment 
 (si vous avez suivi les instructions de ce tutoriel et que c'est la première fois que vous installez Qt), vous 
-n'avez qu'un seul kit disponible : "Qt MinGW".
+n'avez qu'un seul kit disponible : `Qt MinGW`.
 
 Si vous n'avez aucun kit disponible dans cette page, c'est qu'il y a eu un problème lors de l'installation (Qt 
 Creator n'a pas réussi à trouver une version de Qt et un compilateur compatibles ensemble). Voir la suite de ce 
@@ -97,11 +97,11 @@ pas le contrarier et le laisser faire. Cliquez sur Suivant.
 Pour terminer, il est possible d'ajouter le projet dans un gestionnaire de versions. Cela n'est pas nécessaire 
 pour ce test, mais n'hésitez pas à utiliser un tel gestionnaire, c'est très pratique et utile.
 
-Cliquez sur "Terminer" pour créer le projet.
+Cliquez sur `Terminer` pour créer le projet.
 
 ![Page d'acceuil](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_15.png)
 
-Qt Creator crée plusieurs fichiers et passe en mode "Éditer" pour afficher le contenu des fichiers. Un projet
+Qt Creator crée plusieurs fichiers et passe en mode `Éditer` pour afficher le contenu des fichiers. Un projet
 Qt contient généralement les fichiers suivants (cela peut changer en fonction du type de projet) :
 
   * un fichier de projet ''.pro'' ou ''.qmlprojet'', qui contient les informations sur le projet (en particulier 
@@ -116,7 +116,7 @@ utilisant un éditeur graphique (mode Design).
 
 ![Page d'acceuil](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_16.png)
 
-Cliquez sur le triangle vert en bas à gauche, dans le menu "Compiler" puis "Exécuter" ou appuyez sur Ctrl+R pour 
-lancer le programme. Si tout s'est bien passé, une fenêtre "MainWindow" devrait s'ouvrir.
+Cliquez sur le triangle vert en bas à gauche, dans le menu `Compiler` puis `Exécuter` ou appuyez sur Ctrl+R pour 
+lancer le programme. Si tout s'est bien passé, une fenêtre `MainWindow` devrait s'ouvrir.
 
 ![Page d'acceuil](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_17.png)
