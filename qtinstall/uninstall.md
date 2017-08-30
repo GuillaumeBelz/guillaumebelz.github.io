@@ -12,9 +12,9 @@ La raison est que beaucoup ont tenté d'installer Qt avant de lire ce tutoriel e
 de bien désinstaller Qt avant de le réinstaller.
 
 La désinstallation en elle-même ne pose généralement pas de problème. Il faut lancer l'outil `MaintenanceTool`
-qui se trouve dans le répertoire d'installation de Qt et choisir "Désinstaller" (Uninstall).
+qui se trouve dans le répertoire d'installation de Qt et choisir `Désinstaller` (Uninstall).
 
-Les repertoires par defaut d'installation de Qt sont les suivants :
+Les repertoires par défaut d'installation de Qt sont les suivants :
 
 - pour Windows : dans `C:\Qt`
 - pour Mac et Linux : dans `~\Qt`
@@ -27,7 +27,7 @@ est facile de les oublier (d'autant plus qu'ils sont dans un répertoire caché)
 Sous Windows, il faut aller dans le répertoire `C:\Users\VotreNom\AppData\Roaming` et supprimer les 
 répertoires `QtProject`.
 
-Sous Linux et Mac OS X, il faut aller dans `~/.config` et supprimer le repertoire `QtProject`. Le répertoire 
+Sous Linux et Mac OS X, il faut aller dans `~/.config` et supprimer le répertoire `QtProject`. Le répertoire 
 `.config` est est caché, donc il faut afficher les répertoires cachés (`Ctrl + H` sous Linux. Sous Mac, il n'y a pas d'option
-pour faire cela). Une solution alternative est de lancer un terminal et d'utiliser la ligne 
-de commande suivante : `rm -R ~/.config/QtProject`
+pour faire cela, tapez `cd ~/.config`). Une solution alternative est de lancer un terminal et d'utiliser la ligne 
+de commande suivante : `rm -R ~/.config/QtProject`.
