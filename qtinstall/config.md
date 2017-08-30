@@ -2,8 +2,12 @@
 # Configurer Qt Creator
 
 > Dernière mise à jour : 27 aout 2017.
-
+>
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+>
+> Chapitre precedent : [Comprendre les versions de Qt](version.md)
+>
+> Chapitre suivant : [Deployer une application Qt](deploy.md)
 
 ## Quelques points de vocabulaire
 
