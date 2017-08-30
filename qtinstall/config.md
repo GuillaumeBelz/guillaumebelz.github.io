@@ -2,12 +2,8 @@
 # Configurer Qt Creator
 
 > Dernière mise à jour : 27 aout 2017.
->
+
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
->
-> Chapitre precedent : [Comprendre les versions de Qt](version.md)
->
-> Chapitre suivant : [Deployer une application Qt](deploy.md)
 
 ## Quelques points de vocabulaire
 
@@ -43,19 +39,19 @@ Pour connaître les kits utilisables sur votre ordinateur et les configurer, all
 
 Comme vous l'avez sûrement compris, chacun de ces onglets permet de configurer les différents outils utilisés pour la compilation.
 
-L'onglet ''Versions de Qt'' affiche les différentes versions de Qt installées. Une version de Qt est identifiée par un numéro de version de Qt (actuellement Qt 5.5, mais vous pouvez également avoir Qt 5.4, 5.3, etc.) et par le compilateur utilisé pour compiler Qt (MinGW 4.9.1, MSVC 2013 32b OpenGL, etc.) Il faut compiler votre programme avec le même compilateur utilisé pour compiler Qt.
+L'onglet `Versions de Qt` affiche les différentes versions de Qt installées. Une version de Qt est identifiée par un numéro de version de Qt (actuellement Qt 5.5, mais vous pouvez également avoir Qt 5.4, 5.3, etc.) et par le compilateur utilisé pour compiler Qt (MinGW 4.9.1, MSVC 2013 32b OpenGL, etc.) Il faut compiler votre programme avec le même compilateur utilisé pour compiler Qt.
 
 ![image](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_19.png)
 
-S'il manque une version de Qt, vous pouvez cliquer sur le bouton `Ajouter` et aller dans le répertoire de la version de Qt manquante, puis dans le sous-répertoire **bin**, sélectionner **qmake**. Par exemple, si vous avez suivi la procédure d'installation décrite ci-dessus et que Qt n'est pas reconnu, il faudra ajouter ''C:\Qt\5.4\mingw491_32\bin''.
+S'il manque une version de Qt, vous pouvez cliquer sur le bouton `Ajouter` et aller dans le répertoire de la version de Qt manquante, puis dans le sous-répertoire **bin**, sélectionner **qmake**. Par exemple, si vous avez suivi la procédure d'installation décrite ci-dessus et que Qt n'est pas reconnu, il faudra ajouter `C:\Qt\5.4\mingw491_32\bin`.
 
-L'onglet ''Compilateur'' affiche la liste des compilateurs connus. Il faut bien sûr au moins un compilateur valide pour compiler un programme. Qt Creator trouvera les compilateurs installés dans les répertoires par défaut. Si ce n'est pas le cas, cliquez sur le bouton `Ajouter` et allez chercher l'application g++ (pour MinGW et GCC), clang++ (pour LLVM/Clang) et cl.exe pour MSVC.
+L'onglet `Compilateur` affiche la liste des compilateurs connus. Il faut bien sûr au moins un compilateur valide pour compiler un programme. Qt Creator trouvera les compilateurs installés dans les répertoires par défaut. Si ce n'est pas le cas, cliquez sur le bouton `Ajouter` et allez chercher l'application g++ (pour MinGW et GCC), clang++ (pour LLVM/Clang) et cl.exe pour MSVC.
 
 ![image](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_20.png)
 
 Les compilateurs se déclinent en plusieurs versions, il faudra bien choisir la version correspondant à la version de Qt utilisée. Le nom du compilateur correspondant à une version de Qt est indiqué dans la version de Qt.
 
-Pour le ''Débogueur'', si vous avez installé les compilateurs MinGW, GCC ou Clang, le débogueur est inclus dedans et devrait être directement reconnu (s'il est installé dans un répertoire par défaut). Pour MSVC, il faut installer le Windows SDK en complément.
+Pour le `Débogueur`, si vous avez installé les compilateurs MinGW, GCC ou Clang, le débogueur est inclus dedans et devrait être directement reconnu (s'il est installé dans un répertoire par défaut). Pour MSVC, il faut installer le Windows SDK en complément.
 
 ![image](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=install_21.png)
 
