@@ -1,24 +1,28 @@
 # Installer un compilateur C++
 
 > Dernière mise à jour : 24 aout 2017.
-
+>
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+>
+> Chapitre précédent : [Désinstaller proprement Qt et Qt Creator](uninstall.md)
+>
+> Chapitre suivant : [Télécharger l'installateur de Qt](download.md)
 
 Qt est une bibliotheque C++, ce qui signifie que vous devez installer les outils de développement nécessaire pour
 compiler un programme C++. L'installation de ces outils depend du systeme et parfois plusieurs outils sont possibles.
-La procedure d'installation des principaux outils est detaillee.
+La procedure d'installation des principaux outils est detaillée dans ce chapitre.
 
-Lors de l'installation de Qt, celui-ci detecte automatiquement les outils de compilation et configure automatiquement
-l'editeur Qt Creator. Pour cette raison, il est preferable d'installer ces outils avant Qt. Mais si vous avez fait 
-autrement, pas d'inquietude, vous pouvez configurer n'importe quand Qt Creator. La configuration de Qt Creator
-est detaillee dans le chapitre [Configurer Qt Creator](config.md).
+Lors de l'installation de Qt, celui-ci détecte automatiquement les outils de compilation et configure automatiquement
+l'éditeur Qt Creator. Pour cette raison, il est préférable d'installer ces outils avant Qt. Mais si vous avez fait 
+autrement, pas d'inquietude, vous pouvez configurer les kits n'importe quand dans Qt Creator. La configuration de Qt Creator
+est détaillée dans le chapitre [Configurer Qt Creator](config.md).
 
-Le minimum a installer pour programmer en C++ est un compilateur C++. Un compilateur C++ est un outil 
-qui prend du code C++ dans des fichiers textes et produit des binaires. En complement du compilateur,
-il est aussi interessant d'installer d'autres outils, en particulier un debogueur. Un debogueur
-est un outil qui aide a trouver et corriger les erreurs dans le code.
+Le minimum à installer pour programmer en C++ est un compilateur C++. Un compilateur C++ est un outil 
+qui prend du code C++ dans des fichiers textes et produit des binaires. En complément du compilateur,
+il est intéressant d'installer d'autres outils, en particulier un débogueur. Un débogueur
+est un outil qui aide à trouver et corriger les erreurs dans le code.
 
-Certains compilateurs sont disponibles sur plusieurs systèmes, alors que d'autres compilateurs sont spécifique 
+Certains compilateurs sont disponibles sur plusieurs systèmes, alors que d'autres compilateurs sont spécifiques 
 d'un système. Pour les plus connus sur Desktop :
 
 - GCC : multi-plateforme (pour Windows, Linux, Android) ;
@@ -34,10 +38,10 @@ de compilation spécifique.
 
 Visual Studio est l'outil de développement conçu par Microsoft ("MSVC" signifie "Microsoft Visual C++"). C'est donc 
 naturellement l'outil conseillé sur Windows. De nombreuses bibliothèques logicielles ne sont disponibles 
-sur Windows que pour Visual Studio. C'est en particulier le cas du module WebEngine de Qt, qui permet d'afficher 
+sur Windows que pour Visual Studio. C'est en particulier le cas du module `WebEngine` de Qt, qui permet d'afficher 
 des pages internet en utilisant le moteur de Chromium.
 
-Il est important d'installer la version de Visual Studio correspondante a la version de Qt que vous souhaitez installer. 
+Il est important d'installer la version de Visual Studio correspondante à la version de Qt que vous souhaitez installer. 
 Il existe différentes versions de Visual Studio, identifiées par :
 
 - la date de sortie : 2008, 2010, 2013, 2015, 2017 ;
@@ -47,12 +51,12 @@ payantes (`Professional`, `Enterprise`, `Ultimate`, etc.).
 Les versions payantes sont relativement chères pour un particulier. Si votre entreprise possède des licences, utilisez-les. 
 Sinon, la version `Community` est suffisante. (Ce tutoriel utilisera cette version).
 
-Si vous installez la dernière version de Qt, il faut installer Visual Studio 2017 (la version 16.0). 
-Le lien direct pour telecharger Visual Studio sur le [site officiel de Microsoft](https://www.visualstudio.com/fr/vs/), mais si ce 
+Si vous installez la dernière version de Qt, il faut installer Visual Studio 2017 (la version 14.0). 
+Le lien direct pour télécharger Visual Studio sur le [site officiel de Microsoft](https://www.visualstudio.com/fr/vs/), mais si ce 
 lien ne fonctionne pas (Microsoft change souvent les liens de telechargement), vous trouverez facilement sur internet le 
-lien de telechargement. (Prenez bien le site officiel de Microsoft).
+lien de téléchargement. (Prenez bien le site officiel de Microsoft).
 
-Apres avoir telecharger l'installateur, lancez le et suivez les instructions. Lors de l'etape de selection 
+Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. Lors de l'étape de sélection 
 
 _Visual Studio utilise deux systemes de numeration des versions : avec l'annee (2013, 2015, 2017, etc.) ou un 
 numero de version (12.0, 14.0, 16.0). Ne soyez donc pas surpris par les numeros de version._
