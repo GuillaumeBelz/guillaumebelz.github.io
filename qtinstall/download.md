@@ -2,30 +2,34 @@
 # Télécharger l'installateur de Qt 5
 
 > Dernière mise à jour : 19 aout 2017.
-
+>
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+>
+> Chapitre précédent : [Installer un compilateur C++](compiler.md)
+>
+> Chapitre suivant : [Installer Qt 5.9.1](install.md)
 
-_Attention : evitez de telecharger des fichiers, en particulier des applications, sur des sites non-officiels, 
+_Attention : évitez de télécharger des fichiers, en particulier des applications, sur des sites non-officiels, 
 pour minimiser le risque d'installer des logiciels malveillants._
 
 ## Le site officiel de Qt
 
-### La page de telechagement 
+### La page de téléchagement 
 
-Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). Le site est concu pour aider
-les utilisateurs a choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
+Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). Le site est conçu pour aider
+les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
 ce qui le rend un peu complexe au premier abord. Dans ce tutoriel, nous allons installer la version
-open-source de Qt, donc nous n'allons pas detailler le site de Qt.
+open-source de Qt, donc nous n'allons pas détailler le site de Qt.
 
-![Page de telechargement de Qt](http://guillaume.belz.free.fr/lib/exe/fetch.php?cache=&media=installateur_qt_2.png)
+![Page de téléchargement de Qt](http://guillaume.belz.free.fr/lib/exe/fetch.php?cache=&media=installateur_qt_2.png)
 
-_Note pour ceux qui possedent une licence commerciale de Qt : il est possible d'entrer votre numero de licence, 
-meme si vous telecharger la version open-source. Et je trouve qu'il est plus facile de mettre a jour Qt si
-vous installez la version open-source, donc je vous conseille de faire cela, meme si vous avez une licence._
+Pour ceux qui possèdent une licence commerciale de Qt : il est possible d'entrer votre numéro de licence, 
+même si vous télécharger la version open-source. Et je trouve qu'il est plus facile de mettre à jour Qt si
+vous installez la version open-source, donc je vous conseille de faire cela, même si vous avez une licence commerciale.
 
-Pour telecharger la version open-source de Qt, le plus simple est  d'aller directement 
+Pour télécharger la version open-source de Qt, le plus simple est d'aller directement 
 sur la [page de telechargement](https://www.qt.io/download-open-source/) et de cliquer sur le 
-bouton "Download Now" en bas a droite. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
+bouton `Download Now` en bas à droite. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
 correspond est proposé par defaut.
 
 Le nom de l'installateur dépend du système. Notez que le nom du fichier contient un numero de version et que 
