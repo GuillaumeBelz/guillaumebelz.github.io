@@ -112,7 +112,7 @@ Pour télécharger le NDK, allez sur la page officiel [Android NDK](https://deve
 et cliquez sur le fichier `zip` correspondant à votre système hôte. Il n'y a pas d'installation à faire, 
 décompressez simplement l'archive dans un dossier de travail pour Android.
 
-### Clang
+## Clang
 
 Clang est le compilateur le plus récent sur les trois proposés dans ce tutoriel. C'est un projet lancé initialement
 par Apple pour compiler sur MacOS X et sur iOS, en C++ et en Objective-C, mais cet outil est egalement disponible
