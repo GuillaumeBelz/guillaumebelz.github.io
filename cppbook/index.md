@@ -1,6 +1,8 @@
 
 # Débuter en C++ moderne
-# Création d'applications en C++ moderne par la pratique
+
+
+** Apprendre a créer des applications en C++ moderne par la pratique **
 
 ## Avant-propos
 
