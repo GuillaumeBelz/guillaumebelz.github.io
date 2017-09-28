@@ -16,7 +16,15 @@
 
 ## La programmation impérative
 
+- [Les paradigmes de programmation](02-imperatif/01-paradigmes.md)
+
 ### Premiers pas
+
+- [Votre premier programme C++](02-imperatif/01-premiers-pas/01-minimum.md)
+- Le programme "hello world"
+- Les littérales chaînes de caractères
+- Introduction à la qualité logicielle
+- Les erreurs en programmation
 
 ### Bases du calcul numérique
 
