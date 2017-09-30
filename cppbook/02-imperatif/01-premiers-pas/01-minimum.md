@@ -66,211 +66,77 @@ main.cpp:2:12: error: 'world' was not declared in this scope
             ^~~~~
 ```
 
-Il est important d'apprendre à lire les messages d'erreur, mais vous verrez cela plus tard. Le plus important
-est de remarquer que les messages contiennet le mot `error`, ce qui signifie qu'il y a une erreur dans le 
-programme.
-
-Il est important de comprendre que le compilateur analyse votre code et vous indique les erreurs. C'est votre
-ami, il vous aidera beaucoup pour écrire des programme C++. Mais n'oubliez surtout pas que le
-compilateur ne fais que des verifications basiques : un code accepté par le compilateur n'est pas 
-forcement valide. Par contre, vous pouvez être sûr qu'un code qui est refusé par le compilateur
-est (généralement) invalide.
+Il est important d'apprendre à lire les messages d'erreur, mais il n'est n'est pas necessaire de voir cela
+dès ce premier chapitre. Pour le moment, vous n'avez besoin que de remarquer que le message contient le mot 
+`error`, ce qui signifie qu'il y a une erreur de syntaxe dans le programme : vous n'avez pas écrit un code
+C++ valide.
 
 ## Compiler un code C++
 
-Fondamentalement, une application est une suite d'instructions donnée au processeur de votre ordinateur, qui lui indique 
-les tâches qu'il doit accomplir. Un processeur ne connait qu'un seul langage, appelé langage machine, spécifique à chaque 
-type de processeur. Un langage machine est difficilement compréhensible pour les humains et il est donc très peu utilisé. 
+Fondamentalement, une application est une suite d'instructions données au processeur de votre ordinateur, qui lui indiquent 
+les tâches qu'il doit accomplir. Ces instructions doivent être données sous une forme particulière, le plus souvent un 
+fichier "binaire". Écrire directement un tel fichier est fastidieux, personne ne travaille comme ca depuis des dizaines d'années.
+
 C'est pour cela que les programmes sont écrits dans des langages plus compréhensibles pour les humains, appelés _langages 
 de programmation_. C++, Java, C#, PHP, Python, Javascript sont des exemples de langage de programmation.
+Les programmes écrits dans un langage de programmation doivent être convertis dans un format compréhensible
+par un ordinateur.
 
-> Aucun langage ne répond à tous les besoins, les développeurs connaissent généralement plusieurs langages, qu'ils 
-> utilisent en fonction des tâches qu'ils doivent realiser. Nous vous conseillons d'apprendre un langage principal
-> et 1 à 3 langages secondaires.
+Aucun langage ne répond à tous les besoins, les développeurs connaissent généralement plusieurs langages, qu'ils 
+utilisent en fonction des tâches qu'ils doivent réaliser. Nous vous conseillons d'apprendre un langage principal
+et un à trois langages secondaires. Vouloir apprendre trop de langages peut nuire à votre apprentissage. Et évitez
+d'étudier plusieurs langages en même temps, apprennez-les un par un.
 
-Le problème est que le processeur est incapable de comprendre autre chose que le langage machine. Il faut donc passer par 
-une étape qui convertit un code écrit dans un langage de programmation en programme en langage machine.
+Dans le cas du C++, cette étape est réalisée par un compilateur. Lorsque vous cliquez sur le bouton
+`Compile, link and run...`, Coliru lance en fait la ligne de commande qui se trouve à gauche du bouton :
 
-**La compilation est le processus qui transforme le code C++ en programme exécutable par un ordinateur.**
+```
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp && ./a.out
+```
 
-Cette étape est donc indispensable pour tester vos programmes écrits en C++. La compilation est en fait constituée de 
-plusieurs étapes (qui seront détaillées dans un prochain chapitre), chaque étape nécessitant l'utilisation d'un programme 
-dédié. Vous verrez également dans un prochain chapitre différents outils de compilation, comment les installer et les 
-utiliser. C'est pour éviter les problèmes liés à l'installation et l'utilisation de ces outils que vous utilisez dans 
-un premier temps dans ce cours un environnement de compilation en ligne, qui possède déjà tous ces outils.
-
-<note info>**Classifications historiques des langages**
-
-Historiquement, les langages étaient classifiés selon plusieurs critères. Par exemple, on distinguait les langages compilés 
-et les langages interprétés. Ou les langages de haut niveau et bas niveau.
-
-Avec un **langage compilé**, les étapes de compilation et d’exécution sont séparées dans le temps (comme vous venez de le 
-voir pour le C++) alors que pour un **langage interprété**, la conversion en langage machine a lieu en même temps que l'exécution.
-
-Un langage est dit de **bas-niveau** lorsqu'il est proche du langage machine, un langage est **haut-niveau** lorsqu'il 
-est proche du langage humain. (les définitions de "haut" et "bas-niveau" ne sont pas formalisées et dépendent des auteurs. 
-Peu importe ici, lire la suite).
-
-De nos jours, cette distinction n'est plus forcément pertinente, beaucoup de langages peuvent être utilisés via compilation 
-et interprétation, voire même un mélange des deux.</note>
-
-Revenons sur la compilation de notre code C++ minimal. Dans l'éditeur utilisé, la compilation est réalisée en suivant les 
-instructions données dans la partie du bas de la fenêtre. Cette partie (que vous pouvez également modifier) contient les 
-instructions suivantes :
-
-<code>
-clang++ -std=c++11 -Wall -Wextra -pedantic -O2 main.cpp && ./a.out
-</code>
-
-Ces instructions sont en fait des commandes Linux (le serveur utilisé par l'éditeur tourne sous Linux - mais les commandes 
-sur Windows ou Mac OS X sont très proches). Si vous ne savez pas utiliser Linux en ligne de commande, ce n'est pas très 
-grave (pour le moment... un développeur doit quand même avoir quelques bases sur l'utilisation des lignes de commandes).
+Ces instructions sont en fait des commandes pour Linux. Le serveur utilisé par Coliru utilise Linux, mais les commandes 
+sur Windows ou Mac OS X sont très proches. Si vous ne savez pas utiliser Linux en ligne de commande, ce n'est pas très 
+grave pour le moment, mais il faudra apprendre cela par la suite.
 
 Vous pourrez utiliser par la suite des outils qui se chargeront d'appeler ces instructions pour vous, de façon transparente.
 Mais gardez quand même en mémoire que quel que soit l'outil que vous utiliserez, celui-ci ne fera rien d'autre que d'appeler 
-ces instructions, comme vous pourriez le faire vous-même (certains préfèrent d'ailleurs compiler manuellement leurs 
-programmes en utilisant directement des lignes de commande).
-
-Les instructions suivantes réalisent en fait deux tâches : lancer la compilation puis lancer l'exécution. Chaque étape est 
-séparée par l'opérateur ''&&'' ou par un retour à la ligne. Ainsi, le code précédant peut également s'écrire :
-
-<code>
-clang++ main.cpp -std=c++14 -Wall -Wextra -pedantic -O2
-./a.out
-</code>
-
-Remarque : dans l'éditeur, pour ajouter un retour à la ligne dans la partie du bas, il faut appuyer sur les touches 
-''Shift'' + ''Entrée'' du clavier. Appuyer simplement sur la touche ''Entrée'' lance la compilation et l'exécution.
-
-La première ligne, qui nous intéresse pour le moment, permet de lancer la compilation. Cette ligne se décompose de la 
-façon suivante :
-
-```
-<compilateur>            = clang++
-<fichier à compiler>     = main.cpp
-<options de compilation> = -std=c++14 -Wall -Wextra -pedantic -O2
-```
-
-Voyons ces éléments en détail. La commande ''clang++'' permet de lancer un programme de compilation (le compilateur - 
-qui convertit le code C++ en langage machine) appelé Clang. Ce compilateur est gratuit et l'un des plus à jour pour le 
-support du C++. L'éditeur Coliru permet d'utiliser un autre compilateur appelé GCC, que vous pouvez utiliser en remplaçant 
-''clang++'' par ''g++''.
-
-La valeur ''main.cpp'' est le nom du fichier à compiler. Par défaut, le code dans l'éditeur Coliru est enregistré dans 
-ce fichier, il faut donc indiquer à Clang qu'il doit compiler ce fichier.
-
-Pour terminer, les options de compilation permettent de spécifier à Clang comment il doit compiler le code. Il existe 
-plusieurs centaines d'options de compilation, il ne sera pas possible de toutes les détailler dans ce cours. Pour résumer 
-les options utilisées ici, sachez que l'option ''-std=c++14'' permet d'activer le support de la norme la plus récente 
-du C++, les options ''-Wall -Wextra -pedantic'' permettent de vérifier de nombreuses erreurs de programmation dans vos 
-codes et l'option ''-O2'' permet d'optimiser le programme généré.
-
-Il est important de connaître le processus et les options de compilation, cela sera détaillé dans la suite du cours. 
-Cependant, pour les codes d'exemple et les exercices donnés dans ce cours, les instructions de compilation seront 
-données, vous n'aurez pas besoin de les modifier.
-
-<note info>Pour en savoir plus sur ces compilateurs, vous pouvez consulter les pages correspondantes de Wikipédia : 
-[[http://fr.wikipedia.org/wiki/Clang|Clang]] et [[http://fr.wikipedia.org/wiki/GNU_Compiler_Collection|GCC]]. Vous 
-pouvez également consulter les sites officiels : [[http://clang.llvm.org/|Clang]] et [[http://gcc.gnu.org/|GCC]], en 
-particulier les documentations pour connaître les options de compilation utilisables.
-
-Notez aussi qu'il existe un dernier compilateur très utilisé, celui fourni par Microsoft : 
-[[https://www.visualstudio.com/|Visual Studio]]. Ce n'est pas le compilateur qui fournit le meilleur support du C++14 - 
-bien qu'ils aient fait de grands progrès sur ce point - mais il reste incontournable sur Windows.</note>
-
-## L'exécution d'un programme C++
-
-Par défaut, le programme généré par la compilation s'appelle ''a.out''. L'instruction ''./a.out'' permet donc de lancer 
-son exécution. (Pour rappel, le code actuel ne fait rien, l'exécution ne produit aucun message dans la fenêtre de sortie 
-de Coliru pour le moment).
+ces instructions, comme vous pourriez le faire vous-même. Certains développeurs préfèrent compiler manuellement leurs 
+programmes en utilisant directement des lignes de commande.
 
 Le schéma suivant résume l'ensemble des étapes de compilation et d'exécution :
 
-{{ compilation.png |}}
+![Étapes de compilation et d'exécution](02-compilation.png)
 
-Il est possible de changer le nom du programme généré en utilisation l'option ''-o'' (pour //output//, qui signifie 
-//sortie//), par exemple :
+## La fonction main
 
-<code>
-clang++ main.cpp -o mon_programme -std=c++14 -Wall -Wextra -pedantic -O2
-./mon_programme 
-</code>
-
-===== La fonction main =====
-
-Revenons maintenant sur le code C++ de notre programme. Ce code minimal définit une fonction appelée ''main'' (qui 
+Revenons maintenant sur le code C++ de notre programme. Ce code minimal définit une fonction appelée `main` (qui 
 signifie "principal" en anglais), qui ne fait rien :
 
-<code cpp>
+```cpp
 int main() {
 }
-</code>
-
-Pour le moment, vous ne savez pas créer une fonction en C++ et ce code peut vous paraître obscur. Savoir créer des 
-fonctions est un point important de votre apprentissage du C++, mais il n'est pas possible de voir cela en détail dans 
-un seul chapitre. Cela sera détaillé par la suite.
-
-Mais pas de panique. Maîtriser les fonctions n'est pas nécessaire pour créer une fonction ''main''. En effet, la façon 
-d'écrire une fonction ''main'' (on parle de sa //signature//) est définie par la norme C++. Donc, en pratique, vous 
-devrez simplement copier à l'identique cette fonction pour créer un programme C++ de base.
-
-Fondamentalement, un programme est simplement une suite d'instructions que l'on donne à l'ordinateur, pour réaliser 
-une tâche. Tout comme il est souvent possible de décomposer une tâche en plusieurs sous-tâches plus simples, un programme 
-sera décomposé en fonctions, qui sont des suites d'instructions destinées à réaliser une sous-tâche particulière.
-
-Une fonction pourra appeler d'autres fonctions, qui pourront à leur tour appeler d'autres fonctions, jusqu'à ce que 
-l'ensemble des fonctions appelées réalisent le travail demandé.
-
-La fonction ''main'' est un peu particulière puisqu'elle est appelée par le système d'exploitation. Elle est obligatoire 
-dans un programme. Si vous ne créez pas de fonction ''main'' ou si vous en créez plusieurs, le système d'exploitation 
-ne saura pas comment lancer votre application et produira une erreur. Par contre, vous ne pouvez pas vous-même appeler 
-cette fonction, seul le système peut l'appeler.
-
-Vous apprendrez par la suite à créer des fonctions et leurs syntaxes en détail, mais pour comprendre la fonction ''main'', 
-voici quelques explications. Comme indiqué ci-dessus, une fonction est une suite d'instructions. Elle peut être appelée 
-par une autre fonction. L'appel d'une fonction se déroule en trois étapes :
-
-  * le code appelant appelle la fonction à partir de son nom, en lui transmettant des informations si besoin ;
-  * la suite d'instructions correspondant à la fonction appelée est exécutée ;
-  * la fonction se termine en transmettant éventuellement une réponse à la fonction appelante.
-
-Ces trois étapes apparaissent dans la déclaration d'une fonction, avec la syntaxe suivante :
-
-```
-InformationsRetournées NomDeLaFonction(InformationsEnvoyées) {
-    Suite d'instructions
-}
 ```
 
-La déclaration d'une fonction commence par définir les informations retournées par la fonction (encore appelé //paramètre de 
-retour// de la fonction) lorsqu'elle se termine. Il ne peut y avoir qu'un seul paramètre de retour de fonction (mais ce point 
-n'est pas limitant, puisqu'un paramètre peut contenir plusieurs informations). Lorsqu'une fonction ne retourne aucune information, 
-le paramètre de retour est ''void''. Dans le cas de la fonction ''main'', celle-ci retourne toujours une information de type 
-''int'', qui signifie un nombre entier (//integer// en anglais).
+Une fonction est un ensemble d'instructions qui sont regroupées, et possède un nom. Cela permet d'organiser un 
+programme en parties plus petites et donc plus simples à comprendre. De plus, si vous devez répéter plusieurs fois
+la même suite d'instructions, vous pouvez l'écrire une seule fois dans une fonction, puis appelez cette fonction
+plusieurs fois. Cela permet de gagner beaucoup de temps lors de l'écriture de vos programmes.
 
-Vient ensuite le nom de la fonction. Le nommage des fonctions (et plus généralement de tous les éléments que vous allez pouvoir
-définir dans un programme C++) suit des règles spécifiques, qui seront détaillées plus tard. Pour faire simple, un nom est 
-une suite de caractères alphanumériques (n'importe quelle lettre de l'alphabet sans accentuation et n'importe quel chiffre, 
-sauf en première position), avec des majuscules et/ou des minuscules. Certains "mots" sont réservés par la norme C++, il vous 
-est interdit de les utiliser. Il est également habituel d'écrire ses programmes en anglais, je vous conseille de faire de même.
+La fonction `main` est une fonction particulière, puisque cette fonction est appelée automatiquement lorsque
+vous lancez l'application. C'est le "point d'entrée" du programme. Cette fonction doit également respecter
+certaines contraintes :
 
-<note>On voit ici que l'écriture d'un programme C++ ne suit pas simplement des règles imposées par le langage (la norme),
-mais également les habitudes et bonnes pratiques mises en place avec le temps. Suivre ces règles permet :
+- cette fonction est obligatoire ;
+- cette fonction doit être unique ;
+- vous ne pouvez pas appeler cette fonction ;
+- la syntaxe est définie dans la norme C++.
 
-  * de fournir un cadre commun à tous les développeurs C++, pour faciliter la communication ;
-  * de simplifier la création du code, en proposant une approche "classique" de faire les choses ;
-  * d'apporter des garanties sur la qualité du code, pour qu'il fasse exactement ce que l'on attend de lui.
+La "norme C++" ou le "standard C++" est le document qui décrit l'intégralité du langage C++. C'est LA référence
+du langage C++, la seule source valide dans l'absolue. Mais en pratique, la norme C++ n'est pas simple à lire,
+les développeurs préfèrent utiliser d'autres sources. Dans ce cours, nous utiliserons le site
+[cppreference](http://en.cppreference.com/) pour la documentation C++.
 
-Il est classique de voir des débutants ne pas suivre ces bonnes pratiques durant leur phase d'apprentissage et justifier 
-cela en disant que lorsqu'ils travailleront sur de vrais projets, ils suivront ces règles. C'est une mauvaise idée de faire 
-comme cela : une pratique (bonne ou mauvaise) acquise durant sa phase d'apprentissage sera très dure à faire évoluer. Il 
-est important de pratiquer correctement dès le début (même si cela peut sembler faire perdre du temps au début, le temps 
-d'acquérir des habitudes de programmation sera largement rattrapé).</note>
 
-Les informations d'entrée (ou //paramètres d'entrée//) sont définies à la suite du nom de la fonction, entre parenthèses. 
-Lorsqu'il n'y a pas de paramètres d'entrée, on met simplement les parenthèses sans rien dedans (les parenthèses doivent 
-toujours être présentes). Remarquez qu'il ne peut y avoir qu'un seul paramètre de retour de fonction, mais que l'on peut 
-avoir plusieurs paramètres d'entrée.
 
 Pour terminer, la partie la plus importante : la suite d'instructions, dans un bloc de code définit par des accolades 
 ''{'' et ''}''. Chaque instruction se termine par un point-virgule. Dans le code d'exemple de ce chapitre, le bloc 
@@ -384,49 +250,6 @@ int main() { // un commentaire en fin d'une ligne
     lignes */
 }
 ```
-
-## Exercices
-
-** Compilation et exécution **
-
-Dans les commandes de compilation et d'exécution, il est possible d'utiliser la commande ''echo'' suivie d'un texte entre guillemets pour afficher un message.
-
-1. Modifier les instructions de compilation pour afficher un message avant la compilation et un autre après l'exécution :
-
-<code>
-**** Compilation du programme C++ ****
-...
-**** Exécution du programme C++ ****
-...
-</code>
-
-2. Modifier le code de compilation pour compiler deux fois le programme, avec les options d'avertissement et sans les options d'avertissement :
-
-<code>
-**** Compilation du programme C++ avec les avertissements ****
-...
-**** Compilation du programme C++ sans les avertissements ****
-...
-**** Exécution du programme C++ ****
-...
-</code>
-
-3. Modifier le code de compilation et d'exécution pour nommer le programme "mon_programme" au lieu de "a.out".
-
-** La fonction main **
-
-En fait, en plus des deux syntaxes possibles pour la fonction ''main'', il existe une troisième syntaxe.
-
-1. Trouvez dans la [[http://en.cppreference.com/w/cpp/language|documentation du langage C++]] la page correspondant 
-à la fonction ''main''.
-
-2. Trouvez ensuite la troisième syntaxe possible pour la fonction ''main''.
-
-3. Il est courant d'écrire au début de chaque code la licence d'utilisation du code, les coordonnées de l'auteur, la date
-de modification et d'autres informations utiles. Modifier le code de la fonction ''main'' pour ajouter ces informations 
-sous forme de commentaires.
-
-
 
 ## Résumé du chapitre
 
