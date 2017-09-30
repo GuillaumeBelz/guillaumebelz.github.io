@@ -1,7 +1,7 @@
 
 # Votre premier programme C++
 
-> Mise a jour : 28 septembre 2017
+> Mise a jour : 30 septembre 2017
 >
 > Retourner au sommaire : [Sommaire](../../index.md)
 >
@@ -10,91 +10,83 @@
 > Chapitre suivant
 
 Dans ce chapitre, vous allez entrer enfin dans le vif du sujet et écrire vos premiers programmes en C++. Le 
-but sera d'avoir un aperçu du processus de compilation, d'afficher des messages et de faire quelques calculs simples.
+but de ce chapitre et des suivants sera d'avoir un aperçu de la structure d'une programme C++ de base, du
+processus de compilation, d'afficher des messages et de faire quelques calculs simples.
 
-Créer une application en C++ n'est pas très compliqué. Commençons par voir un code C++ minimal, qui permet de 
-créer un programme qui ne fait rien. Même s'il ne fait rien, nous allons pouvoir aborder quelques notions importantes.
+Créer une application en C++ n'est pas très compliqué. Commençons par voir un code C++ minimal, qui ne fait rien 
+de particulier : l'application va démarrer puis se terminer. Même si de programme ne fait rien, il va nous permettre 
+d'aborder quelques notions importantes.
 
 ## Tester l'environnement de compilation en ligne
 
-Pour commencer, revoyons les étapes pour lancer un programme sur l'éditeur en ligne que vous allez utiliser dans 
-ce cours (vous avez déjà réalisé cette procédure dans le chapitre [[comment_realiser_les_exercices_de_ce_cours]] 
-pour tester les codes d'exemple). Cliquez sur le lien suivant, avec le bouton droit de la souris et choisissez 
-"Ouvrir le lien dans un nouvel onglet" : 
-[[http://coliru.stacked-crooked.com/a/1fc82da4e4fa4019|Tester le code C++ minimal]]. Ce lien permet d'ouvrir 
-un environnement de développement en ligne, qui contient un éditeur pour écrire le code C++ et un compilateur 
-pour transformer votre code C++ en programme exécutable.
+Apprendre à utiliser les outils de développement est important, mais cela demande un peu de temps. Pour vous 
+permettre de commencer tout de suite l'apprentissage des bases du langage C++, vous allez commencer par
+utiliser des outils gratuits en ligne. L'utilisation des outils sera vu par la suite.
 
-<note>
-Vous pouvez également copier le code suivant dans un éditeur en ligne ([[http://coliru.stacked-crooked.com|Coliru]],
-[[http://ideone.com|IdeOne]] ou autre), dans n'importe quel éditeur installé sur votre ordinateur (Qt Creator, Visual 
-C++, Code::Block ou autre) ou dans un simple éditeur de texte.
+Le plus simple pour commencer est d'utiliser un editeur en ligne. Dans ce cours, vous allez voir celui de 
+[Coliru.com](http://coliru.stacked-crooked.com). Si vous utiliser un autre editeur en ligne ou si vous utilisez
+un editeur sur votre ordinateur, n'hésitez pas à demander sur les forums pour savoir comment les utiliser.
 
-```
+L'interface de Coliru est assez simple. Vous avez l'editeur en blanc au centre, dans lequel vous allez ecrire votre code
+C++, et vous avez le bouton `Compile, link and run...` en bas a droite, pour lancer votre application. Les messages
+de votre application seront affichés dans la console, qui correspond la partie grise au centre.
+
+![Coliru.com](01-coliru.png)
+
+Lorsque vous ouvrez Coliru pour la premiere fois, l'éditeur contiendra un code d'exemple par defaut. Ce code est
+trop complexe pour vous pour le moment. Vous pouvez l'effacer et le remplacer par le code suivant :
+
+```cpp
 int main() {
 }
 ```
-Dans le début de ce cours, vous pouvez utiliser un éditeur en ligne, ce qui évite l'installation, dans un premier
-temps, d'un environnement de développement. Mais, bien sûr, la création d'un programme C++ professionnel nécessitera 
-d'installer de nombreux outils pour faciliter le développement et apporter des garanties à la qualité du logiciel. 
-Cela sera détaillé dans la suite de ce cours.
-</note>
 
-La nouvelle fenêtre ressemble à l'image suivante :
+Ce code correspond au code minimal d'un programme C++. Vous pouvez le lancer en cliquant sur le bouton 
+`Compile, link and run...`. Ne soyez pas surpris, comme le programme ne fait rien, ca se passe tres vite :
+le bouton devient gris quelques instant puis redevient actif. Rien n'est affiché dans la console.
 
-{{ :minimal_1.png |}}
+Si vous vous amusez à taper n'importe quoi dans le code (essayez !), vous verrez probablement un message
+d'erreur s'afficher dans la console. Par exemple 
 
-<note warning>Mettre à jour les images pour utiliser le C++14 :
-`clang++ main.cpp -std=c++14 -Wall -Wextra -pedantic -O2 && ./a.out`
-</note>
+```cpp
+int main() {
+    hello, world!
+}
+```
 
-Cette fenêtre se décompose en deux parties. De haut en bas :
+affiche :
 
-  * le code du programme ;
-  * le résultat de la compilation et l'exécution.
+```
+main.cpp: In function 'int main()':
+main.cpp:2:5: error: 'hello' was not declared in this scope
+     hello, world!
+     ^~~~~
+main.cpp:2:12: error: 'world' was not declared in this scope
+     hello, world!
+            ^~~~~
+```
 
-Pour le moment, vous ne pouvez pas modifier ce code, cette fenêtre est en fait une simple archive du code qui a été 
-créé pour ce cours. Pour pouvoir modifier et tester ce code, vous devez cliquer sur le bouton "Edit" en bas à 
-droite de la fenêtre.
+Il est important d'apprendre à lire les messages d'erreur, mais vous verrez cela plus tard. Le plus important
+est de remarquer que les messages contiennet le mot `error`, ce qui signifie qu'il y a une erreur dans le 
+programme.
 
-L'aspect de le fenêtre change pour ressembler à l'image suivante :
-
-{{ :minimal_2.png |}}
-
-Cette nouvelle fenêtre contient maintenant trois parties. De haut en bas :
-
-  * Dans la partie du haut, l'éditeur de code, qui contient le code C++ de votre programme. Contrairement à l'étape 
-  précédente, vous pouvez maintenant modifier ce code en cliquant dessus et en tapant le code sur le clavier.
-  * La partie centrale grise, le résultat de la compilation et de l’exécution du programme. Pour le moment, comme 
-  vous n'avez pas lancé le programme, cette partie est vide.
-  * Dans la dernière partie, les instructions pour la compilation et l'exécution du programme.
-
-Pour lancer la compilation et l'exécution, il vous suffit de cliquer sur le bouton "Compile, link and run..." en bas 
-à droite. Si vous le faites, vous verrez que l'éditeur change de couleur quelques instants, mais rien ne change dans 
-la partie centrale grise.
-
-La raison est simple : le code minimal donné ne fait rien et donc rien ne s'affiche, ce qui donne l'impression que 
-rien ne se passe. Mais faites une petite modification du code (n'importe quoi, c'est pour tester) et relancez la 
-compilation, vous verrez des messages s'afficher dans la partie grise :
-
-{{ :minimal_3.png |}}
-
-Même sans comprendre ce qui se passe, vous pouvez voir un mot dans la partie grise qui n'est pas compliqué à 
-interpréter : "error". Le compilateur a analysé le code C++ fourni et a déterminé qu'il n'est pas valide. Il indique 
-donc ce qu'il n'a pas compris (vous verrez par la suite, le compilateur est un ami qui va beaucoup vous aider en 
-indiquant les erreurs que vous faites. Il faudra juste apprendre à le comprendre).
-
-Ce résultat est normal, puisque l'on a écrit n'importe quoi dans le code ! Vous allez apprendre à écrire du code 
-C++ correct dans la suite de ce cours, mais avant cela, vous devez comprendre les bases de la compilation d'un code 
-C++ et de l'exécution d'un programme.
+Il est important de comprendre que le compilateur analyse votre code et vous indique les erreurs. C'est votre
+ami, il vous aidera beaucoup pour écrire des programme C++. Mais n'oubliez surtout pas que le
+compilateur ne fais que des verifications basiques : un code accepté par le compilateur n'est pas 
+forcement valide. Par contre, vous pouvez être sûr qu'un code qui est refusé par le compilateur
+est (généralement) invalide.
 
 ## Compiler un code C++
 
 Fondamentalement, une application est une suite d'instructions donnée au processeur de votre ordinateur, qui lui indique 
 les tâches qu'il doit accomplir. Un processeur ne connait qu'un seul langage, appelé langage machine, spécifique à chaque 
 type de processeur. Un langage machine est difficilement compréhensible pour les humains et il est donc très peu utilisé. 
-C'est pour cela que les programmes sont écrits dans des langages plus compréhensibles pour les humains, appelés //langages 
-de programmation// (le C++ est un exemple d'un tel langage).
+C'est pour cela que les programmes sont écrits dans des langages plus compréhensibles pour les humains, appelés _langages 
+de programmation_. C++, Java, C#, PHP, Python, Javascript sont des exemples de langage de programmation.
+
+> Aucun langage ne répond à tous les besoins, les développeurs connaissent généralement plusieurs langages, qu'ils 
+> utilisent en fonction des tâches qu'ils doivent realiser. Nous vous conseillons d'apprendre un langage principal
+> et 1 à 3 langages secondaires.
 
 Le problème est que le processeur est incapable de comprendre autre chose que le langage machine. Il faut donc passer par 
 une étape qui convertit un code écrit dans un langage de programmation en programme en langage machine.
@@ -425,8 +417,19 @@ Dans les commandes de compilation et d'exécution, il est possible d'utiliser la
 
 En fait, en plus des deux syntaxes possibles pour la fonction ''main'', il existe une troisième syntaxe.
 
-1. Trouvez dans la [[http://en.cppreference.com/w/cpp/language|documentation du langage C++]] la page correspondant à la fonction ''main''.
+1. Trouvez dans la [[http://en.cppreference.com/w/cpp/language|documentation du langage C++]] la page correspondant 
+à la fonction ''main''.
 
 2. Trouvez ensuite la troisième syntaxe possible pour la fonction ''main''.
 
-3. Il est courant d'écrire au début de chaque code la licence d'utilisation du code, les coordonnées de l'auteur, la date de modification et d'autres informations utiles. Modifier le code de la fonction ''main'' pour ajouter ces informations sous forme de commentaires.
+3. Il est courant d'écrire au début de chaque code la licence d'utilisation du code, les coordonnées de l'auteur, la date
+de modification et d'autres informations utiles. Modifier le code de la fonction ''main'' pour ajouter ces informations 
+sous forme de commentaires.
+
+
+
+## Résumé du chapitre
+
+- le compilateur prend du code C++ et le convertie en langage machine, pour etre comprehensible par un ordinateur.
+- le compilateur vérifie votre code et vous indique les erreurs. C'est votre première et principale aide pour 
+écrire du code C++ valide.
