@@ -148,7 +148,7 @@ cette fonction). Cela permet en particulier au système d'envoyer des informatio
 vous pourrez utiliser dans votre code. Pour le moment, vous ne savez pas encore comment traiter ces informations, donc 
 il n'est pas nécessaire de détailler ce point.</note>
 
-===== Mise en forme du code =====
+## Mise en forme du code 
 
 Vous avez maintenant les informations de base pour comprendre ce premier programme C++ (qui ne fait rien). Pour terminer 
 ce chapitre, deux points importants, sur la présentation du code.
@@ -202,8 +202,7 @@ niveau 1
 Il est assez difficile de visualiser facilement à quel niveau hiérarchique correspond chaque ligne. Si on utilise une
 indentation pour distinguer chaque niveau, le code est beaucoup plus lisible :
 
-
-<code>
+```
 niveau 1
     niveau 2
         niveau 3
@@ -211,7 +210,7 @@ niveau 1
     niveau 2
         niveau 3
 niveau 1
-</code>
+```
 
 <note info>Vous trouverez des exemples de styles d'indentation du code dans 
 [[http://fr.wikipedia.org/wiki/Style_d'indentation|la page de Wikipédia]] correspondante. Dans ce cours, j'utiliserais 
