@@ -29,7 +29,7 @@ dans l'éditeur de votre choix.
 int main() {
     std::cout << "Hello, world!" << std::endl;
 }
-</code>
+```
 
 Par rapport au code minimal, vous pouvez voir que l'on a ajouté deux lignes. La première ligne, qui contient la directive 
 ''#include'', permet de spécifier des fonctionnalités utilisées par le programme. "iostream" fournit les fonctionnalités 
