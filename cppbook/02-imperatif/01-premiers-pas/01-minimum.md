@@ -134,48 +134,50 @@ certaines contraintes :
 La "norme C++" ou le "standard C++" est le document qui décrit l'intégralité du langage C++. C'est LA référence
 du langage C++, la seule source valide dans l'absolue. Mais en pratique, la norme C++ n'est pas simple à lire,
 les développeurs préfèrent utiliser d'autres sources. Dans ce cours, nous utiliserons le site
-[cppreference](http://en.cppreference.com/) pour la documentation C++.
+[cppreference](http://en.cppreference.com/) pour la documentation C++, mais il existe d'autres sites de
+références.
 
+Les fonctions en C++ seront étudiées plus loin dans ce cours, retenez simplement, pour le moment, comment s'écrit
+la fonction `main`.
 
+Les accolades `{}` forment un "bloc d'instructions". C'est dans ce bloc que vous allez pouvoir mettre des suites 
+d'instructions, qui vont composer votre programme. Il n'est pas possible de placer des instructions en dehors
+d'un bloc, par exemple avant ou apres la fonction `main`. Il est possible de mettre d'écrire des instructions
+en dehors de la fonction `main`, mais ces instructions devront quand même être dans des blocs.
+ 
+Un bloc d'instructions peut être vide, comme c'est le cas dans ce code d'exemple.
 
-Pour terminer, la partie la plus importante : la suite d'instructions, dans un bloc de code définit par des accolades 
-''{'' et ''}''. Chaque instruction se termine par un point-virgule. Dans le code d'exemple de ce chapitre, le bloc 
-d'instructions est vide, il n'y a que les accolades, le programme ne fait rien (mais vous verrez dès le prochain chapitre 
-les bases pour écrire des instructions).
-
-<note>En fait, il existe plusieurs //signatures// pour la fonction ''main'' (i.e. plusieurs façons différentes d'écrire 
-cette fonction). Cela permet en particulier au système d'envoyer des informations lors du lancement du programme, que 
-vous pourrez utiliser dans votre code. Pour le moment, vous ne savez pas encore comment traiter ces informations, donc 
-il n'est pas nécessaire de détailler ce point.</note>
+> Il existe en fait plusieurs façon d'écrire la fonction `main` (on parle de "plusieurs signatures"). Cela permet 
+> en particulier au système d'exploitation d'envoyer des informations lors du lancement du programme, que 
+> vous pourrez utiliser dans votre code.
 
 ## Mise en forme du code 
 
 Vous avez maintenant les informations de base pour comprendre ce premier programme C++ (qui ne fait rien). Pour terminer 
 ce chapitre, deux points importants, sur la présentation du code.
 
-Dans un code C++, les espaces et les retours à la ligne ne sont pas pris en compte dans la compilation (sauf bien sûr si
-vous accolez deux termes ensembles, si vous écrivez ''intmain'' sans espace, votre compilateur vous insultera copieusement). 
-Vous pouvez donc ajouter des espaces et des retours à la ligne de façon à rendre votre code le plus lisible possible, sans 
-que cela ne change votre programme.
+Dans un code C++, les espaces et les retours à la ligne ne sont pas pris en compte dans la compilation.
+Vous pouvez donc ajouter des espaces et des retours à la ligne de façon à rendre votre code le plus lisible possible,  
+sans que cela ne change le comportement de votre programme.
 
-<note>Un point important à ne pas oublier : un code sera plus souvent lu qu'il n'est écrit ou modifié. Il faut donc 
+Un code sera plus souvent lu qu'il n'est écrit ou modifié. Il faut donc 
 privilégier la qualité de lecture d'un code, plutôt que d'essayer de gagner du temps à l'écriture (même pour un simple 
-code de test ou d'apprentissage). Présenter correctement un code permet de gagner du temps sur le long terme.</note>
+code de test ou d'apprentissage). Présenter correctement un code permet de gagner du temps sur le long terme.
 
-Ainsi, le programme d'exemple peut s'écrire selon les façons suivantes :
+Ainsi, le programme d'exemple peut s'écrire de différentes façons :
 
-```
+```cpp
 int main(){}
 ```
-
-```
+ou 
+```cpp
 int
 main()
 {
 }
 ```
-
-```
+ou encore
+```cpp
 int     main     (     )     {     }
 ```
 
@@ -187,7 +189,7 @@ choisir celles qui vous conviennent.
 **Peu importe les règles de codage que vous choisissez, le plus important est surtout d'avoir des règles et de les respecter.**
 
 En particulier, un point important est le respect de l'indentation. L'indentation correspond aux espaces placés en début 
-d'une ligne. Le début des lignes doit être aligné selon son niveau hiérarchique. Si on écrit la hiérarchie suivante :
+d'une ligne. Le début des lignes doit être aligné selon son niveau hiérarchique. Si vous écrivez la hiérarchie suivante :
 
 ```
 niveau 1
@@ -212,16 +214,13 @@ niveau 1
 niveau 1
 ```
 
-<note info>Vous trouverez des exemples de styles d'indentation du code dans 
-[[http://fr.wikipedia.org/wiki/Style_d'indentation|la page de Wikipédia]] correspondante. Dans ce cours, j'utiliserais 
-le style K&R, avec une indentation de quatre espaces.</note>
-
-Il existe des outils permettant de mettre en forme le code et vérifier que la présentation du code respecte les règles 
-que vous avez fixé. Ces outils seront présentés dans la suite de ce cours.
+Vous trouverez des exemples de styles d'indentation du code dans 
+[[http://fr.wikipedia.org/wiki/Style_d'indentation|la page de Wikipédia]] correspondante. Ce cours utilise
+le style K&R, avec une indentation de quatre espaces.
 
 ## Commentaires du code
 
-Pour comprendre un code, les premières informations que le lecteur verra sont les noms que l'on donne. Appeler par 
+Pour comprendre un code, les premières informations que le lecteur verra sont les noms que vous donnerez. Appeler par 
 exemple ses fonctions ''f1'', ''f2'' et ''f3'' n'aide pas du tout à comprendre à quoi servent ces fonctions. Par contre, 
 appeler ces fonctions ''add'' (addition), ''save'' (enregistrer) ou ''reset'' (remettre à zéro) permet aux lecteurs d'avoir 
 une idée de leur rôle.
@@ -230,13 +229,13 @@ une idée de leur rôle.
 
 Cependant, il n'est pas toujours possible de trouver des noms significatifs (tout au moins, sans faire des noms de 100 
 caractères). Dans ce cas, il est possible d'ajouter des commentaires dans le code, qui seront ignorés par le compilateur 
-(et donc ne changeront par le comportement du programme généré) et seront destinés uniquement aux développeurs.
+(et donc ne changeront par le comportement de votre programme) et seront destinés uniquement aux développeurs.
 
-Il existe deux formes de commentaire. Les commentaires sur une ligne et les commentaires sur plusieurs lignes. Les 
+Il existe deux formes de commentaire : les commentaires sur une ligne et les commentaires sur plusieurs lignes. Les 
 commentaires peuvent être placés n'importe où dans votre code. Pour écrire un commentaire sur une ligne, vous devez 
-utiliser deux barres obliques ''/​/'' suivies du commentaire. Pour un commentaire sur plusieurs lignes, il faut commencer 
-le commentaire par une barre oblique puis un astérisque ''/*'' et terminer le commentaire par un astérisque puis une 
-barre oblique ''*/''.
+utiliser deux barres obliques `//` suivies du commentaire. Pour un commentaire sur plusieurs lignes, il faut commencer 
+le commentaire par une barre oblique puis un astérisque `/*` et terminer le commentaire par un astérisque puis une 
+barre oblique `*/`.
 
 ```cpp
 // un commentaire sur une ligne
@@ -252,6 +251,8 @@ int main() { // un commentaire en fin d'une ligne
 
 ## Résumé du chapitre
 
-- le compilateur prend du code C++ et le convertie en langage machine, pour etre comprehensible par un ordinateur.
-- le compilateur vérifie votre code et vous indique les erreurs. C'est votre première et principale aide pour 
-écrire du code C++ valide.
+- un programme contient obligatoirement une fonction `main` unique. Cette fonction est le point d'entrée de votre programme
+et contient les instructions de votre programme.
+- le compilateur prend du code C++ et le convertie en programme. Il vérifie que votre code est correct et vous indique, si 
+ce n'est pas le cas, quelles sont les erreurs.
+- donnez vous des règles d'écriture et respectez les. Plus un code est lisible, moins vous risquez de faire des erreurs.
