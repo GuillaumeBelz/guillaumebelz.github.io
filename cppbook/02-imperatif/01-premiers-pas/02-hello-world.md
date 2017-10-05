@@ -240,12 +240,12 @@ les messages d'information et ''std::cout'' pour les messages standards.
 > le cas (en particulier sous Windows).
 > 
 > ```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "àâäéèêëîïôöùû" << std::endl;
-}
-```
+> #include <iostream>
+> 
+> int main() {
+>    std::cout << "àâäéèêëîïôöùû" << std::endl;
+> }
+> ```
 
 Comment fonctionne un flux ? Imaginer un employé de bureau qui reçoit des dossiers. Il a une grande pile de dossiers, il 
 prend le plus ancien, le traite, puis passe au suivant. Peu importe si les dossiers arrivent un par un ou en paquet, il les 
