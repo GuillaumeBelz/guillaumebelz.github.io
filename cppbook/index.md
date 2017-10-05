@@ -21,7 +21,7 @@
 ### Premiers pas
 
 - [Votre premier programme C++](02-imperatif/01-premiers-pas/01-minimum.md)
-- Le programme "hello world"
+- [Le programme "hello world"](02-imperatif/01-premiers-pas/02-hello-world.md)
 - Les littérales chaînes de caractères
 - Introduction à la qualité logicielle
 - Les erreurs en programmation
