@@ -1,5 +1,5 @@
 
-> Mise a jour : 5 octobre 2017
+> Mise a jour : 9 octobre 2017
 >
 > Retourner au sommaire : [Sommaire](../../index.md)
 >
@@ -17,11 +17,10 @@ Pour illustrer cette fonctionnalité en C++, nous allons prendre le programme "h
 Ce programme permet simplement d'afficher le message "hello, world!". Il est traditionnellement utilisé pour 
 montrer la syntaxe de base d'un langage informatique, ce qui explique qu'il possède son propre nom. Vous pouvez 
 voir sur Wikipédia ce programme dans différents langages : 
-[[http://fr.wikipedia.org/wiki/Liste_de_programme_Hello_world|Wikipédia]].
+[Wikipédia](http://fr.wikipedia.org/wiki/Liste_de_programme_Hello_world).
 
-Le programme //hello world// en C++ est assez proche du programme minimal présenté dans le chapitre précédent. Vous 
-pouvez ouvrir ce code dans [[http://coliru.stacked-crooked.com/a/d4c54f7ea6b23310|Coliru]] et copier-coller le code 
-dans l'éditeur de votre choix.
+Le programme `hello world` en C++ est assez proche du programme minimal présenté dans le chapitre précédent. Vous
+pouvez copier-coller le code suivant dans Coliru et l'executer.
 
 ```cpp
 #include <iostream>
@@ -31,16 +30,22 @@ int main() {
 }
 ```
 
+affiche :
+
+```
+Hello, world!
+```
+
 Par rapport au code minimal, vous pouvez voir que l'on a ajouté deux lignes. La première ligne, qui contient la directive 
-''#include'', permet de spécifier des fonctionnalités utilisées par le programme. "iostream" fournit les fonctionnalités 
-de base pour afficher un message et récupérer les textes saisies par l'utilisateur.
+`#include`, permet de spécifier un ensemble de fonctionnalités à utiliser par le programme. Le module `iostream` fournit
+les fonctionnalités de base pour afficher un message et récupérer des informations saisies par l'utilisateur.
 
-La quatrième ligne, commençant par ''std::cout'', permet l'affichage proprement dit. On voit sans problème le message 
+La quatrième ligne, commençant par `std::cout`, permet l'affichage proprement dit. Vous pouvez voir le message 
 à afficher "hello, world!" en clair dans le code. Vous pouvez vous amuser à changer le texte et voir ce que cela donne. 
-L'instruction ''std::endl'' permet d'indiquer la fin d'une ligne et donc de passer à la ligne suivante (endl pour 
-"end line", "fin de ligne")
+L'instruction `std::endl` permet d'indiquer la fin d'une ligne et donc de passer à la ligne suivante ("End Line", qui 
+signifie "fin de ligne")
 
-Ces deux lignes de code permettent d'utiliser le flux de sortie ''std::cout'' de la bibliothèque standard.
+Ces deux lignes de code permettent d'utiliser le flux de sortie `std::cout` de la bibliothèque standard.
 
 ## La bibliothèque standard
 
@@ -49,56 +54,39 @@ Le langage C++ proprement-dit propose uniquement les fonctionnalités fondamenta
 programme. La conséquence est que de nombreuses fonctionnalités ne sont pas intégrées directement dans le langage 
 (même l'affichage d'un message ne fait pas partie du langage).
 
-Heureusement, lorsqu'une fonctionnalité n'existe pas dans le langage, cela ne veut pas dire que l'on ne peut pas 
+Heureusement, lorsqu'une fonctionnalité n'existe pas dans le langage, cela ne veut pas dire que vous ne pouvez pas 
 utiliser cette fonctionnalité. Il est possible d'écrire des bibliothèques, qui fournissent de nouvelles fonctionnalités 
-utilisables en C++ (ou dans d'autre langages, mais cela sort du cadre de ce cours).
-
-Cela veut dire aussi que si vous créez un programme qui propose des fonctionnalités intéressantes, vous pouvez également 
-créer une bibliothèque pour que d'autres développeurs utilisent vos fonctionnalités (ou que vous puissiez vous même 
-utiliser ces fonctionnalités dans plusieurs de vos programmes). La création d'une bibliothèque sera vue par la suite.
+utilisables en C++. Une bibliothèque est un ensemble de fonctionnalités qui peut être partagée.
 
 **La bibliothèque standard fait partie intégrante du C++, il est indispensable d'apprendre à l'utiliser en même temps 
 que le langage, l'un ne va pas sans l'autre.**
 
 Pour utiliser une fonctionnalité de la bibliothèque standard, il faut dans un premier temps le spécifier au compilateur, 
-en utilisant la directive de pré-processeur ''#include''. L'une des syntaxes de cette directive est la suivante (il en 
-existe d'autres, mais qui ne seront pas utilisée avec la bibliothèque standard) :
+en utilisant la directive de pré-processeur `#include`. Il existe plusieurs syntaxes pour la directive `#include`,
+mais pour la bibliothèque standard, vous devez utiliser des chevrons simples :
 
 ```cpp
 #include <nom_fichier>
 ```
 
 > **Les directives de pré-processeur**
+> 
+> Le pré-processeur est un outil qui analyse le code avant le compilateur.
 >
 > Une directive de pré-processeur permet de paramétrer le comportement du pré-processeur lors de la compilation. Il
 > existe différentes directives, vous en verrez plusieurs dans ce cours. Une directive s'écrit toujours avec un dièse suivi 
 > de la directive et d'éventuels paramètres optionnels.
 >
 > Il n'est pas possible d'expliquer le fonctionnement de la directive ''#include'' sans expliquer avant le fonctionnement
-> en détail du pré-processeur. Cela sera vu dans un chapitre dédié à la compilation en profondeur.
+> en détail du pré-processeur. Cela sera vu dans un chapitre dédié à la compilation.
 >
 > Elles sont parfois appellees "directive de compilation".
 
-Pour afficher un message, on utilise un objet particulier de la bibliothèque standard, nommé ''std::cout''. Si vous 
-regardez dans la [[http://en.cppreference.com/w/cpp/io/cout|documentation]], vous voyez au début de la page qu'il est 
-écrit : "Defined in header <iostream>".
-
-{{ :cout.png |}}
-
-Cela vous indique quel fichier il faut inclure pour utiliser ''std::cout'' : le fichier ''iostream'' :
-
-<code cpp>
-#include <iostream>
-</code>
-
-"iostream" correspond à //**I**nput/**O**utput stream//, ce qui signifie "flux d'entrée et sortie". "Entrée" et "Sortie" 
+`iostream` signifie _Input/Output stream_, c'est-à-dire "flux d'entrée et sortie". "Entrée" et "Sortie" 
 doivent être compris du point de vue du programme : "entrée" d'information depuis l'extérieur vers l'intérieur du programme 
 (par exemple saisie d'un texte par l'utilisateur ou la lecture d'un fichier) et "sortie" d'information depuis le programme vers 
-l'extérieur (par exemple afficher un message à l'écran ou enregistrer dans un fichier). Vous verrez juste en dessous pourquoi 
-on parle de "flux".
-
-Lorsque vous utiliserez une fonctionnalité de la bibliothèque standard que vous ne connaissez pas, vous pourrez de la même 
-manière aller rechercher dans la documentation quel fichier inclure. 
+l'extérieur (par exemple afficher un message à l'écran ou enregistrer dans un fichier). La notion de flux est détaillé 
+dans la suite de ce chapitre.
 
 ## L'espace de nom std
 
@@ -107,15 +95,15 @@ n'est pas très compliqué, vous verrez par la suite les quelques règles à res
 quelques centaines ou milliers de ligne, cela pose pas trop de problème pour trouver des noms uniques. Mais dans le cas 
 d'un programme de plus grande taille ou utilisant différentes bibliothèques, cela peut devenir très compliqué.
 
-Pour éviter cette contrainte, le C++ permet de regrouper les noms dans un espace dédié : les espaces de noms (//namespace//). 
+Pour éviter cette contrainte, le C++ permet de regrouper des fonctionnalites ensemble, dans un espace de noms (_namespace_). 
 En créant un espace de noms, vous évitez les conflits entre les noms, ce qui peut simplifier vos codes. La bibliothèque 
-standard utilise un espace de noms appelé ''std''. Vous apprendrez par la suite à créer des espaces de noms, mais pour 
+standard utilise un espace de noms appelé `std`. Vous apprendrez par la suite à créer des espaces de noms, mais pour 
 l'instant, voyons comment utiliser l'espace de noms de la bibliothèque standard.
 
-Pour utiliser l'objet ''cout'' de la bibliothèque standard, il faut donc préciser que celui-ci provient de l'espace de 
-noms ''std''. Plusieurs solutions sont possibles, selon le contexte. Premièrement, vous pouvez déclarer l'espace de noms 
-''std'' à chaque utilisation d'une fonctionnalité de la bibliothèque standard, en utilisant l'opérateur ''::'' (comme vous 
-l'avez vu dans les codes précédents) :
+Pour utiliser l'objet `cout` de la bibliothèque standard, il faut donc préciser que celui-ci provient de l'espace de 
+noms `std`. Plusieurs syntaxes sont possibles, selon le contexte. Premièrement, vous pouvez spécifier l'espace de noms 
+`std` à chaque fois que vous utilisez une fonctionnalité de la bibliothèque standard, en utilisant l'opérateur `::` 
+(comme vous l'avez vu dans les codes précédents) :
 
 ```cpp
 #include <iostream>
@@ -125,10 +113,10 @@ int main() {
 }
 ```
 
-Dans ce cas, il faut faire précéder chaque utilisation de ''cout'' et de ''endl'' avec l'espace de noms.
+Dans ce cas, il faut faire précéder chaque utilisation de `cout` et de `endl` par l'espace de noms `std`.
 
 La deuxième solution est de déclarer que vous allez utiliser une fonctionnalité d'un espace de noms en utilisant le mot-clé 
-''using''. Lorsque le compilateur rencontre ensuite ''cout'', il saura qu'il faut utiliser l'objet ''std::cout'' :
+`using`. Lorsque le compilateur rencontre ensuite `cout`, il saura qu'il faut utiliser l'objet `std::cout` :
 
 ```cpp
 #include <iostream>
@@ -139,10 +127,10 @@ int main() {
 }
 ```
 
-Vous pouvez remarquer ici que seul l'objet ''cout'' est déclaré en utilisant ''using''. ''endl'' n'étant pas déclaré de 
+Vous pouvez remarquer ici que seul l'objet `cout` est déclaré en utilisant `using`. `endl` n'étant pas déclaré de 
 cette manière, il faut l'écrire en utilisant la première syntaxe.
 
-Pour terminer, il est possible d'activer un espace de noms globalement, en utilisant ''using namespace''. 
+Pour terminer, il est possible d'activer un espace de noms globalement, en utilisant l'instruction `using namespace` :
 
 ```cpp
 #include <iostream>
@@ -153,15 +141,17 @@ int main() {
 }
 ```
 
-Vous remarquez ici qu'il n'est plus nécessaire d'écrire ''std::'' devant ''cout'' et ''endl'' (ou n'importe quelle autre 
-fonctionnalités de la bibliothèque standard).
+Vous remarquez ici qu'il n'est plus nécessaire d'écrire `std::` devant `cout` et `endl`.
 
-Cette syntaxe semble intéressante, puisque cela fait gagner du temps. Cependant, cela signifie que l'on perd l'intérêt des 
-espaces de noms : si deux espaces de noms proposent le même identifiant, il y aura un conflit. Le message d'erreur généré 
+Cette dernière syntaxe semble intéressante, puisque cela évite de réécrire plusieurs fois l'espace de noms `std`. 
+Cependant, cela signifie que l'on perd l'intérêt des espaces de noms : si deux espaces de noms proposent le même 
+identifiant, il y aura un conflit. Le message d'erreur généré 
 par le compilateur ne sera pas forcement explicite, puisqu'il ne détectera pas le conflit d'espace de noms. Les erreurs 
-générées seront du type "déclaration ambiguë" ou "déclaration multiple".
+générées seront du type "déclaration ambiguëe" ou "déclaration multiple".
 
-Il est possible de limiter la portée de ''using'' en le déclarant à l'intérieur de la fonction :
+Pour cette raison, il est généralement déconseillé d'utiliser de la syntaxe `using namespace`.
+
+Il est possible de limiter la portée de l'instruction `using` en la déclarant à l'intérieur de la fonction :
 
 ```cpp
 #include <iostream>
@@ -183,13 +173,12 @@ int main() {
 }
 ```
 
-Il est préférable de limiter l'utilisation de la syntaxe avec ''using namespace''. Dans ce cours, nous utiliserons 
-systématiquement la première syntaxe, pour des raisons de compréhension. Dans vos codes, utilisez de préférence l'une 
-des deux premières syntaxes.
+Dans ce cours, nous utiliserons systématiquement la première syntaxe, pour des raisons de compréhension. Dans vos 
+codes, utilisez de préférence l'une des deux premières syntaxes.
 
 ## Les flux standards
 
-Si vous avez regardé un peu la documentation de ''std::cout'', vous avez peut-être remarqué qu'il existe d'autres
+Si vous avez regardé un peu la documentation de `std::cout`, vous avez peut-être remarqué qu'il existe d'autres
 flux de sortie :
 
 - ''cout'' et ''wcout'' pour les messages standard ;
