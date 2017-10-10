@@ -77,7 +77,7 @@ mais pour la bibliothèque standard, vous devez utiliser des chevrons simples :
 > existe différentes directives, vous en verrez plusieurs dans ce cours. Une directive s'écrit toujours avec un dièse suivi 
 > de la directive et d'éventuels paramètres optionnels.
 >
-> Il n'est pas possible d'expliquer le fonctionnement de la directive ''#include'' sans expliquer avant le fonctionnement
+> Il n'est pas possible d'expliquer le fonctionnement de la directive `#include` sans expliquer avant le fonctionnement
 > en détail du pré-processeur. Cela sera vu dans un chapitre dédié à la compilation.
 >
 > Elles sont parfois appellees "directive de compilation".
@@ -178,70 +178,14 @@ codes, utilisez de préférence l'une des deux premières syntaxes.
 
 ## Les flux standards
 
-Si vous avez regardé un peu la documentation de `std::cout`, vous avez peut-être remarqué qu'il existe d'autres
-flux de sortie :
 
-- ''cout'' et ''wcout'' pour les messages standard ;
-- ''cerr'' et ''wcerr'' pour les messages d'erreur ;
-- ''clog'' et ''wclog'' pour les messages de log.
-
-Par défaut, ces flux s'affichent tous dans le terminal, vous pouvez utiliser n'importe lequel. Le programme suivant :
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "le flux cout" << std::endl;
-    std::wcout << "le flux wcout" << std::endl;
-    std::cerr << "le flux cerr" << std::endl;
-    std::wcerr << "le flux wcerr" << std::endl;
-    std::clog << "le flux clog" << std::endl;
-    std::wclog << "le flux wclog" << std::endl;
-}
-```
-
-affiche :
-
-```
-le flux cout
-le flux wcout
-le flux cerr
-le flux wcerr
-le flux clog
-le flux wclog
-```
-
-Il est possible de faire en sorte de récupérer spécifiquement un flux, par exemple pour l'enregistrer dans un fichier. Certains 
-éditeur de code récupèrent par exemple les messages affichés à l'aide de ''std::cerr'' pour afficher les messages d'erreur.
-
-Même si utiliser n'importe quel flux ne change rien à votre programme (si les flux ne sont pas spécifiquement récupérés), il 
-est préférable de respecter le rôle de chaque flux et d'utiliser ''std::cerr'' pour les messages d'erreur, ''std::clog'' pour 
-les messages d'information et ''std::cout'' pour les messages standards.
-
-> **Internationalisation**
-> 
-> Le ''w'' signifie que le flux prend en charge les caractères étendus ("w" pour //wide//), c'est-à-dire les caractères 
-> avec accent ou provenant d'un alphabet différent de l'anglais. La gestion de l’internationalisation est un peu complexe 
-> en C++, en particulier à cause de la multiplicité des normes de codage et la prise en charge très variable selon le système 
-> d'exploitation. Cela fera l'objet d'un chapitre dédié.
-> 
-> Si vous faites le test avec Clang dans Coliru, cela affichera les accents correctement, mais ça ne sera pas toujours 
-> le cas (en particulier sous Windows).
-> 
-> ```cpp
-> #include <iostream>
-> 
-> int main() {
->    std::cout << "àâäéèêëîïôöùû" << std::endl;
-> }
-> ```
 
 Comment fonctionne un flux ? Imaginer un employé de bureau qui reçoit des dossiers. Il a une grande pile de dossiers, il 
 prend le plus ancien, le traite, puis passe au suivant. Peu importe si les dossiers arrivent un par un ou en paquet, il les 
 prend toujours un par un.
 
 Les flux standards fonctionnent sur le même principe : ils reçoivent des données (les caractères à afficher), ils prennent 
-le premier arrivé, l'affiche puis passent au suivant. L'opérateur permettant d'envoyer des données à un flux est l'opérateur ''<<'' :
+le premier arrivé, l'affiche puis passent au suivant. L'opérateur permettant d'envoyer des données à un flux est l'opérateur `<<` :
 
 ```cpp
 #include <iostream>
@@ -254,7 +198,7 @@ int main() {
 Ce code ne doit pas être compris comme signifiant "afficher 'hello'", mais comme "envoyer les caractères 'h', 'e', 'l', 'l' 
 et 'o' dans le flux standard 'std::cout'".
 
-Il est possible d'envoyer plusieurs valeurs en série de données dans un flux, en les séparant par plusieurs opérateurs ''<<'' :
+Il est possible d'envoyer plusieurs valeurs en série de données dans un flux, en les séparant par plusieurs opérateurs `<<` :
 
 ```cpp
 #include <iostream>
@@ -303,3 +247,20 @@ Tous les codes précédent affichent :
 helloworld
 ```
 
+> **Internationalisation**
+> 
+> Le `w` signifie que le flux prend en charge les caractères étendus ("w" pour //wide//), c'est-à-dire les caractères 
+> avec accent ou provenant d'un alphabet différent de l'anglais. La gestion de l’internationalisation est un peu complexe 
+> en C++, en particulier à cause de la multiplicité des normes de codage et la prise en charge très variable selon le système 
+> d'exploitation. Cela fera l'objet d'un chapitre dédié.
+> 
+> Si vous faites le test avec Clang dans Coliru, cela affichera les accents correctement, mais ça ne sera pas toujours 
+> le cas (en particulier sous Windows).
+> 
+> ```cpp
+> #include <iostream>
+> 
+> int main() {
+>    std::cout << "àâäéèêëîïôöùû" << std::endl;
+> }
+> ```
