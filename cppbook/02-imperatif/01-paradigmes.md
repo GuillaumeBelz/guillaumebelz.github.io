@@ -1,6 +1,14 @@
 
 # La programmation impérative
 
+> Mise a jour : 12 octobre 2017
+>
+> Retourner au sommaire : [Sommaire](../index.md)
+>
+> Chapitre précédent
+>
+> Chapitre suivant
+
 ## Les paradigmes de programmation
 
 Un paradigme de programmation est une façon spécifique de concevoir les solutions à une problématique. Il existe 
@@ -58,7 +66,7 @@ Tous ces approches sont utilisables en C++ et seront détaillées dans la suite 
 
 Pour comprendre un code, vous devez respecter une règle simple pour lire les instructions :
 
-**vous devez lire les instructions une par une, dans l'ordre.**
+> **vous devez lire les instructions une par une, dans l'ordre.**
 
 Prenez par exemple le *pseudo-code* qui suit. (Un pseudo-code est une code qui est écrit dans le langage courant, pas
 dans un langage de programation).
