@@ -1,7 +1,10 @@
-# Les paradigmes de programmation
 
-Un paradigme de programmation est une façon specifique d'écrire un programme. Il existe de nombreux
-paradigmes de programmation. L'une des specificités du C++ est qu'il autorise l'utilisation de 
+# La programmation impérative
+
+## Les paradigmes de programmation
+
+Un paradigme de programmation est une façon spécifique de concevoir les solutions à une problématique. Il existe 
+de nombreux paradigmes de programmation. L'une des spécificités du C++ est qu'il autorise l'utilisation de 
 plusieurs paradigmes en même temps.
 
 Pour faciliter l'apprentissage du C++, ce cours se décompose en trois parties, chaque partie
@@ -9,110 +12,69 @@ correspondant à un paradigme. Ce découpage suit un decoupage historique du C++
 voir au cours de votre apprentissage que ce découpage n'est pas très stricte et que les
 différents paradigmes se mélangent.
 
-Les trois paradigmes sont :
+Les trois paradigmes sont (dans l'ordre présenté dans ce cours) :
 
 - la programmation imprérative, qui consiste à décomposer un programme en un suite d'instructions ;
 - la programmation objet, qui consiste à décomposer une programme en un ensemble de composants qui communiquent entre eux ;
 - la programmation générique, qui consiste à écrire du code qui s'adapte aux types de données qui sont manipulées.
 
-## Programmation impérative
+## La programmation impérative
 
-Il existe plusieurs façons de concevoir un programme informatique, appelés
-[[https://fr.wikipedia.org/wiki/Paradigme_(programmation)|paradigme de programmation]]. Le C++ est un langage qui 
-autorise l'utilisation de plusieurs paradigme, il est multi-paradigme. Il supporte en particulier la programmation 
-impérative, que va être détaillé dans la suite, la [[https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ricit%C3%A9|programmation générique]] 
-et la [[https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet|programmation objet]], qui seront vues plus tard 
-dans ce cours, la [[https://fr.wikipedia.org/wiki/Programmation_fonctionnelle|programmation fonctionnelle]], qui sera 
-simplement citée, etc.
+La [programmation impérative](https://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative) décrit un programme comme 
+une suite d'instructions, qui doivent être suivies une par une, dans l'ordre. C'est exactement ce que vous faites lorsque
+vous suivez une recette de cuisine par exemple :
 
-La [[https://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative|programmation impérative]] décris un programme comme 
-une suite d'instructions, qui modifie l'état du programme. Cette approche permet de suivre un programme pas-à-pas, 
-depuis le début du programme (correspondant à la fonction ''main'' en C++) jusqu'à sa fin (lorsque la fonction ''main'' 
-se termine en C++).
+- instruction 1 : cassez trois oeufs ;
+- instruction 2 : pesez 300 grammes de farine ;
+- instruction 3 : ajoutez un verre de lait ;
+- etc.
 
-Les instructions sont exécutées une par une, dans l'ordre où elle apparaissent dans le code. Une instruction commence 
-dès que la précédente se termine.
+Dans le cas d'un langage de programmation, les instructions sont très variables. Cela peut être :
 
-Vous pourrez également entendre parler de [[https://fr.wikipedia.org/wiki/Programmation_proc%C3%A9durale|programmation procédurale]] 
-et de [[https://fr.wikipedia.org/wiki/Programmation_structur%C3%A9e|programmation structurée]], toutes deux appartenant 
-au paradigme impératif. Dans la programmation procédurale, le programme est décomposé en "procédures" (en C++, on parle 
-de "fonctions") qui sont des suites d'instructions. Dans la programmation structurée, le programme n'est pas linéaire, mais 
-ajoute les concepts de boucles (une suite d'instruction qui est répétée) et de conditions (une suite d'instruction qui peut 
-être exécutée ou non). Cela sera détaillé dans la suite de ce cours.
+- des calculs numériques (addition, soustraction, multiplication, etc.) ;
+- afficher une fenêtre graphique à l'écran ;
+- lire un fichier sur un disque dur ;
+- envoyer une page HTML sur internet ;
+- etc.
 
-> Les ordinateurs modernes sont généralement capables d'exécuter plusieurs instructions en même temps, voire plusieurs 
-> programme en même temps. Cela complique forcement la compréhension du déroulement d'un programme. Pour simplifier les
-> explications, ce cours se base sur une situation parfaite et abstraite, dans laquelle les instructions sont exécutées 
-> une par une.
+Les instructions que vous pouvez utiliser sont fournies par le langage proprement-dit ou par d'autres
+développeurs (sous forme de bibliothèque logicielle partageable).
 
-Voyons sur un code simple comment suivre le déroulement d'un programme C++. Lorsque vous exécutez le programme suivant, 
-que se passe-t-il ?
+En pratique, vous utiliserez des paradigmes dérivés de la programmation impérative :
 
-```cpp
-#include <iostream>
+- [programmation procédurale](https://fr.wikipedia.org/wiki/Programmation_proc%C3%A9durale) ;
+- [programmation structurée](https://fr.wikipedia.org/wiki/Programmation_structur%C3%A9e).
 
-int main() {
-    std::cout << "ligne 1" << std::endl;
-    std::cout << "ligne 2" << std::endl;
-    std::cout << "ligne 3" << std::endl;
-}
-```
+En programmation procédurale, une **procédure** est un ensemble d'instructions qui sont regroupées ensemble pour 
+former une nouvelle instruction, cette nouvelle instruction pourra être ensuite réutilisée plusieurs fois.
 
-Pour commencer, le système lance le programme et appelle la fonction ''main''. Dans cette étape, il se passe beaucoup de 
-choses, mais qui concernent le système (et qui sont relativement complexes). Cela sort du cadre de ce cours. Mais vous 
-pouvez considérer que le programme commence au niveau de la ligne contenant le ''main''.
+En programmation structurée, les **structures de contrôle** sont des instructions spéciales qui modifient l'ordre 
+d'exécution des instructions. Il en existe deux sortes : les *boucles*, qui permettent de répéter plusieurs fois
+une série d'instructions, et les *conditions*, qui permettent de choisir entre plusieurs instructions.
 
-A cette étape, le programme n'a encore rien écrit dans la console (le système peut avoir écrit des choses, mais cela ne 
-concerne pas le programme).
+Tous ces approches sont utilisables en C++ et seront détaillées dans la suite de ce cours.
 
-Une fois que le programme est lancé, la première instruction est exécutée. Cette première instruction est la première 
-ligne contenant le ''std::cout'', ce qui produit l'affichage de texte dans la console. La console affiche donc à la fin 
-de cette étape :
+## Lire le code d'un programme
+
+Pour comprendre un code, vous devez respecter une règle simple pour lire les instructions :
+
+**vous devez lire les instructions une par une, dans l'ordre.**
+
+Prenez par exemple le *pseudo-code* qui suit. (Un pseudo-code est une code qui est écrit dans le langage courant, pas
+dans un langage de programation).
 
 ```
-ligne 1
+x = 2
+multiplier x par 3
+soustraire 2 à x
+afficher x
 ```
 
-L'étape suivante est la seconde ligne contenant ''std::cout'' et la console affiche donc :
+Ce pseudo-code contient quatre instructions différentes. La première instruction indique que `x` vaut 2, la deuxième
+instruction indique qu'il faut multiplier la valeur de `x` par 3, donc `x` vaut maintenant 6.La troisième instruction 
+indique qu'il faut soustraire 2 à `x`, donc `x` vaut maintenant 4. La dernière instruction indique qu'il faut 
+afficher la valeur de `x`, donc cela affiche la valeur 4.
 
-```
-ligne 1
-ligne 2
-```
-
-La troisième étape est la ligne contenant le dernier ''std::cout'' :
-
-```
-ligne 1
-ligne 2
-ligne 3
-```
-
-Pour terminer, le programme arrive à la fin de la fonction ''main'', correspondant à l'accolade fermante ''}''. 
-Le programme se termine et le système reprend la main.
-
-> Pour simplifier la lecture du code, chaque instruction est écrite sur une ligne, se terminant par un point-virgule '';''. 
-> Mais si une ligne contient plusieurs instructions, séparées par des points-virgules, cela ne change pas le déroulement du 
-> programme : chaque instruction est exécutée une par une. La présentation du code n'influence pas le déroulement du programme.
-
-Pour suivre le déroulement d'un programme C++, vous avez deux garanties :
-
-- chaque instruction est exécutée ;
-- les instructions sont exécutées dans l'ordre.
-
-Il n'est donc pas possible d'obtenir les résultats suivants dans la console :
-
-```
-ligne 1
-ligne 3
-```
-
-ou
-
-```
-ligne 1
-ligne 3
-ligne 2
-```
-
-Le comportement d'un programme sera dont prédictible (sauf erreur de programmation) et constant.
+Lorsque vous lisez un code complexe, n'hésitez surtout pas à prendre un crayon et une feuille de papier et à écrire
+les étapes que vous suivez, les valeurs et les calculs. Vous entendrez parfois parler "d'exécuter un programme ou
+un algorithme sur papier" quand vous faites cela. C'est particulierement important quand vous étudierez l'algorithmique.
