@@ -64,7 +64,7 @@ Tous ces approches sont utilisables en C++ et seront détaillées dans la suite 
 
 ## Lire le code d'un programme
 
-Pour comprendre un code, vous devez respecter une règle simple pour lire les instructions :
+Pour comprendre un code, vous devez respecter la règle simple précédante :
 
 > **vous devez lire les instructions une par une, dans l'ordre.**
 
