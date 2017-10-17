@@ -178,14 +178,17 @@ codes, utilisez de préférence l'une des deux premières syntaxes.
 
 ## Les flux standards
 
+Plusieurs fonctionnalités de la bibliothèque standard du C++ sont implementées en utilisant le concept de flux. C'est
+par exemple le cas pour afficher un message dans la console avec `std::cout`, mais également pour saisir des informations
+au clavier, ou pour lire et écrire dans des fichiers.
 
+Pour vous représenter le concept de flux, imaginez un employé de bureau qui reçoit des documents. Il a une grande 
+pile de documents, il prend le plus ancien, le traite, puis passe au suivant. Peu importe si les dossiers arrivent 
+un par un ou en paquet, il les prend toujours un par un.
 
-Comment fonctionne un flux ? Imaginer un employé de bureau qui reçoit des dossiers. Il a une grande pile de dossiers, il 
-prend le plus ancien, le traite, puis passe au suivant. Peu importe si les dossiers arrivent un par un ou en paquet, il les 
-prend toujours un par un.
-
-Les flux standards fonctionnent sur le même principe : ils reçoivent des données (les caractères à afficher), ils prennent 
-le premier arrivé, l'affiche puis passent au suivant. L'opérateur permettant d'envoyer des données à un flux est l'opérateur `<<` :
+Le flux `std::cout` fonctionne sur le même principe : il reçoit les caractères à afficher, il prend
+le premier arrivé, l'affiche puis passent au suivant. L'opérateur permettant d'envoyer des données à 
+un flux est l'opérateur `<<` :
 
 ```cpp
 #include <iostream>
@@ -195,8 +198,8 @@ int main() {
 }
 ```
 
-Ce code ne doit pas être compris comme signifiant "afficher 'hello'", mais comme "envoyer les caractères 'h', 'e', 'l', 'l' 
-et 'o' dans le flux standard 'std::cout'".
+Ce code ne doit pas être compris comme signifiant "afficher `hello`", mais comme "envoyer les caractères `h`, `e`, `l`, `l` 
+et `o` dans le flux standard `std::cout`".
 
 Il est possible d'envoyer plusieurs valeurs en série de données dans un flux, en les séparant par plusieurs opérateurs `<<` :
 
@@ -208,8 +211,8 @@ int main() {
 }
 ```
 
-Ce code signifie "envoyer 'hello' et 'world' dans 'std::cout'", ce qui peut être développé en "envoyer les caractères
-'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd' dans 'std::cout'". (Remarquez l'absence d'espace entre "hello" et "world").
+Ce code signifie "envoyer 'hello' et 'world' dans `std::cout`", ce qui peut être développé en "envoyer les caractères
+'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd' dans `std::cout`". (Remarquez l'absence d'espace entre "hello" et "world").
 
 Il revient au même d'envoyer les données sur plusieurs lignes :
 
@@ -249,10 +252,12 @@ helloworld
 
 > **Internationalisation**
 > 
-> Le `w` signifie que le flux prend en charge les caractères étendus ("w" pour //wide//), c'est-à-dire les caractères 
-> avec accent ou provenant d'un alphabet différent de l'anglais. La gestion de l’internationalisation est un peu complexe 
-> en C++, en particulier à cause de la multiplicité des normes de codage et la prise en charge très variable selon le système 
-> d'exploitation. Cela fera l'objet d'un chapitre dédié.
+> Si vous essayez d'afficher des caractères étendus, c'est-à-dire les caractères avec accent ou provenant 
+> d'un alphabet différent de l'anglais, vous pourrez rencontrer des problemes lors de l'affichage.
+> En effet, certains systemes d'exploitation gèrent mal les caracteres autres que ceux de base en anglais.
+> 
+> La gestion de l’internationalisation est un peu complexe en C++, en particulier à cause du nombre important
+> de normes de codage et la prise en charge très variable selon le système d'exploitation.
 > 
 > Si vous faites le test avec Clang dans Coliru, cela affichera les accents correctement, mais ça ne sera pas toujours 
 > le cas (en particulier sous Windows).
@@ -264,3 +269,7 @@ helloworld
 >    std::cout << "àâäéèêëîïôöùû" << std::endl;
 > }
 > ```
+> 
+> Dans la majorité des cas, seuls les utilisateurs avancés savent utiliser la console pour lancer un programme.
+> Et il est classique, dans ce cas, que les messages soient en anglais. Pour cette raison, ce cours n'abordera pas
+> l'internationalisation dans les chapitres de base.
