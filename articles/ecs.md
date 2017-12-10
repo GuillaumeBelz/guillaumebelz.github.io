@@ -851,7 +851,7 @@ Au final, la position absolue (X, Y) des objets dans le monde est calculée en f
 
 ## Proposition d'implémentation
 
-<code cpp main.cpp>
+```cpp
 #include <cassert>
 #include <iostream>
 #include <vector>
