@@ -8,7 +8,7 @@ Lorsque l'on commence un nouveau jeu, on n'est pas confronté en général au sy
 
 Par contre, lorsque l'on commence à entrer dans le code du jeu, on est parfois perdu. Quels sont éléments à créer pour concevoir un jeu ? Comment ces éléments interagissent ? Comment éviter de devoir recommencer son jeu plusieurs fois parce que l'on a fait de mauvais choix ?
 
-Il ne faut pas se faire d'illusions, créer un jeu est une tâche très complexe et très longue. Les blogs relatant les mauvaises expériences sont nombreuses (lire en particulier la série d'articles [Erreurs classiques des créateurs de jeux vidéo amateurs](http://conquerirlemonde.com/blog/index-des-articles/).
+Il ne faut pas se faire d'illusions, créer un jeu est une tâche très complexe et très longue. Les blogs relatant les mauvaises expériences sont nombreuses (lire en particulier la série d'articles [Erreurs classiques des créateurs de jeux vidéo amateurs](http://conquerirlemonde.com/blog/index-des-articles/)).
 
 Un moteur de jeux est quelque chose de complexe en soi. La meilleure approche pour créer un jeu est d'utiliser un moteur de jeux existant, qui vous propose déjà une architecture prête à l'utilisation. Il en existe plusieurs [moteurs de jeux](http://fr.wikipedia.org/wiki/Liste_de_moteurs_de_jeu|moteurs de jeux) gratuits, très bons pour débuter et pour aller plus loin. Si votre objectif est la création d'un jeu, c'est cette approche qu'il vous faut suivre. Ne rejetez surtout pas les moteurs de jeux existants pour de mauvaises raisons, comme "je veux tout créer moi même pour avoir plus de liberté". En pratique, si vous faites cela, vous passerez plus de temps à régler les problèmes d'implémentation de votre moteur de jeux plutôt que de réellement concevoir votre jeu.
 
@@ -156,7 +156,7 @@ int main() {
 
 Cette approche peut sembler intéressante en termes de non répétition du code (si un code est commun à deux classes, il suffit de le déplacer dans la classe parente) et d'évolutivité (si on veut ajouter une nouvelle classe, il suffit de la faire hériter d'une classe existante).
 
-En pratique, ce n'est pas le cas. Pour pouvoir déplacer un code commun entre deux classes dans une classe parente, encore faut-il qu'il existe une classe parente. Il y a toujours la possibilité de remonter jusque la classe `Object`, mais on se retrouve au final à avoir une super-classe (on parle de *god-object*) qui remplit tous les rôles. Ce type de classe entre en violation directement des principe de responsabilité unique (//SRP - Single Responsabilty Principle//) et ouvert-fermé (*OCP - Open-Close Principle*) :
+En pratique, ce n'est pas le cas. Pour pouvoir déplacer un code commun entre deux classes dans une classe parente, encore faut-il qu'il existe une classe parente. Il y a toujours la possibilité de remonter jusque la classe `Object`, mais on se retrouve au final à avoir une super-classe (on parle de *god-object*) qui remplit tous les rôles. Ce type de classe entre en violation directement des principe de responsabilité unique (*SRP - Single Responsabilty Principle*) et ouvert-fermé (*OCP - Open-Close Principle*) :
 
  - le principe de responsabilité unique stipule qu'une classe ne doit faire qu'une seule chose (mais bien) ;
  - le principe ouvert-fermé stipule que les classes doivent être fermée à la modification, mais ouverte à l'évolution (dit autrement, cela signifie que pour ajouter une nouvelle fonctionnalité, il ne faut pas modifier une classe existante, mais ajouter une nouvelle classe).
@@ -833,7 +833,8 @@ while (true) {
 
 Exemple: 3 persos A (marchent à côté du char), B (dans le char), C (dans la tourelle), 1 char avec tourelle.
 
-^  Entité    ^  Composant position relative  ^  Composant "Transporte quelque chose"  ^
+|  Entité    |  Composant position relative  |  Composant "Transporte quelque chose"  |
+|------------|-------------------------------|----------------------------------------|
 |  A         |  x_a, y_a                     |                                        |
 |  B         |  x_b, y_b                     |  char                                  |
 |  C         |  x_c, y_c                     |  tour                                  |
