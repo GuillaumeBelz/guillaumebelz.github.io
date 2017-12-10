@@ -2,16 +2,15 @@
 
 ## Introduction
 
-//**Ce tutoriel a été commencé pour le site Zeste de savoir, à l'initiative de valent20000, qui souhaitait écrire un tutoriel sur l'ECS en C++ avec Anax. Au final, comme j'ai écrit la majorité de ce tutoriel, mais que je n'ai pas le temps pour le moment de le finir, je le publie ici, dans l'état. J’essaierais de le compléter, un jour...**//
-
+**Ce tutoriel a été commencé pour le site Zeste de savoir, à l'initiative de valent20000, qui souhaitait écrire un tutoriel sur l'ECS en C++ avec Anax. Au final, comme j'ai écrit la majorité de ce tutoriel, mais que je n'ai pas le temps pour le moment de le finir, je le publie ici, dans l'état. J’essaierais de le compléter, un jour...**
 
 Lorsque l'on commence un nouveau jeu, on n'est pas confronté en général au syndrome de la page blanche. Au contraire, on a souvent beaucoup d'idées sur ce que le jeu contiendra, sur des éléments de gameplay, sur ce qui composera le jeu. Il faut même parfois mettre de côté des idées, partir petit et ajouter progressivement des éléments à son jeu.
 
 Par contre, lorsque l'on commence à entrer dans le code du jeu, on est parfois perdu. Quels sont éléments à créer pour concevoir un jeu ? Comment ces éléments interagissent ? Comment éviter de devoir recommencer son jeu plusieurs fois parce que l'on a fait de mauvais choix ?
 
-Il ne faut pas se faire d'illusions, créer un jeu est une tâche très complexe et très longue. Les blogs relatant les mauvaises expériences sont nombreuses (lire en particulier la série d'articles [[http://conquerirlemonde.com/blog/index-des-articles/|Erreurs classiques des créateurs de jeux vidéo amateurs]].
+Il ne faut pas se faire d'illusions, créer un jeu est une tâche très complexe et très longue. Les blogs relatant les mauvaises expériences sont nombreuses (lire en particulier la série d'articles [Erreurs classiques des créateurs de jeux vidéo amateurs](http://conquerirlemonde.com/blog/index-des-articles/).
 
-Un moteur de jeux est quelque chose de complexe en soi. La meilleure approche pour créer un jeu est d'utiliser un moteur de jeux existant, qui vous propose déjà une architecture prête à l'utilisation. Il en existe plusieurs [[http://fr.wikipedia.org/wiki/Liste_de_moteurs_de_jeu|moteurs de jeux]] gratuits, très bons pour débuter et pour aller plus loin. Si votre objectif est la création d'un jeu, c'est cette approche qu'il vous faut suivre. Ne rejetez surtout pas les moteurs de jeux existants pour de mauvaises raisons, comme "je veux tout créer moi même pour avoir plus de liberté". En pratique, si vous faites cela, vous passerez plus de temps à régler les problèmes d'implémentation de votre moteur de jeux plutôt que de réellement concevoir votre jeu.
+Un moteur de jeux est quelque chose de complexe en soi. La meilleure approche pour créer un jeu est d'utiliser un moteur de jeux existant, qui vous propose déjà une architecture prête à l'utilisation. Il en existe plusieurs [moteurs de jeux](http://fr.wikipedia.org/wiki/Liste_de_moteurs_de_jeu|moteurs de jeux) gratuits, très bons pour débuter et pour aller plus loin. Si votre objectif est la création d'un jeu, c'est cette approche qu'il vous faut suivre. Ne rejetez surtout pas les moteurs de jeux existants pour de mauvaises raisons, comme "je veux tout créer moi même pour avoir plus de liberté". En pratique, si vous faites cela, vous passerez plus de temps à régler les problèmes d'implémentation de votre moteur de jeux plutôt que de réellement concevoir votre jeu.
 
 Cet article présente une approche possible pour concevoir un moteur de jeux, appelée "Entity-Component-System" ou ECS. Il n'est pas possible de présenter toutes les problématiques que l'on peut rencontrer avec l'ECS, ni aborder toutes les implémentations possibles de l'ECS pour tous les types de jeux possibles. Le but est avant tout de vous donner les bases de compréhension de cette architecture et des pistes de réflexions pour l'adapter selon vos besoins.
 
@@ -28,7 +27,7 @@ Avant de commencer à étudier le fonctionnement des ECS, il est important de ra
 
 ### Qualités d'un moteur de jeux
 
-Un moteur de jeux est un programme comme un autre, il doit donc suivre dans l'idéal les critères habituels de  [[http://fr.wikipedia.org/wiki/Qualit%C3%A9_logicielle|qualité logiciel]]. Cependant, il y a deux points qui ont une importance particulière pour les jeux.
+Un moteur de jeux est un programme comme un autre, il doit donc suivre dans l'idéal les critères habituels de  [qualité logiciel](http://fr.wikipedia.org/wiki/Qualit%C3%A9_logicielle). Cependant, il y a deux points qui ont une importance particulière pour les jeux.
 
 #### Performances
 
@@ -40,19 +39,19 @@ La maintenabilité désigne la facilité à corriger les problèmes existants et
 
 Dans le développement logiciel classique, la question ne se pose généralement pas. Il est nécessaire de livrer des versions intermédiaires du logiciel, fonctionnelles mais ne contenant pas la totalité des fonctionnalités. Chaque nouvelle livraison corrigera les bugs de la version précédente et ajoutera de nouvelles fonctionnalités. Cette différence de démarche peut être résumée par la figure suivante :
 
-{{ https://pbs.twimg.com/media/BylDyxyIcAAg30b.jpg }}
+![image](https://pbs.twimg.com/media/BylDyxyIcAAg30b.jpg)
 
-Dans les jeux vidéos, l'évolutivité prend un sens particulier. Les jeux sont (dans le meilleur des cas) développés par des équipes hétérogènes, composées en particulier de développeurs (vous) et de //game designers// (souvent appelé "les autres" ou encore "the bad guys" ;) ). Les //game designers// ont besoin de pouvoir modifier le comportement des éléments du jeu le plus facilement possible, en général en passant par un langage de script comme //lua//. Il faut dans ce cas éviter les conceptions qui nécessiterait de devoir recompiler pour modifier les comportements.
+Dans les jeux vidéos, l'évolutivité prend un sens particulier. Les jeux sont (dans le meilleur des cas) développés par des équipes hétérogènes, composées en particulier de développeurs (vous) et de *game designers* (souvent appelé "les autres" ou encore "the bad guys" ;) ). Les *game designers* ont besoin de pouvoir modifier le comportement des éléments du jeu le plus facilement possible, en général en passant par un langage de script comme *lua*. Il faut dans ce cas éviter les conceptions qui nécessiterait de devoir recompiler pour modifier les comportements.
 
 #### Conséquences sur les moteurs de jeux
 
 Ces critères de qualité logiciel ne sont pas rappelés sans raison. Lorsque l'on doit faire des choix sur la conception a adopter pour concevoir un moteur de jeux, il est nécessaire de conserver ces critères en tête. Dans un monde idéal, on pourrait choisir de respecter tous les critères de qualité et de les appliquer à 100%. Dans le monde réel, ce n'est pas possible.
 
-En particulier, le critère de performances s'oppose souvent au critère de maintenabilité. Une autre erreur classique est de recherche en premier lieu la performance maximale, quitte à sacrifier la lisibilité du code et augmenter les risques d'erreur. Ainsi, en C++, on rencontre souvent du code //old-school// (mélange de C++ et de C bas niveau), ce qui pose régulièrement des problèmes d'exécution (c'est probablement le pire type d'erreurs, puisque ces erreurs ne produisent pas de messages d'erreurs claires, produisent un comportement indéterminé non reproductible, il est parfois très difficile de trouver la source de l'erreur).
+En particulier, le critère de performances s'oppose souvent au critère de maintenabilité. Une autre erreur classique est de recherche en premier lieu la performance maximale, quitte à sacrifier la lisibilité du code et augmenter les risques d'erreur. Ainsi, en C++, on rencontre souvent du code *old-school* (mélange de C++ et de C bas niveau), ce qui pose régulièrement des problèmes d'exécution (c'est probablement le pire type d'erreurs, puisque ces erreurs ne produisent pas de messages d'erreurs claires, produisent un comportement indéterminé non reproductible, il est parfois très difficile de trouver la source de l'erreur).
 
 Ceux qui suivent cette approche font deux erreurs :
 
- - ils ne savent pas faire de compromis sur les performances. Même si un code //old-school// peut parfois être un plus rapide que son équivalent en C++ moderne sur le papier (c'est souvent l'argument utilisé pour rejeter les tableaux du C++ comme `std::vector` ou d'utiliser les pointeurs intelligents versus les pointeurs nus), cela ne veut pas dire que ces pseudo-optimisations auront un impact perceptible par le joueur.
+ - ils ne savent pas faire de compromis sur les performances. Même si un code *old-school* peut parfois être un plus rapide que son équivalent en C++ moderne sur le papier (c'est souvent l'argument utilisé pour rejeter les tableaux du C++ comme `std::vector` ou d'utiliser les pointeurs intelligents versus les pointeurs nus), cela ne veut pas dire que ces pseudo-optimisations auront un impact perceptible par le joueur.
  - ces codes produisent plus facilement des erreurs difficiles à débugger. Les développeurs sont obligés de passer beaucoup de temps pour trouver ces erreurs et les corriger. Ce temps est perdu pour développer de nouvelles fonctionnalités ou d'optimiser des parties du code qui ont un réel problème de performances.
 
 On voit ici que les critères de maintenabilité et d'évolutivité du code sont prioritaires dans les choix de conception d'un moteur de jeux (et d'un logiciel en général). Lors de l'étude des ECS, nous essayerons d'analyser l'impact des différentes implémentations possibles selon ces critères.
@@ -65,7 +64,7 @@ A cela, il faut aussi ajouter tout ce qui n'est pas visible directement, mais a 
 
 Pour s'en convaincre, il suffit de voir la structure d'un tel moteur, extrait du livre "Game Engine Architecture" :
 
-{{ http://www.gameenginebook.com/img/fig-runtime-arch.jpg }}
+![image](http://www.gameenginebook.com/img/fig-runtime-arch.jpg)
 
 (Extrait du livre "Game Engine Architecture")
 
@@ -85,7 +84,7 @@ Par exemple, un joueur et un ennemi sont deux personnages, ils se différencient
 
 On procède de la même manière pour tous les objets. Ainsi, la classe `Personnage` pourra dériver de la classe `Mobile`, qui implémenter ce qui peut bouger, qui dérive elle-même de `Drawable`, qui implémente tout ce qui peut être dessiné à l'écran, qui dérive de `Objet`, qui représente n'importe quel élément du jeu.
 
-{{http://cowboyprogramming.com/images/eyh/Fig-1.gif}}
+![image](http://cowboyprogramming.com/images/eyh/Fig-1.gif)
 
 (Source : http://cowboyprogramming.com/2007/01/05/evolve-your-heirachy/)
 
@@ -106,7 +105,7 @@ public:
     void init() override;
     void update() override;
     void init3D();           // initialise le contexte 3D
-    void draw3D();          // dessine l'élément 3D
+    void draw3D();           // dessine l'élément 3D
 private:
     3dData data_;            // données graphiques 3D (triangles, textures, etc)
 };
@@ -157,16 +156,16 @@ int main() {
 
 Cette approche peut sembler intéressante en termes de non répétition du code (si un code est commun à deux classes, il suffit de le déplacer dans la classe parente) et d'évolutivité (si on veut ajouter une nouvelle classe, il suffit de la faire hériter d'une classe existante).
 
-En pratique, ce n'est pas le cas. Pour pouvoir déplacer un code commun entre deux classes dans une classe parente, encore faut-il qu'il existe une classe parente. Il y a toujours la possibilité de remonter jusque la classe `Object`, mais on se retrouve au final à avoir une super-classe (on parle de //god-object//) qui remplit tous les rôles. Ce type de classe entre en violation directement des principe de responsabilité unique (//SRP - Single Responsabilty Principle//) et ouvert-fermé (//OCP - Open-Close Principle//) :
+En pratique, ce n'est pas le cas. Pour pouvoir déplacer un code commun entre deux classes dans une classe parente, encore faut-il qu'il existe une classe parente. Il y a toujours la possibilité de remonter jusque la classe `Object`, mais on se retrouve au final à avoir une super-classe (on parle de *god-object*) qui remplit tous les rôles. Ce type de classe entre en violation directement des principe de responsabilité unique (//SRP - Single Responsabilty Principle//) et ouvert-fermé (*OCP - Open-Close Principle*) :
 
  - le principe de responsabilité unique stipule qu'une classe ne doit faire qu'une seule chose (mais bien) ;
  - le principe ouvert-fermé stipule que les classes doivent être fermée à la modification, mais ouverte à l'évolution (dit autrement, cela signifie que pour ajouter une nouvelle fonctionnalité, il ne faut pas modifier une classe existante, mais ajouter une nouvelle classe).
 
-(Voir les références en annexes pour des sources sur les principes [[http://fr.wikipedia.org/wiki/SOLID_%28informatique%29|SOLID]].)
+(Voir les références en annexes pour des sources sur les principes [SOLID](http://fr.wikipedia.org/wiki/SOLID_%28informatique%29).)
 
 #### Design pattern Visitor
 
-Le //design pattern// [[http://fr.wikipedia.org/wiki/Visiteur_%28patron_de_conception%29|Visitor]] permet de parcourir une collection hétérogène, c'est-à-dire une collection composé d'objets de types différents, et d'appliquer un traitement sur les objets d'un certain type. Il peut donc être intéressant de l'utiliser ici.
+Le *design pattern* [Visitor](http://fr.wikipedia.org/wiki/Visiteur_%28patron_de_conception%29) permet de parcourir une collection hétérogène, c'est-à-dire une collection composé d'objets de types différents, et d'appliquer un traitement sur les objets d'un certain type. Il peut donc être intéressant de l'utiliser ici.
 
 Prenons par exemple la hiérarchie de classe décrite précédemment. La collection `objects` est un `vector` contenant des objets de type `NonDrawable` et `Drawable`. On souhaite affiche les éléments graphiques, pour cela, on écrit une boucle qui parcourt tous les éléments et appelle la fonction `draw3d`. Le problème est que les objets `NonDrawable` ne possèdent pas cette fonction, on ne peut appeler que les fonctions déclarées dans l'interface de la classe `Object`.
 
@@ -183,9 +182,9 @@ for (object & : objects) {
 
 Autrement dit, on essaie de convertir l'objet en `Drawable` et si cette conversion réussit, alors on appelle la fonction `draw3d`.
 
-Ce code est problématique, parce qu'il implique de devoir connaître le type de l'objet que l'on manipule pour pouvoir appliquer un traitement (ce qui est contraire au principes de programmation objet et implique que le //RTTI - Run-Time Type Information// - soit activé, ce qui diminue les performances).
+Ce code est problématique, parce qu'il implique de devoir connaître le type de l'objet que l'on manipule pour pouvoir appliquer un traitement (ce qui est contraire au principes de programmation objet et implique que le *RTTI - Run-Time Type Information* - soit activé, ce qui diminue les performances).
 
-Le //design pattern Visitor// apporte une solution à ce problème, basé uniquement sur l'appel de fonctions virtuelles. Pour cela, il faut commencer par ajouter une fonction `accept` dans `Object` pour accepter les visiteurs et qui ne fait rien (mais elle ne doit pas être [[http://cpp.developpez.com/faq/cpp/?page=Les-fonctions-membres-virtuelles#Qu-est-ce-qu-une-fonction-virtuelle-pure|virtuelle pure]]).
+Le *design pattern Visitor* apporte une solution à ce problème, basé uniquement sur l'appel de fonctions virtuelles. Pour cela, il faut commencer par ajouter une fonction `accept` dans `Object` pour accepter les visiteurs et qui ne fait rien (mais elle ne doit pas être [virtuelle pure](http://cpp.developpez.com/faq/cpp/?page=Les-fonctions-membres-virtuelles#Qu-est-ce-qu-une-fonction-virtuelle-pure)).
 
 ```cpp
 class Object {
@@ -247,9 +246,9 @@ int main() {
 }
 ```
 
-L'intérêt du //design pattern Visitor// est que si l'on veut ajouter un comportement particulier, on ne doit modifier que la classe qui accepte ce comportement, en ajoutant une fonction `accept`, et créer une nouvelle classe `VisitorForXxx` correspondant à ce comportement.
+L'intérêt du *design pattern Visitor* est que si l'on veut ajouter un comportement particulier, on ne doit modifier que la classe qui accepte ce comportement, en ajoutant une fonction `accept`, et créer une nouvelle classe `VisitorForXxx` correspondant à ce comportement.
 
-Le problème de ce //design pattern// est qu'il faut que la classe `Visitor` connaissent toutes les fonctions `VisitXxx` possibles, ce qui complexifie le code.
+Le problème de ce *design pattern* est qu'il faut que la classe `Visitor` connaissent toutes les fonctions `VisitXxx` possibles, ce qui complexifie le code.
 
 #### Héritage multiple de comportements
 
@@ -257,7 +256,7 @@ La problématique des hiérarchies d'héritage est qu'il est parfois difficile d
 
 Par exemple, on peut implémenter de comportement `Drawable`, `Movable`, `Attack`, etc. On peut également implémenter plus finement les comportements, comme par exemple si a un ennemi qui attaque en fonçant sur sa cible et un autre qui attaque en contournant sa cible, on pourra écrire des comportement `DirectAttack` et `ForwardAttack`.
 
-La première approche pour créer des entités composées de ces éléments est de faire hériter les classes de ces composants, en utilisant l'héritage multiple. La seconde est de créer une entité par [[http://fr.wikipedia.org/wiki/Composition_(programmation)|composition]] des composants. Nous allons voir la première approche dans cette partie et la seconde dans la prochaine partie.
+La première approche pour créer des entités composées de ces éléments est de faire hériter les classes de ces composants, en utilisant l'héritage multiple. La seconde est de créer une entité par [composition](http://fr.wikipedia.org/wiki/Composition_(programmation)) des composants. Nous allons voir la première approche dans cette partie et la seconde dans la prochaine partie.
 
 L'héritage multiple est une fonctionnalité du C++ qui permet de faire hériter une classe de plusieurs autres classes. L'interface de la classe finale contient donc toutes les interfaces de ses classes parentes.
 
@@ -284,7 +283,7 @@ int main() {
 
 Pour créer les composants, on créé une classe spécifique pour chaque comportement que l'on souhaite implémenter. Par exemple, si on veut créer des éléments affichables, on peut créer une classe `Drawable` contenant les fonctions `init3d` et `paint3d` déjà décrite dans la première partie. On peut également créer une hiérarchie de comportements, mais en évitant les hiérarchies profondes. Par exemple, pour l'intelligence artificielle, on peut créer un comportement `Attack`, puis deux autres classes qui dérive de celle-ci, `DirectAttack` et `ForwardAttack`. Pour un objet dont la classe hérite d'une comportement donné, on peut appeler directement les fonctions correspondantes à ce comportement. 
 
-Il ne sera pas possible d'utiliser le //design pattern Visitor// avec cette approche, puisqu'il n'est pas possible d'écrire une fonction `accept` dans chaque comportement. Il faudra donc utiliser `dynamique_cast` pour vérifier les classes qui possèdent ou non un comportement donné. 
+Il ne sera pas possible d'utiliser le *design pattern Visitor* avec cette approche, puisqu'il n'est pas possible d'écrire une fonction `accept` dans chaque comportement. Il faudra donc utiliser `dynamique_cast` pour vérifier les classes qui possèdent ou non un comportement donné. 
 
 ```cpp
 class Object {};
@@ -313,7 +312,7 @@ int main() {
 }
 ```
 
-Le principal problème avec cette approche est que la liste des comportements appliquées à une entité est déterminée à la compilation. Il n'est pas possible par exemple qu'une entité acquière la compétence `Vol` si on n'a pas ajouté ce comportement dans la liste des classes parentes. Il n'est alors pas possible aux //game designers// de modifier les comportements sans passer par la modification du code existant et la recompilation du programme.
+Le principal problème avec cette approche est que la liste des comportements appliquées à une entité est déterminée à la compilation. Il n'est pas possible par exemple qu'une entité acquière la compétence `Vol` si on n'a pas ajouté ce comportement dans la liste des classes parentes. Il n'est alors pas possible aux *game designers* de modifier les comportements sans passer par la modification du code existant et la recompilation du programme.
 
 #### Liste de comportements par composition
 
@@ -357,7 +356,7 @@ private:
 };
 ```
 
-Cette approche présente également le problème de devoir connaître le type réel des classes pour pouvoir les utiliser. Encore une fois, le //design pattern Visitor// pourra faciliter les choses.
+Cette approche présente également le problème de devoir connaître le type réel des classes pour pouvoir les utiliser. Encore une fois, le *design pattern Visitor* pourra faciliter les choses.
 
 Il est également possible de séparer les composants en catégories, ce qui peut simplifier l'héritage entre les classes. Par exemple, au lieu de faire dériver tous les composants de `Component` et de tout mettre dans un `vector` unique, on va créer un attribut pour chaque type de composant que l'entité peut contenir.
 
@@ -393,7 +392,7 @@ private:
 
 #### Design pattern Strategy
 
-Un dernier mot rapide sur le //design pattern Strategy//. Ce design pattern sert à modifier dynamiquement le comportement d'une classe, en utilisant une seconde classe qui contient l'implémentation réelle. L'équivalent //compile-time// de ce //design pattern// est la classe de [[http://alp.developpez.com/tutoriels/traitspolicies/|Politique]].
+Un dernier mot rapide sur le *design pattern Strategy*. Ce design pattern sert à modifier dynamiquement le comportement d'une classe, en utilisant une seconde classe qui contient l'implémentation réelle. L'équivalent *compile-time* de ce *design pattern* est la classe de [Politique](http://alp.developpez.com/tutoriels/traitspolicies/).
 
 
 ```cpp
@@ -414,15 +413,15 @@ private:
     std::unique_ptr<ImplementationInterface> impl;
 ```
 
-Notez aussi que l'on utilise aussi le //design pattern// [[http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Non-Virtual_Interface|NVI - Non Virtual Interface]] dans ce code.
+Notez aussi que l'on utilise aussi le *design pattern* [NVI - Non Virtual Interface](http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Non-Virtual_Interface) dans ce code.
 
-Dans les codes d'exemples précédents, certains composants sont en fait des applications de ce design pattern. Le comportement réelle des entités est déterminée par ses composants, il suffit de créer un nouveau type de composant pour modifier le comportement ce l'entité. Cela permet d'avoir un code facilement évolutif et permet aux //game designers// de "construire" une entité à partir de ces briques élémentaires, sans avoir besoin de connaître comment sont implémentés ces composants.
+Dans les codes d'exemples précédents, certains composants sont en fait des applications de ce design pattern. Le comportement réelle des entités est déterminée par ses composants, il suffit de créer un nouveau type de composant pour modifier le comportement ce l'entité. Cela permet d'avoir un code facilement évolutif et permet aux *game designers* de "construire" une entité à partir de ces briques élémentaires, sans avoir besoin de connaître comment sont implémentés ces composants.
 
 On voit qu'il existe de nombreuses implémentations possibles pour concevoir un moteur de jeux. Selon les contraintes, ces approches peuvent être suffisantes. Dans le cas contraire, l'ECS est une solution supplémentaire, qui présente d'autres avantages.
 
 ## Théorie et implémentations d'un ECS
 
-Les approches décrites dans le chapitre précédent ont une chose en commun : elles sont basées sur la programmation orientée objet. L'ECS est au contraire basé sur la programmation orienté données [[http://en.wikipedia.org/wiki/Data-driven_programming|Data-driven programming]].
+Les approches décrites dans le chapitre précédent ont une chose en commun : elles sont basées sur la programmation orientée objet. L'ECS est au contraire basé sur la programmation orienté données [Data-driven programming](http://en.wikipedia.org/wiki/Data-driven_programming).
 
 Nous allons voir dans un premier temps a quoi correspond cette approche et ce qui la distingue de la programmation objet. Nous verrons ensuite comment implémenter concrètement un ECS en C++.
 
@@ -430,7 +429,7 @@ Nous allons voir dans un premier temps a quoi correspond cette approche et ce qu
 
 #### Notes sur le programmation orientée objet
 
-La programmation orienté objet se décrit en termes de services rendus par les classes et d'interactions entre les objets. Elle se base pour celas sur [[http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)|l'encapsulation]] de comportements (et donc incidemment sur l'encapsulation de données, mais cela n'est qu'une conséquence de l'encapsulation, pas le besoin primaire de l'encapsulation).
+La programmation orienté objet se décrit en termes de services rendus par les classes et d'interactions entre les objets. Elle se base pour celas sur [l'encapsulation](http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)) de comportements (et donc incidemment sur l'encapsulation de données, mais cela n'est qu'une conséquence de l'encapsulation, pas le besoin primaire de l'encapsulation).
 
 Prenons un exemple concret : une épée dans un jeu. Cette arme rend le service suivant : "faire mal" (que l'on traduit généralement en "faire des dégâts" ou "diminuer les points de vie de la cible"... mais c'est plus amusant de dire "faire mal" :)). Et elle va interagir avec plusieurs autres éléments du jeu : au moins le propriétaire de l'arme et celui qui reçoit les dégâts (parfois, c'est la même personne...).
 
@@ -466,7 +465,7 @@ int main() {
 }
 ```
 
-Dit autrement, cela veut dire que la cible possède des points de vie, l'arme possède des points de dégâts et pour calculer le résultat d'une attaque, on calcule la différence entre les deux. Même si l'idée est correcte (c'est comme cela que l'on procède lorsque l'on joue à un jeu de rôle sur plateau), ce type de code ne respecte pas l'encapsulation des comportements et encore moins la [[http://en.wikipedia.org/wiki/Law_of_Demeter|loi de Demeter]].
+Dit autrement, cela veut dire que la cible possède des points de vie, l'arme possède des points de dégâts et pour calculer le résultat d'une attaque, on calcule la différence entre les deux. Même si l'idée est correcte (c'est comme cela que l'on procède lorsque l'on joue à un jeu de rôle sur plateau), ce type de code ne respecte pas l'encapsulation des comportements et encore moins la [loi de Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter).
 
 Ce type de code ne présente pas les critères de qualité logiciel demandé par la programmation objet. Dit autrement, cela ne sert à rien de faire une classe qui ne sert qu'à présenter les données qu'elle contient.
 
@@ -478,7 +477,7 @@ Dans l'approche orientée données, on va concevoir les choses comme un flux de 
 
 ECS peut être représenté comme un tableau avec les entités et systèmes en ligne et colonne, les composants sont a l'intersection des 2.
 
-{{http://blog.monstruosor.com/wp-content/uploads/2012/04/Fig-2.gif}}
+![image](http://blog.monstruosor.com/wp-content/uploads/2012/04/Fig-2.gif)
 
 Définition générale :
 
@@ -541,11 +540,11 @@ return monster;
 
 Qui est propriétaire des composants ? 
 
- - `vector<component>` dans //entity//
- - `vector<component>` dans //system// et `vector<reference_wrapper<component>>` dans //entity//
- - objet polymorphique : `vector<shared_ptr<component>>` dans //entity// et `vector<weak_ptr<component>>` dans system (ou l'inverse)
+ - `vector<component>` dans *entity*
+ - `vector<component>` dans *system* et `vector<reference_wrapper<component>>` dans *entity*
+ - objet polymorphique : `vector<shared_ptr<component>>` dans *entity* et `vector<weak_ptr<component>>` dans system (ou l'inverse)
  - pas de super-composant parent : `vector<any<component>>`
- - un super-parent par //system// : `vector<component_system>`, comment les liés dans entité ? (avec `any<component>` ?)
+ - un super-parent par *system* : `vector<component_system>`, comment les liés dans entité ? (avec `any<component>` ?)
 
 #### Les composants
 
@@ -627,12 +626,12 @@ On peut distinguer les interactions suivantes :
  - entre éléments de même types (entité-entité, composant-composant et système-système) et entre éléments de types différents
  - "horizontale", "verticale" ou "diagonale" (je me réfère au schéma suivant)
 
-== Interactions "verticales" ==
+##### Interactions "verticales"
 
  - entité <-> entité : je ne vois pas a priori le besoin auquel répondrait des interactions entités-entités, donc non.
  - système <-> composant et composant <-> composant (d'un même système et différentes entités) : c'est le boulot des systèmes, cela fait partie du design des ECS.
 
-== Interactions "horizontales" ==
+##### Interactions "horizontales"
 
 C'est le plus compliqué. Pour faire leur boulots, certains systèmes doivent accéder aux informations de plusieurs composants. Il est possible d'implémenter cela en mettant dans les différentes éléments un "lien" vers un autre élément (par exemple une référence dans un composant vers un autre composant, conserver un identifiant de l'entité, etc)
 
@@ -653,8 +652,7 @@ Pour le pointeur/référence, une remarque. Si on créé un composant "ia" qui a
 
 Comment résoudre cela ? Peut être un élément "cleaner", qui détruit les composants inutiles lorsque l'on détruit un composant (on peut imaginer qu'un composant qui utilise un autre composant ne peut plus fonctionner si le premier est supprimé. Par exemple, un composant "ia" qui attaque un personne devrait être détruit et remplacer par un composant "ia" "je glande sur place" si le personnage utilise une magie pour disparaître). Ou un DP observer ?
 
-== Interactions "diagonales" ==
-
+##### Interactions "diagonales"
 A priori, non pour toutes (entre entité <-> système ou entre composant <-> composant de systèmes et entités différentes). Le seul cas que je verrais d'interactions diagonale, c'est si un composant doit accéder directement aux informations d'une autre entités. Par exemple, les composants "IA" qui utilisent l'algo A* et qui ont tous besoin de connaître la position de l'entité "player".
 
 Mais cela ajoute un couplage entre les composants qui n'est pas simple à résoudre. Il est possible de régler cela en créant une référence vers l'entité "player" ou le composant "position" de l'entité "player" (que faire s'il y a plusieurs "players" ?) et utiliser un builder pour créer les composants en attachant l'entité "player" à ces composants directement lors de la création des objets.
@@ -1049,10 +1047,10 @@ Conception objet
 
 #### Généralités
 
- - [[http://en.wikipedia.org/wiki/Entity_component_system|Entity component system]] (Wikipédia)
- - [[http://entity-systems.wikidot.com/|Entity Systems Wiki]]
- - Entities-Parts (GameDev.net) : [[]http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-i-game-objects-r3596|Game Objects]], [[http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-ii-interactions-r3617|Interactions]], [[http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-iii-serialization-r3663|Serialization]]
- - [[http://gameprogrammingpatterns.com/component.html|Game Programming Patterns - Decoupling Patterns - Component]]
+ - [Entity component system](http://en.wikipedia.org/wiki/Entity_component_system) (Wikipédia)
+ - [Entity Systems Wiki](http://entity-systems.wikidot.com/)
+ - Entities-Parts (GameDev.net) : [Game Objects](http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-i-game-objects-r3596), [Interactions](http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-ii-interactions-r3617), [Serialization](http://www.gamedev.net/page/resources/_/technical/game-programming/entities-parts-iii-serialization-r3663)
+ - [Game Programming Patterns - Decoupling Patterns - Component](http://gameprogrammingpatterns.com/component.html)
 
 #### Autres langages
 
