@@ -1099,6 +1099,8 @@ Conception objet
  - http://gamedev.stackexchange.com/questions/58693/grouping-entities-of-the-same-component-set-into-linear-memory
  - http://gamedev.stackexchange.com/questions/31473/what-is-the-role-of-systems-in-a-component-based-entity-architecture/31491#31491
 
+![image](http://guillaume.belz.free.fr/lib/exe/fetch.php?media=ecs_cache.png)
+
 ## Conclusion
 
 Il ne faut pas se faire d'illusions : maintenant que vous avez lu cet article, vous ne savez toujours pas comment implémenter un ECS. Il va falloir vous lancer, faire des erreurs et recommencer pour réellement comprendre. Bref, acquérir de l'expérience.
