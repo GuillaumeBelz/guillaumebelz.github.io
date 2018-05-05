@@ -10,8 +10,8 @@ l'installation de Qt.
 
 ## Version courte
 
-- suivez le lien suivant : [Download Qt Open Source](https://www.qt.io/download-open-source/).
-- cliquez sur `Download Now` pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
+- suivez le lien suivant : [Install Qt - Your download](https://www.qt.io/download-qt-installer).
+- cliquez sur `Download` en bas à gauche pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
 - lancez l'installateur.
 - suivez la procédure.
 - le telechargement et l'installation est automatique. (Cette étape peut etre tres longue).
