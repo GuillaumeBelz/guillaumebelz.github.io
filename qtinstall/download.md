@@ -21,7 +21,7 @@ les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers
 ce qui le rend un peu complexe au premier abord. Dans ce tutoriel, nous allons installer la version
 open-source de Qt, donc nous n'allons pas détailler le site de Qt.
 
-![Page de téléchargement de Qt](http://guillaume.belz.free.fr/lib/exe/fetch.php?cache=&media=installateur_qt_2.png)
+![Page de téléchargement de Qt](images/download_01.png)
 
 Pour ceux qui possèdent une licence commerciale de Qt : il est possible d'entrer votre numéro de licence, 
 même si vous télécharger la version open-source. Et je trouve qu'il est plus facile de mettre à jour Qt si
