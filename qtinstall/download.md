@@ -28,7 +28,7 @@ même si vous télécharger la version open-source. Et je trouve qu'il est plus 
 vous installez la version open-source, donc je vous conseille de faire cela, même si vous avez une licence commerciale.
 
 Pour télécharger la version open-source de Qt, le plus simple est d'aller directement 
-sur la [page de telechargement](https://www.qt.io/download-open-source/) et de cliquer sur le 
+sur la [page de telechargement](https://www.qt.io/download-qt-installer) et de cliquer sur le 
 bouton `Download` en bas à gauche. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
 correspond est proposé par defaut.
 
