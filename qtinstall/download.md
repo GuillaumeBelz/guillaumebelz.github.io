@@ -29,7 +29,7 @@ vous installez la version open-source, donc je vous conseille de faire cela, mê
 
 Pour télécharger la version open-source de Qt, le plus simple est d'aller directement 
 sur la [page de telechargement](https://www.qt.io/download-open-source/) et de cliquer sur le 
-bouton `Download Now` en bas à droite. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
+bouton `Download` en bas à gauche. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
 correspond est proposé par defaut.
 
 Le nom de l'installateur dépend du système. Notez que le nom du fichier contient un numero de version et que 
