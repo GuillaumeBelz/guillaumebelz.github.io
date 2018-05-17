@@ -42,6 +42,40 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
   * [[http://www.pearsonhighered.com/educator/product/Exceptional-C-Style-40-New-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201760422.page|Exceptional C++ Style]]
   * [[http://www.pearsonhighered.com/educator/product/C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/9780321113580.page|C++ Coding Standards]]
 
+## The Addison-Wesley Signature Series
+
+Séries de très livres bons livres sur la conception object, la gestion de projet, la méthode Agile, etc.
+
+- [Martin Fowler](http://www.informit.com/imprint/series_detail.aspx?st=61419)
+- [Kent Beck](http://www.informit.com/imprint/series_detail.aspx?ser=4266306)
+- [Mike Cohn](http://www.informit.com/imprint/series_detail.aspx?ser=4255380)
+
+## Sélection de videos
+
+Les principales :
+
+  * CppCon : https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg
+  * QtStudio : https://www.youtube.com/channel/UCsyT1C1M-QoHQREjsixgayQ
+  * Channel9 (MSDN) : https://channel9.msdn.com/Tags/c++
+
+Autres chaines :
+
+  * A9 Videos : https://www.youtube.com/channel/UCYEYhkwzNWRsUkTCpTmChCg
+  * ACCU conferences : https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw/featured
+  * BoostCon : https://www.youtube.com/channel/UC5e__RG9K3cHrPotPABnrwg
+  * LLVM : https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ
+  * NVIDIADeveloper : https://www.youtube.com/channel/UCBHcMCGaiJhv-ESTcWGJPcw
+  * Code::Dive : http://codedive.pl/en/previous-events/year-2014/materials/
+  * Android Developers : https://www.youtube.com/user/androiddevelopers/featured
+  * Google Developers : https://www.youtube.com/user/GoogleDevelopers
+  * Martin Fowler : http://martinfowler.com/videos.html#rest
+
+## Tutoriels video :
+
+  * Vittorio Romeo : https://www.youtube.com/user/SuperVictorius/playlists
+  * Bo Qian : https://www.youtube.com/user/BoQianTheProgrammer/playlists
+  * CppAdvancedCourse : https://www.youtube.com/user/cppadvancedtopics/videos
+
 ## Pour Qt
 
 Je n'ai pas lu les dernières publications sur Qt, donc je ne pourrais pas me prononcer sur la qualité de tous les livres. 
@@ -64,8 +98,7 @@ Ceux que je n'ai pas lu :
 
 ## Mes anciennes thématiques
 
-Ces ressources concernent des domaines que je ne pratique plus. Elles peuvent donc ètre obsolète. (Par exemple, pour la 3D, il n'y 
-a pas de ressources sur Vulkan).
+Ces ressources concernent des domaines que je ne pratique plus. Elles peuvent donc ètre obsolète.
 
 ### Pour la 3D et OpenGL
 
@@ -77,6 +110,14 @@ a pas de ressources sur Vulkan).
   * La série des GPU Gems [[http://http.developer.nvidia.com/GPUGems/gpugems_pref01.html|1]], [[http://http.developer.nvidia.com/GPUGems2/gpugems2_frontmatter.html|2]] et [[http://http.developer.nvidia.com/GPUGems3/gpugems3_pref01.html|3]], gratuits, complet et en ligne
   * [[http://opengl.datenwolf.net/gltut/html/index.html|Learning Modern 3D Graphics Programming]]
 
+### Pour Vulkan
+
+  * https://vulkan-tutorial.com/
+  * https://github.com/GameTechDev/IntroductionToVulkan
+  * https://www.khronos.org/vulkan/
+  * https://software.intel.com/en-us/articles/api-without-secrets-introduction-to-vulkan-part-1
+  * https://computergraphics.stackexchange.com/questions/4422/directx-openglvulkan-concepts-mapping-chart/4432
+  
 ### Pour les jeux vidéos (hors moteurs de jeux)
 
   * Game Engine Architecture
@@ -99,3 +140,15 @@ a pas de ressources sur Vulkan).
 
   * OpenCL Programming Guide, la référence de Khronos
   * Heterogeneous Computing with OpenCL (Gaster)
+
+
+
+## C++ Users Groups
+
+  * Paris : http://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/
+  * Montpellier : http://www.meetup.com/fr-FR/Montpellier-CPP/
+  * Nantes : http://www.meetup.com/fr-FR/Nantes-C-Meetup/
+
+  * Meeting C++ YT Kanalseite : https://www.youtube.com/channel/UCJpMLydEYA08vusDkq3FmjQ
+
+
