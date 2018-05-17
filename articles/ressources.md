@@ -143,12 +143,3 @@ Ces ressources concernent des domaines que je ne pratique plus. Elles peuvent do
 
 
 
-## C++ Users Groups
-
-  * Paris : http://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/
-  * Montpellier : http://www.meetup.com/fr-FR/Montpellier-CPP/
-  * Nantes : http://www.meetup.com/fr-FR/Nantes-C-Meetup/
-
-  * Meeting C++ YT Kanalseite : https://www.youtube.com/channel/UCJpMLydEYA08vusDkq3FmjQ
-
-
