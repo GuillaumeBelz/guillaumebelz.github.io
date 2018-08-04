@@ -7,11 +7,11 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
 
 ## Pour débuter
 
-  * [[http://www.pearsonhighered.com/educator/product/C-Primer/9780321714114.page|C++ Primer]]. Livre de base, pédagogique, complet et à jour. Pour commencer.
-  * [[http://www.d-booker.fr/programmation-et-langage/157-coder-efficacement.html|Coder efficacement – Bonnes pratiques et erreurs à éviter (en C++)]]. Livre de base, pédagogique, sur la conception.
-  * [[http://shop.oreilly.com/product/0636920033707.do?cmp=af-code-books-video-product_cj_0636920033707_7708709|Effective Modern C++]]. Pédagique, montre les problématiques rencontrées dans le C++03 et comment le C++11/14 permet de les résoudre.
-  * [[http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118858050.html|Professional C++]]. Livre plus avancé, regroupe techniques et bonnes pratiques, orienté utilisation professionnelle (et pragmatique).
-  * [[http://www.oreilly.com/programming/free/files/practical-c-plus-plus-metaprogramming.pdf|Practical C++ Metaprogramming]]. Introduction à la méta-programmation. Livre récent et gratuit.
+  * [C++ Primer](http://www.pearsonhighered.com/educator/product/C-Primer/9780321714114.page). Livre de base, pédagogique, complet et à jour. Pour commencer.
+  * [Coder efficacement – Bonnes pratiques et erreurs à éviter (en C++)](http://www.d-booker.fr/programmation-et-langage/157-coder-efficacement.html). Livre de base, pédagogique, sur la conception.
+  * [Effective Modern C++](http://shop.oreilly.com/product/0636920033707.do?cmp=af-code-books-video-product_cj_0636920033707_7708709). Pédagique, montre les problématiques rencontrées dans le C++03 et comment le C++11/14 permet de les résoudre.
+  * [Professional C++](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118858050.html). Livre plus avancé, regroupe techniques et bonnes pratiques, orienté utilisation professionnelle (et pragmatique).
+  * [Practical C++ Metaprogramming](http://www.oreilly.com/programming/free/files/practical-c-plus-plus-metaprogramming.pdf). Introduction à la méta-programmation. Livre récent et gratuit.
 
 ## En vrac
 
