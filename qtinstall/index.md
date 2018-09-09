@@ -1,23 +1,17 @@
 
-# Installation et premiers pas avec Qt 5.9.1
+# Installation et premiers pas avec Qt 5.12
 
-> Dernière mise à jour : 27 aout 2017.
+> Dernière mise à jour : 9 septembre 2018.
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
 idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
 l'installation de Qt.
 
-## Version courte
+Important ! Si vous avez des problèmes et que vous souhaitez poser des questions sur les forums, lisez d'abord 
+ceci : [Savoir comment demander de l'aide sur les forums](help.md).
 
-- suivez le lien suivant : [Install Qt - Your download](https://www.qt.io/download-qt-installer).
-- cliquez sur `Download` en bas à gauche pour lancer le téléchargement de l'installateur de Qt. (Cette étape est rapide).
-- lancez l'installateur.
-- suivez la procédure.
-- le telechargement et l'installation est automatique. (Cette étape peut etre tres longue).
-- lancez Qt Creator, creez un projet par defaut et lancez le. Cela devrait fonctionner.
-
-## Version detaillée
+## L'installation en détails
 
 La première partie est consacrée à l'installation de Qt et la création de projets par défaut, pour vérifier
 que l'installation s'est bien passée.
