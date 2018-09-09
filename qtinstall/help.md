@@ -1,4 +1,6 @@
 
+Mise à jour : 9 septembre 2018
+
 # Savoir comment demander de l'aide sur les forums
 
 Les forums internet permettent de partager vos codes avec d'autres développeurs et obtenir de l'aide et des conseils. 
@@ -11,8 +13,6 @@ Cependant, pour demander de l'aide sur les forums, il faut respecter quelques r�
 
 Vous devez apprendre par vous-même à trouver les informations nécessaires pour résoudre vos problématiques. 
 Les forums sont une aide précieuse, surtout quand on débute, mais ils ne permettent pas de résoudre tous les problèmes.
-
-Mise à jour : 9 septembre 2018
 
 ## Respectez les règles du forum
 
