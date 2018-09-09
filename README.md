@@ -1,9 +1,9 @@
 
-# Installation et premiers pas avec Qt 5.9
+# Installation et premiers pas avec Qt 5.12
 
-Cette série de tutoriels détaille l'installation de Qt 5.9, la configuration de Qt Creator, et comment créer votre première application.
+Cette série de tutoriels détaille l'installation de Qt 5.12, la configuration de Qt Creator, et comment créer votre première application.
 
-- [Installation et premiers pas avec Qt 5.9](qtinstall/index.md)
+- [Installation et premiers pas avec Qt 5.12](qtinstall/index.md)
 
 # Articles divers
 
