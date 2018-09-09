@@ -8,8 +8,8 @@ régulièrement des problèmes. Le processus est relativement simple et automati
 idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
 l'installation de Qt.
 
-Important ! Si vous avez des problèmes et que vous souhaitez poser des questions sur les forums, lisez d'abord 
-ceci : [Savoir comment demander de l'aide sur les forums](help.md).
+**Important ! Si vous avez des problèmes et que vous souhaitez poser des questions sur les forums, lisez d'abord 
+ceci : [Savoir comment demander de l'aide sur les forums](help.md).**
 
 ## L'installation en détails
 
