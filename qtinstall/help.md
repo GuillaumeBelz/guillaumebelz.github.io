@@ -1,5 +1,5 @@
 
-Mise à jour : 9 septembre 2018
+> Mise à jour : 9 septembre 2018
 
 # Savoir comment demander de l'aide sur les forums
 
@@ -18,7 +18,7 @@ Les forums sont une aide précieuse, surtout quand on débute, mais ils ne perme
 
 En particulier, la politesse (bonjour, merci) et ne pas écrire en style SMS.
 
-## Faites un minimum d'effort dans la rédaction de vos messages
+## Faites un minimum d'effort dans la rédaction de vos messages
 
 Relisez-vous et faites attention aux fautes. Si vous ne faites pas un effort pour rédiger vos messages, les autres 
 ne feront pas un effort pour vous aider. Le minimum est d'utiliser les correcteurs d'orthographe inclus dans votre 
@@ -32,7 +32,7 @@ Ne donnez jamais comme titre à vos messages "J'ai un problème", "Erreur C++" o
 savent que vous avez un problème et que vous avez besoin d'aide, sinon vous ne poseriez pas votre question sur un 
 forum. Et comme vous posez votre question sur un forum C++, on se doute que c'est une erreur C++.
 
-## Expliquez correctement vos problématiques
+## Expliquez correctement vos problématiques
 
 Un adage dit qu'un problème correctement expliqué est à moitié résolu. On voit souvent des personnes trouver la solution à 
 leur problème simplement en rédigeant le message sur le forum. Il faut en particulier donner le contexte, expliquer les 
@@ -47,7 +47,7 @@ exécutable qui permet de reproduire l'erreur.
 
 Si vous devez donner la totalité de votre code, passez par un gestionnaire en ligne tel que [GitHub](https://github.com).
 
-## Donnez vos messages d'erreur
+## Donnez vos messages d'erreur
 
 Le pire que vous puissiez faire est de dire simplement "j'ai une erreur", cela ne sert strictement à rien.
 Ne donnez pas non plus un résumé du message d'erreur. Copiez-collez directement les messages d'erreur tels quels. 
