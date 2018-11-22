@@ -15,25 +15,25 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
 
 ## En vrac
 
-  * [[http://www.manning.com/williams/|C++ Concurrency in Action]]
-  * [[http://www.pearsonhighered.com/educator/product/C-Templates-The-Complete-Guide/9780201734843.page|C++ Templates]]
-  * [[http://www.pearsonhighered.com/educator/product/C-Template-Metaprogramming-Concepts-Tools-and-Techniques-from-Boost-and-Beyond/9780321227256.page|C++ Template Metaprogramming]]
-  * [[http://shop.oreilly.com/product/9780596514808.do|Intel Threading Building Blocks]]
-  * [[http://www.pearsonhighered.com/educator/product/Modern-C-Design-Generic-Programming-and-Design-Patterns-Applied/9780201704310.page|Modern C++ Design]]
-  * [[http://www.amazon.com/The-Standard-Library-Tutorial-Reference/dp/0321623215|The C++ Standard Library: A Tutorial and Reference]], mis à jour pour le C++11
-  * [[http://www.amazon.com/The-Art-Concurrency-Parallel-Applications/dp/0596521537|The Art of Concurrency]], pour les algo concurrents
+  * [C++ Concurrency in Action](http://www.manning.com/williams/)
+  * [C++ Templates](http://www.pearsonhighered.com/educator/product/C-Templates-The-Complete-Guide/9780201734843.page)
+  * [C++ Template Metaprogramming](http://www.pearsonhighered.com/educator/product/C-Template-Metaprogramming-Concepts-Tools-and-Techniques-from-Boost-and-Beyond/9780321227256.page)
+  * [Intel Threading Building Blocks](http://shop.oreilly.com/product/9780596514808.do)
+  * [Modern C++ Design](http://www.pearsonhighered.com/educator/product/Modern-C-Design-Generic-Programming-and-Design-Patterns-Applied/9780201704310.page)
+  * [The C++ Standard Library: A Tutorial and Reference](http://www.amazon.com/The-Standard-Library-Tutorial-Reference/dp/0321623215), mis a jour pour le C++11.
+  * [The Art of Concurrency](http://www.amazon.com/The-Art-Concurrency-Parallel-Applications/dp/0596521537), pour les algo concurrents
 
 ## Scott Meyers
  
-  * [[http://www.pearsonhighered.com/educator/product/Effective-C-55-Specific-Ways-to-Improve-Your-Programs-and-Designs/9780321334879.page|Effective C++]]
-  * [[http://www.pearsonhighered.com/educator/product/More-Effective-C-35-New-Ways-to-Improve-Your-Programs-and-Designs/9780201633719.page|More Effective C++]]
-  * [[http://www.pearsonhighered.com/educator/product/Effective-STL-50-Specific-Ways-to-Improve-Your-Use-of-the-Standard-Template-Library/9780201749625.page|Effective STL]]
+  * [Effective C++](http://www.pearsonhighered.com/educator/product/Effective-C-55-Specific-Ways-to-Improve-Your-Programs-and-Designs/9780321334879.page)
+  * [More Effective C++](http://www.pearsonhighered.com/educator/product/More-Effective-C-35-New-Ways-to-Improve-Your-Programs-and-Designs/9780201633719.page)
+  * [Effective STL](http://www.pearsonhighered.com/educator/product/Effective-STL-50-Specific-Ways-to-Improve-Your-Use-of-the-Standard-Template-Library/9780201749625.page)
 
 ## Bjarne Stroustrup
 
-  * [[http://www.pearsonhighered.com/educator/product/C-Programming-Language-hardcover-The/9780321958327.page|C++ Programming Language]], la référence, mise à jour pour le C++11
-  * [[http://www.pearsonhighered.com/educator/product/Programming-Principles-and-Practice-Using-C/9780321992789.page|Programming: Principles and Practice Using C++]]
-  * [[http://www.pearsonhighered.com/educator/product/Tour-of-C-A/9780321958310.page|Tour of C++]]
+  * [C++ Programming Language](http://www.pearsonhighered.com/educator/product/C-Programming-Language-hardcover-The/9780321958327.page), la référence, mise à jour pour le C++11. Cependant, je ne conseille pas forcement l'achat de ce livre. Le bénéfixe par rapport à une site gratuit comme https://en.cppreference.com/w/ est probablement très réduit.
+  * [Programming: Principles and Practice Using C++](http://www.pearsonhighered.com/educator/product/Programming-Principles-and-Practice-Using-C/9780321992789.page)
+  * [Tour of C++](http://www.pearsonhighered.com/educator/product/Tour-of-C-A/9780321958310.page)
 
 ## Herb Sutter
 
