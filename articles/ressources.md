@@ -5,7 +5,7 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
 
 ## Pour le C++
 
-## Pour débuter
+### Pour débuter
 
   * [C++ Primer](http://www.pearsonhighered.com/educator/product/C-Primer/9780321714114.page). Livre de base, pédagogique, complet et à jour. Pour commencer.
   * [Coder efficacement – Bonnes pratiques et erreurs à éviter (en C++)](http://www.d-booker.fr/programmation-et-langage/157-coder-efficacement.html). Livre de base, pédagogique, sur la conception.
@@ -13,7 +13,7 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
   * [Professional C++](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118858050.html). Livre plus avancé, regroupe techniques et bonnes pratiques, orienté utilisation professionnelle (et pragmatique).
   * [Practical C++ Metaprogramming](http://www.oreilly.com/programming/free/files/practical-c-plus-plus-metaprogramming.pdf). Introduction à la méta-programmation. Livre récent et gratuit.
 
-## En vrac
+### En vrac
 
   * [C++ Concurrency in Action](http://www.manning.com/williams/)
   * [C++ Templates](http://www.pearsonhighered.com/educator/product/C-Templates-The-Complete-Guide/9780201734843.page)
@@ -23,13 +23,13 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
   * [The C++ Standard Library: A Tutorial and Reference](http://www.amazon.com/The-Standard-Library-Tutorial-Reference/dp/0321623215), mis a jour pour le C++11.
   * [The Art of Concurrency](http://www.amazon.com/The-Art-Concurrency-Parallel-Applications/dp/0596521537), pour les algo concurrents
 
-## Scott Meyers
+### Scott Meyers
  
   * [Effective C++](http://www.pearsonhighered.com/educator/product/Effective-C-55-Specific-Ways-to-Improve-Your-Programs-and-Designs/9780321334879.page)
   * [More Effective C++](http://www.pearsonhighered.com/educator/product/More-Effective-C-35-New-Ways-to-Improve-Your-Programs-and-Designs/9780201633719.page)
   * [Effective STL](http://www.pearsonhighered.com/educator/product/Effective-STL-50-Specific-Ways-to-Improve-Your-Use-of-the-Standard-Template-Library/9780201749625.page)
 
-## Bjarne Stroustrup
+### Bjarne Stroustrup
 
   * [C++ Programming Language](http://www.pearsonhighered.com/educator/product/C-Programming-Language-hardcover-The/9780321958327.page), la référence, mise à jour pour le C++11. Cependant, je ne conseille pas forcement l'achat de ce livre. Le bénéfixe par rapport à une site gratuit comme https://en.cppreference.com/w/ est probablement très réduit.
   * [Programming: Principles and Practice Using C++](http://www.pearsonhighered.com/educator/product/Programming-Principles-and-Practice-Using-C/9780321992789.page)
@@ -37,12 +37,12 @@ NB: Certaines ressources peuvent commencer à dater, une partie de leur contenu 
 
 ## Herb Sutter
 
-  * [[http://www.pearsonhighered.com/educator/product/Exceptional-C-47-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201615623.page|Exceptional C++]]
-  * [[http://www.pearsonhighered.com/educator/product/More-Exceptional-C-40-New-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201704341.page|More Exceptional C++]]
-  * [[http://www.pearsonhighered.com/educator/product/Exceptional-C-Style-40-New-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201760422.page|Exceptional C++ Style]]
-  * [[http://www.pearsonhighered.com/educator/product/C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/9780321113580.page|C++ Coding Standards]]
+  * [Exceptional C++](http://www.pearsonhighered.com/educator/product/Exceptional-C-47-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201615623.page)
+  * [More Exceptional C++](http://www.pearsonhighered.com/educator/product/More-Exceptional-C-40-New-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201704341.page)
+  * [Exceptional C++ Style](http://www.pearsonhighered.com/educator/product/Exceptional-C-Style-40-New-Engineering-Puzzles-Programming-Problems-and-Solutions/9780201760422.page)
+  * [C++ Coding Standards](http://www.pearsonhighered.com/educator/product/C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/9780321113580.page)
 
-## The Addison-Wesley Signature Series
+### The Addison-Wesley Signature Series
 
 Séries de très livres bons livres sur la conception object, la gestion de projet, la méthode Agile, etc.
 
@@ -52,40 +52,40 @@ Séries de très livres bons livres sur la conception object, la gestion de proj
 
 ## Sélection de videos
 
-Les principales :
+Les principales chaînes :
 
-  * CppCon : https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg
-  * QtStudio : https://www.youtube.com/channel/UCsyT1C1M-QoHQREjsixgayQ
-  * Channel9 (MSDN) : https://channel9.msdn.com/Tags/c++
+  * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg)
+  * [QtStudio](https://www.youtube.com/channel/UCsyT1C1M-QoHQREjsixgayQ)
+  * [Channel9 (MSDN)](https://channel9.msdn.com/Tags/c++)
 
 Autres chaines :
 
-  * A9 Videos : https://www.youtube.com/channel/UCYEYhkwzNWRsUkTCpTmChCg
-  * ACCU conferences : https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw/featured
-  * BoostCon : https://www.youtube.com/channel/UC5e__RG9K3cHrPotPABnrwg
-  * LLVM : https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ
-  * NVIDIADeveloper : https://www.youtube.com/channel/UCBHcMCGaiJhv-ESTcWGJPcw
-  * Code::Dive : http://codedive.pl/en/previous-events/year-2014/materials/
-  * Android Developers : https://www.youtube.com/user/androiddevelopers/featured
-  * Google Developers : https://www.youtube.com/user/GoogleDevelopers
-  * Martin Fowler : http://martinfowler.com/videos.html#rest
+  * [A9 Videos](https://www.youtube.com/channel/UCYEYhkwzNWRsUkTCpTmChCg)
+  * [ACCU conferences](https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw/featured)
+  * [BoostCon](https://www.youtube.com/channel/UC5e__RG9K3cHrPotPABnrwg)
+  * [LLVM](https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ)
+  * [NVIDIADeveloper](https://www.youtube.com/channel/UCBHcMCGaiJhv-ESTcWGJPcw)
+  * [Code::Dive](http://codedive.pl/en/previous-events/year-2014/materials/)
+  * [Android Developers](https://www.youtube.com/user/androiddevelopers/featured)
+  * [Google Developers](https://www.youtube.com/user/GoogleDevelopers)
+  * ]Martin Fowler](http://martinfowler.com/videos.html#rest)
 
 ## Tutoriels video :
 
-  * Vittorio Romeo : https://www.youtube.com/user/SuperVictorius/playlists
-  * Bo Qian : https://www.youtube.com/user/BoQianTheProgrammer/playlists
-  * CppAdvancedCourse : https://www.youtube.com/user/cppadvancedtopics/videos
+  * [Vittorio Romeo](https://www.youtube.com/user/SuperVictorius/playlists)
+  * [Bo Qian](https://www.youtube.com/user/BoQianTheProgrammer/playlists)
+  * [CppAdvancedCourse](https://www.youtube.com/user/cppadvancedtopics/videos)
 
 ## Pour Qt
 
 Je n'ai pas lu les dernières publications sur Qt, donc je ne pourrais pas me prononcer sur la qualité de tous les livres. 
 Pour ceux que j'ai lu :
 
-  * [[https://www.amazon.fr/GUI-Programming-Qt4-Jasmin-Blanchette/dp/0132354160|C++ GUI Programming with Qt 4]]. En anglais. Ancien, écrit pour Qt 4, mais reste une référence.
-  * [[https://www.amazon.fr/Advanced-Qt-Programming-Creating-Software/dp/0321635906/|Advanced Qt programming]]. En anglais. Même chose, ce livre est complémentaire au précédent.
-  * [[https://www.amazon.fr/Créer-applications-avec-Qt-essentiels/dp/2822701083|Créer des applications avec Qt5]]. En français. Contient beaucoup de QML.
-  * [[https://qmlbook.github.io/|Qt5 Cadaque]] : livre gratuit en ligne, en anglais, sur le QML uniquement. Moins complet que le livre précédent (moins de 300 pages), mais plus recent.
-  * [[https://www.amazon.fr/Introduction-Design-Patterns-C-Qt/dp/0132826453|Introduction to Design Patterns in C++ with Qt]]
+  * [C++ GUI Programming with Qt 4](https://www.amazon.fr/GUI-Programming-Qt4-Jasmin-Blanchette/dp/0132354160). En anglais. Ancien, écrit pour Qt 4, mais reste une référence a mon avis.
+  * [Advanced Qt programming](https://www.amazon.fr/Advanced-Qt-Programming-Creating-Software/dp/0321635906). En anglais. Même chose, ce livre est complémentaire au précédent.
+  * [Créer des applications avec Qt5](https://www.amazon.fr/Créer-applications-avec-Qt-essentiels/dp/2822701083). En français. Contient beaucoup de QML. (Auto-promo : il s'agit du livre auquel j'ai participé). Il n'est plus imprimé, seule la version en ligne est disponible legalement.
+  * [Qt5 Cadaque](https://qmlbook.github.io/) : livre gratuit en ligne, en anglais, sur le QML uniquement. Moins complet que le livre précédent (moins de 300 pages), mais plus recent.
+  * [Introduction to Design Patterns in C++ with Qt](https://www.amazon.fr/Introduction-Design-Patterns-C-Qt/dp/0132826453)
 
 Ceux que je n'ai pas lu :
 
