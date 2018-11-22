@@ -98,17 +98,17 @@ Ceux que je n'ai pas lu :
 
 ## Mes anciennes thématiques
 
-Ces ressources concernent des domaines que je ne pratique plus. Elles peuvent donc ètre obsolète.
+Ces ressources concernent des domaines sur lesquels je ne travaille plus. Elles peuvent donc ètre obsolète.
 
-### Pour la 3D et OpenGL
+### Pour la 3D et OpenGL
 
-  * [[http://www.mathfor3dgameprogramming.com/|Mathematics for 3D Game Programming and Computer Graphics]], le premier à lire, base mathématique pour la 3D avec applications avec OpenGL. Beaucoup de techniques "avancées" pour la 3D (ombres, lumière, rendu, physique, collision, fluides, etc)
-  * [[http://www.opengl-redbook.com/|OpenGL Programming Guide]], la référence officielle, un peu austère, à jour pour OpenGL 4.3.
-  * [[http://www.openglsuperbible.com/|OpenGL SuperBible]], plus agréable à lire que le précédent.
-  * [[http://openglinsights.com/|OpenGL Insight]], bien fait et techniques intéressantes (tesselation, debug contexts, WebGL, etc).
-  * La série des [[http://gpupro.blogspot.fr/|Gpu Pro 1 à 5]], pour les techniques avancées de 3D
-  * La série des GPU Gems [[http://http.developer.nvidia.com/GPUGems/gpugems_pref01.html|1]], [[http://http.developer.nvidia.com/GPUGems2/gpugems2_frontmatter.html|2]] et [[http://http.developer.nvidia.com/GPUGems3/gpugems3_pref01.html|3]], gratuits, complet et en ligne
-  * [[http://opengl.datenwolf.net/gltut/html/index.html|Learning Modern 3D Graphics Programming]]
+  * [Mathematics for 3D Game Programming and Computer Graphics](http://www.mathfor3dgameprogramming.com), le premier à lire, base mathématique pour la 3D avec applications avec OpenGL. Beaucoup de techniques "avancées" pour la 3D (ombres, lumière, rendu, physique, collision, fluides, etc)
+  * [OpenGL Programming Guide](http://www.opengl-redbook.com), la référence officielle, un peu austère, à jour pour OpenGL 4.5 (9eme édition).
+  * [OpenGL SuperBible](http://www.openglsuperbible.com), plus agréable à lire que le précédent.
+  * [OpenGL Insight](http://openglinsights.com), bien fait et techniques intéressantes (tesselation, debug contexts, WebGL, etc).
+  * La série des [Gpu Pro 1 à 5](http://gpupro.blogspot.fr), pour les techniques avancées de 3D
+  * La série des GPU Gems [tome 1](http://http.developer.nvidia.com/GPUGems/gpugems_pref01.html), [tome 2](http://http.developer.nvidia.com/GPUGems2/gpugems2_frontmatter.html) et [tome 3](http://http.developer.nvidia.com/GPUGems3/gpugems3_pref01.html), gratuits, complet et en ligne
+  * [Learning Modern 3D Graphics Programming](http://opengl.datenwolf.net/gltut/html/index.html)
 
 ### Pour Vulkan
 
@@ -140,6 +140,3 @@ Ces ressources concernent des domaines que je ne pratique plus. Elles peuvent do
 
   * OpenCL Programming Guide, la référence de Khronos
   * Heterogeneous Computing with OpenCL (Gaster)
-
-
-
