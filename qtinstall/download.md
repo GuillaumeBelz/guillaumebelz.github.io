@@ -57,14 +57,6 @@ il ne faut pas les confondre.
 Notez que le numero de version de l'installateur pourra etre different lorsque vous telechargerez
 Qt.
 
-`unified` signifie que l'installateur permet d'installer toutes les versions des outils de developpement de Qt,
-pas une seule version.
-
-`online` signifie que l'installateur ne contient pas de version de Qt, mais telechargera les versions de Qt
-que vous aurez selectionne pendant l'installation. Il existe aussi des installateurs "offline", qui permettent 
-d'installer qu'une seule version de Qt et qui de taille plus importante. Ce tutoriel se focalise sur la version
-"online".
-
 ![Page de téléchargement de Qt](images/win-03.png)
 
 Une fois que le téléchargement est terminé (c'est rapide, le fichier ne fait que quelques Mo), vous pouvez 
