@@ -1,7 +1,7 @@
 
 # Télécharger l'installateur de Qt 5
 
-> Dernière mise à jour : 19 aout 2017.
+> Dernière mise à jour : 2 janvier 2019.
 >
 > Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
 >
@@ -16,12 +16,16 @@ pour minimiser le risque d'installer des logiciels malveillants._
 
 ### La page de téléchagement 
 
-Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). Le site est conçu pour aider
+Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). 
+
+![Page de téléchargement de Qt](images/win-01.png)
+
+Le site est conçu pour aider
 les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
 ce qui le rend un peu complexe au premier abord. Dans ce tutoriel, nous allons installer la version
 open-source de Qt, donc nous n'allons pas détailler le site de Qt.
 
-![Page de téléchargement de Qt](images/download_01.png)
+![Page de téléchargement de Qt](images/win-02.png)
 
 Pour ceux qui possèdent une licence commerciale de Qt : il est possible d'entrer votre numéro de licence, 
 même si vous télécharger la version open-source. Et je trouve qu'il est plus facile de mettre à jour Qt si
@@ -32,13 +36,36 @@ sur la [page de telechargement](https://www.qt.io/download-qt-installer) et de c
 bouton `Download` en bas à gauche. Votre systeme d'exploitation est automatiquement reconnu et l'installateur
 correspond est proposé par defaut.
 
-Le nom de l'installateur dépend du système. Notez que le nom du fichier contient un numero de version et que 
-celui-ci peut changer. 
+Par exemple, sur la capture d'ecran precedente, vous pouvez lire les lignes suivantes :
 
-- pour Windows : `qt-unified-windows-x86-3.0.0-online.exe` ;
-- pour Linux 32 bits : `qt-unified-linux-x86-3.0.0-online.run` ;
-- pour Linux 64 bits : `qt-unified-linux-x64-3.0.0-online.run` ;
+```
+We detected your operating system as: Windows
+Recommended download: Qt Online Installer for Windows
+```
+
+Le nom de l'installateur dépend du système :
+
+- pour Windows : `qt-unified-windows-x86-3.0.6-online.exe` ;
+- pour Linux 32 bits : `qt-unified-linux-x86-3.0.6-online.run` ;
+- pour Linux 64 bits : `qt-unified-linux-x64-3.0.6-online.run` ;
 - pour Mac : `qt-unified-mac-x64-3.0.0-online.dmg`.
+
+Le numero de version correspond a l'installateur. Qt Creator (l'editeur de code
+de Qt) et Qt (le framework de developpement) ont des numeros de version differents, 
+il ne faut pas les confondre.
+
+Notez que le numero de version de l'installateur pourra etre different lorsque vous telechargerez
+Qt.
+
+`unified` signifie que l'installateur permet d'installer toutes les versions des outils de developpement de Qt,
+pas une seule version.
+
+`online` signifie que l'installateur ne contient pas de version de Qt, mais telechargera les versions de Qt
+que vous aurez selectionne pendant l'installation. Il existe aussi des installateurs "offline", qui permettent 
+d'installer qu'une seule version de Qt et qui de taille plus importante. Ce tutoriel se focalise sur la version
+"online".
+
+![Page de téléchargement de Qt](images/win-03.png)
 
 Une fois que le téléchargement est terminé (c'est rapide, le fichier ne fait que quelques Mo), vous pouvez 
 lancer l'installateur.
