@@ -3,11 +3,11 @@
 
 > Dernière mise à jour : 2 janvier 2019.
 >
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.12](index.md)
 >
 > Chapitre précédent : [Installer un compilateur C++](compiler.md)
 >
-> Chapitre suivant : [Installer Qt 5.9.1](install.md)
+> Chapitre suivant : [Installer Qt 5.12](install.md)
 
 _Attention : évitez de télécharger des fichiers, en particulier des applications, sur des sites non-officiels, 
 pour minimiser le risque d'installer des logiciels malveillants._
