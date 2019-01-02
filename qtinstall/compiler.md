@@ -1,8 +1,8 @@
 # Installer un compilateur C++
 
-> Dernière mise à jour : 24 aout 2017.
+> Dernière mise à jour : 2 janvier 2019.
 >
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.12](index.md)
 >
 > Chapitre précédent : [Désinstaller proprement Qt et Qt Creator](uninstall.md)
 >
@@ -19,8 +19,10 @@ est détaillée dans le chapitre [Configurer Qt Creator](config.md).
 
 Le minimum à installer pour programmer en C++ est un compilateur C++. Un compilateur C++ est un outil 
 qui prend du code C++ dans des fichiers textes et produit des binaires. En complément du compilateur,
-il est intéressant d'installer d'autres outils, en particulier un débogueur. Un débogueur
-est un outil qui aide à trouver et corriger les erreurs dans le code.
+il est intéressant d'installer d'autres outils, en particulier un débogueur et un editeur. Un débogueur
+est un outil qui aide à trouver et corriger les erreurs dans le code. Un editeur de code permet generalement
+d'ecrire du code en le mettant en forme pour faciliter la lecture et en offrant differents outils pour faciliter
+l'ecriture du code. (Qt est fournit avec l'editeur _Qt Creator_).
 
 Certains compilateurs sont disponibles sur plusieurs systèmes, alors que d'autres compilateurs sont spécifiques 
 d'un système. Pour les plus connus sur Desktop :
@@ -97,7 +99,7 @@ systeme cible est Android.
 
 La compilation d'une application Qt pour Android nécessite deux outils :
 
-- le_ Android SDK_ (_Software Developement Kit_) est le kit de développement en Java pour Android et contient 
+- le _Android SDK_ (_Software Developement Kit_) est le kit de développement en Java pour Android et contient 
   les outils de base pour travailler avec Android ;
 - le _Android NDK_ (_Native Devlopement Kit_) est le kit de développement en C++ pour Android.
 
