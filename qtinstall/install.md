@@ -1,4 +1,4 @@
-# Installer Qt 5.9.1
+# Installer Qt 5.12.0
 
 > Dernière mise à jour : 27 aout 2017.
 >
@@ -73,6 +73,8 @@ ont une licence differente (comme `Qt Charts`) ou parce que ce sont des versions
 developpement (`TP` veut dire `Technology Preview`).
 
 ![Repertoire d'installation](images/install05.png)
+
+- Linux : "Desktop gcc 64-bit"
 
 Tout en bas de la liste, vous trouverez la categorie `Tools`, qui contient plusieurs outils :
 
