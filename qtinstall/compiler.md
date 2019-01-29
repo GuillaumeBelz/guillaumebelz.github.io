@@ -68,12 +68,17 @@ numero de version (12.0, 14.0, 16.0). Ne soyez donc pas surpris par les numeros 
 ### Sur Linux
 
 GCC (GNU Compiler Collection) est la suite historique de compilation sur GNU/Linux, mais elle est également disponible
-pour iOS et Android. Le compilateur `g++` est le compilateur C++ de la suite GCC. Pour l'installation, GCC est  
-géneralement disponible dans les depôts des distributions Linux. Pour l'installer, il vous suffit de rechercher `g++` 
-dans les dépôts (par exemple dans le logiciel `Synaptic` sur Ubuntu) ou d'utiliser la ligne de commande suivante :
+pour iOS and Android. Le compilateur `g++` est le compilateur C++ de la suite GCC. En plus du compilateur, il faut également
+installer d'autres outils de développement, comme `make`. Le plus simple est d'installer le paquet `build-essential`,
+qui contient les outils de base pour compiler en C++.
+
+En plus de ces outils, il est nécessaire d'installer le support pour OpenGL. Pour cela, il faut installer le paquet
+`libglu1-mesa-dev`.
+
+Vous pouvez installer tous des paquets via le gestionnaire de paquets ou avec la ligne de commande suivante :
 
 ```
-sudo apt-get install g++
+sudo apt-get install build-essential libglu1-mesa-dev
 ```
 
 ### Sur Windows
@@ -118,16 +123,16 @@ décompressez simplement l'archive dans un dossier de travail pour Android.
 
 Clang est le compilateur le plus récent sur les trois proposés dans ce tutoriel. C'est un projet lancé initialement
 par Apple pour compiler sur MacOS X et sur iOS, en C++ et en Objective-C, mais cet outil est egalement disponible
-sur Linux, Android et Windows. Cependant, Qt ne supporte pas encore Clang sur Android et Windows, l'installation
-de Clang sur ces systemes ne sera pas détailleé ici.
+sur Linux, Android et Windows. Cependant, Qt ne supporte pas encore Clang sur Windows, l'installation
+de Clang dessus n'est pas détaillé ici.
 
 Pour MacOS X, le compilateur Clang est fourni dans l'outil de développement officiel d'Apple : XCode. Ce logiciel
 est gratuit, il vous suffit donc d'aller dans l'App Store (cliquez sur la pomme de la barre de menu, puis selectionnez
 `App store...`) et d'installer XCode.
 
-Pour Linux, la procedure d'installation est identique à celle pour GCC : recherchez "clang" dans un logiciel
-d'installation de logiciels (par exemple Synaptic) ou utiliser la ligne de commande suivante :
+Pour Linux, la procedure d'installation est identique à celle pour GCC : il faut installer les paquets `build-essential`, 
+`libglu1-mesa-dev` et `clang`. La ligne de commande :
 
 ```
-sudo apt-get install clang
+sudo apt-get install build-essential libglu1-mesa-dev clang
 ```
