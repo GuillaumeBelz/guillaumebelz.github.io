@@ -36,6 +36,52 @@ propositions de traductions francaises, si elles existent, sont indiquees.
 
 ### Structured bindings
 
+En C++ et d'autres langages, les fonctions peuvent generalement prendre plusieurs parametres en entrée, mais qu'un 
+seul en sortie.
+
+```
+PARAMETRE_SORTIE fonction(PARAMETRE_ENTRÉE_1, PARAMETRE_ENTRÉE_2, PARAMETRE_ENTRÉE_3,...);
+```
+
+Il existe bien sur des moyens de contourner cette limitation : utiliser des references non constantes dans les 
+parametre d'entrée, retourner une structure de données, retourner des `std::pair` ou des `std::tuple`, etc.
+
+Ces différentes solutions fonctionnent bien, mais ne sont pas sans présenter aucun inconveniant. Par exemple,
+utiliser les references nécessitent que l'argument existe avant, qu'il ne soit pas constant, et cela ne respecte
+pas la distinction paramètres d'entree vs parametres de sortie. Les structures de données, les `std::pair` et
+`std::tuple` nécessitent plus de code pour acceder aux valeurs retournées. De plus, le code est moins expressif.
+
+Prenons un exemple concret : l'insertion d'un élément dans un `std::unordored_map`. La fonction `insert` doit 
+pouvoir retourner 2 types d'information : si l'insertion a réussie (si l'element existe deja dans la map, l'insertion 
+peut echouer) et l'endroit a laquelle l'insertion a ete faite.
+
+```
+const std::pair<iterator, bool> result = my_map.insert(value);
+if (result.second)
+  do_something(result.first);
+```
+
+Les syntaxes `result.first` et `result.second` ne sont pas très expressives. Ce que l'on aimerait pouvoir faire, 
+c'est par exemple de créer une variable `it_result` qui contient l'iterateur et `is_succeed` qui contient le booléen.
+
+Il est possible d'utiliser `std::tie` pour cela :
+
+```
+iterator it_result { std::end(my_map) };
+bool is_succeed { false };
+std::tie(it_result, is_succeed) = my_map.insert(value);
+if (it_result)
+  do_something(is_succeed);
+```
+
+Mais ce code nécessite de créer les variables a l'avance et implique qu'elle ne peuvent pas etre constante.
+
+Autre impératif, on veut pouvoir faire cela sans devoir mettre a jour toutes les fonctions de la bibliotheque
+standard ! Donc que cela fonctionne avec des `std::pair` directement.
+
+Les structured bindings sont une solution a cette problématique. Le principe est de pouvoir créer des variables
+directement a partir des structures de donnees, des `std::pair` et des `std::tuple` retournés par les fonctions.
+
 
 
 ### Selection statements with initializers
