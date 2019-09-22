@@ -12,17 +12,52 @@ et le C++23 (qui devrait sortir, je suppose que vous avez compris le principe, e
 
 ## Les concepts
 
-## auto vs template
+## Ranges
+
+
+## coroutines
 
 ## RAII
 
 exemple avec autre chose que la gestion de la memoire : `jthread` = join and stop.
 
 
-## Ranges
 
 ## Autres ajouts sur le langages
 
+- dans les lambdas
+  - [=, this]
+  - template (vs auto ou explicite)
+  - pack extention
+- constexpr
+  - virtual
+  - union, try-catch, dynamic_cast, typeid
+  - allocations
+  - constexpr string et vector
+- concurrency
+  - atomic smart ptr
+  - jthread
+  - synchronisation lib: semaphore, atomic waiting, latches, barrieres
+  - std::atomic_ref
+- designated initializers
+- spaceship operator
+- range based for loop initializer
+- non type template parameter
+- [[likely]] et [[unlikely]]
+- calendars and timezone
+- std::span
+- feature test macros
+- <version>
+- consteval
+- continit
+- class enums et  using
+- text formating
+- math constants
+- std::source_location
+- ##nodiscard(reason)]]
+- bit operators
+...
+  
 ## Autres ajouts dans la lib
 
 
