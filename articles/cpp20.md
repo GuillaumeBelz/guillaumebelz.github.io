@@ -1,3 +1,5 @@
+https://youtu.be/u_ij0YNkFUs
+
 # Les prochaines normes du C++ : le C++20 et le C++23
 
 Le C++20 est obsolète, vive le C++23
