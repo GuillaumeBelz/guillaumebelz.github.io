@@ -34,6 +34,8 @@ propositions de traductions francaises, si elles existent, sont indiquees.
 
 ## Les changements dans le langage
 
+### Structured bindings
+
 ### Structured bindings
 
 En C++ et d'autres langages, les fonctions peuvent generalement prendre plusieurs parametres en entrée, mais qu'un 
@@ -82,6 +84,10 @@ standard ! Donc que cela fonctionne avec des `std::pair` directement.
 Les structured bindings sont une solution a cette problématique. Le principe est de pouvoir créer des variables
 directement a partir des structures de donnees, des `std::pair` et des `std::tuple` retournés par les fonctions.
 
+Références :
+
+- [https://en.cppreference.com/w/cpp/language/structured_binding](Structured binding declaration)
+- https://www.youtube.com/watch?v=aBZlbb9sE-g  C++ Weekly - Ep 24 C++17's Structured Bindings (YouTube)
 
 
 ### Selection statements with initializers
@@ -109,3 +115,9 @@ directement a partir des structures de donnees, des `std::pair` et des `std::tup
 - Variable templates for metafunctions
 - Boolean logic metafunctions
 ...
+
+
+## Références
+
+- https://youtu.be/nnY4e4faNp0  CppCon 2017: Jason Turner “Practical C++17” (YouTube)
+
