@@ -36,8 +36,6 @@ propositions de traductions francaises, si elles existent, sont indiquees.
 
 ### Structured bindings
 
-### Structured bindings
-
 En C++ et d'autres langages, les fonctions peuvent generalement prendre plusieurs parametres en entrée, mais qu'un 
 seul en sortie.
 
@@ -76,19 +74,65 @@ if (it_result)
   do_something(is_succeed);
 ```
 
-Mais ce code nécessite de créer les variables a l'avance et implique qu'elle ne peuvent pas etre constante.
+Mais ce code nécessite de créer les variables a l'avance et implique qu'elle ne peuvent pas etre constantes.
 
 Autre impératif, on veut pouvoir faire cela sans devoir mettre a jour toutes les fonctions de la bibliotheque
 standard ! Donc que cela fonctionne avec des `std::pair` directement.
 
 Les structured bindings sont une solution a cette problématique. Le principe est de pouvoir créer des variables
-directement a partir des structures de donnees, des `std::pair` et des `std::tuple` retournés par les fonctions.
+directement a partir des structures de donnees, des tableaux de taille fixée à la compilation, des `std::pair` 
+et des `std::tuple` retournés par les fonctions.
+
+La syntaxe est la suivante :
+
+```
+auto const [it_result, is_succeed] = my_map.insert(value);
+if (it_result)
+  do_something(is_succeed);
+```
+
+La synthaxe générale est la même que pour déclarer une variable avec la déduction de type (avec le mot-clé `auto`,
+avec ou sans `const`, `volatile` et un référence `&` ou `&&`), sauf que l'identifiant est remplacé par une liste
+d'identifiants entre crochets `[]`. Le nombre d'identifiants dans la liste doit correspondre exactement au nombre
+de valeurs dans le tableau, le tuple ou la structure de données.
+
+Avec un tableau :
+
+```
+#include <array>
+#include <iostream>
+
+std::array<int, 2> foo() { 
+    return { 1, 2 };
+}
+ 
+int main() {
+    auto const [i1, i2] = foo();
+    std::cout << i1 << ' ' << i2 << std::endl;
+}
+```
+
+Ce code fonctionnera aussi avec les différentes alternatives suivantes :
+
+```
+// avec un tableau
+std::array<int, 2> foo();
+
+// avec std::pair
+std::pair<int, int> foo();
+
+// avec std::tuple
+std::tuple<int, int> foo();
+
+// avec une structure
+struct my_data { int i1, i2; };
+my_data foo();
+```
 
 Références :
 
-- [https://en.cppreference.com/w/cpp/language/structured_binding](Structured binding declaration)
-- https://www.youtube.com/watch?v=aBZlbb9sE-g  C++ Weekly - Ep 24 C++17's Structured Bindings (YouTube)
-
+- [Structured binding declaration (cppreference.com)](https://en.cppreference.com/w/cpp/language/structured_binding)
+- [C++ Weekly Ep 24 - C++17's Structured Bindings (YouTube)](https://www.youtube.com/watch?v=aBZlbb9sE-g)
 
 ### Selection statements with initializers
 
