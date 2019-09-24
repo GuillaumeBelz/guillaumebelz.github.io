@@ -134,8 +134,8 @@ Références :
 - [Structured binding declaration (cppreference.com)](https://en.cppreference.com/w/cpp/language/structured_binding)
 - [C++ Weekly Ep 24 - C++17's Structured Bindings (YouTube)](https://www.youtube.com/watch?v=aBZlbb9sE-g)
 
-### Selection statements with initializers
 
+- Selection statements with initializers
 - Compile-time conditional statments
 - Fold expressions
 - Class template argument deduction (CTAD)
@@ -149,9 +149,6 @@ Références :
 ## Library Changes 
 
 - string_view
-- optional
-- variant
-- any
 - Parallel algorithms
 - New algorithms
 - Filesystem support
@@ -160,8 +157,29 @@ Références :
 - Boolean logic metafunctions
 ...
 
+### stocker/retourner/transmettre une valeur
+
+- problématique et contexte : any, variant et optional pour une autre manière de stocker/retourner/transmettre une valeur. 
+- pré-C++17 : void*, union, T* (langage)
+
+- Improving std::pair and std::tuple : n4387 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4387.html
+
+#### std::optional
+
+- problématique et contexte ?
+- pré-C++17 ?
+
+#### std::variant
+
+- problématique et contexte ?
+- pré-C++17 : boost::variant, QVariant (libs)
+
+#### std::any
+
+- cppreference : https://en.cppreference.com/w/cpp/utility/any
+- proposal : p0220r1 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html
 
 ## Références
 
-- https://youtu.be/nnY4e4faNp0  CppCon 2017: Jason Turner “Practical C++17” (YouTube)
-
+- [CppCon 2017: Jason Turner "Practical C++17" (YouTube)](https://youtu.be/nnY4e4faNp0)
+- [C++ compiler support for C++17 (cppreference.com)](https://en.cppreference.com/w/cpp/compiler_support#cpp17)
