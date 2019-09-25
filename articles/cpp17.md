@@ -34,7 +34,7 @@ propositions de traductions francaises, si elles existent, sont indiquees.
 
 ## Les changements dans le langage
 
-### Structured bindings
+### Les structured bindings
 
 En C++ et d'autres langages, les fonctions peuvent generalement prendre plusieurs parametres en entrée, mais qu'un 
 seul en sortie.
@@ -134,6 +134,41 @@ Références :
 - [Structured binding declaration (cppreference.com)](https://en.cppreference.com/w/cpp/language/structured_binding)
 - [C++ Weekly Ep 24 - C++17's Structured Bindings (YouTube)](https://www.youtube.com/watch?v=aBZlbb9sE-g)
 
+### programmation générique
+
+
+
+Les simplifications effectuées sur la programmation générique:
+
+- pour les utilisateurs: guide, template auto, std::size/data
+- pour les développeurs: fold, les nouveaux traits, if constexpr
+
+#### templates
+
+- typename in a template template parameter : n4051 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html 
+- Allow constant evaluation for all non-type template arguments : n4268 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html
+- Template argument deduction for class templates	: p0091r3 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html
+- Non-type template parameters with auto type	: p0127r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html
+- DR: Matching of template template-arguments excludes compatible templates	: p0522r0 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html
+
+#### Fold expressions
+
+- problématique et contexte ?
+- pré-C++17 ?
+
+Sources :
+
+- proposal : n4295 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html
+- cppreference : https://en.cppreference.com/w/cpp/language/fold
+
+- Unary fold expressions and empty parameter packs : p0036r0 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf
+- Pack expansions in using-declarations : p0195r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html
+
+
+
+
+
+### Autres
 
 - Selection statements with initializers
 - Compile-time conditional statments
