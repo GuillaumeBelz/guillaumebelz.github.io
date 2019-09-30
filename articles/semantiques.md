@@ -87,6 +87,8 @@ void foo_uptr(std::unique_ptr<A>&& uptr) {
     foo_ptr(uptr.get());
 }
 foo_uptr(std::move(uptr));
+
+[](std::unique_ptr<A>&& uptr){ foo_ptr(uptr.get()); }(std::move(uptr));
 ```
 
 - semantique de collection
