@@ -66,6 +66,29 @@ c'est coherent). Semantiques non stricte/pas correctement definie ? (Oui, mais o
 
 - semantique d'indirection
 
+Les refs comme indirection "universelle" ?
+
+```
+void foo_ref(A const& ref) { ... }
+A a;
+foo_ref(a);
+
+void foo_ptr(A* ptr) {
+    if (ptr) foo_ref(*ptr);
+    else ...
+}
+A* ptr = ...
+foo_ptr(ptr);
+
+std::unique_ptr<A> uptr = ...
+foo_ptr(uptr.get());
+
+void foo_uptr(std::unique_ptr<A>&& uptr) {
+    foo_ptr(uptr.get());
+}
+foo_uptr(std::move(uptr));
+```
+
 - semantique de collection
 
 Plus generalement, les concepts du C++20 sont des outils syntaxiques pour definir des semantiques.
