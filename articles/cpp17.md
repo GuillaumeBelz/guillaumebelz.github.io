@@ -1,6 +1,9 @@
 
 # Le C++17 est arrivé !
 
+Bon, ok, il est arrivé depuis longtemps. Disant que cet article arrive enfain ! Pour ceux qui l'attendait ! Euh... 
+Quelqu'un l'attendait ?
+
 Historiquement, le C++ alternait les mises à jour majeures (C++98 et C++11) et mineures (C++03 et C++14). 
 Mais le délai entre les deux versions majeures, dû à la complexité pour que les membres du comité se mettent
 d'accord sur les fonctionnalités a integerer ou non dans le C++11, a été critiqué.
@@ -32,7 +35,7 @@ Note : de nouveaux termes en anglais ont été ajouté dans le C++17. Il n'exist
 largement acceptées par la communauté francphone. Les termes anglais sont donc utilisés preferentiellement et les
 propositions de traductions francaises, si elles existent, sont indiquees.
 
-## Les changements dans le langage
+## Simplifier le code
 
 ### Les structured bindings
 
@@ -55,7 +58,7 @@ Prenons un exemple concret : l'insertion d'un élément dans un `std::unordored_
 pouvoir retourner 2 types d'information : si l'insertion a réussie (si l'element existe deja dans la map, l'insertion 
 peut echouer) et l'endroit a laquelle l'insertion a ete faite.
 
-```
+```cpp
 const std::pair<iterator, bool> result = my_map.insert(value);
 if (result.second)
   do_something(result.first);
@@ -66,7 +69,7 @@ c'est par exemple de créer une variable `it_result` qui contient l'iterateur et
 
 Il est possible d'utiliser `std::tie` pour cela :
 
-```
+```cpp
 iterator it_result { std::end(my_map) };
 bool is_succeed { false };
 std::tie(it_result, is_succeed) = my_map.insert(value);
@@ -85,7 +88,7 @@ et des `std::tuple` retournés par les fonctions.
 
 La syntaxe est la suivante :
 
-```
+```cpp
 auto const [it_result, is_succeed] = my_map.insert(value);
 if (it_result)
   do_something(is_succeed);
@@ -98,7 +101,7 @@ de valeurs dans le tableau, le tuple ou la structure de données.
 
 Avec un tableau :
 
-```
+```cpp
 #include <array>
 #include <iostream>
 
@@ -114,7 +117,7 @@ int main() {
 
 Ce code fonctionnera aussi avec les différentes alternatives suivantes :
 
-```
+```cpp
 // avec un tableau
 std::array<int, 2> foo();
 
@@ -131,6 +134,8 @@ my_data foo();
 
 + avec refs -> auto& i = std::get<0>(tuple); vs auto& [ i, c, d ] = tuple;
 
++ support avec std::tuple_size<> and provides get<N>()
+
 Références :
 
 - [Structured binding declaration (cppreference.com)](https://en.cppreference.com/w/cpp/language/structured_binding)
@@ -139,6 +144,114 @@ Références :
 - [STRUCTURED BINDINGS in C++ - The Cherno Project (YouTube)](https://youtu.be/eUsTO5BO3WI)
 - https://skebanga.github.io/structured-bindings/
 - http://cpp-today.blogspot.com/2017/03/structured-binding-c17-inside.html
+
+### Les variables inline
+
+Utiliser une variable non initialisé est en général considéré comme une mauvaise pratique, qui peut amener à avoir
+des comportements problématiques, voire des crashs. La règle de base est donc de toujour initialiser, sauf si vous
+avez de bonnes raisons de le faire. (Donc pas juste une intuition, mais des tests de performances).
+
+Pour les attribus de classes, il existe plusieurs synthaxes et les bonnes pratiques ont évoluées avec le temps.
+
+```cpp
+class MyClass {
+    int i; // Comment l'initialiser ?
+};
+```    
+
+La syntaxe la plus ancienne consiste a intiliaser les attribues dans la liste d'initialisation des membres dans les
+constructeurs de la classe.
+
+```cpp
+class MyClass {
+public:
+    MyClass();
+private:
+    int i;
+};
+
+MyClass::MyClass() :
+    i(123)
+{
+}
+```
+
+Note : en français, on parle habituellement de "liste d'initialisation", puisqu'avant le C++11, il ne pouvait pas y avoir
+de confusion possible. Mais le C++11 a ajouté `std::initializer_list` et la possibilité de construire un objet en lui
+donnant une liste de valeurs, avec une synthase similaire à l'initialization par aggrégation. Il peut y avoir
+des confusions lorsqu'on utilise l'expression "liste d'initialisation" et il est donc préférable d'utiliser
+"liste d'initialisation des membres".
+
+Le risque avec cette syntaxe, c'est qu'il est possible d'oublier d'initialiser correctement un attribut ou de ne pas
+être consistant lors de l'initialisation. Ce qui peut arriver très vite si une classe contient beaucoup constructeurs
+(un exemple avec [QVariant](https://doc.qt.io/qt-5/qvariant.html)) ou beaucoup d'attribus.
+
+```cpp
+class MyClass {
+public:
+    MyClass();
+    MyClass(int x);
+private:
+    int i, j, k;
+};
+
+MyClass::MyClass() :
+    i(123), j(456) // k n'est pas initialisé
+{
+}
+
+MyClass::MyClass(int x) : 
+    i(x), j(123), k(456) // la valeur par défaut de j dépend du constructeur appelé
+{
+}
+```
+
+De plus, cela impliquait de devoir parfois écrire des constructeurs par défaut uniquement pour initialiser 
+les attributs.
+
+Le C++11 introduit la possibilité d'initialiser un attribut directement lors de la déclaration de celui-ci dans
+la déclaration de la classe :
+
+```cpp
+class MyClass {
+    int i = 123;
+};
+```
+
+Cela permet de simplifier l'ecriture des classes, en particulier avec les constructeurs explicitement déclarés-implicitement
+définis, et d'éviter les erreurs et oublis. La régle de bonne pratique va être de toujours initialiser par défaut (sauf
+bonnes raisons de ne pas le faire, basé sur des tests), d'utiliser `default` et les constructeurs délégués si c'est
+approprié.
+
+Il reste cependant un problème : cette syntaxe n'est pas utilisable avec les attributs statiques. Pour initialiser
+un tel attribut, il faut le définir en dehors de la déclaration de la classe. (detailler le probleme ? Meme raison que 
+`inline` et `extern`).
+
+```cpp
+class MyClass {
+    static int i; // Impossible d'intialiser ici en C++11.
+};
+
+int MyClass::i = 123;
+```
+
++ constexpr en C++11. https://stackoverflow.com/questions/45183324/whats-the-difference-between-static-constexpr-and-static-inline-variables-in-c
+
+Le C++17 ajoute la possiblité d'utiliser le mot-clé `inline` avec un attribut statique, de façon a spécifier au
+compilateur que cette variable ne doit pas avoir un "internal linkage", mais un "external linkage"
+(https://en.cppreference.com/w/cpp/language/storage_duration).
+
+```cpp
+class MyClass {
+    static int i = 123; // C++17
+};
+```
+
+Références
+
+- Inline variables : p0386r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0386r2.pdf
+- https://en.cppreference.com/w/cpp/language/data_members
+- https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html#inline-variables
 
 ### programmation générique
 
@@ -159,6 +272,10 @@ Les simplifications effectuées sur la programmation générique:
 
 #### Fold expressions
 
+
+
+
+
 - problématique et contexte ?
 - pré-C++17 ?
 
@@ -170,18 +287,12 @@ Sources :
 - Unary fold expressions and empty parameter packs : p0036r0 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf
 - Pack expansions in using-declarations : p0195r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html
 
-
-
-
-
 ### Autres
 
 - Selection statements with initializers
 - Compile-time conditional statments
-- Fold expressions
 - Class template argument deduction (CTAD)
 - auto non-type template parameters
-- inline variables
 - constexpr lambdas
 - Guaranteed copy elision
 - Nested namespace definitions
@@ -222,7 +333,9 @@ Sources :
 
 ## Références
 
+- https://www.bfilipek.com/2017/11/cpp17summary.html
 - [CppCon 2017: Jason Turner "Practical C++17" (YouTube)](https://youtu.be/nnY4e4faNp0)
 - [C++ compiler support for C++17 (cppreference.com)](https://en.cppreference.com/w/cpp/compiler_support#cpp17)
 - [C++17 in details: Code Simplification](https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html)
 - [https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/](https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/)
+- https://www.codingame.com/playgrounds/2205/7-features-of-c17-that-will-simplify-your-code/introduction
