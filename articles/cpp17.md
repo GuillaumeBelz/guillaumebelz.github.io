@@ -129,10 +129,16 @@ struct my_data { int i1, i2; };
 my_data foo();
 ```
 
++ avec refs -> auto& i = std::get<0>(tuple); vs auto& [ i, c, d ] = tuple;
+
 Références :
 
 - [Structured binding declaration (cppreference.com)](https://en.cppreference.com/w/cpp/language/structured_binding)
 - [C++ Weekly Ep 24 - C++17's Structured Bindings (YouTube)](https://www.youtube.com/watch?v=aBZlbb9sE-g)
+- [Structured Bindings demystified - Marc Mutz - Lightning Talks Meeting C++ 2017 (YouTube)](https://youtu.be/FHM4yIe4EOg)
+- [STRUCTURED BINDINGS in C++ - The Cherno Project (YouTube)](https://youtu.be/eUsTO5BO3WI)
+- https://skebanga.github.io/structured-bindings/
+- http://cpp-today.blogspot.com/2017/03/structured-binding-c17-inside.html
 
 ### programmation générique
 
@@ -218,3 +224,5 @@ Sources :
 
 - [CppCon 2017: Jason Turner "Practical C++17" (YouTube)](https://youtu.be/nnY4e4faNp0)
 - [C++ compiler support for C++17 (cppreference.com)](https://en.cppreference.com/w/cpp/compiler_support#cpp17)
+- [C++17 in details: Code Simplification](https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html)
+- [https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/](https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/)
