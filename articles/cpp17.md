@@ -253,16 +253,20 @@ Références
 - https://en.cppreference.com/w/cpp/language/data_members
 - https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html#inline-variables
 
-### programmation générique
+### 
+
+
+
+## programmation générique
 
 
 
 Les simplifications effectuées sur la programmation générique:
 
 - pour les utilisateurs: guide, template auto, std::size/data
-- pour les développeurs: fold, les nouveaux traits, if constexpr
+- pour les développeurs: fold, les nouveaux traits
 
-#### templates
+### templates
 
 - typename in a template template parameter : n4051 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html 
 - Allow constant evaluation for all non-type template arguments : n4268 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html
@@ -270,7 +274,7 @@ Les simplifications effectuées sur la programmation générique:
 - Non-type template parameters with auto type	: p0127r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html
 - DR: Matching of template template-arguments excludes compatible templates	: p0522r0 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html
 
-#### Fold expressions
+### Fold expressions
 
 
 
@@ -287,7 +291,7 @@ Sources :
 - Unary fold expressions and empty parameter packs : p0036r0 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf
 - Pack expansions in using-declarations : p0195r2 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html
 
-### Autres
+## Autres
 
 - Selection statements with initializers
 - Compile-time conditional statments
