@@ -253,7 +253,21 @@ Références
 - https://en.cppreference.com/w/cpp/language/data_members
 - https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html#inline-variables
 
-### 
+### Initialisation dans if et switch
+
+Dans une boucle `for`, la variable utilisee est declaree dans la declaration de la boucle.
+
+```cpp
+for (int i = 0; i < size; ++i) {
+    // Utilisation de la variable i
+}
+```
+
+L'interet est que la portee de la variable declaree dans la boucle `for` est limitee au bloc de 
+cette boucle. Cela permet de limiter les conflits entre les variables.
+
+Pour les tests, les variables doivent etre declarees avant le test. La portee n'est pas limitee
+
 
 
 
