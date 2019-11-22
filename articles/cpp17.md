@@ -255,7 +255,7 @@ Références
 
 ### Initialisation dans if et switch
 
-Dans une boucle `for`, la variable utilisée est déclarée dans la déclaration de la boucle.
+Dans une boucle `for`, il est possible de déclarer une variable dans la déclaration de la boucle.
 
 ```cpp
 for (int i = 0; i < size; ++i) {
@@ -263,15 +263,15 @@ for (int i = 0; i < size; ++i) {
 }
 ```
 
-L'intérêt est que la portée de la variable déclarée dans la boucle `for` est limitée au bloc de 
-cette boucle. Cela permet de limiter les conflits entre les variables.
+L'intérêt est que la portée de la variable est limitée au bloc de cette boucle. Cela permet de limiter les 
+conflits entre les variables.
 
-Pour les tests, les variables doivent etre déclarées avant le test. La portée n'est pas limitée
+Pour 
 
 
 Références
 
-- https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html#constexpr-if
+- https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html#init-statement-for-ifswitch
 
 ## programmation générique
 
