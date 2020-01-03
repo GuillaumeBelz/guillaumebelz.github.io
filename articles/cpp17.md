@@ -357,3 +357,4 @@ Sources :
 - [C++17 in details: Code Simplification](https://www.bfilipek.com/2017/07/cpp17-details-simplifications.html)
 - [https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/](https://www.fluentcpp.com/2018/06/19/3-simple-c17-features-that-will-make-your-code-simpler/)
 - https://www.codingame.com/playgrounds/2205/7-features-of-c17-that-will-simplify-your-code/introduction
+- How C++17 Benefits from Boost Libraries [Part 1](https://www.fluentcpp.com/2019/11/19/how-c17-benefits-from-boost-libraries-part-one/) and [Part 2](https://www.fluentcpp.com/2019/11/22/how-c17-benefits-from-boost-libraries-part-two/).
