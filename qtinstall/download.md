@@ -1,13 +1,13 @@
 
 # Télécharger l'installateur de Qt 5
 
-> Dernière mise à jour : 2 janvier 2019.
+> Dernière mise à jour : 23 janvier 2020.
 >
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.12](index.md)
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.14](index.md)
 >
 > Chapitre précédent : [Installer un compilateur C++](compiler.md)
 >
-> Chapitre suivant : [Installer Qt 5.12](install.md)
+> Chapitre suivant : [Installer Qt 5.14](install.md)
 
 _Attention : évitez de télécharger des fichiers, en particulier des applications, sur des sites non-officiels, 
 pour minimiser le risque d'installer des logiciels malveillants._
@@ -16,14 +16,23 @@ pour minimiser le risque d'installer des logiciels malveillants._
 
 ### La page de téléchagement 
 
-Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/). 
+Vous pouvez retrouver facilement  le site officiel en tapant "qt5" dans un moteur de recherche :
 
-![Page de téléchargement de Qt](images/win-01.png)
+![Recherche qt5 sur Google](images/site.png)
+
+Dans cette capture d'écran, le premier lien "doc.qt.io" correspond à la documentation officielle de Qt
+et le second lien au site officiel de Qt.
+
+Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/).
+
+![Page de téléchargement de Qt](images/download_1.png)
 
 Le site est conçu pour aider
 les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
 ce qui le rend un peu complexe au premier abord. Dans ce tutoriel, nous allons installer la version
-open-source de Qt, donc nous n'allons pas détailler le site de Qt.
+open-source de Qt (gratuite), donc nous n'allons pas détailler le site de Qt.
+
+Cliquez sur 
 
 ![Page de téléchargement de Qt](images/win-02.png)
 
