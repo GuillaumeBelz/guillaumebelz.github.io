@@ -1,9 +1,9 @@
 
-# Installation et premiers pas avec Qt 5.12
+# Installation et premiers pas avec Qt 5.14
 
 > **Mises à jour**
 >
-> 2 janvier 2019 : mise a jour pour Qt 5.12
+> 23 janvier 2020 : mise a jour pour Qt 5.14
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
