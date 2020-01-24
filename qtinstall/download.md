@@ -16,11 +16,11 @@ pour minimiser le risque d'installer des logiciels malveillants._
 
 ### La page de téléchagement 
 
-Vous pouvez retrouver facilement le site officiel en tapant "qt5" dans un moteur de recherche :
+Vous pouvez retrouver facilement le site officiel en tapant `qt5` dans un moteur de recherche :
 
 ![Recherche qt5 sur Google](images/site.png)
 
-Dans cette capture d'écran, le premier lien "doc.qt.io" correspond à la documentation officielle de Qt
+Dans cette capture d'écran, le premier lien `doc.qt.io` correspond à la documentation officielle de Qt
 et le second lien au site officiel de Qt.
 
 Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/).
@@ -29,7 +29,7 @@ Le site est conçu pour aider
 les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
 ce qui le rend un peu complexe au premier abord.
 
-Cliquez sur le bouton "Download. Try. Buy." pour accéder à la page de téléchargement.
+Cliquez sur le bouton `Download. Try. Buy.` pour accéder à la page de téléchargement.
 
 ![Page de téléchargement de Qt](images/download_01.png)
 
@@ -42,8 +42,8 @@ vous installez la version open-source, donc je vous conseille de faire cela, mê
 
 ![Page de téléchargement de Qt](images/download_02.png)
 
-Descendez dans la page pour aller au bouton "Downloads for open sources users" et cliquez sur le bouton 
-"Go open source".
+Descendez dans la page pour aller au bouton `Downloads for open sources users` et cliquez sur le bouton 
+`Go open source`.
 
 ![Page de téléchargement de Qt](images/download_03.png)
 
@@ -51,12 +51,12 @@ Vous arrivez alors sur la page de la version open source de Qt.
 
 ![Page de téléchargement de Qt](images/download_04.png)
 
-Descendez dans la page pour aller au bouton "Download the Qt Online Installer" et cliquez dessus.
+Descendez dans la page pour aller au bouton `Download the Qt Online Installer` et cliquez dessus.
 
 ![Page de téléchargement de Qt](images/download_05.png)
 
 La page suivante vous propose la version de l'installateur correspondant à votre système d'exploitation.
-Par exemple, sur la capture d'ecran precedente, vous pouvez lire les lignes suivantes :
+Par exemple, sur la capture d'écran précédente, vous pouvez lire les lignes suivantes :
 
 ```
 We detected your operating system as: macOS
@@ -67,7 +67,7 @@ Recommended download: Qt Online Installer for macOS
 
 Il existe d'autres options de téléchargement, mais la version proposée par défaut conviendra généralement.
 
-Descendez sur la page pour aller sur le bouton "Download" et cliquez dessus pour lancer le téléchargement.
+Descendez sur la page pour aller sur le bouton `Download` et cliquez dessus pour lancer le téléchargement.
 
 ![Page de téléchargement de Qt](images/download_07.png)
 
@@ -78,11 +78,11 @@ La page suivante indique que le téléchargement est lancé. Le nom de l'install
 - pour Linux 64 bits : `qt-unified-linux-x64-3.1.1-online.run` ;
 - pour Mac : `qt-unified-mac-x64-3.1.1-online.dmg`.
 
-Le numéro de version correspond a l'installateur. Qt Creator (l'editeur de code
+Le numéro de version correspond a l'installateur. Qt Creator (l'éditeur de code
 de Qt) et Qt (le framework de developpement) ont des numéros de version differents, 
 il ne faut pas les confondre.
 
-Notez que le numero de version de l'installateur pourra etre different lorsque vous telechargerez
+Notez que le numéro de version de l'installateur pourra être différent lorsque vous téléchargerez
 Qt.
 
 L'installateur ne contient aucune version de Qt a proprement parlé. Lorsque vous le lancerez, il téléchargera les versions
