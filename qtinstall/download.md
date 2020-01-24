@@ -120,16 +120,16 @@ Par défaut, cet outil se trouve :
 
 ## Autres téléchargements possibles
 
-Si vous souhaitez voir les autres téléchargements possibles, vous pouvez cliquer sur le lien `View All Downloads`. 
-Cela permet d'afficher, dans l'ordre, les liens suivants :
+Si vous souhaitez voir les autres téléchargements possibles, vous pouvez cliquer sur le lien `View other options` 
+ou sur `offline packages you can get them here`.
 
-- Les installateurs online pour tous les systèmes (linux 64b et 32b, Mac et Windows) ;
-- Les installateurs offline pour Linux, Mac et Windows ;
-- Les sources de Qt (Qt étant un projet libre, ses sources sont librement accessibles) ;
+Le premier permet d'afficher les installateurs online pour tous les systèmes (linux 64b et 32b, Mac et Windows).
+
+Le second permet d'afficher :
+
+- Les installateurs offline pour la dernière version de Qt (actuellement la version 5.14) pour Linux, Mac et Windows ;
+- Les installateurs offline pour les versions LTS (Long Term Support) de Qt (les versions 5.12 et 5.9) pour Linux, Mac et Windows ;
 - L'éditeur Qt Creator seul ;
-
-Les autres outils :
-
 - les plugins pour Visual Studio ;
 - l'outil JOM (outil de compilation similaire à nmake, dédié à Qt) ;
 - le Qt Build Suite (QBS) (un outil de build, probable futur remplaçant de qmake) ;
