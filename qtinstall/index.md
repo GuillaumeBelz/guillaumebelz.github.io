@@ -28,16 +28,16 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
-- [Installer Qt 5.9.1](install.md)
-- [Tester l'installation de Qt 5.9.1](test.md)
-- [Mettre à jour Qt 5.9.1](update.md)
+- [Installer Qt 5.14.0](install.md)
+- [Tester l'installation de Qt 14.0](test.md)
+- [Mettre à jour Qt 5.14.0](update.md)
 
 ## Aller plus loin
 
 - [Comprendre les versions de Qt](version.md)
 - [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
-- [Savoir utiliser la documentation de Qt 5.9.1](documentation.md)
+- [Savoir utiliser la documentation de Qt 5.14.0](documentation.md)
 - le plugin MSVC, installation et tests
 
 ## Contributions
