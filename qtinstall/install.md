@@ -1,4 +1,4 @@
-# Installer Qt 5.12.0
+# Installer Qt 5.14.0
 
 > Dernière mise à jour : 30 janvier 2020.
 >
