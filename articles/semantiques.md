@@ -96,6 +96,10 @@ foo_uptr(std::move(uptr));
 Plus generalement, les concepts du C++20 sont des outils syntaxiques pour definir des semantiques.
 Idem pour meta-classes (Sutter).
 
+## Autre exemple 
+
+https://zestedesavoir.com/forums/sujet/3703/la-programmation-en-c-moderne/?page=30#p215872
+
 ## Résumé
 
 - donner une semantique permet de savoir ce que quelque chose represente et comment le manipuler
