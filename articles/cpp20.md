@@ -253,3 +253,4 @@ Quelques extraits du mailing [post-jacksonville 2018](http://www.open-std.org/jt
 
 https://www.youtube.com/watch?v=e2ZQyYr0Oi0
 https://www.reddit.com/r/cpp/comments/f47x4o/202002_prague_iso_c_committee_trip_report_c20_is/
+https://herbsutter.com/2020/02/15/trip-report-winter-iso-c-standards-meeting-prague/
