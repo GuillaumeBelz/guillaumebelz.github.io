@@ -1,8 +1,8 @@
 # Deployer une application Qt
 
-> Dernière mise à jour : 19 aout 2017.
+> Dernière mise à jour : 04 mars 2020.
 
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
+> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.14](index.md)
 
 ## Que contient une application Qt ?
 
