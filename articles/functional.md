@@ -20,3 +20,6 @@ Existant ou en discussion
 Rust, typescript
 
 - l'heritage dans Rust ?
+
+http://learnyouahaskell.com/chapters
+
