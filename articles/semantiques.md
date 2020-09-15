@@ -1,6 +1,8 @@
 
 # Sémantiques
 
+Qu'est-ce qu'une classe ?
+
 ## Un jeu d'enfant
 
 > image cube avec des chiffres + chiffres magnetiques sur tableau blanc. Chiffres sur une feuille de papier ?
@@ -99,6 +101,10 @@ Idem pour meta-classes (Sutter).
 ## Autre exemple 
 
 https://zestedesavoir.com/forums/sujet/3703/la-programmation-en-c-moderne/?page=30#p215872
+
+## Valeurs polymorophique...
+
+http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0201r3.pdf
 
 ## Résumé
 
