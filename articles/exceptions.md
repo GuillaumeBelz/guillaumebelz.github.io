@@ -10,3 +10,5 @@
 - [N3279: Conservative use of noexcept in the Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3279.pdf) (2011)
 - [P0147: The Use and Implementation of Contracts](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0147r0.html)
 - [P0709: Zero-overhead deterministic exceptions: Throwing values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0709r0.pdf) (2018)
+
+Nouveau proposal de Sutter sur les static exceptions
