@@ -1,9 +1,9 @@
 
-# Installation et premiers pas avec Qt 5.14
+# Installation et premiers pas avec Qt 6.0
 
 > **Mises à jour**
 >
-> 23 janvier 2020 : mise a jour pour Qt 5.14
+> 8 décembre 2020 : mise a jour pour Qt 6.0
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
@@ -28,7 +28,7 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
-- [Installer Qt 5.14.0](install.md)
+- [Installer Qt 6.0](install.md)
 - [Tester l'installation de Qt 14.0](test.md)
 - [Mettre à jour Qt 5.14.0](update.md)
 
@@ -37,7 +37,7 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Comprendre les versions de Qt](version.md)
 - [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
-- [Savoir utiliser la documentation de Qt 5.14.0](documentation.md)
+- [Savoir utiliser la documentation de Qt 6](documentation.md)
 - le plugin MSVC, installation et tests
 
 ## Contributions
