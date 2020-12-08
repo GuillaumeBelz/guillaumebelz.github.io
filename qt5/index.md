@@ -1,3 +1,7 @@
+**Note importante : ce tutoriel concerne une ancienne version de Qt. Pour installer la version actuelle de Qt, voici
+le tutoriel a suivre : [Installation et premiers pas avec Qt 6](../qt6/index.md)**
+
+-----
 
 # Installation et premiers pas avec Qt 5.14
 
