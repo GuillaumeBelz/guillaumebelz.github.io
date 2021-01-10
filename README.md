@@ -17,7 +17,7 @@ Le tutoriel pour Qt 5 n'est plus mis à jour :
 
 Les résumés de séances du club de lecture du discord NaN :
 
-- [Club de lecture du discord NaN](club-lecture/README.md)
+- [Club de lecture du discord NaN](club-lecture/)
 
 # Articles divers
 
