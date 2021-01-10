@@ -462,17 +462,10 @@ void test_priority_decoder_4_to_2()
 - Écris un interupt request.
 
 
-### Le décodeur binaire
-
-Écris le code et les tests pour un décodeur binaire. 
-[Binary Decoder](https://www.electronics-tutorials.ws/combination/comb_5.html)
-
-
 ### Le décodeur d'affichage
 
 Écris le code et les tests pour un décodeur d'affichage 7-segments LEDS.
 [Display Decoder](https://www.electronics-tutorials.ws/combination/comb_6.html)
-
 
 **Exercices supplémentaires**
 
@@ -481,33 +474,23 @@ void test_priority_decoder_4_to_2()
 Prends par exemple les contrôleurs [mc685](http://www.primrosebank.net/computers/mtx/techlib/mtx/6845/fdx_80col.htm) ou 6847.
 
 
-### L'additionneur binaire
+### Les autres circuits logiques combinatoires
 
-Un additionneur simple permet d'additionner une entrée binaire avec une autre entrée binaire. 
+Écris le code et les tests des autres composants logiques.
 
-Principe : https://www.electronics-tutorials.ws/combination/comb_7.html
-
-Rappel sur la représentation binaire des nombres entiers : [Binary Numbers](https://www.electronics-tutorials.ws/binary/bin_1.html)
-
-Exercices supplémentaires : additionneur 4 bits, 8 bits, 16, 32 et 64.
-
-### Le comparateur logique
-
-Principe : https://www.electronics-tutorials.ws/combination/comb_8.html
-
-1 bit
-
-Exercices supplémentaires : 4 bits, 8 bits.
-
-### Le soustracteur binaire
-
-https://www.electronics-tutorials.ws/combination/binary-subtractor.html
-
-1 bit, puis n-bits.
-
-### Bus Transceiver
-### Transmission Gate
-
+- Le décodeur binaire [Binary Decoder](https://www.electronics-tutorials.ws/combination/comb_5.html).
+- L'additionneur binaire [Binary Adder](https://www.electronics-tutorials.ws/combination/comb_7.html).
+  - Rappel sur la représentation binaire des nombres entiers : [Binary Numbers](https://www.electronics-tutorials.ws/binary/bin_1.html).
+  - Exercices supplémentaires : écris des additionneurs 4 bits, 8 bits et 16 bits.
+- Le comparateur logique [Digital Comparator](https://www.electronics-tutorials.ws/combination/comb_8.html).
+  - Exercices supplémentaires : écris des comparateurs 4 bits et 8 bits.
+- Le soustracteur binaire [Binary Subtractor](https://www.electronics-tutorials.ws/combination/binary-subtractor.html).
+  - Exercices supplémentaires : écris des soustracteurs 4 bits et 8 bits.
+- L'émetteur-récepteur de bus [Bus Transceiver](https://www.electronics-tutorials.ws/combination/bus-transceiver.html).
+- Transmission Gate
+- Analogue to Digital Converter
+- Binary Weighted DAC
+- R-2R DAC
 
 
 ## Bus de données = plusieurs booléens. Utilisation de std::bitset ou uint64_t. Permet de bosser les boucles.
