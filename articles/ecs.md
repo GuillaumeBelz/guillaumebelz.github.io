@@ -1029,6 +1029,7 @@ Que peut nous apprendre l'ECS sur le conception d'applications ?
 
 ### Bibliothèques existantes
 
+- https://github.com/skypjack/entt
  - Feather Kit [SFML] : http://en.sfml-dev.org/forums/index.php?topic=14193.0 et http://featherkit.therocode.net/
  - SEL [2D Game Engine, Lua] : http://forums.tigsource.com/index.php?topic=37684 et http://www.sel-engine.com/about/
  - Artemis : http://kravall.autious.net/?p=148 et http://gamadu.com/artemis/
