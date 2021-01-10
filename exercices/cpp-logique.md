@@ -14,6 +14,13 @@ pour résoudre les exercices. Voici quelques liens :
 - [Combinational Logic Circuits](https://www.electronics-tutorials.ws/combination/comb_1.html)
 - [Pratique des circuits logiques](http://www.circuits-logiques.polymtl.ca/php/manuel.php)
 
+## Comment réaliser les exercices
+
+Pour la majorité des exercices, il est possible d'écrire la solution dans des fonctions ou des classes et utiliser la
+fonction `main` pour tester ton code. Il suffit alors de copier-coller ton code dans un éditeur en ligne, par exemple
+[wandbox](https://wandbox.org/).
+
+Pour les projets, il faudra créer de vrais projets C++ dans l'éditeur de ton choix.
 
 ## Exercices pour bien comprendre les operateurs logiques du C++
 
@@ -24,17 +31,16 @@ Pour rappel, il existe trois types d'opérateurs en C++ [Logical operators](http
 - les opérateurs binaires, qui prennent deux opérandes : `&&` (AND) et `||` (OR)
 
 ```cpp
-// Remplissez le code suivant pour l'operateur AND
-
+// Remplis le code suivant pour l'opérateur AND
 bool and_operator(bool a, bool b)
 {
-    // doit retourner le resultat de l'operation (a AND b)
+    // Doit retourner le résultat de l'opération (a AND b)
     return ...
 }
 
 void test_and_operator()
 {
-    // Ecrivez les tests pour l'operateur AND
+    // Écris les tests pour l'opérateur AND
     assert(and_operator(false, false), ...);
     assert(and_operator(false,  true), ...);
     assert(and_operator( true, false), ...);
@@ -43,17 +49,16 @@ void test_and_operator()
 ```
 
 ```cpp
-// Remplissez le code suivant pour l'operateur (inclusif) OR
-
+// Remplis le code suivant pour l'opérateur (inclusif) OR
 bool or_operator(bool a, bool b)
 {
-    // doit retourner le resultat de l'operation (a OR b)
+    // Doit retourner le résultat de l'opération (a OR b)
     return ...
 }
 
 void test_or_operator()
 {
-    // Ecrivez les tests pour l'operateur AND
+    // Ecris les tests pour l'opérateur OR
     assert(or_operator(false, false), ...);
     assert(or_operator(false,  true), ...);
     assert(or_operator( true, false), ...);
@@ -62,43 +67,33 @@ void test_or_operator()
 ```
 
 ```cpp
-// Remplissez le code suivant pour l'operateur negation
-
+// Remplis le code suivant pour l'operateur NON
 bool negation_operator(bool a)
 {
-    // doit retourner le resultat de l'operation (!a)
+    // Doit retourner le résultat de l'opération (!a)
     return ...
 }
 
 void test_negation_operator()
 {
-    // Ecrivez les tests pour l'operateur AND
+    // Écris les tests pour l'opérateur NON
     assert(negation_operator(false), ...);
     assert(negation_operator( true), ...);
 }
 ```
 
 
+## Première partie : les composants logiques élémentaires
 
-## Premiere partie : composants logiques elementaires
+Cette série d'exercices à pour but de vous faire écrire des circuits logiques (des expressions logiques dans le code)
+à partir de tables de vérité et d'écrire des tables de vérite2 (sous forme de tests) à partir d'expressions logiques
+simples. Tu n'as besoin d'utiliser que les trois opérateurs logiques de base et tu n'avez pas besoin
+de simplifier les expressions en utilisant des tableaux de Karnaugh et les lois de Morgan.
 
-En general, il vous faudra concevoir un circuit logique a partir d'une table de verite,
-eventuellement apres simlpification en utilisant des tableaux de karnaugh et les
-lois de Morgan.
-
-Cette serie d'exos a pour but de vous faire ecrire des circuits logiques (des expressions logiques dans le code)
-a partir de tables de verite et d'ecrire des tables de verite (sous forme de tests) a partir d'expressions logiques
-simples. Vous n'avez besoin d'utiliser que les 3 operateurs logiques de base et vous n'avez pas besoin
-de simplifier les expressions en utilisant des tableaux de karnaugh et les lois de Morgan.
-
-Si tu es interesse par l'electronique, tu peux lire ce tutoriel sur comment les portes logiques sont
-concus dans les circuits electroniques : https://www.electronics-tutorials.ws/logic/logic_1.html
-
-### Quelques operateurs logiques simples
+### Quelques opérateurs logiques simples
 
 ```cpp
-// Remplis le code suivant pour l'operateur non-AND
-
+// Remplis le code suivant pour l'operateur NON-AND
 bool non_and_operator(bool a, bool b)
 {
     return ...
@@ -358,7 +353,11 @@ void test_expression_5()
 
 
 
-## Secondes partie : les composants elementaires d'un ordinateur simple (logique combinatoire)
+## Deuxième partie : les composants elementaires d'un ordinateur simple (logique combinatoire)
+
+Pour ces exercices, tu devras en général concevoir un circuit logique à partir d'une table de vérité,
+éventuellement apres simlpification en utilisant des tableaux de Karnaugh ou les
+lois de Morgan.
 
 Dans la suite des exercices, tu vas devoir implementer des composants logiques utilises dans
 les ordinateurs, par exemple un multiplexeur, un additioneur, un decodeur, etc.
