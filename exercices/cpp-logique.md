@@ -1,5 +1,5 @@
 
-# Création d'un émulateur d'ordinateur simple
+# Création d'un émulateur simple
 
 **Niveau C++ : débutant**
 
@@ -555,6 +555,6 @@ importants pour la conception de circuits électroniques modernes.
 - The Toggle Flip-flop
 
 
-## Finir l'implémentation de l'ordinateur
+## Finir l'implémentation de l'émulateur
 
-Écris les composants restant pour concevoir un ordinateur simple complet : clock, ROM, démarrage de l'ordinateur, micro-langage, etc.
+Écris les composants restant pour concevoir un émulateur simple complet : clock, ROM, démarrage de l'ordinateur, micro-langage, etc.
