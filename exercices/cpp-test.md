@@ -2,7 +2,7 @@
 
 # Évalues tes connaissances en C++
 
-Lors des discussions sur les forums ou discord, je vois regulièrement des personnes qui essaient de résoudre des problèmes
+Lors des discussions sur les forums ou discord, je vois régulièrement des personnes qui essaient de résoudre des problèmes
 ou qui posent des questions qui ne sont clairement pas adaptées à leur niveau de connaissance en C++. Cela indique en général
 un problème de compréhension de concepts de base et de mauvaise progression dans l'apprentissage. Souvent parce
 qu'ils ne suivent pas un cours correctement structuré.
@@ -12,11 +12,11 @@ les concepts que tu as compris et ceux que tu dois encore travailler, t'orienter
 progresser.
 
 C'est pour cette raison qu'il n'y a pas de réponse toute faite aux exercices suivants. Le but est que les codes que tu écris
-soient relus par des personnes plus expériementées.
+soient relus par des personnes plus expérimentées.
 
 Pour réaliser ces exercices, je te propose de suivre la démarche suivante :
 
-- ouvre l'éditeur en ligne WandBox https://wandbox.org/ et selectione C++.
+- ouvre l'éditeur en ligne WandBox https://wandbox.org/ et sélectionne C++.
 - copies-colles le code de l'exercice dans l'éditeur et écris ta solution.
 - ajoutes les options de compilation suivantes : `-Weverything -Wno-reserved-id-macro`.
 - cliques sur le bouton `Run (or Ctrl+Enter)`.
@@ -26,9 +26,11 @@ Rassemble ensuite tes codes sur un site (par exemple GitHub, c'est le plus simpl
 de Jason Champagne, ou sur les forums de Zeste de Savoir ou d'Openclassrooms.
 
 Si tu ne sais pas résoudre un exercice, ce n'est pas grave. Certains exercices sont volontairement plus difficiles.
+N'hésite pas a modifier le code donne si tu ne comprends pas certaines parties du code et fais de ton milieu pour
+résoudre les exercices.
 
 Il est possible d'écrire plusieurs solutions différentes pour chaque exercice. Il faudra que tu écrives le code
-comme si tu étais dans une entreprise, sur un projet professionel non critique (c'est-à-dire en considérant que tu n'as pas
+comme si tu étais dans une entreprise, sur un projet professionnel non critique (c'est-à-dire en considérant que tu n'as pas
 besoin d'optimiser pour les performances ou la mémoire, mais avoir la meilleure qualité logicielle possible).
 
 Les instructions données sont volontairement minimales. Le but est de voir si tu as acquis aussi le vocabulaire et la compréhension
@@ -62,7 +64,7 @@ int main() {
 }
 ```
 
-## Exercice 2 - Litéraux, fonction template, spécialisation template
+## Exercice 2 - Littéraux, fonction template, spécialisation template
 
 Écris une fonction template `print` qui affiche dans la console le type de l'argument utilisé lors de l'appel de la fonction.
 La fonction template de base affichera "unknown type" et les spécialisations template afficheront le type de l'argument.
