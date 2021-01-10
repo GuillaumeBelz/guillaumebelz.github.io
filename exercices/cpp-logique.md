@@ -1,14 +1,14 @@
 
 # Création d'un émulateur d'ordinateur simple
 
-Le but final de ce projet est de construire un ordinateur de facon logicielle. C'est-à-dire implémenter
-avec du code les differents éléments d'un ordinateur simple, en partant des portes logiques, jusqu'aux composants
+Le but final de ce projet est de construire un ordinateur de façon logicielle. C'est-à-dire implémenter
+avec du code les différents éléments d'un ordinateur simple, en partant des portes logiques, jusqu'aux composants
 les plus complexes.
 
-Pour des raisons de simplicité, l'architure à implémenter sera un ordinateur simple, type TRS-80 ou arduino, 
-sans pipeline d'instructions, sans mémoire cache, et sans les fonctionalités que l'on retrouve
+Pour des raisons de simplicité, l'architecture à implémenter sera un ordinateur simple, type TRS-80 ou Arduino, 
+sans pipeline d'instructions, sans mémoire cache, et sans les fonctionnalités que l'on retrouve
 
-Seuls les exerices sont donnés ici, il faudra que tu fasses tes propres recherches quand nécessaire
+Seuls les exercices sont donnés ici, il faudra que tu fasses tes propres recherches quand nécessaire
 pour résoudre les exercices. Voici quelques liens :
 
 - [Combinational Logic Circuits](https://www.electronics-tutorials.ws/combination/comb_1.html)
@@ -22,7 +22,7 @@ fonction `main` pour tester ton code. Il suffit alors de copier-coller ton code 
 
 Pour les projets, il faudra créer de vrais projets C++ dans l'éditeur de ton choix.
 
-## Exercices pour bien comprendre les operateurs logiques du C++
+## Exercices pour bien comprendre les opérateurs logiques du C++
 
 Pour rappel, il existe trois types d'opérateurs en C++ [Logical operators](https://en.cppreference.com/w/cpp/language/operator_logical),
 à utiliser avec le type `bool` :
@@ -41,10 +41,10 @@ bool and_operator(bool a, bool b)
 void test_and_operator()
 {
     // Écris les tests pour l'opérateur AND
-    assert(and_operator(false, false), ...);
-    assert(and_operator(false,true), ...);
-    assert(and_operator(true, false), ...);
-    assert(and_operator(true,true), ...);
+    assert(and_operator(false, false) == ...);
+    assert(and_operator(false, true) == ...);
+    assert(and_operator(true, false) == ...);
+    assert(and_operator(true, true) == ...);
 }
 ```
 
@@ -59,15 +59,15 @@ bool or_operator(bool a, bool b)
 void test_or_operator()
 {
     // Ecris les tests pour l'opérateur OR
-    assert(or_operator(false, false), ...);
-    assert(or_operator(false,true), ...);
-    assert(or_operator(true, false), ...);
-    assert(or_operator(true,true), ...);
+    assert(or_operator(false, false) == ...);
+    assert(or_operator(false, true) == ...);
+    assert(or_operator(true, false) == ...);
+    assert(or_operator(true, true) == ...);
 }
 ```
 
 ```cpp
-// Remplis le code suivant pour l'operateur NON
+// Remplis le code suivant pour l'opérateur NON
 bool negation_operator(bool a)
 {
     // Doit retourner le résultat de l'opération (!a)
@@ -77,8 +77,8 @@ bool negation_operator(bool a)
 void test_negation_operator()
 {
     // Écris les tests pour l'opérateur NON
-    assert(negation_operator(false), ...);
-    assert(negation_operator(true), ...);
+    assert(negation_operator(false) == ...);
+    assert(negation_operator(true) == ...);
 }
 ```
 
@@ -102,9 +102,9 @@ bool non_and_operator(bool a, bool b)
 void test_non_and_operator()
 {
     assert(non_and_operator(false, false), true);
-    assert(non_and_operator(false,true),true);
-    assert(non_and_operator(true, false),true);
-    assert(non_and_operator(true,true), false);
+    assert(non_and_operator(false, true), true);
+    assert(non_and_operator(true, false), true);
+    assert(non_and_operator(true, true), false);
 }
 ```
 
@@ -128,10 +128,10 @@ bool non_or_operator(bool a, bool b)
 
 void test_non_or_operator()
 {
-    assert(non_or_operator(false, false),true);
-    assert(non_or_operator(false,true), false);
+    assert(non_or_operator(false, false), true);
+    assert(non_or_operator(false, true), false);
     assert(non_or_operator(true, false), false);
-    assert(non_or_operator(true,true), false);
+    assert(non_or_operator(true, true), false);
 }
 ```
 
@@ -142,7 +142,7 @@ void test_non_or_operator()
 // l'une ou l'autre valeur est vraie, mais pas les deux en meme temps.
 
 // Remplis la table de vérité et le code suivant pour l'opérateur OR exclusif (XOR),
-// en te basant sur la description précédante.
+// en te basant sur la description précédente.
 bool xor_operator(bool a, bool b)
 {
     return ...
@@ -150,10 +150,10 @@ bool xor_operator(bool a, bool b)
 
 void test_xor_operator()
 {
-    assert(xor_operator(false, false), ...);
-    assert(xor_operator(false,true), ...);
-    assert(xor_operator(true, false), ...);
-    assert(xor_operator(true,true), ...);
+    assert(xor_operator(false, false) == ...);
+    assert(xor_operator(false, true) == ...);
+    assert(xor_operator(true, false) == ...);
+    assert(xor_operator(true, true) == ...);
 }
 ```
 
@@ -167,10 +167,10 @@ bool non_xor_operator(bool a, bool b)
 
 void test_non_xor_operator()
 {
-    assert(non_xor_operator(false, false), ...);
-    assert(non_xor_operator(false,true), ...);
-    assert(non_xor_operator(true, false), ...);
-    assert(non_xor_operator(true,true), ...);
+    assert(non_xor_operator(false, false) == ...);
+    assert(non_xor_operator(false, true) == ...);
+    assert(non_xor_operator(true, false) == ...);
+    assert(non_xor_operator(true, true) == ...);
 }
 ```
 
@@ -196,14 +196,14 @@ bool expression_1(bool a, bool b, bool c)
 
 void test_expression_1()
 {
-    assert(expression_1(false, false, false), ...);
-    assert(expression_1(false,true, false), ...);
-    assert(expression_1(true, false, false), ...);
-    assert(expression_1(true, true, false), ...);
-    assert(expression_1(false, false, true), ...);
-    assert(expression_1(false, true, true), ...);
-    assert(expression_1(true, false, true), ...);
-    assert(expression_1(true, true, true), ...);
+    assert(expression_1(false, false, false) == ...);
+    assert(expression_1(false, true, false) == ...);
+    assert(expression_1(true, false, false) == ...);
+    assert(expression_1(true, true, false) == ...);
+    assert(expression_1(false, false, true) == ...);
+    assert(expression_1(false, true, true) == ...);
+    assert(expression_1(true, false, true) == ...);
+    assert(expression_1(true, true, true) == ...);
 }
 ```
 
@@ -221,14 +221,14 @@ bool expression_2(bool a, bool b, bool c)
 
 void test_expression_2()
 {
-    assert(expression_2(false, false, false), ...);
-    assert(expression_2(false, true, false), ...);
-    assert(expression_2(true, false, false), ...);
-    assert(expression_2(true, true, false), ...);
-    assert(expression_2(false, false, true), ...);
-    assert(expression_2(false, true, true), ...);
-    assert(expression_2(true, false, true), ...);
-    assert(expression_2(true, true, true), ...);
+    assert(expression_2(false, false, false) == ...);
+    assert(expression_2(false, true, false) == ...);
+    assert(expression_2(true, false, false) == ...);
+    assert(expression_2(true, true, false) == ...);
+    assert(expression_2(false, false, true) == ...);
+    assert(expression_2(false, true, true) == ...);
+    assert(expression_2(true, false, true) == ...);
+    assert(expression_2(true, true, true) == ...);
 }
 ```
 
@@ -248,14 +248,14 @@ bool expression_3(bool a, bool b, bool c, bool d)
 
 void test_expression_3()
 {
-    assert(expression_3(false, false, false), ...);
-    assert(expression_3(false, true, false), ...);
-    assert(expression_3(true, false, false), ...);
-    assert(expression_3(true, true, false), ...);
-    assert(expression_3(false, false, true), ...);
-    assert(expression_3(false, true, true), ...);
-    assert(expression_3(true, false, true), ...);
-    assert(expression_3(true, true, true), ...);
+    assert(expression_3(false, false, false) == ...);
+    assert(expression_3(false, true, false) == ...);
+    assert(expression_3(true, false, false) == ...);
+    assert(expression_3(true, true, false) == ...);
+    assert(expression_3(false, false, true) == ...);
+    assert(expression_3(false, true, true) == ...);
+    assert(expression_3(true, false, true) == ...);
+    assert(expression_3(true, true, true) == ...);
 }
 ```
 
@@ -317,31 +317,31 @@ void test_expression_4()
 // http://electroussafi.ueuo.com/docs/sln/E_karnaugh.pdf
 // https://f2school.com/tableau-de-karnaugh-cours-et-exercices-corriges/
 
-void expression_5(bool a, ...)
+void expression_5(bool a == ...)
 {
-    // ecrivez l'expression logique qui respecte les tests suivants.
+    // Écris l'expression logique qui respecte les tests suivants.
     return ...
 }
 
 void test_expression_5()
 {
-    assert(expression_5(...), ...);
+    assert(expression_5(...) == ...);
     ...
 }
 ```
 
 
-## Deuxième partie : les composants elementaires d'un ordinateur simple (logique combinatoire)
+## Deuxième partie : les composants élémentaires d'un ordinateur simple (logique combinatoire)
 
 Pour ces exercices, tu devras en général concevoir un circuit logique à partir d'une table de vérité,
-éventuellement apres simlpification en utilisant des tableaux de Karnaugh ou les
+éventuellement après simplification en utilisant des tableaux de Karnaugh ou les
 lois de Morgan.
 
 Dans la suite des exercices, tu vas devoir implementer des composants logiques utilises dans
-les ordinateurs, par exemple un multiplexeur, un additioneur, un decodeur, etc.
+les ordinateurs, par exemple un multiplexeur, un additionneur, un décodeur, etc.
 
-En pratique, il s'agit simplement d'implenter des expressions logiques de plus en plus
-complexes, en suivant la meme methode que pour les expressions logiques precedentes.
+En pratique, il s'agit simplement d'implémenter des expressions logiques de plus en plus
+complexes, en suivant la meme méthode que pour les expressions logiques précédentes.
 
 Rappel de cours : https://www.electronics-tutorials.ws/combination/comb_1.html
 
@@ -354,8 +354,8 @@ Le but d'un multiplexeur est de selection une entree parmi plusieurs.
 
 ```cpp
 // Implementer une multiplexeur simple a 2 entrees + 1 entree de selection.
-// Lors que l'entree de selection select est false, la sortie est egale
-// a l'entree input_a. Sinon la sortie est egale a la seconde entree intput_b.
+// Lors que l'entree de selection select est false, la sortie est égale
+// a l'entree `input_a`. Sinon la sortie est égale a la seconde entree `intput_b`.
 
 // (x = ignore)
 //  select | input_a | input_b || output
@@ -372,24 +372,24 @@ bool multiplexer_2_to_1(bool select, bool input_a, bool input_b)
 
 void test_multiplexer_2_to_1()
 {
-    assert(multiplexer_2_to_1(false, false, false), ...);
+    assert(multiplexer_2_to_1(false, false, false) == ...);
     ...
 }
 ```
 
-Exercices supplementaires : multiplexeur 4-to-1, puis 4-to-2. https://www.electronics-tutorials.ws/combination/comb_2.html
+Exercices supplémentaires : multiplexeur 4-to-1, puis 4-to-2. https://www.electronics-tutorials.ws/combination/comb_2.html
 
 
-### Le demultiplexeur
+### Le démultiplexeur
 
-Le demultiplexeur realise l'operation inverse du multiplexeur, c'est a dire de prendre 1 entree et de
+Le démultiplexeur réalise l'operation inverse du multiplexeur, c'est a dire de prendre 1 entree et de
 l'envoyer dans 1 sortie parmis plusieurs.
 
 ```cpp
-// Implementer une demultiplexeur simple a 1 entree + 1 entree de selection + 2 sorties.
-// Lors que l'entree de selection select_a est false, la premiere valeur booleen est egale
-// a l'entree input. Sinon la seconde valeur booleen est egale a l'entree input.
-// Une sortie non active est conservee a false.
+// Implementer une démultiplexeur simple a 1 entree + 1 entree de selection + 2 sorties.
+// Lors que l'entree de selection select_a est false, la premiere valeur booléen est égale
+// a l'entree input. Sinon la seconde valeur booléen est égale a l'entree input.
+// Une sortie non active est conservée a false.
 
 //  select | input || output 1 | output 2
 // ----------------------------------------
@@ -405,12 +405,12 @@ bool demultiplexer_1_to_2(bool select_a, bool input_a, bool input_b)
 
 void test_demultiplexer_1_to_2()
 {
-    assert(demultiplexer_1_to_2(false, false, false), ...);
+    assert(demultiplexer_1_to_2(false, false, false) == ...);
     ...
 }
 ```
 
-Exercices supplementaires : demultiplexeur 1-to-4. https://www.electronics-tutorials.ws/combination/comb_3.html
+Exercices supplémentaires : démultiplexeur 1-to-4. https://www.electronics-tutorials.ws/combination/comb_3.html
 
 
 ### L'encodeur prioritaire
@@ -421,7 +421,7 @@ https://www.electronics-tutorials.ws/combination/comb_4.html
 plusieurs entree, prendre la plus prioritaire. Ie la sortie = indique quelle est l'entree le plus prioritaire active (=true).
 
 ```cpp
-// ordre de priorite : 0 (plus basse priorite) -> 3 (plus haute priorite)
+// ordre de priorité : 0 (plus basse priorité) -> 3 (plus haute priorité)
 
 //  input_3 | input_2 | input_1 | input_0 || output_1 | output_0 | valid
 // ----------------------------------------------------------------------
@@ -444,29 +444,29 @@ void test_priority_decoder_4_to_2()
 }
 ```
 
-Exercices supplementaires : decodeur prioritaire 8 to 3, keybord encodeur, priority encoder navigation, interupt request
+Exercices supplémentaires : décodeur prioritaire 8 to 3, keyboard encodeur, priority encoder navigation, interupt request
 
-### Le decodeur binaire
+### Le décodeur binaire
 
-### Le decodeur d'affichage
+### Le décodeur d'affichage
 
 afficheur 7-segments LEDS
 
 Exercices : BCD to 7-segments
 
 
-### Le controleur d'affichage
+### Le contrôleur d'affichage
 
-Meme principe, mais affichage sur une bitmap (une grille 2D de pixels sur un ecran). Exemple mc6845ou 6847
+Meme principe, mais affichage sur une bitmap (une grille 2D de pixels sur un écran). Exemple mc6845ou 6847
 
 http://www.primrosebank.net/computers/mtx/techlib/mtx/6845/fdx_80col.htm
 
-En realite, plus complexe, puisque le but est d'afficher sur ecran cathodique, donc d'envoyer les pixels
+En réalité, plus complexe, puisque le but est d'afficher sur écran cathodique, donc d'envoyer les pixels
 sequentiellement. http://bitsavers.trailing-edge.com/components/motorola/_dataSheets/6845.pdf
 Non propose en exo, parce que n'apporte rien de plus en termes d'apprentissage et trop complexe. 
 Mais tu es libre de le faire si ca t'amuse.
 
-Ne pas utiliser une table pour implementer cela dans un premier temps. Puis meme exo avec table.
+Ne pas utiliser une table pour implementer cela dans un premier temps. Puis meme exercices avec table.
 
 ```cpp
 std::bitset<64> display_controler(std::bitset<8> input)
@@ -474,7 +474,7 @@ std::bitset<64> display_controler(std::bitset<8> input)
     const uint8_t i = binary_decoder(input);
     switch(i)
     {
-    case 0: return { false, false, false, ... };
+    case 0: return { false, false, false == ... };
     ...
     }
 }
@@ -502,15 +502,15 @@ uint64_t display_controler(uint8_t input)
 Rappel sur la representation binaire des nombres entiers : https://www.electronics-tutorials.ws/binary/bin_1.html
 Principe : https://www.electronics-tutorials.ws/combination/comb_7.html
 
-Exercices supplementaires : additionneur 4 bits, 8 bits, 16, 32 et 64.
+Exercices supplémentaires : additionneur 4 bits, 8 bits, 16, 32 et 64.
 
 ### Le comparateur logique
 
-Princiape : https://www.electronics-tutorials.ws/combination/comb_8.html
+Principe : https://www.electronics-tutorials.ws/combination/comb_8.html
 
 1 bit
 
-Exercices supplementaires : 4 bits, 8 bits.
+Exercices supplémentaires : 4 bits, 8 bits.
 
 ### Le soustracteur binaire
 
@@ -523,7 +523,7 @@ https://www.electronics-tutorials.ws/combination/binary-subtractor.html
 
 
 
-## Bus de donnees = plusieurs booleens. Utilisation de std::bitset ou uint64_t. Permet de bosser les boucles.
+## Bus de données = plusieurs booléens. Utilisation de std::bitset ou uint64_t. Permet de bosser les boucles.
 
 ```cpp
 using bus8 = std::bitset<8>;
@@ -540,9 +540,9 @@ Idem avec std::join ?
 
 
 
-## Composants avec registre : implemente par une classe (etat interne = variable membre)
+## Composants avec registre : implémenta par une classe (état interne = variable membre)
 
-circuit logique sequentel : https://www.electronics-tutorials.ws/sequential/seq_1.html
+circuit logique séquentiel : https://www.electronics-tutorials.ws/sequential/seq_1.html
 
 
 
@@ -552,7 +552,7 @@ circuit logique sequentel : https://www.electronics-tutorials.ws/sequential/seq_
 
 algo simple : instruction pointer contient addresse de l'instruction a lire, lecture de l'instruction, execution, incrementation de IP, refaire
 
-instruciton simple :
+instruction simple :
 - lire et ecrire en memoire
 - saut
 - condition
