@@ -30,8 +30,8 @@ pour résoudre les exercices. Voici quelques liens :
 ## Comment réaliser les exercices
 
 Pour la majorité des exercices, il est possible d'écrire la solution dans des fonctions ou des classes et utiliser la
-fonction `main` pour tester ton code. Il suffit alors de copier-coller ton code dans un éditeur en ligne, par exemple
-[wandbox](https://wandbox.org/).
+fonction `main` pour appeler la fonction de test de ton code. Il suffit alors de copier-coller ton code dans un éditeur 
+en ligne, par exemple [wandbox](https://wandbox.org/).
 
 Pour les projets, il faudra créer de vrais projets C++ dans l'éditeur de ton choix.
 
@@ -428,15 +428,11 @@ void test_demultiplexer_1_to_2()
 
 ### L'encodeur prioritaire
 
-
-plusieurs entree, prendre la plus prioritaire. Ie la sortie = indique quelle est l'entree le plus prioritaire active (=true).
-
+L'encodeur prioritaire prend plusieurs entrées et retourne le numéro (codé en binaire) de l'entrée la plus prioritaire.
 [Priority Encoder](https://www.electronics-tutorials.ws/combination/comb_4.html)
 
-
 ```cpp
-// ordre de priorité : 0 (plus basse priorité) -> 3 (plus haute priorité)
-
+// Ordre de priorité : 0 (plus basse priorité) -> 3 (plus haute priorité)
 //  input_3 | input_2 | input_1 | input_0 || output_1 | output_0 | valid
 // ----------------------------------------------------------------------
 //     0    |    0    |    0    |    0    ||    x     |    x     |   0
@@ -453,68 +449,45 @@ std::tuple<bool, bool, bool> priority_decoder_4_to_2(bool input_3, bool input_2,
 
 void test_priority_decoder_4_to_2()
 {
-    assert(priority_decoder_4_to_2(false, false, false, false), {false, false, false});
+    assert(priority_decoder_4_to_2(false, false, false, false) = std::make_tuple(false, false, false));
     ...
 }
 ```
 
-Exercices supplémentaires : décodeur prioritaire 8 to 3, keyboard encodeur, priority encoder navigation, interupt request
+**Exercices supplémentaires**
+
+- Écris un décodeur prioritaire 8-to-3.
+- Écris un keyboard encodeur.
+- Écris un priority encoder navigation.
+- Écris un interupt request.
+
 
 ### Le décodeur binaire
 
+Écris le code et les tests pour un décodeur binaire. 
+[Binary Decoder](https://www.electronics-tutorials.ws/combination/comb_5.html)
+
+
 ### Le décodeur d'affichage
 
-afficheur 7-segments LEDS
+Écris le code et les tests pour un décodeur d'affichage 7-segments LEDS.
+[Display Decoder](https://www.electronics-tutorials.ws/combination/comb_6.html)
 
-Exercices : BCD to 7-segments
 
+**Exercices supplémentaires**
 
-### Le contrôleur d'affichage
-
-Meme principe, mais affichage sur une bitmap (une grille 2D de pixels sur un écran). Exemple mc6845ou 6847
-
-http://www.primrosebank.net/computers/mtx/techlib/mtx/6845/fdx_80col.htm
-
-En réalité, plus complexe, puisque le but est d'afficher sur écran cathodique, donc d'envoyer les pixels
-sequentiellement. http://bitsavers.trailing-edge.com/components/motorola/_dataSheets/6845.pdf
-Non propose en exo, parce que n'apporte rien de plus en termes d'apprentissage et trop complexe. 
-Mais tu es libre de le faire si ca t'amuse.
-
-Ne pas utiliser une table pour implementer cela dans un premier temps. Puis meme exercices avec table.
-
-```cpp
-std::bitset<64> display_controler(std::bitset<8> input)
-{
-    const uint8_t i = binary_decoder(input);
-    switch(i)
-    {
-    case 0: return { false, false, false == ... };
-    ...
-    }
-}
-```
-
-```cpp
-
-namespace {
-    uint64_t display_data[256] {
-        0b00000100010010000100010000001000000011100000, // A
-        0b00000100010010000100010000001000000011100000, // A
-        ...
-    }
-}
-
-uint64_t display_controler(uint8_t input)
-{
-    return display_data[i];
-}
-```
+- Écris un décodeur BCD to 7-segments.
+- Écris un contrôleur d'affichage. Le principe est le même mais l'affichage se fait sur une une grille 2D de pixels sur un écran. 
+Prends par exemple les contrôleurs [mc685](http://www.primrosebank.net/computers/mtx/techlib/mtx/6845/fdx_80col.htm) ou 6847.
 
 
 ### L'additionneur binaire
 
-Rappel sur la representation binaire des nombres entiers : https://www.electronics-tutorials.ws/binary/bin_1.html
+Un additionneur simple permet d'additionner une entrée binaire avec une autre entrée binaire. 
+
 Principe : https://www.electronics-tutorials.ws/combination/comb_7.html
+
+Rappel sur la représentation binaire des nombres entiers : [Binary Numbers](https://www.electronics-tutorials.ws/binary/bin_1.html)
 
 Exercices supplémentaires : additionneur 4 bits, 8 bits, 16, 32 et 64.
 
