@@ -3,7 +3,7 @@
 
 **Niveau C++ : débutant**
 
-Tu devras utiliser es opérateurs logiques du C++, la classe `std::bitset`, écrire des fonctions
+Tu devras utiliser es opérateurs logiques du C++, la classe `std::bitset`, les algorithmes simples, écrire des fonctions
 et des classes.
 
 Les exercices présentés ici demanderont plus de connaissances sur la logique binaire et les composants
@@ -481,7 +481,7 @@ Prends par exemple les contrôleurs [mc685](http://www.primrosebank.net/computer
 - Le décodeur binaire [Binary Decoder](https://www.electronics-tutorials.ws/combination/comb_5.html).
 - L'additionneur binaire [Binary Adder](https://www.electronics-tutorials.ws/combination/comb_7.html).
   - Rappel sur la représentation binaire des nombres entiers : [Binary Numbers](https://www.electronics-tutorials.ws/binary/bin_1.html).
-  - Exercices supplémentaires : écris des additionneurs 4 bits, 8 bits et 16 bits.
+  - Exercices supplémentaires : écris des additionneurs 4 bits et 8 bits.
 - Le comparateur logique [Digital Comparator](https://www.electronics-tutorials.ws/combination/comb_8.html).
   - Exercices supplémentaires : écris des comparateurs 4 bits et 8 bits.
 - Le soustracteur binaire [Binary Subtractor](https://www.electronics-tutorials.ws/combination/binary-subtractor.html).
@@ -493,37 +493,68 @@ Prends par exemple les contrôleurs [mc685](http://www.primrosebank.net/computer
 - R-2R DAC
 
 
-## Bus de données = plusieurs booléens. Utilisation de std::bitset ou uint64_t. Permet de bosser les boucles.
+## Travailler sur plusieurs bits
+
+Pour le moment, tu as implémenter les circuits logiques en utilisant le type `bool`. Cependant, tu as dû le emarquer, le code
+devient de plus en plus complexe lorsque tu écris des composants 4 bits ou 8 bits. Pour écrire des composants sur 16, 32 voire beaucoup
+plus (par exemple 512 bits pour les instructions AVX-512), il faut utiliser un type plus compact que `bool`. 
+
+Écris les fonctions des exercices précédents en utilisant la classe `std::bitset<8>`. Tu peux utiliser les fonctions déjà écrite
+pour `bool`. Par exemple, pour écrire l'opérateurs AND :
 
 ```cpp
 using bus8 = std::bitset<8>;
 
-bool composantX(bus8 a, bus8 b, bus8 c) {
+bus8 composantAnd(bus8 a, bus8 b) {
     bus8 result;
-    for(int i=0; i<bus8::size; ++i)
-        result[i] = composantOr(composantAnd(a[i], b[i]), c[i]);
+    for(std::size_t i = 0; i < a.size(); ++i)
+        result[i] = composantAnd(a[i], b[i]);
     return result;
 }
 ```
 
-Idem avec std::join ?
+**Exercices supplémentaires**
+
+- Écris la version template de ces fonctions, pour prendre un nombre variable de bits. Par exemple pour l'opérateur AND :
+
+```cpp
+template<std::size_t N>
+std::bitset<N> composantAnd(const std::bitset<N>& a, const std::bitset<N>& b) {
+    std::bitset<N> result;
+    for(std::size_t i = 0; i < N; ++i)
+        result[i] = composantAnd(a[i], b[i]);
+    return result;
+}
+```
 
 
+## Les circuits logiques séquentiels
 
-## Composants avec registre : implémenta par une classe (état interne = variable membre)
+[Sequential Logic Circuits](https://www.electronics-tutorials.ws/sequential/seq_1.html)
 
-circuit logique séquentiel : https://www.electronics-tutorials.ws/sequential/seq_1.html
+Dans les circuits logiques combinatoires, il n'y a pas de notion de temps. Par exemple, pour un additioneur 8 bits,
+le circuit va prendre deux entrées de 8 bits et va retourner immédiatement le résultat 8 bits.
+
+Dans un circuit séquentiel, les opérations vont dépendre du temps. Par exemple, un additionneur 8 bits pourra
+recevoir dans un premier temps la première entrée de 8 bits, puis dans un deuxième temps la seconde entrée 8bits, puis
+enfin, dans un troisième temps, retourner le résultat 8 bits.
+
+Cette approche peut sembler moins performante, mais elle permet d'avoir un circuit avec qu'une seule entrée/sortie 8 bits,
+qui servira pour les deux entrées et le résultat. Cela permet d'avoir moins de connexions entre les circuits, ce qui est 
+importants pour la conception de circuits électroniques modernes.
+
+Écris le code et les tests des différents circuits séquentiels.
+
+- Sequential Logic Circuits
+- The JK Flip Flop
+- Multivibrators
+- The D-type Flip Flop
+- The Shift Register
+- Johnson Ring Counter
+- Conversion of Flip-flops
+- The Toggle Flip-flop
 
 
+## Finir l'implémentation de l'ordinateur
 
-
-
-## clock, ROM, demarrage de l'ordinateur
-
-algo simple : instruction pointer contient addresse de l'instruction a lire, lecture de l'instruction, execution, incrementation de IP, refaire
-
-instruction simple :
-- lire et ecrire en memoire
-- saut
-- condition
-- UAL
+Écris les composants restant pour concevoir un ordinateur simple complet : clock, ROM, démarrage de l'ordinateur, micro-langage, etc.
