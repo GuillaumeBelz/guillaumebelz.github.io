@@ -42,9 +42,9 @@ void test_and_operator()
 {
     // Écris les tests pour l'opérateur AND
     assert(and_operator(false, false), ...);
-    assert(and_operator(false, true), ...);
+    assert(and_operator(false,true), ...);
     assert(and_operator(true, false), ...);
-    assert(and_operator(true, true), ...);
+    assert(and_operator(true,true), ...);
 }
 ```
 
@@ -60,9 +60,9 @@ void test_or_operator()
 {
     // Ecris les tests pour l'opérateur OR
     assert(or_operator(false, false), ...);
-    assert(or_operator(false, true), ...);
+    assert(or_operator(false,true), ...);
     assert(or_operator(true, false), ...);
-    assert(or_operator(true, true), ...);
+    assert(or_operator(true,true), ...);
 }
 ```
 
@@ -101,10 +101,10 @@ bool non_and_operator(bool a, bool b)
 
 void test_non_and_operator()
 {
-    assert(non_and_operator(false, false),  true);
-    assert(non_and_operator(false, true), true);
-    assert(non_and_operator(true, false), true);
-    assert(non_and_operator(true, true), false);
+    assert(non_and_operator(false, false), true);
+    assert(non_and_operator(false,true),true);
+    assert(non_and_operator(true, false),true);
+    assert(non_and_operator(true,true), false);
 }
 ```
 
@@ -114,10 +114,10 @@ Tu peux remarquer que la table de vérité donnée dans les tests correspond à 
 
   a  |  b  |  AND  |  NON-AND
 ----|-----|------|--------
-  false  |  false |  false  |  true
-  false  |  true  |  false  |  true
-  true  |  false |  false  |  true
-  true  |  true  |  true   |  false
+  false  |  false |  false  | true
+  false  | true  |  false  | true
+ true  |  false |  false  | true
+ true  | true  | true   |  false
 
 ```cpp
 // Remplis le code suivant pour l'opérateur non-OR
@@ -128,10 +128,10 @@ bool non_or_operator(bool a, bool b)
 
 void test_non_or_operator()
 {
-    assert(non_or_operator(false, false), true);
-    assert(non_or_operator(false, true), false);
+    assert(non_or_operator(false, false),true);
+    assert(non_or_operator(false,true), false);
     assert(non_or_operator(true, false), false);
-    assert(non_or_operator(true, true), false);
+    assert(non_or_operator(true,true), false);
 }
 ```
 
@@ -151,14 +151,14 @@ bool xor_operator(bool a, bool b)
 void test_xor_operator()
 {
     assert(xor_operator(false, false), ...);
-    assert(xor_operator(false, true), ...);
+    assert(xor_operator(false,true), ...);
     assert(xor_operator(true, false), ...);
-    assert(xor_operator(true, true), ...);
+    assert(xor_operator(true,true), ...);
 }
 ```
 
 ```cpp
-// Remplis la table de vérité et le code suivant pour l'opérateur non-XOR,
+// Remplis la table de vérité et le code suivant pour l'opérateur NON-XOR,
 // en te basant sur la description de l'opérateur XOR.
 bool non_xor_operator(bool a, bool b)
 {
@@ -168,33 +168,27 @@ bool non_xor_operator(bool a, bool b)
 void test_non_xor_operator()
 {
     assert(non_xor_operator(false, false), ...);
-    assert(non_xor_operator(false,  true), ...);
-    assert(non_xor_operator( true, false), ...);
-    assert(non_xor_operator( true,  true), ...);
+    assert(non_xor_operator(false,true), ...);
+    assert(non_xor_operator(true, false), ...);
+    assert(non_xor_operator(true,true), ...);
 }
 ```
 
 
 ### Quelques expressions logiques plus complexes
 
-Les exercices suivants consistent a implementer des expressions logiques un peu plus complexes,
-avec plus de 2 entrees et 1 ou plusieurs sorties. Tu peux utiliser les tableaux de karnaugh
-et les lois de morgan pour simplifier les expressions (si c'est possible) avant de les implementer.
-
-Rappel sur l'algebre boolean : https://www.electronics-tutorials.ws/boolean/bool_6.html
-
+Les exercices suivants consistent à implémenter des expressions logiques un peu plus complexes,
+avec plus de deux entrées et une ou plusieurs sorties. Tu peux utiliser les tableaux de Karnaugh
+et les lois de Morgan pour simplifier les expressions (si c'est possible) avant de les implementer.
 
 ```cpp
-// Remplis le code suivant et le test, en vous basant sur la table de Karnaugh suivante
-
+// Écris le code et les tests, en te basant sur la table de Karnaugh suivante :
 //               ab
 //      | 00 | 01 | 11 | 10
 // -------------------------
 // c  1 |  0 |  0 |  0 |  0
 //    0 |  0 |  0 |  0 |  1
-
-// Cette table peut egalement s'exprimer avec l'expression logique suivante : r = !a!b!c + abc
-
+// Cette table peut également s'exprimer avec l'expression logique suivante : r = !a!b!c + abc
 bool expression_1(bool a, bool b, bool c)
 {
     return ...
@@ -203,25 +197,23 @@ bool expression_1(bool a, bool b, bool c)
 void test_expression_1()
 {
     assert(expression_1(false, false, false), ...);
-    assert(expression_1(false,  true, false), ...);
-    assert(expression_1( true, false, false), ...);
-    assert(expression_1( true,  true, false), ...);
-    assert(expression_1(false, false,  true), ...);
-    assert(expression_1(false,  true,  true), ...);
-    assert(expression_1( true, false,  true), ...);
-    assert(expression_1( true,  true,  true), ...);
+    assert(expression_1(false,true, false), ...);
+    assert(expression_1(true, false, false), ...);
+    assert(expression_1(true, true, false), ...);
+    assert(expression_1(false, false, true), ...);
+    assert(expression_1(false, true, true), ...);
+    assert(expression_1(true, false, true), ...);
+    assert(expression_1(true, true, true), ...);
 }
 ```
 
 ```cpp
-// Remplissez le code suivant et le test, en vous basant sur la table de Karnaugh suivante
-
+// Écris le code et les tests, en te basant sur la table de Karnaugh suivante :
 //               ab
 //      | 00 | 01 | 11 | 10
 // -------------------------
 // c  1 |  1 |  0 |  0 |  0
 //    1 |  1 |  0 |  1 |  1
-
 bool expression_2(bool a, bool b, bool c)
 {
     return ...
@@ -230,19 +222,18 @@ bool expression_2(bool a, bool b, bool c)
 void test_expression_2()
 {
     assert(expression_2(false, false, false), ...);
-    assert(expression_2(false,  true, false), ...);
-    assert(expression_2( true, false, false), ...);
-    assert(expression_2( true,  true, false), ...);
-    assert(expression_2(false, false,  true), ...);
-    assert(expression_2(false,  true,  true), ...);
-    assert(expression_2( true, false,  true), ...);
-    assert(expression_2( true,  true,  true), ...);
+    assert(expression_2(false, true, false), ...);
+    assert(expression_2(true, false, false), ...);
+    assert(expression_2(true, true, false), ...);
+    assert(expression_2(false, false, true), ...);
+    assert(expression_2(false, true, true), ...);
+    assert(expression_2(true, false, true), ...);
+    assert(expression_2(true, true, true), ...);
 }
 ```
 
 ```cpp
-// Remplis le code suivant et le test, en vous basant sur la table de Karnaugh suivante
-
+// Écris le code et les tests, en te basant sur la table de Karnaugh suivante :
 //                 ab
 //        | 00 | 01 | 11 | 10
 // ---------------------------
@@ -250,7 +241,6 @@ void test_expression_2()
 // cd  01 |  0 |  1 |  0 |  0
 //     11 |  0 |  0 |  1 |  0
 //     10 |  0 |  0 |  0 |  1
-
 bool expression_3(bool a, bool b, bool c, bool d)
 {
     return ...
@@ -259,19 +249,18 @@ bool expression_3(bool a, bool b, bool c, bool d)
 void test_expression_3()
 {
     assert(expression_3(false, false, false), ...);
-    assert(expression_3(false,  true, false), ...);
-    assert(expression_3( true, false, false), ...);
-    assert(expression_3( true,  true, false), ...);
-    assert(expression_3(false, false,  true), ...);
-    assert(expression_3(false,  true,  true), ...);
-    assert(expression_3( true, false,  true), ...);
-    assert(expression_3( true,  true,  true), ...);
+    assert(expression_3(false, true, false), ...);
+    assert(expression_3(true, false, false), ...);
+    assert(expression_3(true, true, false), ...);
+    assert(expression_3(false, false, true), ...);
+    assert(expression_3(false, true, true), ...);
+    assert(expression_3(true, false, true), ...);
+    assert(expression_3(true, true, true), ...);
 }
 ```
 
 ```cpp
-// Remplissez le code suivant et le test, en vous basant sur la table de Karnaugh suivante
-
+// Écris le code et les tests, en te basant sur la table de Karnaugh suivante :
 //                 ab
 //        | 00 | 01 | 11 | 10
 // ---------------------------
@@ -279,7 +268,6 @@ void test_expression_3()
 // cd  01 |  1 |  1 |  0 |  1
 //     11 |  0 |  0 |  0 |  1
 //     10 |  0 |  0 |  0 |  1
-
 void expression_4(bool a, bool b, bool c, bool d)
 {
     return ...
@@ -287,21 +275,20 @@ void expression_4(bool a, bool b, bool c, bool d)
 
 void test_expression_4()
 {
-    assert(expression_4(false, false, false), ...);
-    assert(expression_4(false,  true, false), ...);
-    assert(expression_4( true, false, false), ...);
-    assert(expression_4( true,  true, false), ...);
-    assert(expression_4(false, false,  true), ...);
-    assert(expression_4(false,  true,  true), ...);
-    assert(expression_4( true, false,  true), ...);
-    assert(expression_4( true,  true,  true), ...);
+    assert(expression_4(false, false, false) == ...);
+    assert(expression_4(false, true, false) == ...);
+    assert(expression_4(true, false, false) == ...);
+    assert(expression_4(true, true, false) ==...);
+    assert(expression_4(false, false, true) == ...);
+    assert(expression_4(false, true, true) == ...);
+    assert(expression_4(true, false, true) == ...);
+    assert(expression_4(true, true, true) == ...);
 }
 ```
 
 ```cpp
-// Remplis le code suivant et le test, en vous basant sur la table de Karnaugh suivante
+// Écris le code suivant et le test, en te basant sur la table de Karnaugh suivante.
 // Attention, il y a 2 sorties dans cet exercice.
-
 //                 ab
 //        | 00 | 01 | 11 | 10
 // ---------------------------
@@ -309,7 +296,6 @@ void test_expression_4()
 // cd  01 | 01 | 01 | 00 | 01
 //     11 | 10 | 10 | 10 | 11
 //     10 | 10 | 10 | 10 | 11
-
 std::pair<bool, bool> expression_4(bool a, bool b, bool c, bool d)
 {
     return ...
@@ -317,7 +303,7 @@ std::pair<bool, bool> expression_4(bool a, bool b, bool c, bool d)
 
 void test_expression_4()
 {
-    assert(expression_4(false, false, false), {false, false});
+    assert(expression_4(false, false, false, false) == std::make_pair(false, false));
     ...
 }
 ```
@@ -343,7 +329,6 @@ void test_expression_5()
     ...
 }
 ```
-
 
 
 ## Deuxième partie : les composants elementaires d'un ordinateur simple (logique combinatoire)
@@ -433,7 +418,7 @@ Exercices supplementaires : demultiplexeur 1-to-4. https://www.electronics-tutor
 https://en.wikipedia.org/wiki/Priority_encoder
 https://www.electronics-tutorials.ws/combination/comb_4.html
 
-plusieurs entree, prendre la plus prioritaire. Ie la sortie = indique quelle est l'entree le plus prioritaire active (= true).
+plusieurs entree, prendre la plus prioritaire. Ie la sortie = indique quelle est l'entree le plus prioritaire active (=true).
 
 ```cpp
 // ordre de priorite : 0 (plus basse priorite) -> 3 (plus haute priorite)
