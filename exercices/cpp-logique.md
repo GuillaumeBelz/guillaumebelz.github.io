@@ -322,15 +322,13 @@ void test_expression_4()
 ```
 
 ```cpp
-// Prends un exercices sur l'un des sites proposes (ou cherches d'autres exercices en ligne)
-// et implemente le code et les tests.
-
+// Prends un exercices sur l'un des sites proposés (ou cherches d'autres exercices en ligne)
+// et implémente le code et les tests.
 // https://fr.wikiversity.org/wiki/Logique_de_base/Exercices/Tableau_de_Karnaugh_1
 // https://mrproof.blogspot.com/2012/10/exercices-sur-le-tableau-de-karnaugh.html
 // http://electroussafi.ueuo.com/docs/sln/E_karnaugh.pdf
 // https://f2school.com/tableau-de-karnaugh-cours-et-exercices-corriges/
-
-void expression_5(bool a == ...)
+void expression_5(bool a, ...)
 {
     // Écris l'expression logique qui respecte les tests suivants.
     return ...
@@ -354,22 +352,20 @@ Dans la suite des exercices, tu vas devoir implementer des composants logiques u
 les ordinateurs, par exemple un multiplexeur, un additionneur, un décodeur, etc.
 
 En pratique, il s'agit simplement d'implémenter des expressions logiques de plus en plus
-complexes, en suivant la meme méthode que pour les expressions logiques précédentes.
+complexes, en suivant la même méthode que pour les expressions logiques précédentes.
 
-Rappel de cours : https://www.electronics-tutorials.ws/combination/comb_1.html
-
-Note : ces circuits sont dit "combinatoires" du fait qu'ils ne dependent pas du temps : https://fr.wikipedia.org/wiki/Fonction_logique
-
+Note : ces circuits sont dit "combinatoires" du fait qu'ils ne dependent pas du temps
+[https://fr.wikipedia.org/wiki/Fonction_logique](https://fr.wikipedia.org/wiki/Fonction_logique).
 
 ### Le multiplexeur
 
-Le but d'un multiplexeur est de selection une entree parmi plusieurs.
+Le but d'un multiplexeur est de sélection une entrée parmi plusieurs.
+[The Multiplexer](https://www.electronics-tutorials.ws/combination/comb_2.html)
 
 ```cpp
-// Implementer une multiplexeur simple a 2 entrees + 1 entree de selection.
-// Lors que l'entree de selection select est false, la sortie est égale
-// a l'entree `input_a`. Sinon la sortie est égale a la seconde entree `intput_b`.
-
+// Implémente un multiplexeur simple à deux entrées et une entrée de sélection.
+// Lorsque l'entrée de sélection `select` est `false`, la sortie est égale
+// à l'entrèe `input_a`. Sinon la sortie est égale à la seconde entrèe `intput_b`.
 // (x = ignore)
 //  select | input_a | input_b || output
 // --------------------------------------
@@ -377,7 +373,6 @@ Le but d'un multiplexeur est de selection une entree parmi plusieurs.
 //     0   |    1    |    x    ||   1
 //     1   |    x    |    0    ||   0
 //     1   |    x    |    1    ||   1
-
 bool multiplexer_2_to_1(bool select, bool input_a, bool input_b)
 {
     return ...
@@ -390,20 +385,23 @@ void test_multiplexer_2_to_1()
 }
 ```
 
-Exercices supplémentaires : multiplexeur 4-to-1, puis 4-to-2. https://www.electronics-tutorials.ws/combination/comb_2.html
+**Exercices supplémentaires**
+
+- Écris un multiplexeur 4-to-1.
+- Écris un multiplexeur 4-to-2.
 
 
 ### Le démultiplexeur
 
-Le démultiplexeur réalise l'operation inverse du multiplexeur, c'est a dire de prendre 1 entree et de
-l'envoyer dans 1 sortie parmis plusieurs.
+Le démultiplexeur réalise l'opération inverse du multiplexeur, c'est-à-dire de prendre une entrée et de
+l'envoyer dans une sortie parmis plusieurs.
+[The Demultiplexer](https://www.electronics-tutorials.ws/combination/comb_3.html)
 
 ```cpp
-// Implementer une démultiplexeur simple a 1 entree + 1 entree de selection + 2 sorties.
-// Lors que l'entree de selection select_a est false, la premiere valeur booléen est égale
-// a l'entree input. Sinon la seconde valeur booléen est égale a l'entree input.
-// Une sortie non active est conservée a false.
-
+// Implemente un démultiplexeur simple à une entrée, une entrée de sélection et deux sorties.
+// Lorsque l'entrée de sélection `select_a` est `false`, la première valeur booléenne est égale
+// à l'entrée `input`. Sinon la seconde valeur booléenne est égale à l'entrée `input`.
+// Une sortie non active est conservée à `false`.
 //  select | input || output 1 | output 2
 // ----------------------------------------
 //     0   |   0   ||    0     |    0
@@ -423,15 +421,18 @@ void test_demultiplexer_1_to_2()
 }
 ```
 
-Exercices supplémentaires : démultiplexeur 1-to-4. https://www.electronics-tutorials.ws/combination/comb_3.html
+**Exercices supplémentaires**
+
+- Écris un démultiplexeur 1-to-4.
 
 
 ### L'encodeur prioritaire
 
-https://en.wikipedia.org/wiki/Priority_encoder
-https://www.electronics-tutorials.ws/combination/comb_4.html
 
 plusieurs entree, prendre la plus prioritaire. Ie la sortie = indique quelle est l'entree le plus prioritaire active (=true).
+
+[Priority Encoder](https://www.electronics-tutorials.ws/combination/comb_4.html)
+
 
 ```cpp
 // ordre de priorité : 0 (plus basse priorité) -> 3 (plus haute priorité)
