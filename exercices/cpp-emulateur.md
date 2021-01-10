@@ -1,4 +1,4 @@
-*[Retourner à la liste des exercices et projets](..)*
+*[Retourner à la liste des exercices et projets](README.md)*
 
 # Création d'un émulateur simple
 
