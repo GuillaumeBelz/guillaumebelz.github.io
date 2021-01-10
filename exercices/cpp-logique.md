@@ -42,9 +42,9 @@ void test_and_operator()
 {
     // Écris les tests pour l'opérateur AND
     assert(and_operator(false, false), ...);
-    assert(and_operator(false,  true), ...);
-    assert(and_operator( true, false), ...);
-    assert(and_operator( true,  true), ...);
+    assert(and_operator(false, true), ...);
+    assert(and_operator(true, false), ...);
+    assert(and_operator(true, true), ...);
 }
 ```
 
@@ -60,9 +60,9 @@ void test_or_operator()
 {
     // Ecris les tests pour l'opérateur OR
     assert(or_operator(false, false), ...);
-    assert(or_operator(false,  true), ...);
-    assert(or_operator( true, false), ...);
-    assert(or_operator( true,  true), ...);
+    assert(or_operator(false, true), ...);
+    assert(or_operator(true, false), ...);
+    assert(or_operator(true, true), ...);
 }
 ```
 
@@ -78,22 +78,22 @@ void test_negation_operator()
 {
     // Écris les tests pour l'opérateur NON
     assert(negation_operator(false), ...);
-    assert(negation_operator( true), ...);
+    assert(negation_operator(true), ...);
 }
 ```
 
 
 ## Première partie : les composants logiques élémentaires
 
-Cette série d'exercices à pour but de vous faire écrire des circuits logiques (des expressions logiques dans le code)
-à partir de tables de vérité et d'écrire des tables de vérite2 (sous forme de tests) à partir d'expressions logiques
-simples. Tu n'as besoin d'utiliser que les trois opérateurs logiques de base et tu n'avez pas besoin
+Cette série d'exercices à pour but de te faire écrire des circuits logiques (des expressions logiques dans le code)
+à partir de tables de vérité et d'écrire des tables de vérité (sous forme de tests) à partir d'expressions logiques
+simples. Tu n'as besoin d'utiliser que les trois opérateurs logiques de base et tu n'as pas besoin
 de simplifier les expressions en utilisant des tableaux de Karnaugh et les lois de Morgan.
 
 ### Quelques opérateurs logiques simples
 
 ```cpp
-// Remplis le code suivant pour l'operateur NON-AND
+// Remplis le code suivant pour l'opérateur NON-AND
 bool non_and_operator(bool a, bool b)
 {
     return ...
@@ -102,15 +102,15 @@ bool non_and_operator(bool a, bool b)
 void test_non_and_operator()
 {
     assert(non_and_operator(false, false),  true);
-    assert(non_and_operator(false,  true),  true);
-    assert(non_and_operator( true, false),  true);
-    assert(non_and_operator( true,  true), false);
+    assert(non_and_operator(false, true),  true);
+    assert(non_and_operator(true, false),  true);
+    assert(non_and_operator(true, true), false);
 }
 ```
 
 **Aide**
 
-Tu peux remarquer que la table de verite correspond a la negation de l'operateur AND :
+Tu peux remarquer que la table de vérité donnée dans les tests correspond à la négation de l'opérateur AND :
 
    a   |   b   |  AND  | Non-AND
 ---------------------------------
