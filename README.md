@@ -13,6 +13,12 @@ Le tutoriel pour Qt 5 n'est plus mis à jour :
 
 - [Exercices et projets en C++](exercices/README.md)
 
+# Club de lecture
+
+Les résumés de séances du club de lecture du discord NaN :
+
+- [Club de lecture du discord NaN](club-lecture/README.md)
+
 # Articles divers
 
 - [Sélections de ressources pour le C++, Qt et le développement en général](articles/ressources.md)
