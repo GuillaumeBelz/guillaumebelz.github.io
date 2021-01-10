@@ -3,7 +3,7 @@
 
 **Niveau C++ : débutant**
 
-Tu devras utiliser es opérateurs logiques du C++, la classe `std::bitset`, les algorithmes simples, écrire des fonctions
+Tu devras utiliser les opérateurs logiques du C++, la classe `std::bitset`, les algorithmes simples, écrire des fonctions
 et des classes.
 
 Les exercices présentés ici demanderont plus de connaissances sur la logique binaire et les composants
