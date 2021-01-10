@@ -1,6 +1,19 @@
 
 # Création d'un émulateur d'ordinateur simple
 
+**Niveau C++ : débutant**
+
+Tu devras utiliser es opérateurs logiques du C++, la classe `std::bitset`, écrire des fonctions
+et des classes.
+
+Les exercices présentés ici demanderont plus de connaissances sur la logique binaire et les composants
+élémentaires d'un ordinateur que sur le C++ proprement dit.
+
+Ces exercices peuvent intéresser ceux qui veulent approfondir la logique binaire, l'architecture des ordinateurs
+et l'électronique.
+
+**Vue d'ensemble**
+
 Le but final de ce projet est de construire un ordinateur de façon logicielle. C'est-à-dire implémenter
 avec du code les différents éléments d'un ordinateur simple, en partant des portes logiques, jusqu'aux composants
 les plus complexes.
