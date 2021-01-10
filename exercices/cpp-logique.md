@@ -102,8 +102,8 @@ bool non_and_operator(bool a, bool b)
 void test_non_and_operator()
 {
     assert(non_and_operator(false, false),  true);
-    assert(non_and_operator(false, true),  true);
-    assert(non_and_operator(true, false),  true);
+    assert(non_and_operator(false, true), true);
+    assert(non_and_operator(true, false), true);
     assert(non_and_operator(true, true), false);
 }
 ```
@@ -112,20 +112,15 @@ void test_non_and_operator()
 
 Tu peux remarquer que la table de vérité donnée dans les tests correspond à la négation de l'opérateur AND :
 
-   a   |   b   |  AND  | Non-AND
----------------------------------
- false | false | false |  true
----------------------------------
- false | true  | false |  true
----------------------------------
- true  | false | false |  true
----------------------------------
- true  | true  | true  |  false
-
+  a  |  b  |  AND  |  NON-AND
+----|-----|------|--------
+  false  |  false |  false  |  true
+  false  |  true  |  false  |  true
+  true  |  false |  false  |  true
+  true  |  true  |  true   |  false
 
 ```cpp
-// Remplis le code suivant pour l'operateur non-OR
-
+// Remplis le code suivant pour l'opérateur non-OR
 bool non_or_operator(bool a, bool b)
 {
     return ...
@@ -133,22 +128,21 @@ bool non_or_operator(bool a, bool b)
 
 void test_non_or_operator()
 {
-    assert(non_or_operator(false, false),  true);
-    assert(non_or_operator(false,  true), false);
-    assert(non_or_operator( true, false), false);
-    assert(non_or_operator( true,  true), false);
+    assert(non_or_operator(false, false), true);
+    assert(non_or_operator(false, true), false);
+    assert(non_or_operator(true, false), false);
+    assert(non_or_operator(true, true), false);
 }
 ```
 
 ```cpp
-// Avec l'operateur OR "classique" (dit "inclusif"), le resultat
-// est vrai si l'une au moins des 2 valeurs est vraie.
-// Avec l'operateur OR exclusif (XOR), le resultat est vrai si
-// l'une ou l'autre valeur est vraie, mais pas les 2 en meme temps.
+// Avec l'opérateur OR "classique" (dit "inclusif"), le résultat
+// est vrai si l'une au moins des deux valeurs est vraie.
+// Avec l'opérateur OR exclusif (XOR), le résultat est vrai si
+// l'une ou l'autre valeur est vraie, mais pas les deux en meme temps.
 
-// Remplissez la table de verite et le code suivant pour l'operateur OR exclusif,
-// en te basant sur la description de l'operateur XOR.
-
+// Remplis la table de vérité et le code suivant pour l'opérateur OR exclusif (XOR),
+// en te basant sur la description précédante.
 bool xor_operator(bool a, bool b)
 {
     return ...
@@ -157,16 +151,15 @@ bool xor_operator(bool a, bool b)
 void test_xor_operator()
 {
     assert(xor_operator(false, false), ...);
-    assert(xor_operator(false,  true), ...);
-    assert(xor_operator( true, false), ...);
-    assert(xor_operator( true,  true), ...);
+    assert(xor_operator(false, true), ...);
+    assert(xor_operator(true, false), ...);
+    assert(xor_operator(true, true), ...);
 }
 ```
 
 ```cpp
-// Remplis la table de verite et le code suivant pour l'operateur non-XOR,
-// en te basant sur la description de l'operateur XOR.
-
+// Remplis la table de vérité et le code suivant pour l'opérateur non-XOR,
+// en te basant sur la description de l'opérateur XOR.
 bool non_xor_operator(bool a, bool b)
 {
     return ...
