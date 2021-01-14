@@ -46,22 +46,37 @@ Le but est de tester ta connaissance de la syntaxe du C++, pas tes connaissances
 `sum`, `max`, `inverse`, `multiply`, `unique`. Ces fonctions seront déclarées dans l'espace de noms `utils`.
 
 ```cpp
+#include <iostream>
+
+void print(int i) { std::cout << i << std::endl; }
+
+template<typename T>
+void print_array(const T& x) { 
+     for(auto i : x) std::cout << i << ' '; 
+     std::cout << std::endl; 
+ }
+
 int main() {
     // calcule la somme des éléments
     constexpr auto s { utils::sum(t) };
+    print(s);
     
     // recherche la valeur maximale
     constexpr auto m { utils::max(t) };
+    print(m);
     
     // inverse l'ordre des éléments du tableau 
     // (le premier devient le dernier, etc)
     constexpr auto t2 { utils::inverse(t) };
+    print_array(t2);
     
     // multiplie chaque élément par une valeur constante
-    utils::multiply(t, 2);
+    constexpr auto t3 { utils::multiply(t, 2) };
+    print_array(t3);
     
     // supprime les doublons
-    constexpr auto  t3 { utils::unique(t) };
+    constexpr auto  t4 { utils::unique(t) };
+    print_array(t4);
 }
 ```
 
