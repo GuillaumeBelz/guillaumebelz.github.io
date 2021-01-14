@@ -53,8 +53,9 @@ int main() {
     // recherche la valeur maximale
     constexpr auto m { utils::max(t) };
     
-    // inverse l'ordre des éléments du tableau (le premier devient le dernier, etc)
-    constexpr auto t2 { inverse(t) };
+    // inverse l'ordre des éléments du tableau 
+    // (le premier devient le dernier, etc)
+    constexpr auto t2 { utils::inverse(t) };
     
     // multiplie chaque élément par une valeur constante
     utils::multiply(t, 2);
@@ -109,7 +110,7 @@ constexpr typename iterator_traits<InputIt>::difference_type count(
 // https://en.cppreference.com/w/cpp/algorithm/transform
 template<class InputIt, class OutputIt, class UnaryOperation>
 constexpr OutputIt transform(InputIt src_first, InputIt src_last, 
-                             OutputIt dest_first, UnaryOperation unary_op);
+    OutputIt dest_first, UnaryOperation unary_op);
 
 // https://en.cppreference.com/w/cpp/algorithm/sort
 // https://fr.wikipedia.org/wiki/Tri_fusion
@@ -123,7 +124,8 @@ int main() {
     constexpr auto n = utils::count(std::begin(t), std::end(t), 2);
     
     // transform
-    utils::transform(std::begin(in), std::end(in), std::begin(out), [](int x){ return x*x; });
+    utils::transform(std::begin(in), std::end(in), std::begin(out),
+        [](int x){ return x*x; });
     
     // multiplie chaque élément par une valeur constante
     utils::sort(std::begin(v), std::end(v));
