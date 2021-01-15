@@ -110,3 +110,14 @@ int main() {
 ```
 
 # Mes remarques
+
+```cpp
+#ifndef FONCTION_H
+```
+- Attention avec les header guards trop génériques, il y a plus de chances de se retrouver avec conflits.
+
+```cpp
+#include <iostream>
+#include <algorithm>
+```
+- Tu n'utilises pas ces includes. Attention avec les includes inutiles, cela peut avoir un impact sur les temps de compilation. Il existe des outils comme [Include What You Use](https://github.com/include-what-you-use/include-what-you-use) pour aider à nettoyer les includes.
