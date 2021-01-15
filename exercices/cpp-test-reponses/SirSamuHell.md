@@ -1,4 +1,4 @@
-# Le code proposé
+# Le code proposé par SirSamuHell
 
 ```cpp
 #include <iostream>
