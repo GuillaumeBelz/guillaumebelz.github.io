@@ -85,7 +85,7 @@ int main() {
 *Note : les codes proposés et mes commentaires ne sont pas une solution aux exercices proposés, mais juste pour aider à orienter
 ton apprentissage du C++.*
 
-- [Code de SirSamuHell](cpp-test-reponses/SirSamuHell.md)
+- [Code de SirSamuHell](cpp-test-reponses/SirSamuHell-1.md)
 
 
 ## Exercice 2 - Littéraux, fonction template, spécialisation template
