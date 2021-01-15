@@ -226,7 +226,8 @@ for(auto i = 0; i < TAILLE; i++)
 
 - `0` est une littérale de type `int` donc `i` sera de type `int` aussi. `t[i]` attend un non signé, donc tu as un avertissement lors de la compilation. Idem pour `j`.
 ```
-prog.cc:47:22: warning: implicit conversion changes signedness: 'int' to 'std::__1::array::size_type' (aka 'unsigned long') [-Wsign-conversion]
+prog.cc:47:22: warning: implicit conversion changes signedness: 'int' to 
+'std::__1::array::size_type' (aka 'unsigned long') [-Wsign-conversion]
                 if(t[i] == t[j] && j != i)
                    ~ ^
 ```
