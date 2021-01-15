@@ -80,6 +80,14 @@ int main() {
 }
 ```
 
+**Codes proposés**
+
+*Note : les codes proposés et mes commentaires ne sont pas une solution aux exercices proposés, mais juste pour aider à orienter
+ton apprentissage du C++.*
+
+- [Code de SirSamuHell](cpp-test-reponses/SirSamuHell.md)
+
+
 ## Exercice 2 - Littéraux, fonction template, spécialisation template
 
 Écris une fonction template `print` qui affiche dans la console le type de l'argument utilisé lors de l'appel de la fonction.
