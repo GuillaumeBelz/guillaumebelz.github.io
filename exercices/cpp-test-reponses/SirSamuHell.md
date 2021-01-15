@@ -86,7 +86,7 @@ int main() {
 
 # Mes commentaires
 
-```
+```cpp
 constexpr int sum(const std::array<int, TAILLE> t)
 ...
 constexpr int max (std::array<int, TAILLE> t)
@@ -142,8 +142,8 @@ constexpr auto max (std::array<int, TAILLE> t)
 }
 ```
 
-=> voir la programmation par contrat, les préconditions, les postconditions, les invariants de classes.
-=> tu peux regarder aussi les concepts, qui sont en quelques sortes des préconditions sur les types
+- => voir la programmation par contrat, les préconditions, les postconditions, les invariants de classes.
+- => tu peux regarder aussi les concepts, qui sont en quelques sortes des préconditions sur les types
 
 - En C++20, il y a les ranges maintenant, qui acceptent de prendre directement une collection :
 ```cpp
@@ -171,14 +171,13 @@ constexpr std::array<int, TAILLE> multiply(std::array<int, TAILLE> t, const int 
     std::copy(t.begin(), t.end(), cpy.begin()); // seconde copie
 ```
 
-
 ```cpp
 // pas trouver de fonction dans la STL...
 ```
 - probablement `std::transform`, mais pour un code aussi simple, un range-for loop est très bien aussi. Par contre, utiliser `transform` permet d'utiliser les ranges (et par exemple composer un `std::ranges::copy` et un `std::ranges::transform`, qui est moins couteux que de faire la copie et le transform séparés) ou la version "parallèle" de `std::transform`.
 
-=> si tu veux voir le C++20, tu peux regarder les ranges plus en detail
-=> si tu es intéressé par le parallélisme, tu peux regarder la version multithreads des algos standard <https://en.cppreference.com/w/cpp/header/execution> (C++17)
+- => si tu veux voir le C++20, tu peux regarder les ranges plus en detail
+- => si tu es intéressé par le parallélisme, tu peux regarder la version multithreads des algos standard <https://en.cppreference.com/w/cpp/header/execution> (C++17)
 
 ```cpp
  constexpr std::array<int, TAILLE> multiply(std::array<int, TAILLE> t, const int k)
@@ -210,8 +209,8 @@ constexpr auto multiply(const array_type& t, const typename array_type::value_ty
     array_type cpy;
 ```
 
-=> pour les details, voir les template template
-=> voir aussi l'utilisation de `typename` et `template` dans les noms dépendants <https://en.cppreference.com/w/cpp/language/dependent_name>
+- => pour les details, voir les template template
+- => voir aussi l'utilisation de `typename` et `template` dans les noms dépendants <https://en.cppreference.com/w/cpp/language/dependent_name>
 
 ```
 (void)t;
@@ -232,9 +231,9 @@ prog.cc:47:22: warning: implicit conversion changes signedness: 'int' to
                    ~ ^
 ```
 
-=> utilise `std::size_t` pour les indices de tableaux
-=> attention a l'utilisation de signed et unsigned ensemble
-=> tu peux revoir les littoraux, les types des littoraux et la deduction de type
+- => utilise `std::size_t` pour les indices de tableaux
+- => attention a l'utilisation de signed et unsigned ensemble
+- => tu peux revoir les littoraux, les types des littoraux et la deduction de type
 
 
 ```
