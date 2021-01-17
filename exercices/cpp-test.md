@@ -82,8 +82,8 @@ int main() {
 
 **Codes proposés**
 
-*Note : les codes proposés et mes commentaires ne sont pas une solution aux exercices proposés, mais juste pour aider à orienter
-ton apprentissage du C++.*
+*Note : les codes proposés et mes commentaires ne sont pas une solution aux exercices, mais juste une aide pour orienter
+l'apprentissage du C++ de ceux qui sont intéressés.*
 
 - [Code de SirSamuHell](cpp-test-reponses/SirSamuHell-1.md)
 
