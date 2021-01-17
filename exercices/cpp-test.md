@@ -59,24 +59,24 @@ void print_array(const T& x) {
 int main() {
     // calcule la somme des éléments
     constexpr auto s { utils::sum(t) };
-    print(s);
+    print(s); // affiche 16
     
     // recherche la valeur maximale
     constexpr auto m { utils::max(t) };
-    print(m);
+    print(m); // affiche 5
     
     // inverse l'ordre des éléments du tableau 
     // (le premier devient le dernier, etc)
     constexpr auto t2 { utils::inverse(t) };
-    print_array(t2);
+    print_array(t2); // affiche 2, 3, 5, 2, 3, 1
     
     // multiplie chaque élément par une valeur constante
     constexpr auto t3 { utils::multiply(t, 2) };
-    print_array(t3);
+    print_array(t3); // affiche 2, 6, 4, 10, 6, 4
     
     // supprime les doublons
     constexpr auto  t4 { utils::unique(t) };
-    print_array(t4);
+    print_array(t4); // affiche 1, 2, 3 et 5 (trié ou non)
 }
 ```
 
