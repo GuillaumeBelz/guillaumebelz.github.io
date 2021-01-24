@@ -1,3 +1,4 @@
+*[Retourner à la page d'accueil](README.md)*
 
 # Mes critiques de livres
 
@@ -42,6 +43,7 @@ qui ont amenés a ce que le C++ est aujourd'hui.
 - "Accelerated C++", de Koening et Moo
 - plus généralement, la série des "C++ in depth"
 - également la série des "Effective C++", de Meyers
+- et la série des "Exceptional C++", de Sutter
 
 Les nouveaux livres qui me semblent avoir un bon potentiel.
 
