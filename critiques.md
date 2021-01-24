@@ -10,7 +10,7 @@ mais ce livre date de 2012 et commence à se faire vieux. Le but est donc de voi
 en particulier sur le C++20.
 
 Bien sûr, mes critiques se basent sur des critères et un point de vue personnel sur ce que j'attend d'un livre C++ pour
-les débutants. Pour les explications sur comment je juge les livres que je lis : [Mes critères de lecture](critiques-criteres.md).
+les débutants. Pour les explications sur comment je juge les livres que je lis : ~~[Mes critères de lecture](critiques-criteres.md)~~.
 
 La majorité des livres sont en anglais.
 
