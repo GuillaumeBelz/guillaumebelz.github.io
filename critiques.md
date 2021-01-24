@@ -11,7 +11,16 @@ en particulier sur le C++20.
 Bien sûr, mes critiques se basent sur des critères et un point de vue personnel sur ce que j'attend d'un livre C++ pour
 les débutants. Pour les explications sur comment je juge les livres que je lis : [Mes critères de lecture](critiques-criteres.md).
 
-Voici la liste des livres prévus.
+La majorité des livres sont en anglais.
+
+**Pour les débutants**
+
+Pour les débutants, je conseille :
+
+- "C++ Primer", de Lippman, Lajoie et Moo, ou "Programming: Principles and Practice Using C++", de Stroustrup.
+- puis "Professional C++", de Gregoire.
+
+**Liste des livres prévus**
 
 Les grands classiques (que j'ai déjà lu en général, mais qui ont une nouvelle édition, ou simplement pour partager mon avis) :
 
