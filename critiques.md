@@ -39,7 +39,7 @@ qui ont amenés à ce que le C++ est aujourd'hui.
 
 - "Elements of programming", de Stepanov
 - "Multi-paradigm design in C++", de Coplien
-- "Advanced C++, programming styles et idioms", de Coplien
+- "Advanced C++, programming styles and idioms", de Coplien
 - "Accelerated C++", de Koening et Moo
 - plus généralement, la série des "C++ in depth"
 - également la série des "Effective C++", de Meyers
