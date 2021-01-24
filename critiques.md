@@ -19,8 +19,9 @@ Les grands classiques (que j'ai déjà lu en général, mais qui ont une nouvell
 livres est destiné à un public différent.
 - "C++ Primer", de Lippman
 - "Effective Modern C++", de Meyers
-
-
+- les livres de Josuttis : "C++ Templates", "C++17 - The Complete Guide" et "C++ Standard Library"
+- "C++ Concurrency in Action", de Williams
+- "Professional C++", de Gregoire
 
 Pour les grands grands classiques très très anciens, je verrais si j'écris une critique. Ces livres sont intéressants à lire,
 mais pour les développeurs C++ avancés, pour avoir une meilleure compréhension de l'histoire des pratiques et conceptions en C++,
@@ -30,8 +31,31 @@ qui ont amenés a ce que le C++ est aujourd'hui.
 - "Multi-paradigm design in C++", de Coplien
 - "Advanced C++, programming styles et idions", de Coplien
 - "Accelerated C++", de Koening et Moo
+- plus généralement, la série des "C++ in depth"
+- également la série des "Effective C++", de Meyers
 
 Les nouveaux livres qui me semblent avoir un bon potentiel.
 
 - "Discovering Modern C++", de Gottschling
 - "Exploiting Modern C++", de Butler (qui doit sortir cet été)
+- "Functional Programming in C++", de Cukic
+- "C++17 In Detail", de Filipek
+- "Large scale C++", de Lakos
+
+Les livres que je ne connais pas du tout.
+
+- "C and C++ Under the Hood", de J. Dos Reis
+- les livres des éditions Packt
+- les livres des éditions Apress
+- "C++ Crash Course", de Lospinoso
+
+Les livres que je ne lirai pas, a priori.
+
+- Les livres des éditions ENI. J'ai déjà fait une critique de 2 livres sur le C++ chez cet éditeur... c'était tellement mauvais que
+je n'ai pas fini la lecture.
+
+Ensuite, les livres autres que sur le C++, en fonction de mes envies (surtout sur Qt et les jeux).
+
+- "Game Engine Architecture", de Gregory
+- "Game Programming Patterns", de Nystrom
+- les livres de Eric Lengyel
