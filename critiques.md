@@ -1,6 +1,6 @@
 *[Retourner à la page d'accueil](README.md)*
 
-# Mes critiques de livres
+# Critiques de livres
 
 J'ai déjà publié de nombreuses critiques de livres, mais cela fait plusieurs années que je ne me suis pas mis à
 jour sur les livres destinés aux débutants, pour savoir quels cours C++ leur conseiller.
