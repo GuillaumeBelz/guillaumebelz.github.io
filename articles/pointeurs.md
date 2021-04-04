@@ -103,9 +103,75 @@ l'erreur pour réussir à compiler.
 
 Dit autrement : **il n'est pas possible d'écrire un code invalide !**
 
+## Les pointeurs
 
+concept d'indirection. Un objet qui permet d'acceder indirectement a un autre objet. Par exemple pointeur, references, iterateurs, etc.
 
+image concept d'indirection
 
+code exemple 
+
+```cpp
+int main() {
+    int i = 0;
+    int* p = &i;
+    printf("%i", *p);
+}
+```
+
+image p et i
+
+### Pointeur invalide
+
+= utiliser un pointeur qui ne reference pas un objet valide en memoire
+
+exemple de pointeur sur un objet hors de sa portee
+
+```cpp
+int main() {
+    int* p;
+    {
+        int i = 0;
+        p = &i;
+        printf("%i", *p); // ligne 1
+    }
+    printf("%i", *p); // ligne 2
+}
+```
+
+Dans ce cas, code invalide, comportement indeterminé. Gros probleme : pas d'erreur de compilation, parfois tres difficile a trouver. J'ai deja passe2
+des jours sur ce genre d'erreur. Et certains logiciels tres utilise ont eu (et ont encore) des bugs pendant des annees due a ce type de probleme.
+
+comme le compialteur ne detecte pas d'erreur, il est de ta responsabilite que ton code soit valide.
+
+Comment detecter a l'execution qu'un pointeur invalide ?
+
+Par exemple :
+
+```cpp
+void foo(int* p) {
+    // quel code ecrire ici pour detecter si p est valide ou pas ?
+
+    printf("%i", *p);
+}
+
+int main() {
+    int* p;
+    foo(p); // ligne 1
+    {
+        int i = 0;
+        p = &i;
+        foo(p); // ligne 2
+    }
+    foo(p); // ligne 3
+}
+```
+
+Quel code ecrire dans la fonction `foo` pour detecter que l'appel de la ligne 2 est valide et que les appels des lignes 2 et 3 sont invalides ?
+
+La reponse extremenet simple : ce n'est pas possible. Aucun code ne permet de faire cela.
+
+### Pointeur nul
 
 
 
