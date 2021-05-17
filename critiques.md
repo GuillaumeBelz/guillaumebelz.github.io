@@ -1,6 +1,6 @@
 *[Retourner à la page d'accueil](README.md)*
 
-# Critiques de livres
+## Critiques de livres
 
 J'ai déjà publié de nombreuses critiques de livres, mais cela fait plusieurs années que je ne me suis pas mis à
 jour sur les livres destinés aux débutants, pour savoir quels cours C++ leur conseiller.
@@ -71,7 +71,7 @@ Ensuite, les livres autres que sur le C++, en fonction de mes envies (surtout su
 - "Game Programming Patterns", de Nystrom
 - les livres de Eric Lengyel
 
-# Expert C++: Become a proficient programmer by learning coding best practices with C++17 and C++20's latest features
+## Expert C++: Become a proficient programmer by learning coding best practices with C++17 and C++20's latest features
 
 **Note : cette review est basée sur un survol rapide du PDF du livre, pas une lecture complète. Mon avis sur ce livre pourra changer apres lecture complète de celui-ci.**
 
