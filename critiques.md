@@ -15,11 +15,11 @@ La majorité des livres sont en anglais.
 
 **Note : cette review est basée sur un survol rapide du PDF du livre, pas une lecture complète. Mon avis sur ce livre pourra changer apres lecture complète de celui-ci.**
 
-Globalement, sur un survol rapide du pdf, je dirais que c'est un livre avec une approche ascendante (du bas niveau - processus de compile, optimisation, call stack, etc - vers le haut). Par exemple, quand il parle de la POO dans le chapitre 3, il s'intéresse à l'organisation des données en mémoire, pas aux questions de sémantiques de la POO.
+Globalement, sur un survol rapide du PDF, je dirais que c'est un livre avec une approche ascendante (du bas niveau - processus de compilation, optimisations, call stack, etc - vers le haut). Par exemple, quand il parle de la POO dans le chapitre 3, il s'intéresse à l'organisation des données en mémoire, pas aux questions de sémantiques de la POO.
 
 Et il considère qu'il faut déjà connaître le C++ a priori. Les syntaxes sont utilisées sans être présentées (par exemple les classes).
 
-En termes de structure du livre et de pédagogie, il me semble qu'il est pas complexe à lire, bien organisé, avec une progression logique. C'est pas une structure que l'on rencontre et conseille en général dans les cours débutants, mais pour le propos de ce livre, elle me semble cohérente. 
+En termes de structure du livre et de pédagogie, il me semble qu'il est pas complexe à lire, bien organisé, beaucoup d'illustrations, avec une progression logique. C'est pas une structure que l'on rencontre et conseille en général dans les cours débutants, mais pour le propos de ce livre, elle me semble cohérente. 
 
 La question est peut être quel est le public visé ? Difficile à dire. Très clairement, ce n'est pas un livre que je conseille aux débutants (pour eux, mon conseil est C++ Primer ou Tour of C++, suivi de Professional C++), mais peut être comme 3ème livre, pour ceux qui veulent approfondir le bas niveau. Mais ceux qui sont intéressé par ça peuvent aussi regarder des livres comme "Performance Analysis and Tuning on Modern CPUs" de Denis Bakhvalov, plus technique mais aussi plus avancé. Je dirais que l'avantage de ce livre est de regrouper pleins de petites informations que l'on trouve habituellement dans des livres différents.
 
