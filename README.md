@@ -17,7 +17,7 @@ Le tutoriel pour Qt 5 n'est plus mis à jour :
 
 - [Club de lecture du discord NaN](club-lecture/)
 
-- [Mes Critiques de livres](critiques.md)
+- [Mes critiques de livres](critiques.md)
 
 ## Articles divers
 
