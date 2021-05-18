@@ -69,6 +69,10 @@ Les livres que je ne connais pas du tout.
 
 - "C and C++ Under the Hood", de J. Dos Reis
 - les livres des éditions Packt
+  - Advanced C++ Programming Cookbook
+  - C++ System Programming Cookbook
+  - Modern C++ Programming Cookbook
+  - The C++ Workshop
 - les livres des éditions Apress
 - "C++ Crash Course", de Lospinoso
 
