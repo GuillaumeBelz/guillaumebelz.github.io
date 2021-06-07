@@ -39,6 +39,8 @@ Name lookup, ADL, etc.
 
 Organisation de projets, pimpl
 
+Pleins de sujets abordés : threads, fichiers, tests, performances
+
 Quelques details pedago criticable :
 
 - Des pointeurs assez tot, sans entrer dans les details (ce n'est pas un cours pour debuter le C++)
