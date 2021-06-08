@@ -19,45 +19,54 @@ Pour résumer, dans l'ordre de ce que je recomande parmis les livres dont j'ai �
 
 ## Advanced C++: Master the technique of confidently writing robust C++ code
 
-nombreux chapitres pas sur la synaxe, mais l'ecosysteme (IDE = eclispe, outils de build = cmake, test = gtest, debug = dnas eclipse, bonne pratique = outil de formatage dans eclispe + nommages + code clear, conception = regles 3/5/0, doc = cppreference, etc)
+**TL;DR : beaucoup de choses intéressante dans ce livre et beaucoup d'exercices proposés. Je le recommande, par exemple comme second livre après un cours débutant.**
 
-Je ne suis pas un grand fan d'eclipse pour le C++ dans l'idee (je ne l'ai pas testé depuis tres tres longtemps). Par contre, je prefere tres largement qu'un auteur se positionne clairement pour un outil, qu'il connait et utilise tous les jours (peu importe que cet outil ne soit pas mon préféré), plutot que de rester generaliste et vague (et donc inutile) sous pretexte de "laisser le choix au lecteur de choisir les outils qu'il prefere".
+De nombreux chapitres ne concernent pas directement la syntaxe du C++, mais tout l'écosystème autour du C++ :
+- éditeur (avec Eclispe)
+- outils de build (cmake)
+- outils de tests (gtest)
+- debug (dans Eclipse)
+- les bonnes pratiques (outil de formatage dans Eclispe, nommage des variables et fonctions, lisibilité du code, conception avec les règles des 3/5/0)
+- la documentation (cppreference.com)
 
-explications et etapes tres détaillees. tres nombreux exos, fournis dans un repos GitHub https://github.com/TrainingByPackt/Advanced-CPlusPlus
+Je ne suis pas un grand fan d'Eclipse pour le C++, je ne l'ai pas testé depuis très très longtemps. Par contre, je préfère très largement qu'un auteur se positionne clairement pour un outil, qu'il connaît et utilise tous les jours (peu importe que cet outil ne soit pas mon préféré), plutôt que de rester généraliste et vague (et donc inutile), sous pretexte de "laisser le choix aux lecteurs de choisir les outils qu'ils préfèrent".
 
-presentation du processus de compilation. Illuster avec Compiler Explorer = (pour moi) présenter ce genre de concept (demangling par exemple) en illustrant avec des captures d'ecran de Compiler Explorer, ca me laisse penser que les auteurs sont de vrais devs C++, qui presentent cet outil parce que c'est comme ca qu'ils travaillent et qu'ils ont un vraie connaissance pratique du C++. C'est le genre d'outils qu'on s'attend a ce qu'un vrai dev connaissance, du fait de sa popularité dans les confs, et qui est un outil pratique auquel on a recours assez facilement dans du dev de tous les jours, quand on se pose des questions sur des details syntaxiques du langage.
+Les explications et étapes pour reproduire les exemples sont très détaillées. Il y a de très nombreux exercices, qui sont fournis dans un dépôt sur GitHub : https://github.com/TrainingByPackt/Advanced-CPlusPlus.
 
-presentation des types : explique pourquoi c'est important (permet d'eviter ou detecter certins types d'erreurs)
+Le code est moderne (C++17), je n'ai pas vu de problème dans les codes présentés.
 
-presente plusieurs syntaxe pour initialiser (sans valeur, avec = ou avec {}) mais pas la syntaxe avec (). Ca me conforte dans l'idée qu'ils connaissent réellement le C++ et qu'ils omettent volontairement cette syntaxe possible a cause du https://en.wikipedia.org/wiki/Most_vexing_parse. C'est la différence avec un cours écrit pas un non dev (prof par exemple, ou un dev qui utilise pleins de langage et ne maitrse pas le C++), qui va souvent faire un catalogue de syntaxes possibles, sans avoir le recul (et le tri) que fait un vrai dev C++. Dit autrement, un vrai dev C++ ne cherchera pas a presenter toutes les syntaxes possibles, mais uniquement celles qui ont un sens dans un vrai code pro.
+Quelques exemples de notions abordées dans de livre :
 
-Code moderne (C++17).
+Une présentation du processus de compilation, qui est illustrée avec des captures d'écran de Compiler Explorer. C'est, pour moi, un exemple qui montre que les auteurs sont très probablement des vrais développeurs, qui utilisent professionnellement le C++ : ils présentent cet outil parce que c'est comme ça qu'ils travaillent et qu'ils ont un vraie connaissance pratique du C++. C'est le genre d'outils qu'on s'attend à ce qu'un vrai développeur connaissance, du fait de sa popularité dans les conférences C++, et qui est un outil pratique auquel on a recours assez facilement dans du développement de tous les jours, quand on se pose des questions sur des détails syntaxiques du langage.
 
-Autre exemple de bonne approche pedago. Au lieu d'entree directement dans la syntaxe des exceptions, explique : 1. pourquoi des exceptions. 2. qu'est-ce que cela change pour le workflow. 3. comment throw et catch. 4. comment gerer avec le RAII. 5. STL (exceptions et RAII). 6. question plus generale : qui est responsable (ownership). 7. move semantic, smart ptr (custom et STL). 8. impact sur les parametres de fonction.
+Une présentation des types, pourquoi c'est important pour permet d'éviter ou détecter certains types d'erreurs.
 
-Name lookup, ADL, etc.
+Les auteurs présentent plusieurs syntaxe pour initialiser : sans valeur, avec `=` ou avec `{}` mais pas la syntaxe avec `()`. Cela me conforte dans l'idée qu'ils connaissent réellement le C++ et qu'ils omettent volontairement cette syntaxe possible à cause du https://en.wikipedia.org/wiki/Most_vexing_parse. C'est la différence avec un cours écrit par une personne qui n'est pas développeur (un enseignant par exemple, ou un développeur qui utilise pleins de langage et ne maîtrise pas le C++), qui va souvent faire un catalogue de syntaxes possibles, sans avoir le recul (et faire le tri) que fait un vrai développeur C++. Dit autrement, un vrai dev C++ ne cherchera pas à présenter toutes les syntaxes possibles, mais uniquement celles qui ont un sens dans un vrai code professionnel.
 
-Organisation de projets, pimpl
+Un autre exemple de bonne approche pédagogique, au lieu d'expliquer directement la syntaxe des exceptions, les auteurs abordent progressivement les choses :
 
-Pleins de sujets abordés : threads, fichiers, tests, performances
+1. pourquoi les exceptions.
+2. qu'est-ce que cela change pour le workflow.
+3. comment utiliser `throw` et `catch`.
+4. comment gérer la mémoire avec le RAII.
+5. les exceptions et les classes RAII dans la STL.
+6. question plus generale : qui est responsable (ownership).
+7. la move semantic et les pointeurs intelligents (écrire ses propres classes de pointeurs et utiliser ceux de la STL).
+8. impact sur le passage de paramètres de fonction.
 
-Quelques details pedago criticable :
+Pleins de sujets abordés : le name lookup (ADL), l'organisation d'un projet et Pimpl, les threads, la gestion de fichiers, les tests, les performances.
 
-- Des pointeurs assez tot, sans entrer dans les details (ce n'est pas un cours pour debuter le C++)
+Quelques détails pédagogiques qui me semblent critiquable, mais qui ne sont pas majeurs :
 
-- "The first and least preferred initialization mechanism..." : si c'est moins preférée, pourquoi la présenter ? Et en premier ? 
+- les pointeurs nus sont présentés assez tôt, sans entrer dans les détails. Ce qui n'est pas catastrophique, vu que ce n'est pas un cours pour débutants.
 
-C'est une critique pedago habituelle d'apprendre en premier des syntaxes qui ne sont pas utilisé en vrai dans le monde pro. Mais c'est surtout quand on a le temps de s'habituer a ces syntaxes, parce que cela necessite un desapprentissage et on sait que les gens ont utilise ce qu'ils ont l'habitude. Quand la "mauvaise" syntaxe est apprise en meme temps que la "bonne" et que cette derniere est celle que va utiliser en pratique celui qui apprend, ca ne sera pas forcément un probleme.
+- "The first and least preferred initialization mechanism..." : si c'est moins préférée, pourquoi la présenter ? Et en premier ? 
 
-D'autant plus qu'ici, l'initialisation des attribus lors de la déclaration de la classes est présentée juste apres et il est bien précisé que c'est la methode recommandée.
+C'est une critique pédagogique habituelle d'enseigner en premier des syntaxes qui ne sont pas utilisées en vrai dans le monde professionnel. Mais c'est surtout quand le lecteur va avoir le temps de s'habituer à ces syntaxes, parce que cela nécessite un désapprentissage. Et on sait que les gens vont utiliser ce dont ils ont l'habitude. Quand la "mauvaise" syntaxe est apprise en même temps que la "bonne" et que cette dernière est celle que va utiliser en pratique celui qui apprend, ca ne sera pas forcément un problème.
 
+D'autant plus qu'ici, l'initialisation des attributs lors de la déclaration de la classes est présentée juste après et il est bien précisé que c'est la méthode recommandée.
 
-
-
-
-
-
-2 livres, qui ont changé mon pt de vue sur ce type d'editeur. Bien meileur que mes apriosi (basés sur mes anciennes reviews d'editeur). Conclusion : lisez des livres écrit par des devs et pas par des profs qui ne pratiquent. Les profs n'écrivent pas des livres mieux pedagogiquement, par contre ils sont souvent moins bon techniquement.
+Ce livre et le livre suivant ("Expert C++) ont changé mon point de vue sur ce type d'éditeur. J'avais un a priori assez négatif, basé sur mes anciennes reviews. Mais j'ai été surpris de la qualité de ces livres. Ma conclusion : lisez des livres écrits par des développeurs et pas par des enseignants qui ne pratiquent pas. Les enseignants n'écrivent pas des livres significativement mieux pédagogiquement, par contre ils sont souvent moins bon techniquement.
 
 
 ## Expert C++: Become a proficient programmer by learning coding best practices with C++17 and C++20's latest features
