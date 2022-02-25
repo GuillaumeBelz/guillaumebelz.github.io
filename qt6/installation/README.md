@@ -1,15 +1,15 @@
 
-# Installation et premiers pas avec Qt 6.0
+# Installation et premiers pas avec Qt 6.2
 
 > **Mises à jour**
 >
 > - 8 décembre 2020 : mise a jour pour Qt 6.0
-> - 24 février 2022 : correction des liens
+> - 24 février 2022 : correction des liens, mise à jour pour Qt 6.2
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
 idée de ce que l'on fait. Le but de cette série de tutoriels est de montrer pas-à-pas comment installer et tester 
-l'installation de Qt.
+l'installation de Qt 6.
 
 **Important ! Si vous avez des problèmes et que vous souhaitez poser des questions sur les forums, lisez d'abord 
 ceci : [Savoir comment demander de l'aide sur les forums](help.md).**
