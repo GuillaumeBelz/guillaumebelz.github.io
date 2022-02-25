@@ -14,7 +14,7 @@ pour minimiser le risque d'installer des logiciels malveillants.**
 
 Vous pouvez retrouver facilement le site officiel en tapant `qt5` dans un moteur de recherche :
 
-![Recherche "qt6 download" sur Google](images/site.png)
+![Recherche "qt6 download" sur Google](images/google-qt6.png)
 
 Dans cette capture d'écran, le premier lien `doc.qt.io` correspond à la documentation officielle de Qt
 et le second lien au site officiel de Qt.
