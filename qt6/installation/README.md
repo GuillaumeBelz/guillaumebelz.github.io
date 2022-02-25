@@ -29,8 +29,8 @@ réaliser quelque chose, la première chose à faire est probablement d'étudier
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
-- [Installer Qt 6.0](install.md)
-- [Tester l'installation de Qt 14.0](test.md)
+- [Installer Qt 6.0](installation.md)
+- [Tester l'installation de Qt 5.14.0](test.md)
 - [Mettre à jour Qt 5.14.0](update.md)
 
 ## Aller plus loin
