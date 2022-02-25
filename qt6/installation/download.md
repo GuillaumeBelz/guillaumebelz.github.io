@@ -1,16 +1,12 @@
 
-# Télécharger l'installateur de Qt 5
+# Télécharger l'installateur de Qt
 
-> Dernière mise à jour : 23 janvier 2020.
->
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.14](index.md)
->
-> Chapitre précédent : [Installer un compilateur C++](compiler.md)
->
-> Chapitre suivant : [Installer Qt 5.14](install.md)
+> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
+> 
+> Dernière mise à jour : 24 février 2022.
 
-_Attention : évitez de télécharger des fichiers, en particulier des applications, sur des sites non-officiels, 
-pour minimiser le risque d'installer des logiciels malveillants._
+**Attention : évitez de télécharger des fichiers, en particulier des applications, sur des sites non-officiels, 
+pour minimiser le risque d'installer des logiciels malveillants.**
 
 ## Le site officiel de Qt
 
@@ -18,7 +14,7 @@ pour minimiser le risque d'installer des logiciels malveillants._
 
 Vous pouvez retrouver facilement le site officiel en tapant `qt5` dans un moteur de recherche :
 
-![Recherche qt5 sur Google](images/site.png)
+![Recherche "qt6 download" sur Google](images/site.png)
 
 Dans cette capture d'écran, le premier lien `doc.qt.io` correspond à la documentation officielle de Qt
 et le second lien au site officiel de Qt.
