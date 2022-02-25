@@ -1,6 +1,8 @@
 
 # Désinstaller proprement Qt et Qt Creator
 
+> [Revenir à la page Installation et premiers pas avec Qt 6.2](README.md)
+> 
 > Dernière mise à jour : 24 février 2022.
 
 Il peut sembler étrange de commencer un tutoriel sur l'installation de Qt en expliquant comment désinstaller.
