@@ -1,12 +1,8 @@
 # Installer un compilateur C++
 
-> Dernière mise à jour : 2 janvier 2019.
->
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.12](index.md)
->
-> Chapitre précédent : [Désinstaller proprement Qt et Qt Creator](uninstall.md)
->
-> Chapitre suivant : [Télécharger l'installateur de Qt](download.md)
+> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
+> 
+> Dernière mise à jour : 24 février 2022.
 
 Qt est une bibliotheque C++, ce qui signifie que vous devez installer les outils de développement nécessaire pour
 compiler un programme C++. L'installation de ces outils depend du systeme et parfois plusieurs outils sont possibles.
