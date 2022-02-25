@@ -1,12 +1,8 @@
-# Installer Qt 5.14.0
+# Installer Qt
 
-> Dernière mise à jour : 30 janvier 2020.
->
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.14.0](index.md)
->
-> Chapitre precedent : [Télécharger l'installateur de Qt](download.md)
->
-> Chapitre suivant : [Tester l'installation de Qt 5.14.0](test.md)
+> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
+> 
+> Dernière mise à jour : 24 février 2022.
 
 Pour installer ou mettre à jour des versions de Qt, lancez l'installateur que vous avez téléchargé à l'étape précédente, si 
 vous installez Qt pour la premiere fois. Ou lancez l'outil `Qt Maintenance Tool` qui se trouve dans le répertoire 
