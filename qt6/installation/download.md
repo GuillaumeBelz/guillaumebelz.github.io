@@ -12,20 +12,17 @@ pour minimiser le risque d'installer des logiciels malveillants.**
 
 ### La page de téléchagement 
 
-Vous pouvez retrouver facilement le site officiel en tapant `qt5` dans un moteur de recherche :
+Vous pouvez retrouver facilement le site officiel en tapant `qt6 download` dans un moteur de recherche :
 
 ![Recherche "qt6 download" sur Google](images/google-qt6.png)
 
-Dans cette capture d'écran, le premier lien `doc.qt.io` correspond à la documentation officielle de Qt
-et le second lien au site officiel de Qt.
+Dans cette capture d'écran, le premier lien https://www.qt.io/product/qt6 correspond à la page de présentation de Qt 6
+et le second lien https://www.qt.io/download à la page de téléchargement de Qt 6.
 
-Le téléchargement de Qt se fait sur le [site officiel de Qt](http://www.qt.io/).
+Le site est conçu pour aider les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version 
+commerciale...), ce qui le rend un peu complexe au premier abord.
 
-Le site est conçu pour aider
-les utilisateurs à choisir la version correcte de Qt (en orientant pas mal vers la version commerciale...), 
-ce qui le rend un peu complexe au premier abord.
-
-Cliquez sur le bouton `Download. Try. Buy.` pour accéder à la page de téléchargement.
+Cliquez sur le bouton `Go open source` pour accéder à la page de téléchargement.
 
 ![Page de téléchargement de Qt](images/download_01.png)
 
