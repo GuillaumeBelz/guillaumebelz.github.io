@@ -3,8 +3,8 @@
 
 > **Mises à jour**
 >
-> 8 décembre 2020 : mise a jour pour Qt 6.0
-> 24 février 2022 : correction des liens
+> - 8 décembre 2020 : mise a jour pour Qt 6.0
+> - 24 février 2022 : correction des liens
 
 Pour un débutant, l'installation et la configuration d'un environnement de développement pour le C++ et Qt posent 
 régulièrement des problèmes. Le processus est relativement simple et automatisé, mais encore faut-il avoir une 
