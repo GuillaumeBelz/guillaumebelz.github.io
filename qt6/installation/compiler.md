@@ -8,7 +8,7 @@ Qt est une bibliotheque C++, ce qui signifie que vous devez installer les outils
 compiler un programme C++. L'installation de ces outils depend du systeme et parfois plusieurs outils sont possibles.
 La procedure d'installation des principaux outils est detaillée dans ce chapitre.
 
-Lors de l'installation de Qt, celui-ci détecte automatiquement les outils de compilation et configure automatiquement
+Lors de l'installation de Qt, celui-ci détecte les outils de compilation et configure automatiquement
 l'éditeur Qt Creator. Pour cette raison, il est préférable d'installer ces outils avant Qt. Mais si vous avez fait 
 autrement, pas d'inquietude, vous pouvez configurer les kits n'importe quand dans Qt Creator. La configuration de Qt Creator
 est détaillée dans le chapitre [Configurer Qt Creator](config.md).
