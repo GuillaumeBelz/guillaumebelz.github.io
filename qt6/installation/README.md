@@ -1,6 +1,8 @@
 
 # Installation et premiers pas avec Qt 6.2
 
+> [Revenir a la page d'accueil](../../README.md)
+> 
 > **Mises à jour**
 >
 > - 8 décembre 2020 : mise a jour pour Qt 6.0
