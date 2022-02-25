@@ -64,11 +64,11 @@ Les trois premiers liens permettent d'afficher les installateurs online pour tou
 
 Le quatrième lien permet de télécharger :
 
-- les source de Qt 6 et Qt 5
-- Les installateurs offline de Qt 5.12
-- L'éditeur Qt Creator seul
+- les source de Qt 6 et Qt 5 ;
+- Les installateurs offline de Qt 5.12 ;
+- L'éditeur Qt Creator seul ;
 - Différents outils (les plugins pour Visual Studio, JOM, qbs, Qt Installer Framework) ainsi que les dépôts sur code.qt.io
-  et les archives dans anciennes versions
+  et les archives dans anciennes versions ;
 - Les futures versions de Qt et Qt Creator. Actuellement, il est possible de tester Qt 6.3 beta et Qt Creator 7.0.0 beta.
 
 ## Autres liens utiles
@@ -78,5 +78,5 @@ Vous trouverez sur le [site officiel de Qt](http://www.qt.io/) d'autres liens in
 - la [documentation de Qt](http://doc.qt.io/), qui est accessible également dans Qt Creator en appuyant sur 
 la touche `F1` ;
 - le [blog officiel de Qt](http://blog.qt.io/dev/) et les [blogs partenaires de Qt](http://planet.qt.io/) ;
-- le [wiki officiel de Qt](http://wiki.qt.io/Main), qui contient de nombreuses informations complementaires a la documentation ;
-- le [forum officiel de Qt](https://forum.qt.io/), en anglais.
+- le [wiki officiel de Qt](http://wiki.qt.io/Main), qui contient de nombreuses informations complementaires ;
+- le [forum officiel de Qt](https://forum.qt.io/).
