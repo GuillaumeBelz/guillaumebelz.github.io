@@ -16,36 +16,44 @@ ceci : [Savoir comment demander de l'aide sur les forums](help.md).**
 
 ## L'installation en détails
 
-La première partie est consacrée à l'installation de Qt et la création de projets par défaut, pour vérifier
-que l'installation s'est bien passée.
-
-Dans la seconde partie, j'explique un peu plus en détail le fonctionnement de Qt et de son installation, pour 
-aider ceux qui rencontrent des problèmes lors de l'installation.
-
-Pour terminer, je décris comment utiliser la documentation de Qt, qui est très bien faite et très riche. En 
-particulier, il existe des codes d'exemple pour la majorité des fonctionnalités de Qt. Quand vous souhaitez 
-réaliser quelque chose, la première chose à faire est probablement d'étudier ces codes d'exemple.
+Si vous avez déjà installé Qt et que vous avez rencontré des problèmes, il est possible que votre ordinateur contienne
+des fichiers de configuration INVALIDES. La première étape dans ce cas est de nettoyer correctement votre ordinateur :
 
 - [Désinstaller proprement Qt et Qt Creator](uninstall.md)
+
+Pour installer Qt, vous avez besoin d'un compilateur et de l'installateur Qt :
+
 - [Installer un compilateur C++](compiler.md)
 - [Télécharger l'installateur de Qt](download.md)
-- [Installer Qt 6.0](installation.md)
-- [Tester l'installation de Qt 5.14.0](test.md)
-- [Mettre à jour Qt 5.14.0](update.md)
+- [Installer Qt](installation.md)
+
+
+Une fois que vous avez installer Qt, il FAUT tester que l'installation est valide. Pour cela, il FAUT faire un premier
+test avec Qt Creator, même si vous souhaitez utiliser un autre éditeur de code par la suite.
+
+- [Tester l'installation de Qt](test.md)
+
+Qt est régulièrement mit à jour. Vous n'avez pas besoin de faire une installation complète si vous avez déjà installé Qt,
+il y a un outil pour faire les mises à jour.
+
+- [Mettre à jour Qt](update.md)
 
 ## Aller plus loin
+
+Les tutoriels suivants ne sont pas indispensables à lire pour installer Qt, mais ils vous permettront de mieux comprendre
+comment Qt fonctionne et donc d'être plus efficace.
 
 - [Comprendre les versions de Qt](version.md)
 - [Configurer Qt Creator](config.md)
 - [Deployer une application Qt](deploy.md)
-- [Savoir utiliser la documentation de Qt 6](documentation.md)
+- [Savoir utiliser la documentation de Qt](documentation.md)
 - le plugin MSVC, installation et tests
 
 ## Contributions
 
 Si vous souhaitez ameliorer ce tutoriel, vous pouvez :
 
-- consulter et modifier les sources Markdown sur [GitHub](https://github.com/GuillaumeBelz/guillaumebelz.github.io/tree/master/qtinstall) ;
+- consulter et modifier les sources Markdown sur [GitHub](https://github.com/GuillaumeBelz/guillaumebelz.github.io/tree/master/qt6/installation) ;
 - creer un [rapport de bug](https://github.com/GuillaumeBelz/guillaumebelz.github.io/issues/new).
 
 Si vous avez des questions sur l'installation de Qt, n'hesitez pas a les poser sur 
@@ -53,7 +61,8 @@ Si vous avez des questions sur l'installation de Qt, n'hesitez pas a les poser s
 
 ## Licence
 
-Ce tutoriel est sous licence [Creative Common Attribution-Noncommercial-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) (CC BY-NC-SA 3.0).
+Ce tutoriel est sous licence [Creative Common Attribution-Noncommercial-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) 
+(CC BY-NC-SA 3.0).
 
 ## Notes
 
