@@ -41,23 +41,13 @@ de Qt que vous aurez sélectionné. Le téléchargement de l'installateur est do
 Une fois que le téléchargement est terminé (c'est rapide, le fichier ne fait que quelques Mo), vous pouvez 
 lancer l'installateur.
 
-### Autres liens utiles
-
-Vous trouverez sur le [site officiel de Qt](http://www.qt.io/) d'autres liens interessants :
-
-- la [documentation de Qt](http://doc.qt.io/), qui est accessible également dans Qt Creator en appuyant sur 
-la touche `F1` ;
-- le [blog officiel de Qt](http://blog.qt.io/dev/) et les [blogs partenaires de Qt](http://planet.qt.io/) ;
-- le [wiki officiel de Qt](http://wiki.qt.io/Main), qui contient de nombreuses informations complementaires a la documentation ;
-- le [forum officiel de Qt](https://forum.qt.io/), en anglais.
-
 ## Installateurs online et offline
 
 Il existe deux versions de l'installateur : `online` et `offline`. Les deux versions installe l'outil
-`Qt Maintenance Tool`, qui permet d'installer, desinstaller et mettre a jour Qt. La version `online` ne
-contient que cet outil, et c'est celui-ci qui va installer Qt. La version `offline` contient tout
-ce qui est necessaire pour installer une version complete de Qt, sans avoir besoin d'etre connecte
-a internet _pendant l'installation_. Naturellement, l'installateur `offline` est plus volumineuse que 
+`Qt Maintenance Tool`, qui permet d'installer, désinstaller et mettre à jour Qt. La version `online` ne
+contient que cet outil et c'est celui-ci qui va installer Qt. La version `offline` contient tout
+ce qui est necessaire pour installer une version complète de Qt, sans avoir besoin d'etre connecté
+à internet _pendant l'installation_. Naturellement, l'installateur `offline` est plus volumineuse que 
 l'installateur `online`.
 
 Lors de l'installation de Qt, l'outil `Qt Maintenance Tool` est installe dans le repertoire d'installation de Qt. 
@@ -68,19 +58,25 @@ Par défaut, cet outil se trouve :
 
 ## Autres téléchargements possibles
 
-Si vous souhaitez voir les autres téléchargements possibles, vous pouvez cliquer sur le lien `View other options` 
-ou sur `offline packages you can get them here`.
+Si vous souhaitez voir les autres téléchargements possibles, vous pouvez cliquer sur le lien `View other options`.
 
-Le premier permet d'afficher les installateurs online pour tous les systèmes (linux 64b et 32b, Mac et Windows).
+Les trois premiers liens permettent d'afficher les installateurs online pour tous les systèmes (Mac, Windows et Linux).
 
-Le second permet d'afficher :
+Le quatrième lien permet de télécharger :
 
-- Les installateurs offline pour la dernière version de Qt (actuellement la version 5.14) pour Linux, Mac et Windows ;
-- Les installateurs offline pour les versions LTS (Long Term Support) de Qt (les versions 5.12 et 5.9) pour Linux, Mac et Windows ;
-- L'éditeur Qt Creator seul ;
-- les plugins pour Visual Studio ;
-- l'outil JOM (outil de compilation similaire à nmake, dédié à Qt) ;
-- le Qt Build Suite (QBS) (un outil de build, probable futur remplaçant de qmake) ;
-- Qt Installer Framework (pour créer vos propres installateurs pour vos programmes) ;
-- les dépôts Git de Qt ;
-- les archives des anciennes versions de Qt (ce dernier lien permet en particulier de télécharger Qt 4 si nécessaire).
+- les source de Qt 6 et Qt 5
+- Les installateurs offline de Qt 5.12
+- L'éditeur Qt Creator seul
+- Différents outils (les plugins pour Visual Studio, JOM, qbs, Qt Installer Framework) ainsi que les dépôts sur code.qt.io
+  et les archives dans anciennes versions
+- Les futures versions de Qt et Qt Creator. Actuellement, il est possible de tester Qt 6.3 beta et Qt Creator 7.0.0 beta.
+
+## Autres liens utiles
+
+Vous trouverez sur le [site officiel de Qt](http://www.qt.io/) d'autres liens intéressants :
+
+- la [documentation de Qt](http://doc.qt.io/), qui est accessible également dans Qt Creator en appuyant sur 
+la touche `F1` ;
+- le [blog officiel de Qt](http://blog.qt.io/dev/) et les [blogs partenaires de Qt](http://planet.qt.io/) ;
+- le [wiki officiel de Qt](http://wiki.qt.io/Main), qui contient de nombreuses informations complementaires a la documentation ;
+- le [forum officiel de Qt](https://forum.qt.io/), en anglais.
