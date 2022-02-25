@@ -1,7 +1,7 @@
 
 # Désinstaller proprement Qt et Qt Creator
 
-> [Revenir à la page Installation et premiers pas avec Qt 6.2](README.md)
+> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
 > 
 > Dernière mise à jour : 24 février 2022.
 
