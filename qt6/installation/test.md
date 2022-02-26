@@ -1,12 +1,8 @@
-# Tester l'installation de Qt 5.9.1
+# Tester l'installation de Qt
 
-> Dernière mise à jour : 29 aout 2017.
->
-> Revenir a la page d'accueil : [Installation et premiers pas avec Qt 5.9.1](index.md)
->
-> Chapitre precedent : [Installer Qt 5.9.1](install.md)
->
-> Chapitre suivant : [Mettre à jour Qt 5.9.1](update.md)
+> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
+> 
+> Dernière mise à jour : 24 février 2022.
 
 La première chose à faire après avoir installé Qt est de tester si l'installation s'est correctement déroulée. 
 Pour cela, nous allons simplement créer un programme par défaut et l'exécuter. Si tout se passe bien, le 
