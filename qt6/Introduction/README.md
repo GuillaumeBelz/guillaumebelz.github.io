@@ -3,7 +3,7 @@
 
 ## Vue d'ensemble de Qt 6
 
-liste des modules
+liste des modules https://doc.qt.io/qt-6/qtmodules.html
 
 ## Introduction a Qt Creator
 
