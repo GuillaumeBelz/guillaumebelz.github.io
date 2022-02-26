@@ -4,19 +4,22 @@
 > 
 > Dernière mise à jour : 24 février 2022.
 
-Pour installer ou mettre à jour des versions de Qt, lancez l'installateur que vous avez téléchargé à l'étape précédente, si 
-vous installez Qt pour la premiere fois. Ou lancez l'outil `Qt Maintenance Tool` qui se trouve dans le répertoire 
-d'installation de Qt si vous avez déjà installé Qt.
+Lancez l'installateur que vous avez téléchargé à l'étape précédente.
 
-La première page donne des informations générales sur les licences, avec des liens pour plus d'informations.
+La première page permet de se connecter à son compte Qt (le compte que vous utilisez sur `qt.io`). Si vous possédez
+un compte avec une licence commerciale de Qt, cette licence sera automatiquement utilisée lors de l'installation.
 
-![Informations generales](images/install_01.png)
+![Connexion a son compte Qt](images/install_01.png)
 
-La page suivante permet de se connecter à son compte Qt ou de créer un compte Qt. Si vous possédez
-un compte avec une licence commerciale de Qt, cette licence sera automatiquement téléchargée
-depuis votre compte en ligne lors de l'installation.
+Si vous n'avez pas encore créé un compte sur qt.io, vous pouvez le faire directement depuis l'installateur
+en cliquant sur `Sign up`. La page suivante s'affichera :
 
-![Connexion a son compte Qt](images/install_02.png)
+![Créer un compte Qt](images/install_02.png)
+
+
+
+
+
 
 Cette page sert simplement à vous souhaitez la bienvenue. Cliquez sur `Suivant`. L'installateur lance 
 alors une recherche en ligne pour mettre à jour les informations sur les versions disponibles de Qt.
