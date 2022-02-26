@@ -22,9 +22,13 @@ La liste complète des modules est détaillée dans le lien suivant : [All Modul
 ## Premier pas avec Qt Creator
 
 Lors de l'installation de Qt, vous avez vu dans le tutoriel [Tester l'installation de Qt](../installation/test.md) comment
-créer un projet minimal et le lancer.
+créer un projet minimal et le lancer. Nous allons détailler dans un premier temps l'interface de Qt Creator.
 
 premier pas, comprendre l'interface de QTC, creer et lancer des projets QML
+
+## Projets d'exemple
+
+explorer les projets et les lancer. Etudier le code.
 
 ## Introduction au QML
 
