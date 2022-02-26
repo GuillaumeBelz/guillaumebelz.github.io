@@ -16,34 +16,23 @@ en cliquant sur `Sign up`. La page suivante s'affichera :
 
 ![Créer un compte Qt](images/install_02.png)
 
+Une fois que vous êtes connecté, une page informe des restrictions liées à l'utilisation de la licence open source
+de Qt. Pour simplifier, tant que vous utilisez les options de compilation par défaut de Qt Creator, vous pouvez
+utiliser la version open source, aussi bien pour faire des applications gratuites que commerciales.
 
+Acceptez les conditions et cliquez sur `Next`.
 
+![Licence open source](images/install_03.png)
 
+La page suivante vous souhaite simplement la bienvenue.
 
-
-Cette page sert simplement à vous souhaitez la bienvenue. Cliquez sur `Suivant`. L'installateur lance 
-alors une recherche en ligne pour mettre à jour les informations sur les versions disponibles de Qt.
-
-![Page de bienvenue](images/install_03.png)
-
-**Sur MacOSX uniquement**
-
-Si vous n'avez pas installé XCode (l'outil de développement sous MacOSX) précédement, l'installateur de Qt vous
-propose de l'installer maintenant. Cliquez sur le bouton `Install`
-
-![Page de bienvenue](images/install_04.png)
-
-Cliquez sur le bouton `Agree` pour accepter la licence des outils en ligne de commande.
-
-![Page de bienvenue](images/install_05.png)
-
-**Sur toutes les plateformes**
+![Bienvenue](images/install_04.png)
 
 La page suivante vous propose de contribuer à l'expérience utilisateur de Qt Creator en envoyant des
 statistiques anonymisées de votre utilisation de Qt Creator. Vous pouvez acceptez si vous le souhaitez, mais
 ce n'est pas obligatoire.
 
-![Page de bienvenue](images/install_06.png)
+![Statistiques Qt Creator](images/install_05.png)
 
 La page suivante permet de choisir le répertoire d'installation de Qt. Par défaut, ce repertoire
 est `C:\Qt` sur Windows et `Users/your_name/Qt` sur MacOSX et Linux.
@@ -52,7 +41,11 @@ Vous pouvez changer le répertoire d'installation si vous le souhaitez. Dans la 
 allons utiliser le chemin par défaut. Si vous changez de répertoire, pensez à adapter les chemins donnés 
 dans la suite de ce tutoriel.
 
-![Repertoire d'installation](images/install_07.png)
+La liste d'options en dessous du chemin d'installation permet de choisir entre différents types d'installation
+par défaut. L'installation personnalisée est détaillée dans [Mettre à jour Qt](update.md). Dans ce tutoriel,
+nous allons utiliser l'option `Qt 6.2 for desktop development`.
+
+![Repertoire d'installation](images/install_06.png)
 
 La page suivante permet de sélectionner la liste des outils à installer. Pour programmer en C++ avec Qt,
 il faut installer au moins trois outils :
