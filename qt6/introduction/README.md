@@ -30,7 +30,66 @@ premier pas, comprendre l'interface de QTC, creer et lancer des projets QML
 
 explorer les projets et les lancer. Etudier le code.
 
+Tests, debug, deployement, cross plateformes
+
 ## Introduction au QML
 
 Base du QML
+
+Composants
+ 
+Dialogues
+
+Layouts, anchors
+
+aspect, material
+
+(animation, views, states)
+
+internationalisation
+
+(3d)
+
+(charts)
+
+touch screen, events
+
+drag and drop
+
+## Coder en C++
+
+QObject, proprietes, invokables
+
+signal et slots
+
+(creer ses events, decouplage)
+
+(modele view)
+
+settings 
+
+## Modules
+
+multi threads
+
+files, serialisation, JSON, XML, etc.
+
+network
+
+(sensor mobile)
+
+(dessin, QPainter, OpenGL/Vulkan)
+
+(multimedia)
+
+(webengine, webassembly)
+
+(database)
+
+(plugins)
+
+
+## Projets a realiser
+
+
 
