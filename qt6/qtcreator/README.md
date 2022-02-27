@@ -1,5 +1,5 @@
 
-# Premiers pas avec Qt Creator
+# Premiers pas avec Qt Creator (en cours de rédaction)
 
 Qt Creator est l'éditeur fournit dans Qt pour écrire du code, compiler et executé vos applications Qt. Cet outil est automatiquement
 configuré lors de l'installation de Qt et peut donc être utilisé directement quand vous avez fini l'installation. C'est pour des 
