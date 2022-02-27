@@ -12,7 +12,7 @@ outils et vous êtes tout à fait libre de les utiliser. Mais pour suivre ce tut
 quand même de tester Qt Creator dans un premier temps. Quand vous connaîtrez mieux Qt, vous pourrez explorer d'autres outils par
 vous même.
 
-Dans cette premirère partie du tutoriel sur Qt Creator, nous allons voir :
+Dans cette premirère partie du tutoriel, sur Qt Creator, nous allons voir :
 
 - [L'interface générale de Qt Creator](interface.md).
 - [Comment créer, compiler et exécuter un projet par défaut](projet.md).
