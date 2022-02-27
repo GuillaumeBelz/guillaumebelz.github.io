@@ -58,7 +58,7 @@ Si vous souhaitez ameliorer ce tutoriel, vous pouvez :
 - consulter et modifier les sources Markdown sur [GitHub](https://github.com/GuillaumeBelz/guillaumebelz.github.io/tree/master/qt6/installation) ;
 - creer un [rapport de bug](https://github.com/GuillaumeBelz/guillaumebelz.github.io/issues/new).
 
-Si vous avez des questions sur l'installation de Qt, n'hesitez pas a les poser sur 
+Si vous avez des questions sur l'installation de Qt, n'hesitez pas à les poser sur le [discord Nan](https://discordapp.com/invite/zcWp9sC) ou sur
 [le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
 
 ## Licence
