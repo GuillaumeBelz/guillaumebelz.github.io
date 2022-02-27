@@ -1,5 +1,7 @@
 
-## Introduction au QML et à QtQuick
+## Introduction au QML et à QtQuick (en cours de rédaction)
+
+> [Revenir à la page principale du tutoriel](../README.md)
 
 Base du QML
 
