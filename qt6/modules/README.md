@@ -1,5 +1,7 @@
 
-# Quelques modules supplémentaires de Qt
+# Quelques modules supplémentaires de Qt (en cours de rédaction)
+
+> [Revenir à la page principale du tutoriel](../README.md)
 
 multi threads
 
