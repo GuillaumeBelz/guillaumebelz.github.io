@@ -21,11 +21,11 @@ La liste complète des modules est détaillée dans le lien suivant : [All Modul
 
 Ce tutoriel est découpé de la façon suivante :
 
-- Une introduction sur l'éditeur Qt Creator, qui sera utilisé pendant tout ce tutoriel, pour illustrer les explications.
-- L'utilisation du QML et de QtQuick, qui sont utilisés pour créer des applications avec une interface graphique.
-- L'utilisation de Qt dans du code C++, pour aller plus loin.
-- Un tour d'horizon de plusieurs modules importants de Qt, pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
-- Quelques idées de projets, pour vous entraîner et aller plus loin.
+- [Une introduction sur l'éditeur Qt Creator](qtcreator/README.md), qui sera utilisé pendant tout ce tutoriel, pour illustrer les explications.
+- [L'utilisation du QML et de QtQuick](qml/README.md), qui sont utilisés pour créer des applications avec une interface graphique.
+- [L'utilisation de Qt en C++](cpp/README.md), pour aller plus loin.
+- [Un tour d'horizon de plusieurs modules importants de Qt](modules/README.md), pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
+- [Quelques idées de projets](projets/README.md), pour vous entraîner et aller plus loin.
 
 Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord Nan](https://discordapp.com/invite/zcWp9sC) ou sur
 [le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
