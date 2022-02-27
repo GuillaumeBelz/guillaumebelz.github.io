@@ -19,6 +19,16 @@ graphiques et sera détaillé dans ce tutoriel, et `QtWidgets` qui ne sera pas d
 
 La liste complète des modules est détaillée dans le lien suivant : [All Modules](https://doc.qt.io/qt-6/qtmodules.html).
 
+Ce tutoriel est découpé de la façon suivante :
+
+- Une introduction sur l'éditeur Qt Creator, qui sera utilisé pendant tout ce tutoriel, pour illustrer les explications.
+- L'utilisation du QML et de QtQuick, qui sont utilisés pour créer des applications avec une interface graphique.
+- L'utilisation de Qt dans du code C++, pour aller plus loin.
+- Un tour d'horizon de plusieurs modules importants de Qt, pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
+- Quelques idées de projets, pour vous entraîner et aller plus loin.
+
+
+
 ## Premier pas avec Qt Creator
 
 Lors de l'installation de Qt, vous avez vu dans le tutoriel [Tester l'installation de Qt](../installation/test.md) comment
@@ -31,7 +41,7 @@ Creer un projet dans github. Utiliser git dans QtCreator.
 
 
 
-## Projets d'exemple
+### Projets d'exemple
 
 explorer les projets et les lancer. Etudier le code.
 
