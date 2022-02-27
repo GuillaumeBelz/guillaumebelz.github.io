@@ -26,6 +26,11 @@ créer un projet minimal et le lancer. Nous allons détailler dans un premier te
 
 premier pas, comprendre l'interface de QTC, creer et lancer des projets QML
 
+
+
+
+
+
 ## Projets d'exemple
 
 explorer les projets et les lancer. Etudier le code.
