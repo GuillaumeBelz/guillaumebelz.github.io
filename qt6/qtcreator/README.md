@@ -14,57 +14,11 @@ vous même.
 
 Dans cette premirère partie du tutoriel sur Qt Creator, nous allons voir :
 
-- L'interface générale de Qt Creator.
-- Comment créer, compiler et exécuter un projet par défaut.
-- Explorer les projets d'exemple.
-
-## L'interface de Qt Creator
-
-![Page d'acceuil](images/qtc_01.png)
-
-![Page d'acceuil](images/qtc_02.png)
-
-![Page d'acceuil](images/qtc_03.png)
-
-![Page d'acceuil](images/qtc_04.png)
-
-![Page d'acceuil](images/qtc_05.png)
-
-![Page d'acceuil](images/qtc_06.png)
-
-## Créer un projet avec Qt Creator
-
-Creer un projet dans github. Utiliser git dans QtCreator.
-
-![Page d'acceuil](images/qtc_07.png)
-
-![Page d'acceuil](images/qtc_08.png)
-
-![Page d'acceuil](images/qtc_09.png)
-
-![Page d'acceuil](images/qtc_10.png)
-
-![Page d'acceuil](images/qtc_11.png)
-
-![Page d'acceuil](images/qtc_12.png)
-
-![Page d'acceuil](images/qtc_13.png)
-
-![Page d'acceuil](images/qtc_14.png)
-
-![Page d'acceuil](images/qtc_15.png)
-
-## Créer un projet sur GitHub
-
-![Page d'acceuil](images/qtc_16.png)
-
-![Page d'acceuil](images/qtc_17.png)
-
-![Page d'acceuil](images/qtc_18.png)
+- [L'interface générale de Qt Creator](interface.md).
+- [Comment créer, compiler et exécuter un projet par défaut](projet.md).
+- [Créer un projet sur GitHub](github.md).
+- [Explorer les projets d'exemple](exemples.md).
 
 
-## Projets d'exemple
 
-explorer les projets et les lancer. Etudier le code.
-
-## Tests, debug, deployement, cross plateformes
+> Tests, debug, deployement, cross plateformes
