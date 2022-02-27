@@ -1,5 +1,5 @@
 
-# Premiers pas avec Qt 6
+# Tutoriel d'introduction sur Qt 6
 
 ## Vue d'ensemble de Qt 6
 
@@ -27,25 +27,39 @@ Ce tutoriel est découpé de la façon suivante :
 - Un tour d'horizon de plusieurs modules importants de Qt, pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
 - Quelques idées de projets, pour vous entraîner et aller plus loin.
 
+Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord Nan](https://discordapp.com/invite/zcWp9sC) ou sur
+[le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
 
+Amusez-vous bien dans votre exploration de Qt !
 
 ## Premier pas avec Qt Creator
 
-Lors de l'installation de Qt, vous avez vu dans le tutoriel [Tester l'installation de Qt](../installation/test.md) comment
-créer un projet minimal et le lancer. Nous allons détailler dans un premier temps l'interface de Qt Creator.
+Qt Creator est l'éditeur fournit dans Qt pour écrire du code, compiler et executé vos applications Qt. Cet outil est automatiquement
+configuré lors de l'installation de Qt et peut donc être utilisé directement quand vous avez fini l'installation. C'est pour des 
+raisons de simplicité que Qt Creator est utilisé dans ce tutoriel.
 
-premier pas, comprendre l'interface de QTC, creer et lancer des projets QML
+Cependant, cela ne veut pas dire que Qt Creator est l'outil qui vous conviendra le mieux. Vous pourrez être intéressé par d'autres
+outils et vous êtes tout à fait libre de les utiliser. Mais pour suivre ce tutoriel et vos premiers pas avec Qt 6, je vous conseille
+quand même de tester Qt Creator dans un premier temps. Quand vous connaîtrez mieux Qt, vous pourrez explorer d'autres outils par
+vous même.
 
+Dans cette premirère partie du tutoriel sur Qt Creator, nous allons voir :
+
+- L'interface générale de Qt Creator.
+- Comment créer, compiler et exécuter un projet par défaut.
+- Explorer les projets d'exemple.
+
+### L'interface de Qt Creator
+
+### Créer un projet avec Qt Creator
 
 Creer un projet dans github. Utiliser git dans QtCreator.
-
-
 
 ### Projets d'exemple
 
 explorer les projets et les lancer. Etudier le code.
 
-Tests, debug, deployement, cross plateformes
+### Tests, debug, deployement, cross plateformes
 
 ## Introduction au QML
 
