@@ -1,7 +1,7 @@
 
 # Installation et premiers pas avec Qt 6.2
 
-> [Revenir à la page d'accueil](../../README.md)
+> [Revenir à la page principale du tutoriel](../README.md)
 > 
 > **Mises à jour**
 >
