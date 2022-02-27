@@ -1,5 +1,7 @@
 
-# Tutoriel d'introduction sur Qt 6
+# Tutoriel d'introduction sur Qt 6 (en cours de rédaction)
+
+> [Revenir à la page d'accueil](../README.md)
 
 ## Vue d'ensemble de Qt 6
 
