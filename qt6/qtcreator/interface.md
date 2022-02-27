@@ -3,6 +3,8 @@
 
 > [Revenir à la page principale du tutoriel](README.md)
 
+Lors du premier lancement de Qt Creator, vous arrivez sur la page d'accueil
+
 ![Page d'acceuil](images/qtc_01.png)
 
 ![Page d'acceuil](images/qtc_02.png)
