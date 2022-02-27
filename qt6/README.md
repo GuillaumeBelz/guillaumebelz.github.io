@@ -97,28 +97,6 @@ signal et slots
 
 settings 
 
-## Modules
-
-multi threads
-
-files, serialisation, JSON, XML, etc.
-
-network
-
-(sensor mobile)
-
-(dessin, QPainter, OpenGL/Vulkan)
-
-(multimedia)
-
-(webengine, webassembly)
-
-(database)
-
-(plugins)
-
-
-## Projets a realiser
 
 
 
