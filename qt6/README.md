@@ -61,30 +61,6 @@ explorer les projets et les lancer. Etudier le code.
 
 ### Tests, debug, deployement, cross plateformes
 
-## Introduction au QML
-
-Base du QML
-
-Composants
- 
-Dialogues
-
-Layouts, anchors
-
-aspect, material
-
-(animation, views, states)
-
-internationalisation
-
-(3d)
-
-(charts)
-
-touch screen, events
-
-drag and drop
-
 
 
 
