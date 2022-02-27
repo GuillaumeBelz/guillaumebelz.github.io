@@ -21,6 +21,7 @@ La liste complète des modules est détaillée dans le lien suivant : [All Modul
 
 Ce tutoriel est découpé de la façon suivante :
 
+- [L'installation de Qt 6](installation/README.md), pour installer tout ce qui est nécessaire pour utiliser Qt.
 - [Une introduction sur l'éditeur Qt Creator](qtcreator/README.md), qui sera utilisé pendant tout ce tutoriel, pour illustrer les explications.
 - [L'utilisation du QML et de QtQuick](qml/README.md), qui sont utilisés pour créer des applications avec une interface graphique.
 - [L'utilisation de Qt en C++](cpp/README.md), pour aller plus loin.
