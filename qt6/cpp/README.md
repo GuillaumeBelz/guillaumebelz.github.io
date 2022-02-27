@@ -1,5 +1,7 @@
 
-# C++
+# Utiliser Qt en C++ (en cours de rédaction)
+
+> [Revenir à la page principale du tutoriel](../README.md)
 
 QObject, proprietes, invokables
 
