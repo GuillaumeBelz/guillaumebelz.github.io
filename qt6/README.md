@@ -3,6 +3,12 @@
 
 > [Revenir à la page d'accueil](../README.md)
 
+## Prérequis
+
+Ce cours est destiné à des développeurs qui ont les bases en C++. Je vous conseille d'avoir lu par exemple :
+- [Tour of C++, de Bjarne Stroustrup](https://www.amazon.fr/Tour-C-Bjarne-Stroustrup/dp/0134997832)
+- ou [Le cours de C++ de Zeste de Savoir](https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/)
+
 ## Vue d'ensemble de Qt 6
 
 Qt est un ensemble d'outils (framework) qui facilite le développement d'applications en C++. Le but de ce tutoriel est
