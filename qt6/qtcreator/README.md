@@ -14,7 +14,7 @@ vous même.
 
 Dans cette premirère partie du tutoriel, sur Qt Creator, nous allons voir :
 
-- [L'interface générale de Qt Creator](interface.md), pour comprendre les fonctionnalités présentes lors que vous ouvrez Qt Creator.
+- [L'interface générale de Qt Creator](interface.md), pour comprendre les fonctionnalités présentes lorsque vous ouvrez Qt Creator.
 - [Créer un projet sur GitHub](github.md) (optionel), pour partager et versionner vos projets.
 - [Comment créer, compiler et exécuter un projet par défaut](projet.md), pour créer un projet minimal qui peut être compilé et exécuté.
 - [Explorer les projets d'exemple](exemples.md), pour découvrir par vous même les fonctionnalités de Qt, en allant lire les codes proposés.
