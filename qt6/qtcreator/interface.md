@@ -7,6 +7,9 @@ Lors du premier lancement de Qt Creator, vous arrivez sur la page d'accueil suiv
 centrale (qui présente les projets d'exemple, dans la capture d'écran suivante) entouré de plusieurs barres (une barre de menus au dessus,
 une barre d'outils à gauche et une autre en bas).
 
+En fonction de la configuration courante et des projets et fichiers ouverts, les boutons présents dans la capture d'écran suivante
+peuvent activés ou non.
+
 ![Page d'acceuil](images/qtc_01.png)
 
 Je suppose qu'il n'est pas nécessaire d'expliquer ce qu'est une barre de menus.
@@ -15,17 +18,21 @@ Je suppose qu'il n'est pas nécessaire d'expliquer ce qu'est une barre de menus.
 
 La barre d'outils à gauche contient deux groupes d'outils : les modes en haut et les boutons de compilation et d'exécution en bas.
 
-Les modes sont une mode de travail de Qt Creator. Dans la capture d'écran, le mode actif est `Welcome`, qui permet de créer ou d'ouvrir
+Les modes sont une mode de travail de Qt Creator.
+
+![Page d'acceuil](images/qtc_02.png)
+
+Dans la capture d'écran, le mode actif est `Welcome`, qui permet de créer ou d'ouvrir
 des projets, d'afficher les projets d'exemple, d'accéder à des tutoriels, etc. Le mode `Edit` est le mode que vous utiliserez le plus
 souvent. C'est le mode utilisé lors que vous écrivez du code. Le mode `Design` permet de créer vos interface graphique à l'aide d'un
 éditeur visuel. Le mode `Debug` permet d'utiliser différents outils qui vous aideront à corriger vos programmes. Le mode `Project` permet
 de configurer vos projets. Le mode `Help` permet d'afficher les pages d'aide de Qt.
 
-![Page d'acceuil](images/qtc_02.png)
-
 ## Les boutons de compilation et d'exécution
 
 Le groupe de boutons en bas permettent de compiler et d'exécuter vos projets.
+
+![Page d'acceuil](images/qtc_03.png)
 
 Le premier bouton en haut (l'écran d'ordinateur) permet de sélectionner la configuration à utiliser pour compiler et exécuter vos projets. 
 Chaque projet peut être compilé en utilisant plusieurs configurations. Par exemple pour exécuter sur l'ordinateur, sur un appareil iOS ou 
@@ -45,11 +52,28 @@ sur Windows et Linux ou `Cmd+B` sur MacOS.
 
 ## L'outil de recherche et les fenêtres de sortie
 
-![Page d'acceuil](images/qtc_03.png)
 
-## Le contenu central
+En dessous de la zone centrale se trouve le locator (l'outil de recherche de Qt Creator) à gauche ainsi que la liste des fenêtre de sortie
+à droite.
 
 ![Page d'acceuil](images/qtc_04.png)
+
+Le locator permet de faire des recherches dans l'ensemble de vos projets et de vos fichiers. Quand vous commencez à taper du texte
+dans cette zone, le locator vous propose la liste des occurences du texte qu'il trouve, aussi bien dans les noms de fichier, les
+noms de classe, les noms de fonction, etc. Si vous tapez par exemple `.cpp`, vous aurez la liste de tous les fichiers source C++.
+
+Dans un recherche, vous pouvez utiliser le caractère `*` à la place de un ou plusieurs caractères. Si vous tapez par exemple 
+`m*.cpp`, vous aurez la liste de tous les fichiers source C++ qui commencent par "m".
+
+Il est possible de limiter la recherche en tapant un caractère clé suivi d'un espace, puis votre texte à rechercher. En cliquant sur
+le locator, vous aurez la liste des caractères clés. Par exemple `c ` permet de limiter la recherche aux noms de classe, `f ` pour limiter
+aux noms de fichier, `m ` pour les méthodes de classe, `l ` pour aller à une ligne du fichier courant, etc.
+
+Vous pouvez également utiliser le raccourci clavier `Ctrl+K` sur Windows et Linux ou `Cmd+K` sur MacOS pour lancer une recherche.
+
+N'hésitez pas à consulter [la page de documentation du locator](https://doc.qt.io/qtcreator/creator-editor-locator.html) pour en savoir plus.
+
+## Le contenu central
 
 ![Page d'acceuil](images/qtc_05.png)
 
