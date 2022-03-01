@@ -52,7 +52,6 @@ sur Windows et Linux ou `Cmd+B` sur MacOS.
 
 ## L'outil de recherche et les fenêtres de sortie
 
-
 En dessous de la zone centrale se trouve le locator (l'outil de recherche de Qt Creator) à gauche ainsi que la liste des fenêtre de sortie
 à droite.
 
@@ -75,10 +74,16 @@ N'hésitez pas à consulter [la page de documentation du locator](https://doc.qt
 
 ## Le contenu central
 
+La partie centrale de Qt Creator est la zone principale de travail. La capture d'écran suivante montre ce qu'elle contient lorsque
+vous êtes dans le mode `Welcome`. Cette page contient une liste de quatre boutons en haut à gauche : `Projects` pour créer et ouvrir
+des projets, `Examples` pour afficher les projets d'exemple, `Tutorials` pour une liste de tutoriels (en anglais) et `Marketplace`
+pour une liste d'outils complémentaires pour Qt et Qt Creator.
+
 ![Page d'acceuil](images/qtc_05.png)
 
-![Page d'acceuil](images/qtc_06.png)
-
+À gauche de ces boutons, si vous êtes sur `Projects`, vous trouverez des boutons pour gérer vos sessions (voir ci-dessous), pour
+créer un projet (`New`) ou pour ouvrir un projet (`Open`). En dessous, la colonne de gauche est la liste des sessions (une seule 
+dans la capture d'écran : `default`) et la colonne de droite est la liste de projets (un seul : `untitled`).
 
 ## Gérer les sessions
 
@@ -86,7 +91,7 @@ Sans entrer en détail dans la configuration de Qt Creator, il y a une fonctionn
 Allez dans le menu `File` puis `Sesssion` puis `Manage...` pour ouvrir le gestionnaire de sessions. Une session est l'état de
 Qt Creator à un moment donné (incluant la liste des projets et fichiers ouverts). Par défaut, il existe une sessions `default`.
 
-![Page d'acceuil](images/qtc_20.png)
+![Page d'acceuil](images/qtc_06.png)
 
 Avoir plusieurs sessions peut être intéressant si vous travaillez sur plusieurs environnements en même temps. Par exemple, si
 vous travaillez la journée sur plusieurs projets professionels et le soir sur plusieurs projets personnels. En créant une session
