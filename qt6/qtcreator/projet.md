@@ -1,7 +1,7 @@
 
 # Créer un projet avec Qt Creator
 
-> [Revenir à la page principale du tutoriel](README.md)
+> [Revenir à la page précédante](README.md)
 
 Creer un projet dans github. Utiliser git dans QtCreator.
 
