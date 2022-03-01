@@ -1,7 +1,7 @@
 
 # Créer un projet sur GitHub
 
-> [Revenir à la page principale du tutoriel](README.md)
+> [Revenir à la page précédante](README.md)
 
 ![Page d'acceuil](images/qtc_16.png)
 
