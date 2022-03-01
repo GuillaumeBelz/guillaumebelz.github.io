@@ -11,6 +11,8 @@ une barre d'outils à gauche et une autre en bas).
 
 Je suppose qu'il n'est pas nécessaire d'expliquer ce qu'est une barre de menus.
 
+## La selection des modes
+
 La barre d'outils à gauche contient deux groupes d'outils : les modes en haut et les boutons de compilation et d'exécution en bas.
 
 Les modes sont une mode de travail de Qt Creator. Dans la capture d'écran, le mode actif est `Welcome`, qui permet de créer ou d'ouvrir
@@ -20,6 +22,8 @@ souvent. C'est le mode utilisé lors que vous écrivez du code. Le mode `Design`
 de configurer vos projets. Le mode `Help` permet d'afficher les pages d'aide de Qt.
 
 ![Page d'acceuil](images/qtc_02.png)
+
+## Les boutons de compilation et d'exécution
 
 Le groupe de boutons en bas permettent de compiler et d'exécuter vos projets.
 
@@ -39,7 +43,11 @@ Le dernier bouton (le marteau) permet de compiler uniquement votre application. 
 vérifie que le code est correct, sans lancer l'exécution de l'application. Vous pouvez également utiliser le raccourci clavier `Ctrl+B` 
 sur Windows et Linux ou `Cmd+B` sur MacOS.
 
+## L'outil de recherche et les fenêtres de sortie
+
 ![Page d'acceuil](images/qtc_03.png)
+
+## Le contenu central
 
 ![Page d'acceuil](images/qtc_04.png)
 
