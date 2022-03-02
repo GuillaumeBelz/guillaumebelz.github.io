@@ -23,6 +23,8 @@ Qt Creator fournit des outils en interne pour manipuler des projets versionnés 
 Note : Git et GitHub sont deux outils parmis d'autres. Peut être que d'autres outils similaires vous conviendront mieux dans
 l'avenir. Pour faciliter la lecture de ce tutoriel sur Qt, je vous conseille quand même de les utiliser dans un premier temps.
 
+Pour en savoir plus sur Git, vous pouvez lire le livre gratuit et en français [Git Book](https://git-scm.com/book/fr/v2).
+
 ## Créer un compte sur GitHub
 
 Pour pouvoir créer des dépôts (projet versionné) sur GitHub, vous devez avoir un compte sur https://github.com. Lorsque vous allez 
@@ -102,18 +104,25 @@ gitignore
 
 licence
 
-
-
 ![Page d'acceuil](images/gh_project_02.png)
+
+Le projet créé, avec les fichiers genere. A noter, different d'un projet Qt.
 
 ![Page d'acceuil](images/gh_project_03.png)
 
+cloner le projet. HTTPS ou SSH. URL de la forme https://github.com/pseudo/nomprojet
+
 ![Page d'acceuil](images/gh_project_04.png)
+
+retour sur Qt Creator. Creer un projet `Git Clone`.
 
 ![Page d'acceuil](images/gh_project_05.png)
 
+L'URL du projetet et le chemin. 
+
 ![Page d'acceuil](images/gh_project_06.png)
 
+echec de l'ouverture, ce qui est normal, ce n'est pas un projet Qt pour Qt Creator. Mais le dépôt a bien ete cloné, donc l'etape
+suivante est de creer un projet Qt et le placer dans ce depot.
+
 ![Page d'acceuil](images/gh_project_07.png)
-
-
