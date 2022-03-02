@@ -101,13 +101,25 @@ sur comment utiliser votre projet, comment le compiler, où trouver la documenta
 est écrit avec markdown, un langage de rédaction très simple à utiliser. Pour en savoir plus sur le markdown sur GitHub :
 [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-gitignore
+Le fichier `.gitignore` permet d'indiquer à Git quels fichiers il doit ignorer. Lorsque vous travaillez sur un projet, de nombreux
+fichiers temporaires ou cachés sont créé par Qt Creator. Ces fichiers ne doivent pas être partagé et `.gitignore` permet d'éviter cela.
+La liste des fichiers à ignorer dépend du type de projet. Heureusement, GitHub propose un modèle de `.gitignore` adapté pour Qt. Il
+vous suffit de le sélectionner dans la liste.
 
-licence
+Pour terminer, il est d'usage de mettre un fichier indiquant la licence d'utilisation du projet, même si vous ne voulez pas protéger
+votre projet. La raison est que ceux qui seront intéressé par votre projet voudront connaître la licence et s'il ne trouve rien,
+ils ne sauront pas quoi faire. Au pire, choisissez `unlicense` (sans licence), mais par exemple `mit` est très bien et classique.
+
+Cliquez sur `Create repository` pour créer le dépôt.
 
 ![Page d'acceuil](images/gh_project_02.png)
 
+
 Le projet créé, avec les fichiers genere. A noter, different d'un projet Qt.
+
+
+
+
 
 ![Page d'acceuil](images/gh_project_03.png)
 
