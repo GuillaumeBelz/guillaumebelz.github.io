@@ -68,3 +68,30 @@ en cliquant sur `Skip personalization`.
 
 ## Créer un dépôt sur GitHub
 
+L'étape suivante est de créer un dépôt (un projet versionné) sur GitHub, puis de le copier (le cloner) sur votre ordinateur.
+
+
+![Page d'acceuil](images/gh_project_01.png)
+
+![Page d'acceuil](images/gh_project_02.png)
+
+![Page d'acceuil](images/gh_project_03.png)
+
+![Page d'acceuil](images/gh_project_04.png)
+
+![Page d'acceuil](images/gh_project_05.png)
+
+![Page d'acceuil](images/gh_project_06.png)
+
+![Page d'acceuil](images/gh_project_07.png)
+
+![Page d'acceuil](images/gh_project_08.png)
+
+![Page d'acceuil](images/gh_project_09.png)
+
+
+
+
+
+
+
