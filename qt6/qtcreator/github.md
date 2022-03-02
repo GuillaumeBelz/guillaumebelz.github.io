@@ -66,12 +66,43 @@ en cliquant sur `Skip personalization`.
 
 ![Page d'acceuil](images/gh_09.png)
 
-## Créer un dépôt sur GitHub
+## Créer un dépôt ("repository") sur GitHub
 
 L'étape suivante est de créer un dépôt (un projet versionné) sur GitHub, puis de le copier (le cloner) sur votre ordinateur.
 
+Lorsque vous arrivez sur votre page GitHub pour la première fois, celle-ci ne contient encore aucun dépôt. Différentes pages
+d'aide sur GitHub sont proposées, n'hésitez pas à les consulter.
+
+Vous pouvez créer votre premier dépôts en cliquant sur le bouton `Create repository` en haut à gauche.
 
 ![Page d'acceuil](images/gh_project_01.png)
+
+La page suivante permet de configurer votre nouveau dépôt. La première chose à faire est de choisir un propriétaire ("owner", ce
+qui est utile uniquement si vous avez plusieurs comptes GitHub) et un nom de dépôt unique (faites simple). En dessous, vous
+pouvez ajouter une courte description de votre dépôt, pour ceux qui visiterait votre page GitHub.
+
+L'option suivante permet de choisir entre créer un dépôt publique ou privé. Un dépôt publique peut être vu par n'importe quel
+visiteur sur votre page GitHub, un dépôt privé ne sera visible que par ceux que vous autorisez. Le nombre de dépôts privés est
+limité si vous avec un compte gratuit sur GitHub, je vous conseille de laisser le dépôt en public. Cela vous permettra de partager
+votre codet et demander des conseils sur les forums ou discord.
+
+Ce qui suit est optionnel, mais je vous conseille de faire ces étapes aussi. 
+
+Un dépôt minimal peut ne rien contenir, mais il existe plusieurs fichiers qu'il est d'usage de retrouver systématiquement sur
+tous les dépôts GitHub. Pour vous évitez de perdre du temps à créer ces fichiers, GitHub peut les générer automatiquement, en
+suivant des modèles pré-existants.
+
+Le fichier `README.md` est la description de ce que contient votre dépôt. C'est le premier fichier que les développeurs vont lire
+pour découvrir votre projet et c'est ce fichier que GitHub affiche par défaut. Ce fichier contient généralement des explications
+sur comment utiliser votre projet, comment le compiler, où trouver la documentation, etc. L'extention `.md` indique que ce fichier
+est écrit avec markdown, un langage de rédaction très simple à utiliser. Pour en savoir plus sur le markdown sur GitHub :
+[Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+gitignore
+
+licence
+
+
 
 ![Page d'acceuil](images/gh_project_02.png)
 
@@ -84,14 +115,5 @@ L'étape suivante est de créer un dépôt (un projet versionné) sur GitHub, pu
 ![Page d'acceuil](images/gh_project_06.png)
 
 ![Page d'acceuil](images/gh_project_07.png)
-
-![Page d'acceuil](images/gh_project_08.png)
-
-![Page d'acceuil](images/gh_project_09.png)
-
-
-
-
-
 
 
