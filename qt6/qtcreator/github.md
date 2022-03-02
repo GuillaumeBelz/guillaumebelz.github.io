@@ -23,7 +23,8 @@ Qt Creator fournit des outils en interne pour manipuler des projets versionnés 
 Note : Git et GitHub sont deux outils parmis d'autres. Peut être que d'autres outils similaires vous conviendront mieux dans
 l'avenir. Pour faciliter la lecture de ce tutoriel sur Qt, je vous conseille quand même de les utiliser dans un premier temps.
 
-Pour en savoir plus sur Git, vous pouvez lire le livre gratuit et en français [Git Book](https://git-scm.com/book/fr/v2).
+Pour en savoir plus sur Git, vous pouvez lire le livre gratuit et en français [Git Book](https://git-scm.com/book/fr/v2). Et
+pour la documentation de GitHub en anglais [GitHub Docs](https://docs.github.com/en).
 
 ## Créer un compte sur GitHub
 
