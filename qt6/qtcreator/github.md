@@ -1,5 +1,5 @@
 
-# Créer un projet sur GitHub
+# Créer un dépôt sur GitHub
 
 > [Revenir à la page précédante](README.md)
 
@@ -25,8 +25,8 @@ l'avenir. Pour faciliter la lecture de ce tutoriel sur Qt, je vous conseille qua
 
 ## Créer un compte sur GitHub
 
-Pour pouvoir créer des projets sur GitHub, vous devez avoir un compte sur https://github.com. Lorsque vous allez pour la première
-fois sur GitHub, vous devriez voir la page suivante :
+Pour pouvoir créer des dépôts (projet versionné) sur GitHub, vous devez avoir un compte sur https://github.com. Lorsque vous allez 
+pour la première fois sur GitHub, vous devriez voir la page suivante :
 
 ![Page d'acceuil](images/gh_01.png)
 
@@ -40,7 +40,7 @@ L'étape suivante est de créer un mot de passe, en respectant les contraintes i
 
 ![Page d'acceuil](images/gh_03.png)
 
-Entrez ensuite un nom d'utilisateur. Ce nom sera utilisé dans l'URL de GitHub pour accéder à votre compte et vos projet. Par exemple,
+Entrez ensuite un nom d'utilisateur. Ce nom sera utilisé dans l'URL de GitHub pour accéder à votre compte et vos dépôts. Par exemple,
 si vous choisissez "coucou" comme pseudo, votre URL pour GitHub sera https://github.com/coucou.
 
 ![Page d'acceuil](images/gh_04.png)
@@ -66,16 +66,5 @@ en cliquant sur `Skip personalization`.
 
 ![Page d'acceuil](images/gh_09.png)
 
-## Créer un projet sur GitHub
+## Créer un dépôt sur GitHub
 
-
-
-
-
-
-
-![Page d'acceuil](images/qtc_16.png)
-
-![Page d'acceuil](images/qtc_17.png)
-
-![Page d'acceuil](images/qtc_18.png)
