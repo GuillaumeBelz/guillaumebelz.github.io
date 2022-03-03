@@ -149,13 +149,20 @@ Cliquez sur `Next`.
 
 ![Page d'acceuil](images/gh_project_06.png)
 
+La copie du dépôt se lance et les différentes étapes sont affichées dans la zone de texte. À la fin, vous devriez avoir `Succeeded` en
+bas de la zone de texte si tout c'est bien passé.
+
+Cliquez sur `Finish`.
 
 ![Page d'acceuil](images/gh_project_07.png)
 
+Après que le dépôt est copié sur votre ordinateur, Qt Creator essaie d'ouvrir un projet Qt dans ce dépôt. Cependant, pour le moment,
+c'est juste un dépôt vide, qui ne contient aucun projet Qt. Qt Creator affiche alors une fenêtre pour indiquer que l'ouverture à
+échouée.
 
+Mais pas d'inquiétude, si vous avez bien eu le message `Succeeded` à l'étape précédante, le dépôt a bien été cloné. Vous pouvez le vérifier
+en ouvrant le dossier du dépôt, celui-ci devrait contenir les trois fichiers créés par défaut (`.gitignore`, `LICENSE` et `README.md`).
 
-echec de l'ouverture, ce qui est normal, ce n'est pas un projet Qt pour Qt Creator. Mais le dépôt a bien ete cloné, donc l'etape
-suivante est de creer un projet Qt et le placer dans ce depot.
+Nous allons voir dans le chapitre suivant comment créer un projet Qt. Vous pouvez cliquer sur `Ok` pour fermer ce dialogue.
 
 ![Page d'acceuil](images/gh_project_08.png)
-
