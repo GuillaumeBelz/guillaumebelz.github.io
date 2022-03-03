@@ -1,5 +1,5 @@
 
-# Installation de Qt 6.2
+# Installation de Qt 6
 
 > [Revenir à la page d'accueil](../../README.md)
 > 
