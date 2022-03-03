@@ -1,7 +1,7 @@
 
 # Créer un projet avec Qt Creator
 
-> [Revenir à la page précédante](README.md)
+> [Revenir à la page précédente](README.md)
 
 ## Creer un projet Qt
 
