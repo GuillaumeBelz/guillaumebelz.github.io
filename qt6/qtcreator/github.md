@@ -114,18 +114,26 @@ Cliquez sur `Create repository` pour créer le dépôt.
 
 ![Page d'acceuil](images/gh_project_02.png)
 
-
-Le projet créé, avec les fichiers genere. A noter, different d'un projet Qt.
-
-
-
-
+Le nouveau dépôt est créé et les fichiers générés. L'interface de GitHub ne va pas être détaillée, mais n'hésitez pas à consulter la
+documentation de GitHub pour en apprendre un peu plus sur l'interface et les outils proposés. Pour le moment, la seule fonctionnalité
+que vous allez utiliser est le bouton vert `Code` en haut à droite.
 
 ![Page d'acceuil](images/gh_project_03.png)
 
-cloner le projet. HTTPS ou SSH. URL de la forme https://github.com/pseudo/nomprojet
+Pour cloner votre dépôt sur votre ordinateur, c'est-à-dire pour créer une copie versionnée de votre projet, vous avez besoin de l'URL
+du projet. Le mieux est d'utiliser le protocole SSH, mais cela nécessite de configure SSH sur votre ordinateur et d'enregistrer la
+clé publique dans la configuration du projet sur GitHub. Je vous conseille de lire la documentation de GitHub et de configurer SSH.
+
+Pour simplifier, dans ce tutoriel, nous allons utiliser le protocole HTTPS. L'URL est de la forme : https://github.com/pseudo/nomprojet.
+Cliquez sur le bouton à droite de l'URL pour la copier.
 
 ![Page d'acceuil](images/gh_project_04.png)
+
+Les étapes suivantes se passent dans Qt Creator, sur votre ordinateur. La finalité sera d'avoir un dépôt local sur votre ordinateur,
+puis de créer un projet Qt dans ce dépôt. Ensuite, vous pourrez modifier votre projet Qt et envoyer vos modifications (`push`) sur
+votre dépôt en ligne dans GitHub.
+
+La création du dépôt local est expliqué ci-dessous, la création du projet Qt est expliquée dans le chapitre suivant.
 
 retour sur Qt Creator. Creer un projet `Git Clone`.
 
