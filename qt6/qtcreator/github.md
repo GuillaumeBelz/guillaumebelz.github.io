@@ -1,7 +1,7 @@
 
 # Créer un dépôt sur GitHub
 
-> [Revenir à la page précédante](README.md)
+> [Revenir à la page précédente](README.md)
 
 ## Pourquoi utiliser Git et GitHub
 
@@ -135,15 +135,27 @@ votre dépôt en ligne dans GitHub.
 
 La création du dépôt local est expliqué ci-dessous, la création du projet Qt est expliquée dans le chapitre suivant.
 
-retour sur Qt Creator. Creer un projet `Git Clone`.
+Dans Qt Creator, créez un nouveau projet dans le menu `File` puis `New file or Project...`. Le dialogue qui s'ouvre contient deux listes
+de choix. À gauche, dans les catégories de projets et de fichiers, sélectionnez `Import project`. À droite, dans la liste des types de
+projets, sélectionnez `Git clone`. Cliquez ensuite sur `Choose...`.
 
 ![Page d'acceuil](images/gh_project_05.png)
 
-L'URL du projetet et le chemin. 
+Dans le champ `Repository:`, entrez l'URL du dépôt que vous avez créé dans GitHub. Dans le champ `Path:`, sélectionnez le dossier dans
+lequel vous souhaitez créé votre dépôt. Par défaut, le champ `Directory:` correspond au nom du dépôt Git, mais vous pouvez changer si
+vous le souhaitez.
+
+Cliquez sur `Next`.
 
 ![Page d'acceuil](images/gh_project_06.png)
+
+
+![Page d'acceuil](images/gh_project_07.png)
+
+
 
 echec de l'ouverture, ce qui est normal, ce n'est pas un projet Qt pour Qt Creator. Mais le dépôt a bien ete cloné, donc l'etape
 suivante est de creer un projet Qt et le placer dans ce depot.
 
-![Page d'acceuil](images/gh_project_07.png)
+![Page d'acceuil](images/gh_project_08.png)
+
