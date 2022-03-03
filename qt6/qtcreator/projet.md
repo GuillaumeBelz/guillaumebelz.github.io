@@ -3,6 +3,12 @@
 
 > [Revenir à la page précédante](README.md)
 
+## Creer un projet Qt
+
+## Mettre le projet Qt dans le dépôt Git et envoyer les modifications sur GitHub
+
+
+
 Creer un projet dans github. Utiliser git dans QtCreator.
 
 ![Page d'acceuil](images/qtc_07.png)
