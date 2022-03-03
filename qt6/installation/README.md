@@ -29,7 +29,6 @@ Pour installer Qt, vous avez besoin d'un compilateur et de l'installateur Qt :
 - [Télécharger l'installateur de Qt](download.md)
 - [Installer Qt](installation.md)
 
-
 Une fois que vous avez installer Qt, il FAUT tester que l'installation est valide. Pour cela, il FAUT faire un premier
 test avec Qt Creator, même si vous souhaitez utiliser un autre éditeur de code par la suite.
 
