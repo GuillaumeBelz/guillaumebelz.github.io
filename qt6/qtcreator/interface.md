@@ -1,7 +1,7 @@
 
 # L'interface de Qt Creator
 
-> [Revenir à la page précédante](README.md)
+> [Revenir à la page précédente](README.md)
 
 Lors du premier lancement de Qt Creator, vous arrivez sur la page d'accueil suivante. Cette fenêtre contient une zone de travail
 centrale (qui présente les projets d'exemple, dans la capture d'écran suivante) entouré de plusieurs barres (une barre de menus au dessus,
