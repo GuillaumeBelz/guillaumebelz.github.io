@@ -173,21 +173,36 @@ Dans le chapitre précédent, vous avez créer un dépôt Git local pour version
 
 Mettre le projet Qt dans le dépôt Git et envoyer les modifications sur GitHub
 
+copier les fichier `untilted1.pro`, `main.cpp` et `main.qml` dans le depot.
 
 ![Page d'acceuil](images/qtc_git_01.png)
 
+Dans Qt Creator, faites `Ouvrir un projet` et selectionner le fichier `untilted1.pro`.
+
 ![Page d'acceuil](images/qtc_git_02.png)
+
+Dans le menu Tools > Git > Local Repository > Commit...
+
+- information : nom et email
+- description 
+- fichiers : untracked = pas dans le versionning, cliquez sur `ajoutez tout`
+
+Cliquez sur `Commit (3/3)` pour créer localement un commit = un ensemble de modifications
 
 ![Page d'acceuil](images/qtc_git_03.png)
 
-Tools > Git > Local Repository > Commit...
+Envoyer le commit sur GitHub avec la commande Push, dans le menu Tools > Git > Remote Repository > Push
 
 ![Page d'acceuil](images/qtc_git_04.png)
 
-Tools > Git > Remote Repository > Push
+Sur GitHub, les fichiers sont visibles.
 
 ![Page d'acceuil](images/qtc_git_05.png)
 
+Cliquez sur `Commit` pour avoir la liste des commits.
 
+![Page d'acceuil](images/qtc_git_05.png)
 
+Cliquez sur le dernier commit, pour voir les modifs contenues dans ce commit : 3 ajouts de fichiers.
 
+![Page d'acceuil](images/qtc_git_06.png)
