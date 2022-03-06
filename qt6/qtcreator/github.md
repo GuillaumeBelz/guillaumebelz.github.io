@@ -166,3 +166,28 @@ en ouvrant le dossier du dépôt, celui-ci devrait contenir les trois fichiers c
 Nous allons voir dans le chapitre suivant comment créer un projet Qt. Vous pouvez cliquer sur `Ok` pour fermer ce dialogue.
 
 ![Page d'acceuil](images/gh_project_08.png)
+
+## Versionner le projet avec Git
+
+Dans le chapitre précédent, vous avez créer un dépôt Git local pour versionner votre projet et 
+
+Mettre le projet Qt dans le dépôt Git et envoyer les modifications sur GitHub
+
+
+![Page d'acceuil](images/qtc_git_01.png)
+
+![Page d'acceuil](images/qtc_git_02.png)
+
+![Page d'acceuil](images/qtc_git_03.png)
+
+Tools > Git > Local Repository > Commit...
+
+![Page d'acceuil](images/qtc_git_04.png)
+
+Tools > Git > Remote Repository > Push
+
+![Page d'acceuil](images/qtc_git_05.png)
+
+
+
+
