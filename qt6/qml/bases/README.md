@@ -1,7 +1,7 @@
 
 # Les bases du QML et Qt Quick
 
-
+> [Revenir à la page précédente](../README.md)
 
 ## Vue d'ensemble du QML et de QtQuick
 
