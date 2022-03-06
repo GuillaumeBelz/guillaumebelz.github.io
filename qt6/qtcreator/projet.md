@@ -85,6 +85,7 @@ Explorez Qt Creator, pour découvrir les fonctionnalités qui pourraient vous pl
 Dans le chapitre précédent, vous avez créer un dépôt Git local pour versionner votre projet et 
 
 
+![Page d'acceuil](images/qtc_project_10.png)
 
 
 
