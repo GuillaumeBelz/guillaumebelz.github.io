@@ -12,7 +12,10 @@ peuvent activés ou non.
 
 ![Page d'acceuil](images/qtc_01.png)
 
-Je suppose qu'il n'est pas nécessaire d'expliquer ce qu'est une barre de menus.
+Pendant la rédaction de ce chapitre, une nouvelle version de Qt Creator est disponible en version bêta. L'interface change un peu, voici une
+capture d'écran de la nouvelle interface :
+
+![Page d'acceuil](images/qtc_07.png)
 
 ## La selection des modes
 
