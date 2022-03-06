@@ -13,10 +13,6 @@ avec `QtQuick`. La raison est que cela permet d'avoir un support visuel simple e
 importants de Qt. Et même si vous n'êtes pas intéressé par la création d'applications graphique, je pense que cela reste une
 compétence indispensable a avoir pour l'importe quel développeur C++, au minimum pour créer une fenêtre avec 2-3 boutons.
 
-- http://qmlweb.github.io/
-- https://www.qt.io/product/qt6/qml-book/
-- https://qmlbook.github.io/ (Qt 5)
-
 - [les base du QML et Qt Quick](bases/README.md)
 
 ## Composants
@@ -38,3 +34,9 @@ internationalisation
 touch screen, events
 
 drag and drop
+
+## Outils et refences
+
+- http://qmlweb.github.io/
+- https://www.qt.io/product/qt6/qml-book/
+- https://qmlbook.github.io/ (Qt 5)
