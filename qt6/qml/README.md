@@ -1,7 +1,7 @@
 
 # Introduction au QML et à QtQuick (en cours de rédaction)
 
-> [Revenir à la page principale du tutoriel](../README.md)
+> [Revenir à la page précédente](../README.md)
 
 Quand on présente un framework comme Qt, la logique voudrait qu'on présente dans un premier temps les fonctionnalités les
 plus basiques, puisqu'on ajoute progressivement des couches de complexité par dessus. Par exemple en présentant les modules
