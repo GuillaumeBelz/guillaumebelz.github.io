@@ -3,8 +3,6 @@
 
 > [Revenir à la page précédente](README.md)
 
-## Creer un projet Qt
-
 Si l'installation de Qt s'est correctement passé, vous devriez pouvoir créer un projet par défaut dans Qt Creator et celui-ci devrait fonctionner
 directement. C'est donc intéressant de créer un tel projet, même si vous ne souhaitez pas utiliser Qt Creator par la suite, pour tester
 votre installation de Qt.
@@ -79,17 +77,3 @@ Explorez Qt Creator, pour découvrir les fonctionnalités qui pourraient vous pl
 - de trouver les messsages de compilation et de sortie d'application ;
 - de créer des marque-pages et afficher la liste ;
 - etc.
-
-## Versionner le projet avec Git
-
-Dans le chapitre précédent, vous avez créer un dépôt Git local pour versionner votre projet et 
-
-
-![Page d'acceuil](images/qtc_project_10.png)
-
-
-
-Mettre le projet Qt dans le dépôt Git et envoyer les modifications sur GitHub
-
-
-
