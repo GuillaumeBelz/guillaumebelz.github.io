@@ -32,7 +32,7 @@ Ce tutoriel est découpé de la façon suivante :
 - [L'installation de Qt 6](installation/README.md), pour installer tout ce qui est nécessaire pour utiliser Qt.
 - [Introduction sur l'éditeur Qt Creator](qtcreator/README.md), qui sera utilisé pendant tout ce tutoriel pour créer, compiler et exécuter des projets Qt.
 - [Introduction sur le QML et QtQuick](qml/README.md), qui sont utilisés pour créer des applications avec une interface graphique.
-- [L'utilisation de Qt en C++](cpp/README.md), pour aller plus loin avec le C++ et Qt.
+- [Interagir entre le QML et le C++](cpp/README.md), pour aller plus loin avec le C++ et Qt.
 - [Un tour d'horizon de plusieurs modules importants de Qt](modules/README.md), pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
 - [Quelques idées de projets](projets/README.md), pour vous entraîner et aller plus loin.
 
