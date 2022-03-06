@@ -42,8 +42,9 @@ Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord N
 Amusez-vous bien dans votre exploration de Qt !
 
 ----------------------------------------------------------
+----------------------------------------------------------
 
-Allez plus loin ?
+# Allez plus loin ?
 
 ## Qt Creator
 
