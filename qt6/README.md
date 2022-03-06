@@ -45,6 +45,10 @@ Amusez-vous bien dans votre exploration de Qt !
 
 Allez plus loin ?
 
+## Qt Creator
+
+Tests, debug, deployement, cross plateformes
+
 ## Composants
  
 Dialogues
