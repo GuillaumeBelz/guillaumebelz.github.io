@@ -1,2 +1,0 @@
-
-# syntaxe de QML
