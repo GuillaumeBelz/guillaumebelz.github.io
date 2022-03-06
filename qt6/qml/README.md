@@ -15,26 +15,6 @@ compétence indispensable a avoir pour l'importe quel développeur C++, au minim
 
 - [les base du QML et Qt Quick](bases.md)
 
-## Composants
- 
-Dialogues
-
-Layouts, anchors
-
-aspect, material
-
-(animation, views, states)
-
-internationalisation
-
-(3d)
-
-(charts)
-
-touch screen, events
-
-drag and drop
-
 ## Outils et refences
 
 - http://qmlweb.github.io/
