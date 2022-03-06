@@ -17,7 +17,7 @@ compétence indispensable a avoir pour l'importe quel développeur C++, au minim
 - https://www.qt.io/product/qt6/qml-book/
 - https://qmlbook.github.io/ (Qt 5)
 
-- [les base du QML et Qt Quick](bases/README.md
+- [les base du QML et Qt Quick](bases/README.md)
 
 ## Composants
  
