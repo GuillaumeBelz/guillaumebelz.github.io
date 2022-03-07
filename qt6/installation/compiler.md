@@ -54,7 +54,7 @@ Le lien direct pour télécharger Visual Studio sur le [site officiel de Microso
 lien ne fonctionne pas (Microsoft change souvent les liens de telechargement), vous trouverez facilement sur internet le 
 lien de téléchargement. Prenez bien le site officiel de Microsoft.
 
-Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. Lors de l'étape de sélection 
+Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. Lors de l'étape de sélection, sélectionnez `Desktop development with C++`.
 
 ## GCC et Mingw32
 
