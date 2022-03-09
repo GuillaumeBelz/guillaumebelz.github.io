@@ -57,7 +57,10 @@ Le déclaratif se prête bien à la description d'interface graphique, par exemp
 
 ## Les composants et leurs propriétés
 
-L'exemple précédent en déclaratif est en fait du QML.
+
+
+
+
 
 
 
