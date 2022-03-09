@@ -55,12 +55,14 @@ Rectangle {
 Aucun paradigme n'est meilleur que les autres, mais certains sont plus adaptés à certains domaines ou problèmes spécifique.
 Le déclaratif se prête bien à la description d'interface graphique, par exemple le QML et le HTML.
 
-## Les composants et leurs propriétés
+## Les composants Rectangle et Item
+
+heritage
 
 
 
 
-
+## Couleurs
 
 
 
