@@ -13,6 +13,9 @@ avec `QtQuick`. La raison est que cela permet d'avoir un support visuel simple e
 importants de Qt. Et même si vous n'êtes pas intéressé par la création d'applications graphique, je pense que cela reste une
 compétence indispensable a avoir pour l'importe quel développeur C++, au minimum pour créer une fenêtre avec 2-3 boutons.
 
+Pour tester les codes de ce cours, vous pouvez utiliser un projet par défaut `QtQuick Application`, comme vous avez fait dans
+le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlweb.github.io pour tester les syntaxes de base du QML.
+
 - [les base du QML et Qt Quick](bases.md)
 
 ## Outils et refences
