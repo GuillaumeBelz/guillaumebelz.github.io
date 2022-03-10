@@ -58,15 +58,15 @@ lien de téléchargement. Prenez bien le site officiel de Microsoft.
 
 Si vous voulez installer la version recommandée avec Qt, vous pouvez télécharger l'installateur sur cette page : https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes. Choisissez `Download Community 2019`.
 
-![Page d'acceuil](images/msvc_03.png)
+![Page d'acceuil](images/msvc_01.png)
 
 Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. 
 
-![Page d'acceuil](images/msvc_01.png)
+![Page d'acceuil](images/msvc_02.png)
 
 Lors de l'étape de sélection, sélectionnez `Desktop development with C++`.
 
-![Page d'acceuil](images/msvc_02.png)
+![Page d'acceuil](images/msvc_03.png)
 
 ## GCC et Mingw32
 
