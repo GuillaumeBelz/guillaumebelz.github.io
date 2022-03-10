@@ -43,8 +43,8 @@ Il existe différentes versions de Visual Studio, identifiées par :
 - la licence d'utilisation : `Express` (version gratuite limitée), `Community` (version gratuite moins limitée) et les versions 
 payantes (`Professional`, `Enterprise`, `Ultimate`, etc.).
 
-_Ne soyez donc pas surpris, Visual Studio utilise deux systemes de numérotation des versions : avec l'année (2013, 2015, 2017, 2019, 2022) ou un 
-numéro de version (12.0, 14.0, 16.0, 17.0)._
+Ne soyez donc pas surpris, Visual Studio utilise deux systemes de numérotation des versions : avec l'année (2013, 2015, 2017, 2019, 2022) ou un 
+numéro de version (12.0, 14.0, 16.0, 17.0).
 
 Les versions payantes sont relativement chères pour un particulier. Si votre entreprise possède des licences, utilisez-les. 
 Sinon, la version `Community` est suffisante. Ce tutoriel utilisera cette version.
@@ -54,7 +54,13 @@ Le lien direct pour télécharger Visual Studio sur le [site officiel de Microso
 lien ne fonctionne pas (Microsoft change souvent les liens de telechargement), vous trouverez facilement sur internet le 
 lien de téléchargement. Prenez bien le site officiel de Microsoft.
 
-Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. Lors de l'étape de sélection, sélectionnez `Desktop development with C++`.
+Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. 
+
+![Page d'acceuil](images/msvc_01.png)
+
+Lors de l'étape de sélection, sélectionnez `Desktop development with C++`.
+
+![Page d'acceuil](images/msvc_02.png)
 
 ## GCC et Mingw32
 
@@ -76,6 +82,9 @@ sudo apt-get install build-essential libglu1-mesa-dev
 
 ### Sur Windows
 
+Important : si vous souhaitez utiliser QtWebEngine sur Windows, il faut obligatoirement utiliser Visual Studio. Ce module n'est
+pas disponible avec MingW.
+
 MingW est le portage de GCC sur Windows. Le plus simple pour installer MingW sur Windows est de sélectionner cet 
 outil dans l'installateur de Qt. Il est disponible dans la partie `Tools`. Chaque version de Qt peut utiliser
 une version differente de MingW, il est donc nécessaire de sélectionner la version de MingW correspondant
@@ -96,9 +105,9 @@ systeme cible est Android.
 
 La compilation d'une application Qt pour Android nécessite deux outils :
 
-- le _Android SDK_ (_Software Developement Kit_) est le kit de développement en Java pour Android et contient 
+- le `Android SDK` (`Software Developement Kit`) est le kit de développement en Java pour Android et contient 
   les outils de base pour travailler avec Android ;
-- le _Android NDK_ (_Native Devlopement Kit_) est le kit de développement en C++ pour Android.
+- le `Android NDK` (`Native Devlopement Kit`) est le kit de développement en C++ pour Android.
 
 Ces deux outils sont nécessaires pour utiliser Qt sur Android, vous devez installer le SDK même si vous n'utilisez
 pas le Java (Qt utilise en interne une activités Java sur Android).
