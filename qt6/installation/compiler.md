@@ -33,14 +33,16 @@ de compilation spécifique.
 
 ## Microsoft Visual Studio (MSVC)
 
+**Important : il ne faut pas confondre "Visual Studio Code" et "Visual Studio". Faites bien attention à télécharger le bon outil.**
+
 Visual Studio est l'outil de développement conçu par Microsoft ("MSVC" signifie "Microsoft Visual C++"). C'est donc 
 naturellement l'outil conseillé sur Windows.
 
 Il est important d'installer la version de Visual Studio correspondante à la version de Qt que vous souhaitez installer. 
 Il existe différentes versions de Visual Studio, identifiées par :
 
-- la date de sortie : 2008, 2010, 2013, 2015, 2017 ;
-- la licence d'utilisation : `Express` (version gratuite limitée), `Community` (version gratuite moins limitée) et les versions 
+- la date de sortie : 2008, 2010, 2013, 2015, 2017, 2019, 2022 ;
+- la licence d'utilisation : `Express` (version gratuite limitée, qui n'existe plus), `Community` (version gratuite moins limitée) et les versions 
 payantes (`Professional`, `Enterprise`, `Ultimate`, etc.).
 
 Ne soyez donc pas surpris, Visual Studio utilise deux systemes de numérotation des versions : avec l'année (2013, 2015, 2017, 2019, 2022) ou un 
@@ -53,6 +55,10 @@ La version officiellement testé avec Qt 6.2 est MSVC 2019, mais vous pouvez uti
 Le lien direct pour télécharger Visual Studio sur le [site officiel de Microsoft](https://visualstudio.microsoft.com/fr/downloads/), mais si ce 
 lien ne fonctionne pas (Microsoft change souvent les liens de telechargement), vous trouverez facilement sur internet le 
 lien de téléchargement. Prenez bien le site officiel de Microsoft.
+
+Si vous voulez installer la version recommandée avec Qt, vous pouvez télécharger l'installateur sur cette page : https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes. Choisissez `Download Community 2019`.
+
+![Page d'acceuil](images/msvc_03.png)
 
 Apres avoir télécharger l'installateur, lancez-le et suivez les instructions. 
 
