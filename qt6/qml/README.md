@@ -16,15 +16,15 @@ compétence indispensable a avoir pour l'importe quel développeur C++, au minim
 Pour tester les codes de ce cours, vous pouvez utiliser un projet par défaut `QtQuick Application`, comme vous avez fait dans
 le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlweb.github.io pour tester les syntaxes de base du QML.
 
-- [Les base du QML et Qt Quick](bases.md)
+- [Les base du QML et Qt Quick](bases.md), pour comprendre la syntaxe de base du QML.
 - [Les types et composants de base](types.md)
 
 Certains concepts sont important et feront l'objet des chapitres suivants :
 
-- le placement des composants, avec les ancres, les layouts, etc.
-- les controles
-- interactions (mouse area, touch, etc)
-- enrichir les UI avec les animations, particules, et
+- [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
+- [Les contrôles](controls.md), qui composants plus avancés pour créer une interface (bouton, checkbox, etc).
+- [Gérer les interactions avec l'utilisateur](input.md) avec la souris, le clavier, l'écran tactile.
+- [Enrichir les UI](ui.md) avec les animations, particules, et
 
 ## Outils et refences
 
