@@ -18,4 +18,5 @@ clavier 3x3, ou 4x4 avec blancs. Fournir la fonction JS qui genere la liste de c
 Pour continuer à pratiquer, vous pouvez prendre des applications que vous connaissez et d'essayer de reproduire les interfaces.
 Commencez par des interfaces simples (éléments peu nombreux et simples).
 
-https://www.designyourway.net/drb/user-interface-design-inspiration-40-ui-design-examples/
+- https://www.designyourway.net/drb/user-interface-design-inspiration-40-ui-design-examples/
+- lightroom
