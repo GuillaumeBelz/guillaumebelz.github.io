@@ -18,4 +18,4 @@ Livres
 - The Design of Everyday Things
 
 Safe UX design: comment faire qu'une UI est "safe" par design. Exemple sur la securite des infos (password), les interfaces des 
-systemes critiques (voiture, avion, bateau, etc)
+systemes critiques (voiture, avion, bateau, etc) https://www.toptal.com/designers/product-design/ux-security
