@@ -18,10 +18,11 @@ le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlwe
 
 - [Les base du QML et Qt Quick](bases.md), pour comprendre la syntaxe de base du QML.
 - [Les types et composants de base](types.md)
+- [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
+- [Exercices](exercices.md)
 
 Certains concepts sont important et feront l'objet des chapitres suivants :
 
-- [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
 - [les scripts JS](js.md)
 - [Les contrôles](controls.md), qui composants plus avancés pour créer une interface (bouton, checkbox, etc).
 - [Gérer les interactions avec l'utilisateur](input.md) avec la souris, le clavier, l'écran tactile.
