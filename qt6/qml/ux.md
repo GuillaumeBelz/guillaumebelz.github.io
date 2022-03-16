@@ -2,7 +2,7 @@
 # Introduction au concept d'epérience utilisateur (UX)
 
 Idéalement, travailler avec un graphiste. (Voir les outils des graphistes et savoir importer les UI ?) Quelques notions, de facon a
-avoir un truc pas trop moche, quand vous travaillez dans designer.
+avoir un truc pas trop moche et fonctionel, quand vous travaillez sans designer.
 
 Pas limité aux interface graphique des applications, mais pour tout ce qu'une personne peut utiliser "The Design of Everyday Things"
 
