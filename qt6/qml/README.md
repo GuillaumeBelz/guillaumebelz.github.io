@@ -18,6 +18,7 @@ le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlwe
 
 - [Les base du QML et Qt Quick](bases.md), pour comprendre la syntaxe de base du QML.
 - [Les types et composants de base](types.md)
+- [les matériels](material.md)
 - [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
 - [La conception d'interface utilisateur](us.md), introduction aux principes de l'UX design.
 - [Exercices](exercices.md)
