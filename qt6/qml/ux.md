@@ -4,7 +4,7 @@
 Pas limité aux interface graphique des applications, mais pour tout ce qu'une personne peut utiliser "The Design of Everyday Things"
 
 - https://grow.google/certificates/ux-design/#?modal_active=none
-- https://www.designyourway.net/blog/user-experience/ux-design-certification/
+- https://www.designyourway.net/blog/category/user-experience/
 - https://en.wikipedia.org/wiki/User_experience_design
 
 ## Quelques sites
