@@ -7,9 +7,11 @@ ces concepts sur des exemples concrets.
 Le but de ces exercices n'est pas de créer une application complète et fonctionnelle, mais simplement d'obtenir
 visuellement le résultat attendu.
 
-## 
+## Clavier numérique aléatoire
 
+https://www.bonbache.fr/authentification-securisee-anti-keylogger-en-javascript-276.html 
 
+clavier 3x3, ou 4x4 avec blancs
 
 ## Allez plus loin
 
