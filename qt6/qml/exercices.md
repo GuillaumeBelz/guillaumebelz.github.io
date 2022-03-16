@@ -20,3 +20,4 @@ Commencez par des interfaces simples (éléments peu nombreux et simples).
 
 - https://www.designyourway.net/drb/user-interface-design-inspiration-40-ui-design-examples/
 - lightroom
+- https://www.justinmind.com/ux-design/examples
