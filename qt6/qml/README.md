@@ -22,6 +22,7 @@ le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlwe
 Certains concepts sont important et feront l'objet des chapitres suivants :
 
 - [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
+- [les scripts JS](js.md)
 - [Les contrôles](controls.md), qui composants plus avancés pour créer une interface (bouton, checkbox, etc).
 - [Gérer les interactions avec l'utilisateur](input.md) avec la souris, le clavier, l'écran tactile.
 - [Enrichir les UI](ui.md) avec les animations, particules, et
