@@ -97,7 +97,7 @@ La documentation de chaque composant indique quel module vous devez importer. Pa
 [Button](https://doc.qt.io/qt-6/qml-qtquick-controls2-button.html), il est indiqué qu'il faut ajouter `import QtQuick.Controls` pour
 importer le module `QtQuick.Controls` dans votre code QML et pouvoir utiliser ce composant.
 
-![image](images/qml_base_02.qml)
+![image](images/qml_base_02.png)
 
 Dans le code précédant, la ligne `import QtQuick` permet donc d'importer le module de base de QtQuick et d'utiliser les composants
 que vous allez voir dans la suite de ce chapitre : `Window` et `Rectangle`.
@@ -169,7 +169,7 @@ Pour connaitre la liste des proprietes, cf la doc. Par exemple, la documentation
 [Rectangle](https://doc.qt.io/qt-6/qml-qtquick-rectangle.html) indique que celui-ci contient les propriétés `border.width`, `border.color`, 
 `color` ou encore `radius`.
 
-![image](images/qml_base_03.qml)
+![image](images/qml_base_03.png)
 
 Essayez de modifier ces propriétés dans le premier code d'exemple, pour voir leur effet.
 
