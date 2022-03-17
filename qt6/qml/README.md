@@ -1,5 +1,5 @@
 
-# Introduction au QML et à QtQuick (en cours de rédaction)
+# Introduction au QML et à QtQuick
 
 > [Revenir à la page précédente](../README.md)
 
