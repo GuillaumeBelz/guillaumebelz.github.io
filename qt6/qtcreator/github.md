@@ -206,3 +206,33 @@ Cliquez sur `Commit` pour avoir la liste des commits.
 Cliquez sur le dernier commit, pour voir les modifs contenues dans ce commit : 3 ajouts de fichiers.
 
 ![Page d'acceuil](images/qtc_git_06.png)
+
+## Utiliser les lignes de commande
+
+Git est un outil qui s'utilise parfois en ligne de commande. Certains préfèrent cette méthode plutôt qu'utiliser un outil graphique.
+Dans tous les cas, il est intéressant de connaitre ces commandes, lorsque l'on veut automatiser les processus avec des scripts.
+
+Pour cloner un dépôt (créer une copie versionnée locale) :
+
+```
+git clone https://github.com/gbdivers/project-test.git
+```
+
+Pour récupérer les modifications depuis le dépôt en ligne sur votre version locale :
+
+```
+git pull
+```
+
+Pour créer un commit :
+
+```
+git commit -m "le message expliquant les modifications"
+```
+
+Pour envoyer vos modifications depuis votre dépôt local vers la version en ligne :
+
+```
+git push
+```
+
