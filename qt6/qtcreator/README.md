@@ -1,5 +1,5 @@
 
-# Premiers pas avec Qt Creator (en cours de rédaction)
+# Premiers pas avec Qt Creator
 
 > [Revenir à la page précédente](../README.md)
 
