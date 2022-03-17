@@ -57,66 +57,153 @@ Le déclaratif se prête bien à la description d'interface graphique, par exemp
 
 ## Un premier exemple de code QML
 
-Pour commencer, voyons un code de base en QML.
+Pour commencer, voyons un code de base en QML. Copiez-collez le code suivant dans un projet "Qt Quick Application".
 
 ```js
 import QtQuick
 
-Rectangle {
-    width: 500; height: 200
-	color: "red"
+Window {
+    id: root
+    width: 640
+    height: 480
+    visible: true
+    title: qsTr("Hello World")
+
+    Rectangle {
+        x: 20; y: 50
+        width: 500; height: 200
+        color: "red"
+    }
 }
 ```
 
-Vous pouvez copier-coller ce code dans http://qmlweb.github.io pour tester en ligne ou dans une application QtQuick pour tester localement.
+Lorsque vous lancez l'application, vous obtenez le résultat suivant :
 
-image
+![image](images/qml_base_01.png)
 
-Sans surprise, le résultat obtenu est un rectangle (`Rectangle`) rouge (`red`), de 500 pixels de large (`width`) pour 200 pixels de haut (`height`).
-Vous voyez immédiatement la simplicité de ce code QML, le code se comprend directement.
+Sans surprise (si vous comprenez l'anglais), le résultat obtenu est une fenêtre (`Window`) qui contient un rectangle (`Rectangle`)
+rouge (`red`), de 500 pixels de large (`width`) pour 200 pixels de haut (`height`). Vous voyez immédiatement la simplicité du langage 
+QML, ce code peut être compris assez facilement.
 
-plus en detail les differentes partie du code
+Faites des testes en changeant les dimensions, la couleur, et d'autres propriétés, et voyez ce que vous obtenez.
 
-import, pour utiliser les composants de certains modules. plusieurs modules, qui proposent des composants, `import QtQuick`.
+## Importation des modules QtQuick
 
-creation d'un composant :
+Un code QML commence généralement par la liste des modules importés. Pour organiser les fonctionnalités de QtQuick, les composants
+sont regroupés par module logique. Par exemple, il existe un module QtQuick.Particles pour les effets de particules, QtQuick.Layout
+pour les outils de positionnement des éléments et ainsi de suite.
+
+La documentation de chaque composant indique quel module vous devez importer. Par exemple, si vous consulter la documentation de
+[Button](https://doc.qt.io/qt-6/qml-qtquick-controls2-button.html), il est indiqué qu'il faut ajouter `import QtQuick.Controls` pour
+importer le module `QtQuick.Controls` dans votre code QML et pouvoir utiliser ce composant.
+
+![image](images/qml_base_02.qml)
+
+Dans le code précédant, la ligne `import QtQuick` permet donc d'importer le module de base de QtQuick et d'utiliser les composants
+que vous allez voir dans la suite de ce chapitre : `Window` et `Rectangle`.
+
+## Créer un élément en QML
+
+Après la liste des importations, vous trouverez généralement l'élément qui se trouve a la racine.
+
+La syntaxe générale pour créer un élément est la suivante : le type d'élément (le composant) suivi de la déclaration des propriétés
+de cet élément dans un bloc de code défini par des accolades.
 
 ```
-TYPE {
+COMPOSANT {
     // liste des propriétés
 }
 ```
 
-Il faut un seul composant de base. Donc pas possible d'ecrire :
+Par exemple, pour créer un rectangle, le code sera :
+
 ```js
-import QtQuick
-
 Rectangle {
-    width: 500; height: 200
-	color: "red"
-}
-
-Rectangle {
-    width: 500; height: 200
-	color: "Blue"
 }
 ```
 
-Pour chaque propriété, la syntaxe dans un bloc d'un composant :
+Il n'est pas possible d'avoir plusieurs éléments à la racine d'un code QML. Par exemple, le code suivant n'est pas valide :
 
 ```js
-propriété: value
+Rectangle {
+}
+
+Rectangle {
+}
 ```
 
-chaque composant a une liste de propriete et chaque propriete a un type de valeur. Par exemple `500` pour un nombre entier, `"red"` pour
-une chaine de caractere (qui contient le nom d'une couleur préexistante, nous reviendrons dessus plus tard).
+Par contre, il est possible d'imbriquer des éléments et d'avoir un élément qui contient un ou plusieurs éléments. Par exemple, le code
+suivant contient un autre rectangle.
 
-Faites des testes en changeant les dimensions, la couleur, quel code est valide ou pas.
+```js
+Rectangle {
+    Rectangle {
+    }
+}
+```
+
+Comme en C++, il est classique d'indenter le code, en ajoutant des espaces de façon à montrer visuellement la hiérarchie des éléments.
+Qt Creator propose automatiquement l'indentation en fonction de la hiérarchie et il est possible de reformater un code QML complet en
+tapant `Ctrl+A` puis `Ctrl+I`.
+
+Un autre exemple d'éléments imbriqués est donné dans le premier code d'exemple, avec l'élément rectangle qui imbriqué dans l'élément 
+fenêtre.
+
+Cette hiérarchie des éléments a un impact sur leur positionnement et les liens entre eux. Cela sera détaillé par la suite.
+
+## Modifier les propriétés d'un élément
+
+Chaque élément possède des propriétés, que vous pouvez modifier pour personnaliser cet élément. Si vous ne modifier pas une
+propriété, elle aura généralement une valeur par défaut (par exemple 0 pour la position et les dimensions d'un rectangle).
+
+La syntaxe générale pour modifier une propriétéest la suivante : le nom de la propriéte puis sa valeur, séparé par deux points.
+
+```js
+PROPRIÉTÉ: VALEUR
+```
+
+La liste des propriétés que vous pouvez utiliser dépend du type de composant. Vous devez consulter la documentation pour avoir
+cette liste. Par exemple, pour le composant `Rectangle`, la docuementation 
+
+Pour connaitre la liste des proprietes, cf la doc. Par exemple, la documentation du compostant 
+[Rectangle](https://doc.qt.io/qt-6/qml-qtquick-rectangle.html) indique que celui-ci contient les propriétés `border.width`, `border.color`, 
+`color` ou encore `radius`.
+
+![image](images/qml_base_03.qml)
+
+Essayez de modifier ces propriétés dans le premier code d'exemple, pour voir leur effet.
+
+Dans la documentation, vous pouvez voir aussi que chaque propriété possède une type. Par exemple, la propriété `antialiasing` est 
+de type `bool` (booléen). Si vous ne respectez par le type, vous obtiendrez un message d'erreur et votre interface graphique ne
+s'affichera pas.
+
+Par exemple, si vous écrivez :
+
+```js
+antialiasing: "hello world"
+```
+
+Vous obtiendrez le message d'erreur suivant :
+
+```
+QQmlApplicationEngine failed to load component
+qrc:/untitled/main.qml:13:23: Invalid property assignment: boolean expected
+```
+
+("échec du chargement du composant" puis "Affectation de propriété non valide : valeur booléenne attendue")
+
+Les types des propriétés sont assez proche de ceux que vous connaissez deja en C++ :
+
+- `bool` pour les booléens ;
+- `int` pour les nombres entiers ;
+- `real` pour les nombres à virgules ;
+- `color` est similaire à la classe `QColor` dans Qt et peut accepter plusieurs syntaxes ;
+- `any` correspond à `std::any` en C++ et permet aussi d'accepter plusieurs syntaxes pour cette propriété.
+
+Les types de propriétés seront plus en détail dans le chapitre suivant.
 
 ## Les composants Rectangle et Item
 
-Pour connaitre la liste des proprietes, cf la doc. Par exemple pour `Rectangle` : 
-https://doc-snapshots.qt.io/qt6-dev/qml-qtquick-rectangle.html
 
 Dans Qt Creator, egalement possible de placer le curseur sur le type du composant et taper `F1`.
 
@@ -149,7 +236,14 @@ Note : quelques nouvelles infos dans la doc de Item.
 - `Methods` comme pour les classes C++, qui ont des variables membres (attributs/propriete) et des fonctions membres, les composants QML peuvent
   avoir des methodes. Comme le code QML n'est pas composé de suite d'instructions, l'utilisation des methodes sera vu plus tard.
 
+## La propriété id et le binding
 
 
 
-> Couleurs
+
+En plus des propriétés indiquées dans la documentation, 
+
+propriete particuliere `id`
+
+
+x: width/2, width/4, etc
