@@ -43,7 +43,7 @@ En programmation déclaratif, il n'y a plus d'exécution séquentielle d'instruc
 L'ordre dans lequel vous écrivez les propriétés n'a pas d'importance. C'est comme si les lignes étaient exécutées toutes en même temps et le 
 résultat est obtenu en une seule fois, après que le composant est créé et paramétré.
 
-```
+```js
 Rectangle {
     x: 10
     y: 10
@@ -109,7 +109,7 @@ Après la liste des importations, vous trouverez généralement l'élément qui 
 La syntaxe générale pour créer un élément est la suivante : le type d'élément (le composant) suivi de la déclaration des propriétés
 de cet élément dans un bloc de code défini par des accolades.
 
-```
+```js
 COMPOSANT {
     // liste des propriétés
 }
