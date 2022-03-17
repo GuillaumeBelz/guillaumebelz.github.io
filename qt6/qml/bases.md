@@ -5,9 +5,9 @@
 
 ## Vue d'ensemble du QML et de QtQuick
 
-Le QML et `QtQuick` sont indisociables, mais pour autant, ce sont bien deux choses différentes. `QtQuick` est le module de
+Le QML et QtQuick sont indisociables, mais ce sont bien deux choses différentes. QtQuick est le module de
 Qt qui fournit les fonctionnalités pour créer une interface graphique. Le QML est un langage basé sur le JavaScript et qui
-permet d'utiliser `QtQuick`.
+permet d'utiliser QtQuick.
 
 ## Paradigme déclaratif
 
