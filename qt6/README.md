@@ -36,6 +36,9 @@ Ce tutoriel est découpé de la façon suivante :
 - [Un tour d'horizon de plusieurs modules importants de Qt](modules/README.md), pour utiliser les fonctionnalités réseaux, fichiers, base de données, etc.
 - [Quelques idées de projets](projets/README.md), pour vous entraîner et aller plus loin.
 
+Les trois premiers chapitres sont accessibles pour ceux qui n'ont pas de connaissances en C++, par exemple pour les graphistes
+qui veulent pouvoir travailler directement sur une interface QML, sans connaître le C++.
+
 Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord Nan](https://discordapp.com/invite/zcWp9sC) ou sur
 [le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
 
