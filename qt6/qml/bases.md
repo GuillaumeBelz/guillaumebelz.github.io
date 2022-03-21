@@ -162,6 +162,23 @@ La syntaxe générale pour modifier une propriétéest la suivante : le nom de l
 PROPRIÉTÉ: VALEUR
 ```
 
+Par exemple, pour modifier la couleur d'un rectangle, vous pouvez écrire :
+
+```js
+Rectangle {
+    color: "blue"
+}
+```
+
+Pour modifier plusieurs propriétés, vous pouvez les écrire sur des lignes différentes ou les séparer par un point-virgule.
+
+```js
+Rectangle {
+    x: 10; y: 20
+    color: "green"
+}
+```
+
 La liste des propriétés que vous pouvez utiliser dépend du type de composant. Vous devez consulter la documentation pour avoir
 cette liste. Par exemple, pour le composant `Rectangle`, la docuementation 
 
