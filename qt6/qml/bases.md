@@ -63,7 +63,6 @@ Pour commencer, voyons un code de base en QML. Copiez-collez le code suivant dan
 import QtQuick
 
 Window {
-    id: root
     width: 640
     height: 480
     visible: true
@@ -230,25 +229,68 @@ Vous retrouvez ici un concept que vous connaissez bien en C++ (et plus général
 
 Quand vous utiliserez un composant, il faudra bien regarder l'ensemble de ses proprietes dont il hérite.
 
-`Item` est le composant de base de tous les autres composants graphiques. 
+`Item` est le composant de base de tous les autres éléments graphiques, ce qui implique que ses propriétés sont utilisables pour
+tous les autres éléments graphiques. Toutes les propriétés se sont pas détaillées ici, vous verrez d'autres propriétés dans les chapitres
+suivants.
 
-z
-enable, visible
-opacity
-clip
-rotation, scale
+Quelques propriétés intéressantes à connaître :
 
-
+- `x`, `y`, `width` et `height` : la position et la taille de l'élément graphique.
+- `z` : la profondeur. Quand plusieurs éléments se superposent, ils sont affichés par ordre croisant.
+- `enable` et `visible` : un élément peut etre activé ou non, et visible ou non.
+- `opacity` : pour modifier la transparence d'un élément.
+- `clip` : quand un élément contient un élément enfant qui déborde, l'affichage peut être limité (clipé) ou non.
+- `rotation` et `scale` : pour modifier la rotation et la taille d'un élément.
 
 ## La propriété id et le binding
 
-é
+Reprenons le premier code d'exemple et modifions le code pour les propriétés `width` et `height` de la façon suivante, puis copiez-collez
+le code dans un projet dans QtCreator :
 
+```js
+import QtQuick
 
+Window {
+    id: root
+    width: 640
+    height: 480
+    visible: true
+    title: qsTr("Hello World")
 
-En plus des propriétés indiquées dans la documentation, 
+    Rectangle {
+        x: 20; y: 50
+        width: parent.width / 2
+        height: root.height / 2
+        color: "red"
+    }
+}
+```
 
-propriete particuliere `id`
+Lorsque vous modifier la taille de la fenêtre, vous pouvez constater que la taille du rectangle rouge est modifiée en même temps.
 
+Cette fonctionnalité du QML s'appelle le "binding" ("lien"). Cela consiste à lier la valeur d'une propriété à un ou plusieurs autres propriétés.
+Lorsque ces propriétés liées sont modifiées, alors la propriété est mise à jour aussi. Dans l'exemple précédent, la hauteur et la largeur
+du rectangle rouge est calculée automatiquement à partir de la hauteur et la largeur de la fenêtre.
 
-x: width/2, width/4, etc
+Dans une expression, il est parfois nécessaire de spécifier à quel élément correspond une propriété. La syntaxe pour faire cela est
+d'utiliser l'identifiant de l'objet suivi de la propriété, séparé par un point. L'identifiant d'un objet est determiné par la propriété
+`id`. Il est classique d'appeler l'éléement à la racine du fichier QML par "root". Il est également possible d'utiliser `parent` pour 
+indiquer l'élément parent.
+
+```js
+// définir un identifiant
+id: mon_element
+
+// syntaxe pour lier une propriété
+mon_element.la_propriété
+```
+
+**Note :** les expressions utilisées dans un binding sont écrites en JavaScript. C'est une des manières d'intégrer du code non déclaratif
+dans un code QML. Vous verrez dans le chapitre "JavaScript en detail".
+
+## Exercices
+
+Pour bien assimiler les explications données dans ce chapitre, il est nécessaire de mettre en pratique. Voici quelques exercices à réaliser.
+
+- dessiner un rectangle de 100 sur 100, qui tourne lorsque la fenêtre est redimenssionnée.
+- idem pour la transparence.
