@@ -226,18 +226,19 @@ propriétés présentées dans les codes d'exemple sont absentes, par exemple `x
 sur le lien vers [Item](https://doc.qt.io/qt-6/qml-qtquick-item.html), vous trouverez ces propriétés.
 
 Vous retrouvez ici un concept que vous connaissez bien en C++ (et plus généralement en programation objet) : l'héritage. Comme indiqué à la ligne
-`Inherits: Item`, cela signifie que le composant `Rectangle` dérive du composant `Item` et donc il hérite de toutes les proprietes de `Item`.
-Si vous cliquez sur `Item` pour acceder a sa doc https://doc.qt.io/qt-6/qml-qtquick-item.html, vous trouverez les proprietes manquantes dans
-`Rectangle`, c'est a dire `width`, `height`, `x` et `y`.
+`Inherits: Item`, cela signifie que le composant `Rectangle` dérive du composant `Item` et donc il hérite de toutes les propriétés de `Item`.
 
-Quand vous utiliserez un composant, il faudra bien regarder l'ensemble de ses proprietes dont il herite.
+Quand vous utiliserez un composant, il faudra bien regarder l'ensemble de ses proprietes dont il hérite.
 
-Note : quelques nouvelles infos dans la doc de Item.
+`Item` est le composant de base de tous les autres composants graphiques. 
 
-- `Instantiates: QQuickItem` indique quel type C++ est instancié. Cela sera utile lorsque vous ecrire du code C++ qui devra communiquer avec le QML
-- `Inherited By:` suivi d'une longue liste, c'est la liste des composants qui derivent de Item
-- `Methods` comme pour les classes C++, qui ont des variables membres (attributs/propriete) et des fonctions membres, les composants QML peuvent
-  avoir des methodes. Comme le code QML n'est pas composé de suite d'instructions, l'utilisation des methodes sera vu plus tard.
+z
+enable, visible
+opacity
+clip
+rotation, scale
+
+
 
 ## La propriété id et le binding
 
