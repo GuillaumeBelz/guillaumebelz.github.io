@@ -221,26 +221,12 @@ Les types de propriétés seront plus en détail dans le chapitre suivant.
 
 ## Les composants Rectangle et Item
 
+Dans la documentation de [Rectangle](https://doc.qt.io/qt-6/qml-qtquick-rectangle.html), vous avez peut-être remarqué que certaines
+propriétés présentées dans les codes d'exemple sont absentes, par exemple `x`, `y`, `width` et `height`. Cependant, si vous cliquez
+sur le lien vers [Item](https://doc.qt.io/qt-6/qml-qtquick-item.html), vous trouverez ces propriétés.
 
-Dans Qt Creator, egalement possible de placer le curseur sur le type du composant et taper `F1`.
-
-image de la doc
-
-Contient :
-
-- titre "Rectangle" puis "QML type" pour ne pas confondre avec la doc C++
-- une courte description
-- l'import a utiliser
-- l'heritage Item puis "List of all members, including inherited members", on va revenir dessus.
-- la liste des propriétés
-- le reste de la description détaillée
-
-Globalement pas de difficiluté a lire la doc, mais une chose importante a noter. Dans le code precent, vous avez utiliser les propreites
-`width`, `height`, `x` et `y`, mais celles-ci ne sont pas dans la documentation des proprietes de `Rectangle`. La seule presente est `color`.
-Si vous cliquez sur `List of all members, including inherited members`, vous les trouverez. 
-
-Vous retrouvez ici un concept que vous connaissez bien en C++ (et plus generalement en prog objet), c'est l'heritage. Comme indiqué a la ligne
-`Inherits: Item`, cela signifie que le composant `Rectangle` dérive du composant `Item` et donc il herite de toutes les proprietes de `Item`.
+Vous retrouvez ici un concept que vous connaissez bien en C++ (et plus généralement en programation objet) : l'héritage. Comme indiqué à la ligne
+`Inherits: Item`, cela signifie que le composant `Rectangle` dérive du composant `Item` et donc il hérite de toutes les proprietes de `Item`.
 Si vous cliquez sur `Item` pour acceder a sa doc https://doc.qt.io/qt-6/qml-qtquick-item.html, vous trouverez les proprietes manquantes dans
 `Rectangle`, c'est a dire `width`, `height`, `x` et `y`.
 
@@ -255,6 +241,7 @@ Note : quelques nouvelles infos dans la doc de Item.
 
 ## La propriété id et le binding
 
+é
 
 
 
