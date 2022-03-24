@@ -10,3 +10,5 @@ creer une communauté
 outils de collaborations, automatisation
 
 qualité logicielle
+
+site web, pour activite collective et collecter les infos
