@@ -12,6 +12,7 @@ Pour tester les codes de ce cours, vous pouvez utiliser un projet par défaut `Q
 le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlweb.github.io pour tester les syntaxes de base du QML.
 
 - [Les base du QML et Qt Quick](bases.md), pour comprendre la syntaxe de base du QML.
+- [Le prototypage d'interfaces graphiques](prototype.md)
 - [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
 - [Les types et composants de base](types.md)
 - [Creer ses propres composants](component.md) composant dynamique, pour modifier en temps reel une UI (ecrire du code QML, changer les couleurs, etc)
