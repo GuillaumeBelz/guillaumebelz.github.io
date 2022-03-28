@@ -179,15 +179,28 @@ Rectangle {
 ```
 
 La liste des propriétés que vous pouvez utiliser dépend du type de composant. Vous devez consulter la documentation pour avoir
-cette liste. Par exemple, pour le composant `Rectangle`, la docuementation 
-
-Pour connaitre la liste des proprietes, cf la doc. Par exemple, la documentation du compostant 
+cette liste. Par exemple, la documentation du compostant 
 [Rectangle](https://doc.qt.io/qt-6/qml-qtquick-rectangle.html) indique que celui-ci contient les propriétés `border.width`, `border.color`, 
 `color` ou encore `radius`.
 
 ![image](images/qml_base_03.png)
 
 Essayez de modifier ces propriétés dans le premier code d'exemple, pour voir leur effet.
+
+Lorsqu'une propriété contient plusieurs autres propriétés, par exemple `border` qui contient les propriétés `width` et `color`, il est possible
+de regrouper ces propriétés dans un bloc.
+
+```js
+border.width: 1
+border.color: "red"
+
+// ou
+
+border {
+    width: 1
+    color: "red"
+}
+```
 
 Dans la documentation, vous pouvez voir aussi que chaque propriété possède une type. Par exemple, la propriété `antialiasing` est 
 de type `bool` (booléen). Si vous ne respectez par le type, vous obtiendrez un message d'erreur et votre interface graphique ne
