@@ -5,7 +5,13 @@
 
 À partir des éléments de base, vous pouvez commencer déjà a prototyper votre interface graphique, en représentant de façon simplifier
 vos idées d'interface, vos choix de styles, la facilité d'utilisation. Par exemple, si vous voulez imiter l'interface de Qt Creator,
-vous pouvez 
+vous pouvez écrire le code suivant :
+
+```js
+
+
+
+```
 
 
 
