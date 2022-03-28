@@ -1,7 +1,11 @@
 
-# Comment positionner les élements graphiques
+# Positionner les élements graphiques
 
-La premiere chose a faire est de placer et organiser les elements.
+## Le prototypage d'interface graphique
+
+À partir des éléments de base, vous pouvez commencer déjà a prototyper votre interface graphique, en représentant de façon simplifier
+vos idées d'interface, vos choix de styles, la facilité d'utilisation. Par exemple, si vous voulez imiter l'interface de Qt Creator,
+vous pouvez 
 
 
 
@@ -15,3 +19,5 @@ avantages et limites
 - (vues ?)
 - repeater
 - rotation et scale
+
+## Exercices
