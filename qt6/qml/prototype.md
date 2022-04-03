@@ -81,5 +81,27 @@ Rectangle {
 }
 ```
 
+Creation de composants pour architecturer le code, en fonction de l'architecture de l'UI.
 
+```js
+// main.qml
+Window {
+    ModeMenubar {
+      x: 0; y: 0
+      width: 61; height: parent.height
+    }
+    MainArea {
+      x: 61; y: 0
+      width: parent.width - 62; height: parent.height
+    }
+}
+
+// ModeMenubar.qml
+Rectangle { ... }
+
+// MainArea.qml
+Rectangle { ... }
+```
+
+Ce qui est interne (qui n'interagit pas avec le reste) et externe (ce qui interagit avec d'autres composants).
 
