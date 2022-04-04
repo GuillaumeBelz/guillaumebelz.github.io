@@ -15,13 +15,6 @@ L'intérêt de faire le prototypage en QML, c'est de pouvoir avoir directement u
 integration), découper les tâches par composants graphiques (on va revenir la dessus) et facile pour les designers pour tester directement
 certains changements.
 
-## Le composant Text
-
-Servira a écrire du texte dans l'UI et donc identifier chaque composant en cours de développement.
-
-Dérive de `Item`, donc possède les propriétés de positionnement (`x`, `y`, `width` et `height`) et une propriété `text`. 
-D'autres propriétés pour la mise en forme : [documentation de Text](https://doc.qt.io/qt-5/qml-qtquick-text.html).
-
 ## Création de composants
 
 Exemple pour illustrer avec Qt Creator.
