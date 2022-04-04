@@ -301,6 +301,13 @@ mon_element.la_propriété
 **Note :** les expressions utilisées dans un binding sont écrites en JavaScript. C'est une des manières d'intégrer du code non déclaratif
 dans un code QML. Vous verrez dans le chapitre "JavaScript en detail".
 
+## Le composant Text
+
+Servira a écrire du texte dans l'UI et donc identifier chaque composant en cours de développement.
+
+Dérive de `Item`, donc possède les propriétés de positionnement (`x`, `y`, `width` et `height`) et une propriété `text`. 
+D'autres propriétés pour la mise en forme : [documentation de Text](https://doc.qt.io/qt-5/qml-qtquick-text.html).
+
 ## Exercices
 
 Pour bien assimiler les explications données dans ce chapitre, il est nécessaire de mettre en pratique. Voici quelques exercices à réaliser.
