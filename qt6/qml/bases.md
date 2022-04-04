@@ -303,10 +303,34 @@ dans un code QML. Vous verrez dans le chapitre "JavaScript en detail".
 
 ## Le composant Text
 
-Servira a écrire du texte dans l'UI et donc identifier chaque composant en cours de développement.
+Un autre composant QML de base est [Text](https://doc.qt.io/qt-5/qml-qtquick-text.html), qui permet d'afficher un texte dans l'interface.
 
-Dérive de `Item`, donc possède les propriétés de positionnement (`x`, `y`, `width` et `height`) et une propriété `text`. 
-D'autres propriétés pour la mise en forme : [documentation de Text](https://doc.qt.io/qt-5/qml-qtquick-text.html).
+Ce composant (comme la majorité des composants QML) dérive aussi de `Item` et possède donc les propriétés de positionnement et de
+dimensionnement (`x`, `y`, `width` et `height`). En plus, `Text` contient la propriété `text` utilisé pour définir le texte à
+afficher.
+
+```js
+Text {
+    text: "hello, world"
+}
+```
+
+Note : attention à ne pas confondre la propriété `text` et le composant `Text`. Vous devez retenir que le langage QML impose que les
+noms de composants commencent par une majuscule (`Item`, `Rectangle`, `Text`) et que les noms de propriété ainsi que la valeur de la
+propriété `id` commencent par des minuscules (`width`, `height`, `text`).
+
+La propriété `text` accepte une chaîne de caractères ou quelque chose qui soit convertible en chaîne. Vous pouvez par exemple afficher
+des nombres, qui seront affichés comme des chaînes.
+
+```js
+Window {
+    Text { text: "width: " + parent.width + " - height: " + parent.height }
+}
+```
+
+affiche :
+
+<image>
 
 ## Exercices
 
