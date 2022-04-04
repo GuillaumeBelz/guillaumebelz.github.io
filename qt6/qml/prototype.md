@@ -98,5 +98,12 @@ Rectangle { ... }
 
 Ce qui est interne (qui n'interagit pas avec le reste) et externe (ce qui interagit avec d'autres composants).
 
+## UX design
+
+## Colors
+
 ## Exercices
+
+
+
 
