@@ -1109,3 +1109,8 @@ Il ne faut pas se faire d'illusions : maintenant que vous avez lu cet article, v
 Les questions de savoir comment organiser votre ECS, quels systèmes créer, que mettre dans chaque composant, sont des questions qui n'ont pas de réponses faciles et définitives. Cela dépend de votre expérience, de votre compréhension de l'ECS, de vos préférences personnelles.
 
 Bon courage pour vos futurs jeux.
+
+https://stackoverflow.com/questions/1901251/component-based-game-engine-design
+https://skypjack.github.io/tags/#ecs
+
+
