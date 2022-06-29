@@ -21,3 +21,6 @@ Dans cette premirère partie du tutoriel, sur Qt Creator, nous allons voir :
 - [Comment créer, compiler et exécuter un projet par défaut](projet.md), pour créer un projet minimal qui peut être compilé et exécuté.
 - [Créer un projet sur GitHub](github.md), pour partager et versionner vos projets.
 - [Explorer les projets d'exemple](exemples.md), pour découvrir par vous même les fonctionnalités de Qt, en allant lire les codes proposés.
+
+> Aller plus loin
+> - la création de pages d'aide avec QtHelp https://doc.qt.io/qt-6/qthelp-framework.html
