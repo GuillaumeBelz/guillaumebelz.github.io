@@ -3,7 +3,8 @@
 
 > [Revenir à la page précédente](../README.md)
 
-> + Qt Designer (QtWidgets) + Qt Design Studio (QML)
+> + Qt Designer (QtWidgets) + Qt Design Studio (QML), non couvert dans ce tutoriel
+> + Qt linguist (traduction) qui sera abordé plus tard
 
 Qt Creator est l'éditeur fournit dans Qt pour écrire du code, compiler et executé vos applications Qt. Cet outil est automatiquement
 configuré lors de l'installation de Qt et peut donc être utilisé directement quand vous avez fini l'installation. C'est pour des 
