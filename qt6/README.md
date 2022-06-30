@@ -45,7 +45,8 @@ Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord N
 Amusez-vous bien dans votre exploration de Qt !
 
 > Aller plus loin (non pro?)
-> 3D https://doc-snapshots.qt.io/qt6-dev/qtquick3d-index.html
+> - 3D https://doc-snapshots.qt.io/qt6-dev/qtquick3d-index.html
+> - multimedia
 
 > Aller plus loin (pro?)
 > - la création de pages d'aide avec QtHelp https://doc.qt.io/qt-6/qthelp-framework.html
