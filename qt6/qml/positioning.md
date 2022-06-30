@@ -26,4 +26,6 @@ avantages et limites
 - repeater
 - rotation et scale
 
+> https://doc.qt.io/qt-6/scalability.html comment adapter en fonction de la resolution et orientation de l'ecran
+
 ## Exercices
