@@ -16,7 +16,7 @@ le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlwe
 - [Le positionnement des composants](positioning.md) permet de placer les éléments graphiques dans un interface.
 - [Les types et composants de base](types.md)
 - [Creer ses propres composants](component.md) composant dynamique, pour modifier en temps reel une UI (ecrire du code QML, changer les couleurs, etc)
-- [les matériels](material.md)
+- [les styles et matériels](material.md) https://doc-snapshots.qt.io/qt6-dev/qtquick-usecase-styling.html
 - [La conception d'interface utilisateur](ux.md), introduction aux principes de l'UX design, gestion de projets, Agile
 - [Exercices](exercices.md)
 
