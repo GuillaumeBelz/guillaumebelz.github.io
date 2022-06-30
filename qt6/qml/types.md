@@ -7,5 +7,5 @@ chose.
 
 Text, Label, Image
 
-> https://doc.qt.io/qt-6/qtquick-usecase-text.html text, formattage
-> https://doc-snapshots.qt.io/qt6-dev/qtquick-usecase-visual.html#the-image-type
+> - https://doc.qt.io/qt-6/qtquick-usecase-text.html text, formattage
+> - https://doc-snapshots.qt.io/qt6-dev/qtquick-usecase-visual.html#the-image-type
