@@ -3,10 +3,10 @@
 
 > [Revenir à la page précédente](../README.md)
 
-L'approche historique pour apprendre à utiliser Qt est de partir des fonctionnalités les plus internes, en C++, et d'aller vers 
-les fonctionnalités plus haut niveau (interface graphique, fichier, base de données, réseaux, etc). Cette approche est tout à fait
-valide, mais je préfère aborder ce cours dans un approche top-down : aller du plus haut niveau (par le plus proche de l'utilisateur
-final, donc par l'interface graphique) vers le bas niveau (les fonctionnalités implémentées en C++).
+L'approche habituelle suivie par les développeurs C++ pour apprendre Qt est de commencer par le C++ et les widgets.
+Cette approche est tout à fait valide, mais je pense qu'elle n'aide pas les développeurs C++ à aborder correctement le QML.
+Pour cette raison, ce tutoriel est organisé en suivant une autre approche : commencer par le création de l'interface
+graphique avec le QML et QtQuick et aller progressivement vers le bas niveau en C++.
 
 Pour tester les codes de ce cours, vous pouvez utiliser un projet par défaut `QtQuick Application`, comme vous avez fait dans
 le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlweb.github.io pour tester les syntaxes de base du QML.
