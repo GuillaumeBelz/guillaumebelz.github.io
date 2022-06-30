@@ -23,7 +23,7 @@ le chapitre sur Qt Creator. Vous pouvez également utiliser le site http://qmlwe
 Certains concepts sont important et feront l'objet des chapitres suivants :
 
 - [les scripts JS](js.md)
-- [Les contrôles](controls.md), qui composants plus avancés pour créer une interface (bouton, checkbox, etc).
+- [Les contrôles](controls.md), qui composants plus avancés pour créer une interface (bouton, checkbox, etc). https://doc-snapshots.qt.io/qt6-dev/qtquickcontrols-index.html
 - [Gérer les interactions avec l'utilisateur](input.md) avec la souris, le clavier, l'écran tactile.
 - [Enrichir les UI](ui.md) avec les animations, particules, et
 
