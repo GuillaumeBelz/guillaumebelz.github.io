@@ -6,3 +6,6 @@ Le principale dans ce cours, c'est surtout que vous ayez une vue d'ensemble, pou
 chose.
 
 Text, Label, Image
+
+> https://doc.qt.io/qt-6/qtquick-usecase-text.html text, formattage
+> 
