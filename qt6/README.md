@@ -43,3 +43,9 @@ Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord N
 [le forum d'OpenClassrooms](https://openclassrooms.com/forum/categorie/langage-c-1).
 
 Amusez-vous bien dans votre exploration de Qt !
+
+
+> Aller plus loin
+> - la création de pages d'aide avec QtHelp https://doc.qt.io/qt-6/qthelp-framework.html
+> - Unit tests avec QtTest et GUI tests avec Squish https://www.froglogic.com/squish/
+
