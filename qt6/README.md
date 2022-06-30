@@ -44,9 +44,14 @@ Si vous avez des questions sur Qt, n'hésitez pas à les poser sur le [discord N
 
 Amusez-vous bien dans votre exploration de Qt !
 
+> Aller plus loin (non pro?)
+> 3D https://doc-snapshots.qt.io/qt6-dev/qtquick3d-index.html
 
-> Aller plus loin
+> Aller plus loin (pro?)
 > - la création de pages d'aide avec QtHelp https://doc.qt.io/qt-6/qthelp-framework.html
 > - Unit tests avec QtTest et GUI tests avec Squish https://www.froglogic.com/squish/
-> - Dat avizualisation https://doc-snapshots.qt.io/qt6-dev/qtdatavisualization-overview.html
+> - Data Visualization https://doc-snapshots.qt.io/qt6-dev/qtdatavisualization-overview.html
+> - PDF https://doc-snapshots.qt.io/qt6-dev/qtpdf-index.html
+> - network et internet websocket
+> shader tools
 
