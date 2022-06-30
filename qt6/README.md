@@ -48,4 +48,5 @@ Amusez-vous bien dans votre exploration de Qt !
 > Aller plus loin
 > - la création de pages d'aide avec QtHelp https://doc.qt.io/qt-6/qthelp-framework.html
 > - Unit tests avec QtTest et GUI tests avec Squish https://www.froglogic.com/squish/
+> - Dat avizualisation https://doc-snapshots.qt.io/qt6-dev/qtdatavisualization-overview.html
 
