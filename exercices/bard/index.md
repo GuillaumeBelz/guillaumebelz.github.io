@@ -38,4 +38,66 @@ est le même avec chatGPT) de générer des exercices pour le cours de C++ de Ze
 [ici](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/)) et je vais commenter les solutions proposées, de façon à expliquer les
 bonnes pratiques du C++ moderne et vous donner des mots-clés permettant d'améliorer votre apprentissage avec des chatbots.
 
+## La programmation impérative en C++
 
+> Écris des exercices et les solutions correspondantes en C++ pour apprendre a écrire des programmes simples du type hello world
+
+> Exercice 1 : Écrivez un programme qui affiche le message "Hello World" sur la console.
+
+```cpp
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+```
+
+code simple, mais deja des points a noter. Quel norme de C++ ? Derniere verison, on ecrirait un code comme :
+
+```cpp
+import std;
+
+int main() {
+  println("Hello World!");
+  return 0;
+}
+```
+
+Accessoirement, pas de retour a la ligne (utliser `std::endl` ou `\n`). Et le `return 0` a expliquer (ou utiliser `SUCCESS`)
+
+## Les littérals et les variables
+
+Exercices sur le chapitre [Une super mémoire](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/le-debut-du-voyage/une-super-memoire/)
+
+> Écris des exercices en C++ pour apprendre a manipuler différents types de littérals
+
+> Exercice 1 : Écrivez un programme qui affiche la valeur de chaque littéral suivant :
+> - int : 10
+> - float : 3.14
+> - double : 6.28
+> - char : A
+> - string : "Hello World!"
+
+```cpp
+#include <iostream>
+
+int main() {
+  std::cout << "int : " << 10 << std::endl;
+  std::cout << "float : " << 3.14 << std::endl;
+  std::cout << "double : " << 6.28 << std::endl;
+  std::cout << "char : " << 'A' << std::endl;
+  std::cout << "string : " << "Hello World!" << std::endl;
+  return 0;
+}
+```
+
+Une autre critique generale sur les chatbots, ils ne comprennent pas ce qu'ils expliquent. Ici, il y a une difference en C++ entre le type `float` et le type
+`double`, mais cela n'apparait pas dans le code. En toute rigueur, `3.14` devrait être écrit `3.14f` pour que cet littéral soit de type `float` et pas de type
+`double`.
+
+Ce genre de détail n'est generalement pas un problème dans un vrai code, mais il est important qu'un débutant sache faire la distinction entre les types et
+qu'il apprenne la rigueur. Un developpeur expériementé pourra faire ce genre de critiques, que ne fera pas un cahatbot.
+
+Pareil pour la chaine de caractères. En C++, quand on parle de `string`, on fait generalement reference au type `std::string` de la bibliothèque standard.
+En toute rigueur, `"Hello World!"` est du type `const char [13]`. Pour avoir une chaine de type `std::string`, il faudrait écrire `"Hello World!"s`.
