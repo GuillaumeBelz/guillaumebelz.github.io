@@ -119,7 +119,7 @@ qu'il apprenne la rigueur. Un developpeur expériementé pourra faire ce genre d
 Pareil pour la chaine de caractères. En C++, quand on parle de `string`, on fait generalement reference au type `std::string` de la bibliothèque standard.
 En toute rigueur, `"Hello World!"` est du type `const char [13]`. Pour avoir une chaine de type `std::string`, il faudrait écrire `"Hello World!"s`.
 
-#### Écris des exercices et les solutions à ces exercices, pour pratiquer les variables en C++23
+##### Écris des exercices et les solutions à ces exercices, pour pratiquer les variables en C++23
 
 > Exercice 2 : Écrivez un programme C++ qui déclare une variable flottante, temperature, et l'initialise à 23.5 degrés Celsius. Imprimez la valeur de la variable
 > temperature sur la console en degrés Fahrenheit.
@@ -147,7 +147,7 @@ Un problème plus général est le choix des exemples et exerices pour pratiquer
 présenter les sytnaxes, mais vous ne trouverez jamais ces sytnaxes utilisés dans ces contextes dans un vrai code. Les apprenants peuvent en arriver à se demander
 "a quoi servent ces syntaxes, ça sert à rien !". Mais c'est juste que le contexte d'utilisation n'est pas correct.
 
-#### Écris des exercices et les solutions à ces exercices, pour pratiquer les constantes en C++23
+**Écris des exercices et les solutions à ces exercices, pour pratiquer les constantes en C++23**
 
 > Exercice 1 : Écrivez un programme C++ qui déclare une constante entière, PI, et la initialise à la valeur de Pi. Imprimez la valeur de la constante PI sur la console.
 
