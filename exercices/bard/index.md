@@ -25,7 +25,7 @@ bonnes pratiques du C++ moderne et vous donner des mots-clés permettant d'amél
 Pour commencer, je vais vous montrer un problème général des chatbot pour l'apprentissage (pas uniquement le C++ et la programmation). Demandons
 a Bard de donner un cours de C++ pour débutant :
 
-#### Écris un plan détaillé d'un cours d'introduction à la syntaxe de base du C++
+**Écris un plan détaillé d'un cours d'introduction à la syntaxe de base du C++**
 
 ```cpp
 (...)
@@ -57,7 +57,7 @@ ou dangereuse (en termes de qualité logicielle) ou non recommandées dans le mo
 
 ## La programmation impérative en C++
 
-#### Écris des exercices et les solutions correspondantes en C++ pour apprendre a écrire des programmes simples du type hello world
+**Écris des exercices et les solutions correspondantes en C++ pour apprendre a écrire des programmes simples du type hello world**
 
 > Exercice 1 : Écrivez un programme qui affiche le message "Hello World" sur la console.
 
@@ -87,7 +87,7 @@ Accessoirement, pas de retour a la ligne (utliser `std::endl` ou `\n`). Et le `r
 
 Exercices sur le chapitre [Une super mémoire](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/le-debut-du-voyage/une-super-memoire/)
 
-#### Écris des exercices en C++ pour apprendre a manipuler différents types de littérals
+**Écris des exercices en C++ pour apprendre a manipuler différents types de littérals**
 
 > Exercice 1 : Écrivez un programme qui affiche la valeur de chaque littéral suivant :
 > - int : 10
@@ -119,7 +119,7 @@ qu'il apprenne la rigueur. Un developpeur expériementé pourra faire ce genre d
 Pareil pour la chaine de caractères. En C++, quand on parle de `string`, on fait generalement reference au type `std::string` de la bibliothèque standard.
 En toute rigueur, `"Hello World!"` est du type `const char [13]`. Pour avoir une chaine de type `std::string`, il faudrait écrire `"Hello World!"s`.
 
-##### Écris des exercices et les solutions à ces exercices, pour pratiquer les variables en C++23
+**Écris des exercices et les solutions à ces exercices, pour pratiquer les variables en C++23**
 
 > Exercice 2 : Écrivez un programme C++ qui déclare une variable flottante, temperature, et l'initialise à 23.5 degrés Celsius. Imprimez la valeur de la variable
 > temperature sur la console en degrés Fahrenheit.
