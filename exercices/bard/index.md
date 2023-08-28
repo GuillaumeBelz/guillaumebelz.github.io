@@ -10,7 +10,7 @@ Pour rappel, un [modèle de langage](https://fr.wikipedia.org/wiki/Mod%C3%A8le_d
 qui cherche a prédire la suite de mots la plus probable, à partir d'une conversation. On parle de [chatbot ou d'agent conversationnel](https://fr.wikipedia.org/wiki/Chatbot).
 
 L'idée est de discuter avec ces chatbot pour leur demander d'expliquer les concepts qu'on veut apprendre, proposer des exercices, des solutions
-à ces exercices, etc. L'utiliser en quelque sorte comme un professioneur particulier, expert dans tous les domaines.
+à ces exercices, etc. L'utiliser en quelque sorte comme un professeur particulier, expert dans tous les domaines.
 
 Je ne vais pas aller plus dans les détails de ce type d'outil, il existe pleins de ressources pour cela. Je vous conseille en particulier
 les vidéos de [MrPhi sur le sujet](https://www.youtube.com/@MonsieurPhi/videos).
@@ -188,3 +188,8 @@ syntaxe est possible (par exemple sur [StackOverflow](https://stackoverflow.com/
 ne comprend pas ce qu'il lit, il ne comprend pas que c'est des questions et ne comprend pas que les réponses sont négatives.
 
 Pour créer une chaine de caractères à la compilation, on peut utiliser `constexpr` avec une littérale `const char[]` ou avec une `std::string_view`.
+
+## Le conditionnel conjugué en C++
+
+Exercices sur le chapitre [Le conditionnel conjugué en C++](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/le-debut-du-voyage/le-conditionnel-conjuge-en-c/)
+
