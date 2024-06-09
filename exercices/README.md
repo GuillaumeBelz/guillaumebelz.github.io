@@ -1,5 +1,7 @@
 *[Retourner à la page d'accueil](../README.md)*
 
+- [Apprendre le C++ en utilisant les IA de modèle de langage](chatgpt.md)
+
 # Exercices et projets en C++
 
 Pour commencer, tu peux évaluer ton niveau en C++ en faisant quelques exercices de test :
