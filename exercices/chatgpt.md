@@ -274,7 +274,11 @@ Un autre point, dans les recommandations actuelles, on évite de déclarer plusi
 > }
 > ```
 
+Comment détermine-t-on qu'un code est correct ?
 
+Dans les solutions à ces deux premiers exercices, on voit un manque de cohérence dans les réponses de ChatGPT. Dans le premier cas, on demandait des valeurs de
+tests à l'utilisateur en utilisant l'instruction `std::cin`. Dans le second cas, on utise des valeurs écritent directement dans le code. Quelle est la 
+"bonne" façon de savoir quand un code est correct ?
 
 
 
