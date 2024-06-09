@@ -1,6 +1,8 @@
 
 # Apprendre le C++ en utilisant les IA de modèle de langage (ChatGPT, Bard, etc)
 
+Mise à jour 8 juin 2024 : utilisation de ChatGPT 4
+
 Une question qui revient de régulièrement ces derniers est de savoir si on peut apprendre en utilisant les modéles de langages, du type
 [chatGPT](https://fr.wikipedia.org/wiki/ChatGPT) ou [Bard](https://fr.wikipedia.org/wiki/Bard_(chatbot)). Dans le cas qui va nous intéresser
 ici, la programmation en C++.
@@ -15,8 +17,8 @@ L'idée est de discuter avec ces chatbot pour leur demander d'expliquer les conc
 Je ne vais pas aller plus dans les détails de ce type d'outil, il existe pleins de ressources pour cela. Je vous conseille en particulier
 les vidéos de [MrPhi sur le sujet](https://www.youtube.com/@MonsieurPhi/videos).
 
-Pour aider les débutants a mieux utiliser les chatbots pour apprendre le C++, je vais demander a un chatbot (j'ai utilisé Bard, mais le principe
-est le même avec chatGPT) de générer des exercices pour le cours de C++ de Zeste de Savoir (le cours en version beta, que vous trouverez 
+Pour aider les débutants a mieux utiliser les chatbots pour apprendre le C++, je vais demander a un chatbot (ChatGPT 4) de générer 
+des exercices pour le cours de C++ de Zeste de Savoir (le cours en version beta, que vous trouverez 
 [ici](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/)) et je vais commenter les solutions proposées, de façon à expliquer les
 bonnes pratiques du C++ moderne et vous donner des mots-clés permettant d'améliorer votre apprentissage avec des chatbots.
 
@@ -28,26 +30,24 @@ a Bard de donner un cours de C++ pour débutant :
 **Écris un plan détaillé d'un cours d'introduction à la syntaxe de base du C++**
 
 ```cpp
+#include et int main()
 (...)
-const int PI = 3.141592653589793; // Déclaration d'une constante
+V. Tableaux et chaînes de caractères
 (...)
-int age = 18;
-int* pointeur = &age; // Initialisation du pointeur pointeur avec l'adresse de la variable age
-(...)
-char chaine[10] = "Hello"; // Déclaration d'une chaîne de caractères de style C
+VI. Introduction aux pointeurs
 ```
 
-A mon sens, le problème dans ce type d'approche, c'est les mêmes que pour l'auto-apprentissage en général : comment un débutant dans un domaine
+A mon sens, le problème de cette approche est similaire à celui rencontré dans l'auto-apprentissage en général : comment un débutant dans un domaine
 peut-il faire le tri dans les informations qu'il reçoit ?
 
-En informatique, il existe souvent plusieurs façon de faire quelque chose et cela demande
+En informatique, il existe souvent plusieurs façons de faire quelque chose et cela demande
 souvent un niveau d'expertise avancé pour savoir faire le tri entre les différentes pratiques. Et comme il n'est pas possible d'être expert en tout,
-et donc que chaque développeur puisse faire le tri lui même entre les pratiques, on utilise souvent des "guides de bonnes pratiques. C'est à dire
-une ensemble de pratiques qui sont validées et recommandées par les communautés d'experts. En C++ par exemple, il existe les 
+et donc que chaque développeur puisse faire le tri lui même entre les pratiques, on utilise souvent des "guides de bonnes pratiques. C'est-à-dire
+un ensemble de pratiques qui sont validées et recommandées par les communautés d'experts. En C++ par exemple, il existe les 
 [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). 
 
 En plus, il faut ajouter un problème plus spécifique au C++ (et plus généralement aux langages de programmation anciens) : les pratiques ont
-évoluées au cours du temps. Les raisons de ces changements sont multiples, mais pour simplifier, c'est simplement parce que l'univers de l'informatique
+évolué au cours du temps. Les raisons de ces changements sont multiples, mais pour simplifier, c'est simplement parce que l'univers de l'informatique
 a évolué : les ordinateurs modernes et les applications logicielles n'ont rien à voir avec ce qui existait il y a 20 ans. La structure des équipes
 de développement, les exigences de qualité logiciel, la complexité des programmes, tout a changé radicalement.
 
@@ -59,18 +59,41 @@ ou dangereuse (en termes de qualité logicielle) ou non recommandées dans le mo
 
 **Écris des exercices et les solutions correspondantes en C++ pour apprendre a écrire des programmes simples du type hello world**
 
-> Exercice 1 : Écrivez un programme qui affiche le message "Hello World" sur la console.
+> Exercice 1 : Écrivez un programme C++ qui affiche le message "Hello World" dans le terminal.
+>
+> Pour écrire un programme C++ qui affiche le message "Hello World" dans le terminal, vous pouvez suivre ces étapes simples:
+> Créez un fichier avec l'extension .cpp, par exemple hello_world.cpp.
+>
+> Ouvrez ce fichier dans un éditeur de texte et écrivez le code suivant:
+>
+> ```cpp
+> #include <iostream>
+>
+> int main() {
+>     std::cout << "Hello World";
+>     return 0;
+> }
+> ```
+> Enregistrez le fichier et compilez-le à l'aide d'un compilateur C++, comme g++:
+>
+> ```
+> g++ hello_world.cpp -o hello_world
+> ```
+> 
+> Exécutez le programme compilé dans le terminal:
+> 
+> ```
+> ./hello_world
+> ```
+> 
+> Ce programme commence par inclure la bibliothèque <iostream> qui permet d'utiliser std::cout pour afficher des messages dans le terminal. La fonction main() est le point d'entrée du programme. À l'intérieur de cette fonction, std::cout << "Hello World"; affiche le message "Hello World" dans le terminal. Enfin, return 0; indique que le programme s'est terminé avec succès. Pour plus d'informations sur la création de votre premier programme en C++, vous pouvez consulter les ressources suivantes:
+> 
+> - Programme Hello World en C++ avec explication du code - Guru99
+> - Écrivez votre premier programme - Apprenez à programmer en C++
+> - Bonjour tout le monde ! Exemple : votre premier programme - Guru99
 
-```cpp
-#include <iostream>
-
-int main() {
-  std::cout << "Hello World!";
-  return 0;
-}
-```
-
-code simple, mais deja des points a noter. Quel norme de C++ ? Derniere verison, on ecrirait un code comme :
+Dès ce premier code simple, on peut déjà faire des remarques sur le code produit. Pour commencer, quelle est la version du C++ utilisée ? Dans la dernière version
+du C++ (le C++23), le code serait :
 
 ```cpp
 import std;
@@ -81,7 +104,32 @@ int main() {
 }
 ```
 
-Accessoirement, pas de retour a la ligne (utliser `std::endl` ou `\n`). Et le `return 0` a expliquer (ou utiliser `SUCCESS`)
+L'utilisation des modules et du mot clé `import` est récent et il arrivera souvent que les chatbots proposent des codes qui ne sont pas à jour ou 
+ne suivent pas les bonnes pratiques.
+
+On peut également critiquer le manque de retour à la ligne, mais c'est accessoire. Les liens donnés sont des vieux tutoriels, que je ne recommenderais 
+pas de suivre.
+
+Et lorsque l'on demande des explications sur ce code, les explications ne sont pas forcément satisfaisantes :
+
+> La ligne avec `#include` en programmation C est utilisée pour inclure le contenu d'un fichier dans un autre. Cette directive est facile à reconnaître car
+> elle commence toujours par le symbole `#`. Lorsque vous utilisez `#include` avec des guillemets, le préprocesseur recherche d'abord le fichier dans le
+> même répertoire que le fichier qui contient l'instruction `#include`, puis dans les répertoires des
+> fichiers inclus actuellement ouverts, dans l'ordre inverse dans lequel ils ont été ouverts. Pour ouvrir
+> un fichier `.h` en programmation C, vous devez inclure la bibliothèque correspondante à ce fichier en utilisant la directive `#include`. Par exemple, pour
+> inclure le fichier exemple.h, vous devez ajouter la ligne suivante en début de votre code : `#include "exemple.h"`.
+
+D'abord, on remarque que la réponse indique spécifiquement le C et pas le C++. Ici, ce n'est pas grave, mais ChatGPT peut faire la confusion (comme certains
+développeurs en fait, ChatGPT ne fait que reproduire les erreurs qu'il voit sur internet) en le C et le C++.
+
+Plus problématique, cette réponse expliquer l'utilisation de `include` avec des guillemets, mais pas avec des chevrons, comme c'est le cas dans le code.
+Ca peut être perturbant pour les débutants et le perdre dans des détails inutile à ce niveau.
+
+Et surtout, il manque l'explication sur ce qu'est la bibliothèque standard, ce qui est justement un des points les plus importants dans cet exercice "hello world".
+
+Dans un cours écrit par un expert, l'auteur peut établir un plan pédagogique, choisir les points qu'il lui semble important à mettre en avant et les détails 
+qui seront détaillés plus tard dans le cours. Dans le cas de l'apprentissage avec ChatGPT, c'est le hasard des questions de celui qui apprend qui va orienter
+les points détaillés, pas forcément la cohérence pédagogique.
 
 ## Les littérals et les variables
 
