@@ -280,7 +280,10 @@ Dans les solutions à ces deux premiers exercices, on voit un manque de cohéren
 tests à l'utilisateur en utilisant l'instruction `std::cin`. Dans le second cas, on utise des valeurs écritent directement dans le code. Quelle est la 
 "bonne" façon de savoir quand un code est correct ?
 
-
+Ce type de question est justement un bon moyen d'introduire la question du la qualité logicielle et des tests. Certains sites de programmation vérifient les codes
+via des tests, en particulier sur les cas limites. Encore une fois, c'est pas une erreur de ChatGPT, il ne fait que reproduire ce qu'on voit dans beaucoup
+de (mauvais, à mon avis) tutotiels. Mais justement, ChatGPT ne peut pas avoir l'idée d'aborder de lui même ce type de concepts et c'est pas le débutant
+qui peut penser à demander cela.
 
 > Exercice 3 : Utilisation de Variables pour Dessiner
 >
@@ -288,7 +291,10 @@ tests à l'utilisateur en utilisant l'instruction `std::cin`. Dans le second cas
 >
 > Solution : Cet exercice est plus conceptuel et vise à comprendre comment les variables peuvent être utilisées pour contrôler les positions des formes dans
 > un environnement graphique. La solution dépendra de l'environnement de programmation graphique que vous utilisez (par exemple, SFML, SDL, etc.).
->
+
+Bon, un exercice sur une interface graphique. Pourquoi pas, cela peut être un exercice intéressant. Mais pas pour un débutant qui découvre les variables.
+Encore une fois, ChatGPT ne peut pas avoir de cohérence pédagogique, comme dans un vrai cours.
+
 > Exercice 4 : Affichage et Adresse de Variables
 > 
 > Énoncé : Écrire un programme C++ qui déclare un entier a, une référence vers cet entier ref_a, et un pointeur vers cet entier p_a, puis affiche les
@@ -316,60 +322,19 @@ tests à l'utilisateur en utilisant l'instruction `std::cin`. Dans le second cas
 > Ces exercices couvrent différents aspects de l'utilisation des variables en C++, de la manipulation basique à des concepts plus avancés comme
 > les références et les pointeurs. Pratiquez-les pour renforcer votre compréhension des variables en C++.
 
+Un autre exemple de problème de cohérence et de progression dans ce que propose ChatGPT. Et encore une fois, ce n'est pas réellement de sa faute, il ne fait que
+reproduire ce qu'il a appris sur internet. On voit régulièrement ce type de code pour montrer les pointeurs et références. Ce qui n'a aucun sens ! Dans un vrai
+code, on ne ferait jamais cela. C'est un code d'exemple pour illustrer ces deux concepts, mais dans un contexte qui n'a aucun sens. Pédagogiquement, c'est très discutable.
 
+Dans mon cours C++ par exemple, je présentais les références dans la partie sur les fonctions, pour le passage d'arguments. Et les pointeurs (intelligents) dans la
+partie programmation objet, pour la création dynamique d'objets polymorphiques. 
 
+## Conclusion
 
-Un problème classique : l'utilisation des constantes. Dans ce code, `temperature` et `fahrenheit` sont des constantes et devraient être `constexpr`. Le problème (déjà signalé) 
-est que l'on trouve sur internet beaucoup de code obsolète (en particluer en C, dans lequel `const` et `constexpr` n'existent pas) et que les chatbots ont appris
-à partir de ces codes.
+Je ne vais pas aller plus loin pour l'instant dans les exemples d'exercices et de solutions. Les critiques principales sont :
 
-Un problème plus général est le choix des exemples et exerices pour pratiquer une syntaxe. Il arrive très (trop) souvent que les exemples choisis ne servent qu'à
-présenter les sytnaxes, mais vous ne trouverez jamais ces sytnaxes utilisés dans ces contextes dans un vrai code. Les apprenants peuvent en arriver à se demander
-"a quoi servent ces syntaxes, ça sert à rien !". Mais c'est juste que le contexte d'utilisation n'est pas correct.
+- ChatGPT n'a aucun cohérence ou progression pédagogique et ce n'est pas le débutant qui peut orienter correctement les questions
+- les codes proposés reproduisent les codes que l'on voit sur internet et qui sont critiqués depuis des dizaines d'années
 
-**Écris des exercices et les solutions à ces exercices, pour pratiquer les constantes en C++23**
-
-> Exercice 1 : Écrivez un programme C++ qui déclare une constante entière, PI, et la initialise à la valeur de Pi. Imprimez la valeur de la constante PI sur la console.
-
-```cpp
-#include <iostream>
-
-constexpr double PI = 3.141592653589793;
-
-int main() {
-  std::cout << "PI = " << PI << std::endl;
-
-  return 0;
-}
-```
-
-C'est de l'ordre du détail, mais dans le passé, il était classique de déclarer les constantes avec `#define` et les noms étaient écrit en majuscules. De nos jours, on
-va préférer l'utilisation de `constexpr` et ne plus utiliser les majuscules. Je vous conseille de regarder les "coding guidelines/styles/conventions/etc" de projets
-majeurs. Par exemple pour [boost](https://www.boost.org/doc/libs/1_31_0/libs/spirit/doc/style_guide.html), [Qt](https://wiki.qt.io/Qt_Coding_Style),
-[Google](https://google.github.io/styleguide/cppguide.html).
-
-> Exercice 2 : Écrivez un programme C++ qui déclare une constante chaîne, NOM, et la initialise au nom de l'utilisateur. Imprimez la valeur de la constante NOM sur la console.
-
-```cpp
-#include <iostream>
-
-constexpr std::string NOM = "John Doe";
-
-int main() {
-  std::cout << "Bonjour, " << NOM << " !" << std::endl;
-
-  return 0;
-}
-```
-
-Gros problème dans ce code, il n'est pas valide. `std::string` ne peut pas être `constexpr` dans ce contexte (c'est possible dans d'autres contextes). Je ne sais pas
-pourquoi ce chatbot donne cette syntaxe, mais il est possible qu'il a "appris" cette sytnaxe dans des discussions en ligne, où des développeurs demandaient si cette
-syntaxe est possible (par exemple sur [StackOverflow](https://stackoverflow.com/questions/70571655/how-does-constexpr-stdstring-in-c20-work)). Comme le chatbot
-ne comprend pas ce qu'il lit, il ne comprend pas que c'est des questions et ne comprend pas que les réponses sont négatives.
-
-Pour créer une chaine de caractères à la compilation, on peut utiliser `constexpr` avec une littérale `const char[]` ou avec une `std::string_view`.
-
-## Le conditionnel conjugué en C++
-
-Exercices sur le chapitre [Le conditionnel conjugué en C++](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/le-debut-du-voyage/le-conditionnel-conjuge-en-c/)
-
+Il me semble très difficile pour une débutant d'apprendre avec ChatGPT, seul. À la rigueur, en suivant un cours et en étant encadré. Mais la majorité des débutants 
+perdront plus de temps à se perdre dans les mauvais codes proposés par ChatGPT.
