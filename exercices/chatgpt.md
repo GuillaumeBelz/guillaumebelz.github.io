@@ -131,61 +131,189 @@ Dans un cours écrit par un expert, l'auteur peut établir un plan pédagogique,
 qui seront détaillés plus tard dans le cours. Dans le cas de l'apprentissage avec ChatGPT, c'est le hasard des questions de celui qui apprend qui va orienter
 les points détaillés, pas forcément la cohérence pédagogique.
 
+À noter quand même un point positif : ChatGPT 3 ne donnait que le code de l'exercice, avec peu d'explication et sans les lignes de commandes pour compiler
+ce programme. Donc un conseil : utilisez ChatGPT 4.
+
 ## Les littérals et les variables
 
 Exercices sur le chapitre [Une super mémoire](https://zestedesavoir.com/contenus/beta/822/la-programmation-en-c-moderne/le-debut-du-voyage/une-super-memoire/)
 
-**Écris des exercices en C++ pour apprendre a manipuler différents types de littérals**
+**Écris des exercices et leur solution en C++ pour apprendre a manipuler différents types de littérales**
 
-> Exercice 1 : Écrivez un programme qui affiche la valeur de chaque littéral suivant :
-> - int : 10
-> - float : 3.14
-> - double : 6.28
-> - char : A
-> - string : "Hello World!"
+> Bien sûr! Voici quelques exercices et leurs solutions en C++ pour vous aider à manipuler différents types de littérales:
+>
+> Exercice 1: Écrivez un programme en C++ qui demande à l'utilisateur de saisir deux nombres entiers et affiche leur somme.
+>
+> ```cpp
+> #include <iostream>
+> using namespace std;
+> 
+> int main() {
+>     int num1, num2, sum;
+>     
+>     cout << "Entrez le premier nombre: ";
+>     cin >> num1;
+>     
+>     cout << "Entrez le deuxième nombre: ";
+>     cin >> num2;
+>     
+>     sum = num1 + num2;
+>     
+>     cout << "La somme est: " << sum << endl;
+>     
+>     return 0;
+> }
+> ```
+> Exercice 2: Écrivez un programme en C++ qui demande à l'utilisateur de saisir un nombre réel et affiche sa racine carrée.
+> ```cpp
+> #include <iostream>
+> #include <cmath>
+> using namespace std;
+> 
+> int main() {
+>     double num, squareRoot;
+>     
+>     cout << "Entrez un nombre réel: ";
+>     cin >> num;
+>     
+>     squareRoot = sqrt(num);
+>     
+>     cout << "La racine carrée est: " << squareRoot << endl;
+>     
+>     return 0;
+> }
+> ```
+> Exercice 3: Écrivez un programme en C++ qui demande à l'utilisateur de saisir un caractère et affiche son code ASCII.
+> ```cpp
+> #include <iostream>
+> using namespace std;
+> 
+> int main() {
+>     char ch;
+>     
+>     cout << "Entrez un caractère: ";
+>     cin >> ch;
+>     
+>     cout << "Le code ASCII de " << ch << " est: " << int(ch) << endl;
+>     
+>     return 0;
+> }
+> ```
+> J'espère que ces exercices vous aideront à vous familiariser avec la manipulation des différents types de littérales en C++. N'hésitez pas à me
+> demander si vous avez d'autres questions!
+
+Là, ChatGPT est complètement hors sujet. Ces exercices n'abordent pas les littérales.
+
+**Écris des exercices et leur solution pour pratiquer les variables en C++**
+
+> Voici quelques exercices sur les variables en C++ avec leurs solutions pour vous aider à pratiquer et à mieux comprendre leur utilisation :
+> 
+> Exercice 1 : Échange de Variables
+>
+> Énoncé : Écrire un programme qui demande à l'utilisateur de saisir deux entiers A et B, échange le contenu des variables A et B, puis affiche A et B.
+>
+> Solution :
+> ```cpp
+> #include <iostream>
+> using namespace std;
+> 
+> int main() {
+>     int A, B, temp;
+>     cout << "Entrez la valeur de A : ";
+>     cin >> A;
+>     cout << "Entrez la valeur de B : ";
+>     cin >> B;
+>     
+>     // Échange des valeurs
+>     temp = A;
+>     A = B;
+>     B = temp;
+>     
+>     cout << "Après échange, A = " << A << " et B = " << B << endl;
+>     return 0;
+> }
+> ```
+
+Il y a beaucoup plus de choses à dire sur les exercices proposés ici par ChatGPT, je vais détailler pour chaque exercice.
+
+Pour commencer, cette pratique de déclarer les variables en début de fonction date du début du C. Cela était une obligation du langage. C'est une obligation
+qui n'existe plus depuis plusieurs dizaines d'années et une pratique qui est déconseillée en C++. On va préférer déclarer les variables quand on en a besoin.
+
+Une autre pratique hérité du C est l'absence du mot clé `const`. `temp` est une variable qui n'est plus modifiée après son initialisation. En C++, on préfère écrire 
+par exemple :
 
 ```cpp
-#include <iostream>
-
-int main() {
-  std::cout << "int : " << 10 << std::endl;
-  std::cout << "float : " << 3.14 << std::endl;
-  std::cout << "double : " << 6.28 << std::endl;
-  std::cout << "char : " << 'A' << std::endl;
-  std::cout << "string : " << "Hello World!" << std::endl;
-  return 0;
-}
+const int temp = A;
 ```
 
-Une autre critique generale sur les chatbots, ils ne comprennent pas ce qu'ils expliquent. Ici, il y a une difference en C++ entre le type `float` et le type
-`double`, mais cela n'apparait pas dans le code. En toute rigueur, `3.14` devrait être écrit `3.14f` pour que cet littéral soit de type `float` et pas de type
-`double`.
-
-Ce genre de détail n'est generalement pas un problème dans un vrai code, mais il est important qu'un débutant sache faire la distinction entre les types et
-qu'il apprenne la rigueur. Un developpeur expériementé pourra faire ce genre de critique, que ne fera pas un cahatbot.
-
-Pareil pour la chaine de caractères. En C++, quand on parle de `string`, on fait generalement reference au type `std::string` de la bibliothèque standard.
-En toute rigueur, `"Hello World!"` est du type `const char [13]`. Pour avoir une chaine de type `std::string`, il faudrait écrire `"Hello World!"s`.
-
-**Écris des exercices et les solutions à ces exercices, pour pratiquer les variables en C++23**
-
-> Exercice 2 : Écrivez un programme C++ qui déclare une variable flottante, temperature, et l'initialise à 23.5 degrés Celsius. Imprimez la valeur de la variable
-> temperature sur la console en degrés Fahrenheit.
+Sans entrer dans les détails, il existe d'autres styles d'écriture, par exemple :
 
 ```cpp
-#include <iostream>
-
-int main() {
-  float temperature = 23.5;
-
-  // Conversion de degrés Celsius en degrés Fahrenheit
-  float fahrenheit = (temperature * 9 / 5) + 32;
-
-  std::cout << "La température est de : " << fahrenheit << " degrés Fahrenheit" << std::endl;
-
-  return 0;
-}
+const auto temp { A };
 ```
+
+Mais ce type de problématiques sur le style est sujet à de longues discussions. C'est quelque chose que l'on peut aborder avec un débutant, mais il faut éviter de le
+perdre dans des détails et débats peu pertinents pour son apprentissage. Je pense que le mieux est que l'auteur d'un cours fasse des choix (peu importe lequels au final, 
+tant qu'ils ont du sens) et soit cohérent. ChatGPT n'aura pas cette cohérence et pourra utiliser des styles différents dans chaque solution, ce qui peut être
+problématique pour l'apprentissage.
+
+Un autre point, dans les recommandations actuelles, on évite de déclarer plusieurs variables sur un ligne.
+
+> Exercice 2 : Addition de Deux Nombres
+>
+> Énoncé : Utilisez les variables pour calculer la somme de deux nombres. Solution :
+> ```cpp
+> #include <iostream>
+> using namespace std;
+> 
+> int main() {
+>     int a = 5, b = 8, resultat;
+>     resultat = a + b;
+>     cout << "La somme de a et b est : " << resultat << endl;
+>     return 0;
+> }
+> ```
+
+
+
+
+
+> Exercice 3 : Utilisation de Variables pour Dessiner
+>
+> Énoncé : Définissez une variable et utilisez-la pour dessiner un rectangle et deux ellipses. À quelle abscisse x les ellipses sont-elles dessinées ?
+>
+> Solution : Cet exercice est plus conceptuel et vise à comprendre comment les variables peuvent être utilisées pour contrôler les positions des formes dans
+> un environnement graphique. La solution dépendra de l'environnement de programmation graphique que vous utilisez (par exemple, SFML, SDL, etc.).
+>
+> Exercice 4 : Affichage et Adresse de Variables
+> 
+> Énoncé : Écrire un programme C++ qui déclare un entier a, une référence vers cet entier ref_a, et un pointeur vers cet entier p_a, puis affiche les
+> variables, leurs adresses, et la valeur pointée.
+>
+> Solution :
+> ```cpp
+> #include <iostream>
+> using namespace std;
+> 
+> int main() {
+>     int a = 10;
+>     int& ref_a = a;
+>     int* p_a = &a;
+>     
+>     cout << "Valeur de a : " << a << endl;
+>     cout << "Adresse de a : " << &a << endl;
+>     cout << "Valeur de ref_a : " << ref_a << endl;
+>     cout << "Adresse de ref_a : " << &ref_a << endl;
+>     cout << "Valeur pointée par p_a : " << *p_a << endl;
+>     cout << "Adresse stockée dans p_a : " << p_a << endl;
+>     return 0;
+> }
+> ```
+> Ces exercices couvrent différents aspects de l'utilisation des variables en C++, de la manipulation basique à des concepts plus avancés comme
+> les références et les pointeurs. Pratiquez-les pour renforcer votre compréhension des variables en C++.
+
+
+
 
 Un problème classique : l'utilisation des constantes. Dans ce code, `temperature` et `fahrenheit` sont des constantes et devraient être `constexpr`. Le problème (déjà signalé) 
 est que l'on trouve sur internet beaucoup de code obsolète (en particluer en C, dans lequel `const` et `constexpr` n'existent pas) et que les chatbots ont appris
