@@ -3,7 +3,7 @@
 
 Mise à jour 8 juin 2024 : utilisation de ChatGPT 4
 
-Une question qui revient de régulièrement ces derniers est de savoir si on peut apprendre en utilisant les modéles de langages, du type
+Une question qui revient de régulièrement ces derniers temps est de savoir si on peut apprendre en utilisant les modéles de langages, du type
 [chatGPT](https://fr.wikipedia.org/wiki/ChatGPT) ou [Bard](https://fr.wikipedia.org/wiki/Bard_(chatbot)). Dans le cas qui va nous intéresser
 ici, la programmation en C++.
 
