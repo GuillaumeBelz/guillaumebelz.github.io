@@ -12,6 +12,7 @@ Le tutoriel pour Qt 5 n'est plus mis à jour :
 ## Exercices et projets en C++
 
 - [Exercices et projets en C++](exercices/README.md)
+- [Apprendre le C++ en utilisant les IA de modèle de langage](exercices/chatgpt.md)
 
 ## Club de lecture
 
