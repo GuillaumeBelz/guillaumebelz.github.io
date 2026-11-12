@@ -5,9 +5,8 @@
 
 ## Vue d'ensemble du QML et de QtQuick
 
-Le QML et QtQuick sont indisociables, mais ce sont bien deux choses différentes. QtQuick est le module de
-Qt qui fournit les fonctionnalités pour créer une interface graphique. Le QML est un langage basé sur le JavaScript et qui
-permet d'utiliser QtQuick.
+Le QML et Qt Quick sont liés, mais ce sont deux choses différentes. Qt Quick fournit les types et fonctions pour créer
+une interface graphique. QML est un langage déclaratif avec des expressions JavaScript, utilisé pour décrire cette interface.
 
 ## Paradigme déclaratif
 
@@ -59,8 +58,9 @@ Le déclaratif se prête bien à la description d'interface graphique, par exemp
 
 Pour commencer, voyons un code de base en QML. Copiez-collez le code suivant dans un projet "Qt Quick Application".
 
-```js
+```qml
 import QtQuick
+import QtQuick.Window
 
 Window {
     width: 640
@@ -86,20 +86,19 @@ QML, ce code peut être compris assez facilement.
 
 Faites des testes en changeant les dimensions, la couleur, et d'autres propriétés, et voyez ce que vous obtenez.
 
-## Importation des modules QtQuick
+## Importation des modules Qt Quick
 
-Un code QML commence généralement par la liste des modules importés. Pour organiser les fonctionnalités de QtQuick, les composants
-sont regroupés par module logique. Par exemple, il existe un module QtQuick.Particles pour les effets de particules, QtQuick.Layout
-pour les outils de positionnement des éléments et ainsi de suite.
+Un code QML commence généralement par la liste des modules importés. Les types sont regroupés par module logique : `QtQuick`
+fournit les types visuels de base, `QtQuick.Controls` les contrôles d'interface et `QtQuick.Layouts` les layouts.
 
-La documentation de chaque composant indique quel module vous devez importer. Par exemple, si vous consulter la documentation de
-[Button](https://doc.qt.io/qt-6/qml-qtquick-controls2-button.html), il est indiqué qu'il faut ajouter `import QtQuick.Controls` pour
+La documentation de chaque composant indique quel module vous devez importer. Par exemple, la documentation de
+[Button](https://doc.qt.io/qt-6/qml-qtquick-controls-button.html) indique qu'il faut ajouter `import QtQuick.Controls` pour
 importer le module `QtQuick.Controls` dans votre code QML et pouvoir utiliser ce composant.
 
 ![image](images/qml_base_02.png)
 
-Dans le code précédant, la ligne `import QtQuick` permet donc d'importer le module de base de QtQuick et d'utiliser les composants
-que vous allez voir dans la suite de ce chapitre : `Window` et `Rectangle`.
+Dans le code précédent, `import QtQuick` importe les types de base comme `Rectangle`. Le type `Window` provient de
+`QtQuick.Window`, d'où son import explicite dans l'exemple.
 
 ## Créer un élément en QML
 
@@ -108,7 +107,7 @@ Après la liste des importations, vous trouverez généralement l'élément qui 
 La syntaxe générale pour créer un élément est la suivante : le type d'élément (le composant) suivi de la déclaration des propriétés
 de cet élément dans un bloc de code défini par des accolades.
 
-```js
+```qml
 COMPOSANT {
     // liste des propriétés
 }
@@ -116,14 +115,14 @@ COMPOSANT {
 
 Par exemple, pour créer un rectangle, le code sera :
 
-```js
+```qml
 Rectangle {
 }
 ```
 
 Il n'est pas possible d'avoir plusieurs éléments à la racine d'un code QML. Par exemple, le code suivant n'est pas valide :
 
-```js
+```qml
 Rectangle {
 }
 
@@ -134,7 +133,7 @@ Rectangle {
 Par contre, il est possible d'imbriquer des éléments et d'avoir un élément qui contient un ou plusieurs éléments. Par exemple, le code
 suivant contient un autre rectangle.
 
-```js
+```qml
 Rectangle {
     Rectangle {
     }
@@ -227,7 +226,7 @@ Les types des propriétés sont assez proche de ceux que vous connaissez deja en
 - `int` pour les nombres entiers ;
 - `real` pour les nombres à virgules ;
 - `color` est similaire à la classe `QColor` dans Qt et peut accepter plusieurs syntaxes ;
-- `any` correspond à `std::any` en C++ et permet aussi d'accepter plusieurs syntaxes pour cette propriété.
+- `var` accepte différentes valeurs JavaScript ; préférez un type précis lorsque c'est possible.
 
 Les types de propriétés seront plus en détail dans le chapitre suivant.
 
@@ -250,7 +249,7 @@ Quelques propriétés intéressantes à connaître :
 
 - `x`, `y`, `width` et `height` : la position et la taille de l'élément graphique.
 - `z` : la profondeur. Quand plusieurs éléments se superposent, ils sont affichés par ordre croisant.
-- `enable` et `visible` : un élément peut etre activé ou non, et visible ou non.
+- `enabled` et `visible` : un élément peut être activé ou non, et visible ou non.
 - `opacity` : pour modifier la transparence d'un élément.
 - `clip` : quand un élément contient un élément enfant qui déborde, l'affichage peut être limité (clipé) ou non.
 - `rotation` et `scale` : pour modifier la rotation et la taille d'un élément.
@@ -262,6 +261,7 @@ le code dans un projet dans QtCreator :
 
 ```js
 import QtQuick
+import QtQuick.Window
 
 Window {
     id: root
@@ -303,7 +303,7 @@ dans un code QML. Vous verrez dans le chapitre "JavaScript en detail".
 
 ## Le composant Text
 
-Un autre composant QML de base est [Text](https://doc.qt.io/qt-5/qml-qtquick-text.html), qui permet d'afficher un texte dans l'interface.
+Un autre composant QML de base est [Text](https://doc.qt.io/qt-6/qml-qtquick-text.html), qui permet d'afficher un texte dans l'interface.
 
 Ce composant (comme la majorité des composants QML) dérive aussi de `Item` et possède donc les propriétés de positionnement et de
 dimensionnement (`x`, `y`, `width` et `height`). En plus, `Text` contient la propriété `text` utilisé pour définir le texte à
@@ -322,7 +322,10 @@ propriété `id` commencent par des minuscules (`width`, `height`, `text`).
 La propriété `text` accepte une chaîne de caractères ou quelque chose qui soit convertible en chaîne. Vous pouvez par exemple afficher
 des nombres, qui seront affichés comme des chaînes.
 
-```js
+```qml
+import QtQuick
+import QtQuick.Window
+
 Window {
     Text { text: "width: " + parent.width + " - height: " + parent.height }
 }
@@ -330,7 +333,7 @@ Window {
 
 affiche :
 
-<image>
+Le texte est recalculé lorsque la taille de la fenêtre change, car son expression reste liée à `parent.width` et `parent.height`.
 
 ## Exercices
 

@@ -1,23 +1,17 @@
-
 # Premiers pas avec Qt Creator
 
-> [Revenir à la page précédente](../README.md)
+> [Revenir au tutoriel Qt 6](../README.md)
 
-> + Qt Designer (QtWidgets) + Qt Design Studio (QML), non couvert dans ce tutoriel
-> + Qt linguist (traduction) qui sera abordé plus tard
+Qt Creator est un IDE qui permet d'éditer, construire, exécuter et déboguer des projets. Il peut aussi ouvrir des projets
+utilisant CMake, Git ou d'autres outils : son usage n'est pas obligatoire pour développer avec Qt.
 
-Qt Creator est l'éditeur fournit dans Qt pour écrire du code, compiler et executé vos applications Qt. Cet outil est automatiquement
-configuré lors de l'installation de Qt et peut donc être utilisé directement quand vous avez fini l'installation. C'est pour des 
-raisons de simplicité que Qt Creator est utilisé dans ce tutoriel.
+Pour Qt 6, les projets CMake sont le choix recommandé pour les nouveaux projets. Qt Creator fournit une intégration avec
+CMake, les kits et les outils Qt. Les captures historiques ci-dessous peuvent montrer des menus ou écrans différents ;
+les concepts restent les mêmes.
 
-Cependant, cela ne veut pas dire que Qt Creator est l'outil qui vous conviendra le mieux. Vous pourrez être intéressé par d'autres
-outils et vous êtes tout à fait libre de les utiliser. Mais pour suivre ce tutoriel et vos premiers pas avec Qt 6, je vous conseille
-quand même de tester Qt Creator dans un premier temps. Quand vous connaîtrez mieux Qt, vous pourrez explorer d'autres outils par
-vous même.
+- [Comprendre l'interface et les modes](interface.md)
+- [Créer et exécuter un projet Qt Quick avec CMake](projet.md)
+- [Versionner un projet avec Git et GitHub](github.md)
+- [Explorer les exemples livrés avec Qt](exemples.md)
 
-Dans cette premirère partie du tutoriel, sur Qt Creator, nous allons voir :
-
-- [L'interface générale de Qt Creator](interface.md), pour comprendre les fonctionnalités présentes lorsque vous ouvrez Qt Creator.
-- [Comment créer, compiler et exécuter un projet par défaut](projet.md), pour créer un projet minimal qui peut être compilé et exécuté.
-- [Créer un projet sur GitHub](github.md), pour partager et versionner vos projets.
-- [Explorer les projets d'exemple](exemples.md), pour découvrir par vous même les fonctionnalités de Qt, en allant lire les codes proposés.
+Pour installer ou réparer un compilateur et un kit, consultez [la configuration de Qt Creator](../installation/config.md).

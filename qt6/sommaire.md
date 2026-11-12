@@ -1,9 +1,14 @@
 - [Tutoriel d'introduction sur Qt 6](README.md)
   - [Installation de Qt 6](installation/README.md)
-    - [Désinstaller proprement Qt et Qt Creator](installation/uninstall.md)
+      - [Comprendre les versions et le support](installation/version.md)
     - [Installer un compilateur C++](installation/compiler.md)
     - [Télécharger l'installateur de Qt](installation/download.md)
     - [Installer Qt](installation/installation.md)
+      - [Tester l'installation](installation/test.md)
+      - [Mettre à jour ou retirer des composants](installation/update.md)
+      - [Configurer Qt Creator et ses kits](installation/config.md)
+      - [Déployer une application](installation/deploy.md)
+      - [Consulter la documentation](installation/documentation.md)
   - [Premiers pas avec Qt Creator](qtcreator/README.md)
     - [L'interface générale de Qt Creator](qtcreator/interface.md)
     - [Créer un projet sur GitHub](qtcreator/github.md)
@@ -14,11 +19,4 @@
   - [Un tour d'horizon de plusieurs modules importants de Qt](modules/README.md)
   - [Quelques idées de projets](projets/README.md)
 
-A trier
-
-- [Tester l'installation de Qt](test.md)
-- [Mettre à jour Qt](update.md)
-- [Comprendre les versions de Qt](version.md)
-- [Configurer Qt Creator](config.md)
-- [Deployer une application Qt](deploy.md)
-- [Savoir utiliser la documentation de Qt](documentation.md)
+Les chapitres d'approfondissement sont également accessibles depuis la section Installation ci-dessus.

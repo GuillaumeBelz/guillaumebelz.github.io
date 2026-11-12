@@ -1,13 +1,17 @@
 
-## Installation et premiers pas avec Qt 6.0
+## Blog
 
-Cette série de tutoriels détaille l'installation de Qt 6.0, la configuration de Qt Creator, et comment créer votre première application.
+- **2026-11-11** — [Les nouveautés envisagées pour C++26](articles/nouveautes-cpp26.md)
+- **2021-04-04** — [Comprendre les pointeurs en C et C++](articles/pointeurs.md)
+- **2019-09-19** — [Sémantiques](articles/semantiques.md)
+- **2018-05-17** — [Sélections de ressources pour le C++, Qt et le développement en général](articles/ressources.md)
+- **2017-12-10** — [Entity Component System (ECS) : principes et usages](articles/ecs.md)
 
-- [Installation et premiers pas avec Qt 6.2](qt6/installation/README.md)
+## Tutoriel Qt 6
 
-Le tutoriel pour Qt 5 n'est plus mis à jour : 
+Cette série de tutoriels présente l'installation et les premiers pas avec Qt 6, Qt Creator, QML/Qt Quick et C++.
 
-- [Installation et premiers pas avec Qt 5.14](qt5/index.md)
+- [Tutoriel d'introduction à Qt 6](qt6/README.md)
 
 ## Exercices et projets en C++
 
@@ -19,10 +23,6 @@ Le tutoriel pour Qt 5 n'est plus mis à jour :
 - [Club de lecture du discord NaN](club-lecture/)
 
 - [Mes critiques de livres](critiques.md)
-
-## Articles divers
-
-- [Sélections de ressources pour le C++, Qt et le développement en général](articles/ressources.md)
 
 ## Aide pour GitHub
 

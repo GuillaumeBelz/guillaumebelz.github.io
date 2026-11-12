@@ -1,25 +1,30 @@
+# Principes d'expérience utilisateur
 
-# Introduction au concept d'epérience utilisateur (UX)
+> [Revenir à la page précédente](README.md)
 
-Idéalement, travailler avec un graphiste. (Voir les outils des graphistes et savoir importer les UI ?) Quelques notions, de facon a
-avoir un truc pas trop moche et fonctionel, quand vous travaillez sans designer.
+L'expérience utilisateur (UX) concerne l'ensemble de l'expérience d'une personne avec un produit, pas seulement son
+apparence. Même sans spécialiste UX ou graphiste dans l'équipe, quelques principes aident à concevoir une interface
+compréhensible et prévisible.
 
-Pas limité aux interface graphique des applications, mais pour tout ce qu'une personne peut utiliser "The Design of Everyday Things"
+## Partir des tâches
 
-- https://grow.google/certificates/ux-design/#?modal_active=none
-- https://www.designyourway.net/blog/category/user-experience/
-- https://en.wikipedia.org/wiki/User_experience_design
+- Identifiez les utilisateurs, leur contexte et les tâches qu'ils veulent accomplir.
+- Donnez la priorité aux actions principales et utilisez des libellés explicites.
+- Affichez les états importants : chargement, absence de résultat, succès et erreur.
+- Préservez les données saisies lorsqu'une erreur peut être corrigée.
 
-## Quelques sites
+## Cohérence et accessibilité
 
-- Google (Android) : https://material.io/design
-- Apple (iOS et iPhoneOS) : https://developer.apple.com/design/human-interface-guidelines/
-- Microsfot (Windows) : https://www.microsoft.com/design/fluent/
-- Ubuntu : https://design.ubuntu.com/
+Réutilisez les contrôles standard de Qt Quick Controls et suivez les conventions de la plateforme cible. Assurez une
+navigation au clavier, un focus visible, des tailles de texte lisibles et des descriptions accessibles pour les éléments
+non textuels. Ne communiquez pas une information uniquement par la couleur.
 
-Livres 
+Adaptez l'interface aux tailles d'écran, à l'orientation, aux traductions et aux textes plus longs. Testez les parcours
+avec des personnes réelles dès que possible ; une maquette visuelle seule ne valide pas l'utilisabilité.
 
-- The Design of Everyday Things
+## Ressources
 
-Safe UX design: comment faire qu'une UI est "safe" par design. Exemple sur la securite des infos (password), les interfaces des 
-systemes critiques (voiture, avion, bateau, etc) https://www.toptal.com/designers/product-design/ux-security
+- [Qt Quick Controls](https://doc.qt.io/qt-6/qtquickcontrols-index.html)
+- [Accessibilité dans Qt](https://doc.qt.io/qt-6/accessible.html)
+- [Material Design](https://m3.material.io/) et [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+- Livre : *The Design of Everyday Things*, Don Norman

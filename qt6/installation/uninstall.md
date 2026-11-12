@@ -1,31 +1,15 @@
+# Désinstaller Qt et Qt Creator
 
-# Désinstaller proprement Qt et Qt Creator
+> [Revenir à la page d'installation de Qt 6](README.md)
 
-> [Revenir à la page "Installation et premiers pas avec Qt 6.2"](README.md)
-> 
-> Dernière mise à jour : 24 février 2022.
+Pour retirer une version de Qt ou Qt Creator, utilisez **Qt Maintenance Tool** dans le répertoire d'installation. Choisissez
+les composants à retirer et vérifiez la sélection avant de confirmer. Cette méthode préserve les autres versions et outils
+qui partagent la même installation.
 
-Il peut sembler étrange de commencer un tutoriel sur l'installation de Qt en expliquant comment désinstaller.
-La raison est que beaucoup ont tenté d'installer Qt avant de lire ce tutoriel et il est dans ce cas nécessaire 
-de bien désinstaller Qt avant de le réinstaller.
+Ne supprimez pas directement le répertoire Qt comme première étape : cela peut laisser des kits, des chemins CMake et des
+raccourcis obsolètes dans Qt Creator. Après la désinstallation, retirez les anciennes références depuis **Preferences/Options
+> Kits** si elles sont encore présentes.
 
-La désinstallation en elle-même ne pose généralement pas de problème. Il faut lancer l'outil `MaintenanceTool`
-qui se trouve dans le répertoire d'installation de Qt et choisir `Désinstaller` (Uninstall).
-
-Les repertoires par défaut d'installation de Qt sont les suivants :
-
-- pour Windows : dans `C:\Qt`
-- pour Mac et Linux : dans `~\Qt`
-
-Si cela ne fonctionne pas, il est possible de supprimer le répertoire d'installation de Qt. Cependant, il faut 
-également supprimer les fichiers de configuration de Qt et de Qt Creator, pour éviter les conflits lors de la 
-réinstallation. Ces fichiers ne se trouvent pas dans le répertoire d'installation de Qt, ce qui explique qu'il 
-est facile de les oublier (d'autant plus qu'ils sont dans un répertoire caché).
-
-Sous Windows, il faut aller dans le répertoire `C:\Users\VotreNom\AppData\Roaming` et supprimer les 
-répertoires `QtProject`.
-
-Sous Linux et Mac OS X, il faut aller dans `~/.config` et supprimer le répertoire `QtProject`. Le répertoire 
-`.config` est est caché, donc il faut afficher les répertoires cachés (`Ctrl + H` sous Linux. Sous Mac, il n'y a pas d'option
-pour faire cela, tapez `cd ~/.config`). Une solution alternative est de lancer un terminal et d'utiliser la ligne 
-de commande suivante : `rm -R ~/.config/QtProject`.
+Les paramètres personnels de Qt Creator sont indépendants des bibliothèques installées. Ne supprimez pas ces préférences
+pour résoudre un problème sans avoir d'abord sauvegardé les réglages et vérifié le diagnostic ; cela efface des paramètres
+et configurations sans réparer nécessairement Qt. Pour un dépannage, consultez d'abord [l'aide](help.md).
