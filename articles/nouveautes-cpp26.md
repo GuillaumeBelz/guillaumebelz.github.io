@@ -84,6 +84,3 @@ C++FrUG (C++ French User Group) est  un lieu d’échange sur les évolutions fu
 ## Historique des mises à jour
 
 - 2026-11-11 — Création de l’article.
-- 2026-11-11 — Ajout du lien vers la communauté C++FrUG.
-- 2026-11-11 — Réduction du texte et ajout d’exemples de code.
-- 2026-11-11 — Précision sur les discussions et les membres impliqués dans le comité au sein de C++FrUG.
