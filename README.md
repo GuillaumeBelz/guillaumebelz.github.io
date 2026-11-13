@@ -1,6 +1,7 @@
 
 ## Blog
 
+- **2026-11-12** — [Compatibilité ABI : pourquoi s’en soucier quand on crée une bibliothèque ?](articles/compatibilite-abi.md)
 - **2026-11-11** — [Les nouveautés envisagées pour C++26](articles/nouveautes-cpp26.md)
 - **2021-04-04** — [Comprendre les pointeurs en C et C++](articles/pointeurs.md)
 - **2019-09-19** — [Sémantiques](articles/semantiques.md)
