@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Deux workflows possibles de développement piloté par les spécifications</title>
+  <desc id="desc">En haut, un cycle général va du besoin à la vérification avec une boucle de retour. En bas, un exemple de workflow Spec Kit enchaîne Specify, Plan, Tasks et Implement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="feedback-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a3412"/>
+    </marker>
+  </defs>
+  <rect x="10" y="10" width="1180" height="500" rx="18" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#172033">
+    <text x="600" y="44" text-anchor="middle" font-size="25" font-weight="700">Deux workflows possibles</text>
+
+    <rect x="24" y="58" width="1152" height="204" rx="12" fill="#f8fafc"/>
+    <text x="36" y="83" font-size="17" font-weight="700">Démarche générale, à adapter</text>
+
+    <rect x="24" y="98" width="260" height="92" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="154" y="133" text-anchor="middle" font-size="20" font-weight="700">Besoin</text>
+    <text x="154" y="160" text-anchor="middle" font-size="15">problème · contraintes</text>
+
+    <rect x="314" y="98" width="260" height="92" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+    <text x="444" y="133" text-anchor="middle" font-size="20" font-weight="700">Spec</text>
+    <text x="444" y="160" text-anchor="middle" font-size="15">comportements attendus</text>
+
+    <rect x="604" y="98" width="260" height="92" rx="12" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
+    <text x="734" y="133" text-anchor="middle" font-size="20" font-weight="700">Réalisation</text>
+    <text x="734" y="160" text-anchor="middle" font-size="15">plan · tâches · code</text>
+
+    <rect x="894" y="98" width="260" height="92" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="1024" y="133" text-anchor="middle" font-size="20" font-weight="700">Vérification</text>
+    <text x="1024" y="160" text-anchor="middle" font-size="15">tests · revue</text>
+
+    <path d="M286 144 H304" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M576 144 H594" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M866 144 H884" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1024 198 V218 H444 V198" fill="none" stroke="#9a3412" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+    <text x="734" y="246" text-anchor="middle" font-size="14" fill="#7c2d12">Retour : ajuster la spec ou le code</text>
+
+    <rect x="24" y="276" width="1152" height="218" rx="12" fill="#f8fafc"/>
+    <text x="36" y="303" font-size="17" font-weight="700">Exemple Spec Kit, présenté par GitHub</text>
+
+    <rect x="24" y="318" width="260" height="104" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="154" y="357" text-anchor="middle" font-size="19" font-weight="700">Specify</text>
+    <text x="154" y="385" text-anchor="middle" font-size="15">spécifier le besoin</text>
+
+    <rect x="314" y="318" width="260" height="104" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+    <text x="444" y="357" text-anchor="middle" font-size="19" font-weight="700">Plan</text>
+    <text x="444" y="385" text-anchor="middle" font-size="15">planifier la réalisation</text>
+
+    <rect x="604" y="318" width="260" height="104" rx="12" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
+    <text x="734" y="357" text-anchor="middle" font-size="19" font-weight="700">Tasks</text>
+    <text x="734" y="385" text-anchor="middle" font-size="15">découper en tâches</text>
+
+    <rect x="894" y="318" width="260" height="104" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="1024" y="357" text-anchor="middle" font-size="19" font-weight="700">Implement</text>
+    <text x="1024" y="385" text-anchor="middle" font-size="15">implémenter</text>
+
+    <path d="M286 370 H304" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M576 370 H594" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M866 370 H884" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="600" y="465" text-anchor="middle" font-size="14" fill="#475569">Un exemple d’outil, pas une séquence universelle du SDD.</text>
+  </g>
+</svg>

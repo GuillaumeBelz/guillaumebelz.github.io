@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Vue d’ensemble du contexte partagé, de l’agent IA et des spécifications</title>
+  <desc id="desc">Des documents généraux sur le projet et des spécifications propres aux changements apportent deux types de contexte à un agent de programmation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="14" y="14" width="1172" height="592" rx="18" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#172033">
+    <text x="600" y="55" text-anchor="middle" font-size="24" font-weight="700">Deux sources de contexte pour l’agent</text>
+
+    <rect x="34" y="82" width="310" height="458" rx="14" fill="#ffffff" stroke="#0369a1" stroke-width="2"/>
+    <text x="189" y="120" text-anchor="middle" font-size="23" font-weight="700">Memory bank</text>
+    <text x="189" y="147" text-anchor="middle" font-size="16">Contexte général du projet</text>
+
+    <path d="M62 176 H316 V246 H62 Z" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+    <path d="M290 176 V202 H316" fill="#bae6fd" stroke="#64748b" stroke-width="2"/>
+    <text x="189" y="218" text-anchor="middle" font-size="19">principes.md</text>
+
+    <path d="M62 269 H316 V339 H62 Z" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+    <path d="M290 269 V295 H316" fill="#bae6fd" stroke="#64748b" stroke-width="2"/>
+    <text x="189" y="311" text-anchor="middle" font-size="19">produit.md</text>
+
+    <path d="M62 362 H316 V432 H62 Z" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+    <path d="M290 362 V388 H316" fill="#bae6fd" stroke="#64748b" stroke-width="2"/>
+    <text x="189" y="404" text-anchor="middle" font-size="19">architecture.md</text>
+    <text x="189" y="484" text-anchor="middle" font-size="15" fill="#475569">Informations réutilisées</text>
+    <text x="189" y="507" text-anchor="middle" font-size="15" fill="#475569">selon la tâche et l’outil</text>
+
+    <rect x="450" y="82" width="300" height="458" rx="14" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="600" y="285" text-anchor="middle" font-size="32" font-weight="700" fill="#ffffff">Agent IA</text>
+    <text x="600" y="326" text-anchor="middle" font-size="17" fill="#ffffff">utilise le contexte pertinent</text>
+    <text x="600" y="353" text-anchor="middle" font-size="17" fill="#ffffff">pour travailler sur un changement</text>
+
+    <rect x="856" y="82" width="310" height="458" rx="14" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+    <text x="1011" y="120" text-anchor="middle" font-size="23" font-weight="700">Specs</text>
+    <text x="1011" y="147" text-anchor="middle" font-size="16">Documents liés à un changement</text>
+
+    <rect x="878" y="171" width="266" height="144" rx="10" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2"/>
+    <text x="898" y="201" font-size="17" font-weight="700">Fonctionnalité A</text>
+    <path d="M898 220 H1010 V278 H898 Z" fill="#ede9fe" stroke="#64748b"/>
+    <path d="M991 220 V239 H1010" fill="#ddd6fe" stroke="#64748b"/>
+    <text x="949" y="255" text-anchor="middle" font-size="15">spec.md</text>
+    <path d="M1022 220 H1122 V278 H1022 Z" fill="#ede9fe" stroke="#64748b"/>
+    <path d="M1103 220 V239 H1122" fill="#ddd6fe" stroke="#64748b"/>
+    <text x="1072" y="255" text-anchor="middle" font-size="14">plan / tâches</text>
+
+    <rect x="878" y="333" width="266" height="144" rx="10" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2"/>
+    <text x="898" y="363" font-size="17" font-weight="700">Fonctionnalité B</text>
+    <path d="M898 382 H1010 V440 H898 Z" fill="#ede9fe" stroke="#64748b"/>
+    <path d="M991 382 V401 H1010" fill="#ddd6fe" stroke="#64748b"/>
+    <text x="949" y="417" text-anchor="middle" font-size="15">spec.md</text>
+    <path d="M1022 382 H1122 V440 H1022 Z" fill="#ede9fe" stroke="#64748b"/>
+    <path d="M1103 382 V401 H1122" fill="#ddd6fe" stroke="#64748b"/>
+    <text x="1072" y="417" text-anchor="middle" font-size="14">plan / tâches</text>
+
+    <text x="1011" y="505" text-anchor="middle" font-size="15" fill="#475569">Exemples de fichiers ; formats variables</text>
+
+    <path d="M348 311 H440" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="394" y="288" text-anchor="middle" font-size="14" fill="#334155">contexte</text>
+    <path d="M850 311 H760" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="805" y="288" text-anchor="middle" font-size="14" fill="#334155">besoin ciblé</text>
+
+    <text x="600" y="578" text-anchor="middle" font-size="15" fill="#475569">Le memory bank est transversal ; chaque spec porte sur un changement particulier.</text>
+  </g>
+</svg>
