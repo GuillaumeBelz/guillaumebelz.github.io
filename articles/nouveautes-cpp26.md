@@ -1,7 +1,7 @@
 # Les nouveautés envisagées pour C++26
 
 - **Créé le :** 11 novembre 2026
-- **Dernière mise à jour :** 11 novembre 2026
+- **Dernière mise à jour :** 16 novembre 2026
 - **Rédaction :** avec l’aide de l’IA
 
 Quelques fonctionnalités majeures du projet C++26, avec des exemples courts.
@@ -75,6 +75,20 @@ Le projet C++26 a été rejeté au vote ISO d’octobre 2026 ; ces fonctionnalit
 
 [Liste des fonctionnalités C++26](https://en.cppreference.com/w/cpp/26)
 
+## Références et conférences
+
+Les pages de cppreference donnent une vue d’ensemble des nouveautés du C++26 et de leur prise en charge par les compilateurs.
+
+- [C++26 sur cppreference](https://en.cppreference.com/w/cpp/26) — fonctionnalités du langage et de la bibliothèque standard.
+- [Prise en charge de C++26 par les compilateurs](https://en.cppreference.com/cpp/compiler_support/26) — état de l’implémentation des fonctionnalités.
+
+Les conférences suivantes approfondissent plusieurs de ces sujets :
+
+- [C++26: A Curated Tour of What's New - Marc Gregoire - CppCon 2026](https://www.youtube.com/watch?v=ak1zrDo2y-U) — panorama de la réflexion statique, des contrats, des améliorations du langage et de la bibliothèque standard, dont `std::execution`, `std::inplace_vector` et `std::hive`.
+- [C++26 - What's In It For You? — Marc Gregoire, CppCon 2025](https://youtu.be/PcidhLUYp-4) — présentation de la réflexion et des contrats, puis tour d’horizon des ajouts du langage et de la bibliothèque : exécution asynchrone, nouveaux conteneurs, algèbre linéaire et SIMD (Single Instruction, Multiple Data, ou « instruction unique, données multiples »).
+- [C++26 Uncovered: Everything You Need to Know About the New Standard — Inbal Levi - Core C++ 2026](https://youtu.be/AKO5A1bdwuM) — lecture du standard autour de trois axes, simplicité, sûreté et performance, avec un focus sur réflexion statique, contrats, `std::execution`, SIMD et comportements erronés, une catégorie distincte du comportement indéfini.
+- [Three Cool Things in C++26: Safety, Reflection & std::execution — Herb Sutter, C++ on Sea 2025](https://youtu.be/kKbT0Vg3ISw) — met en avant la réduction des comportements indéfinis, la réflexion à la compilation et le modèle sender/receiver pour composer des tâches concurrentes et parallèles.
+
 ## Communauté francophone
 
 C++FrUG (C++ French User Group) est  un lieu d’échange sur les évolutions futures du C++. La communauté compte des personnes impliquées dans le comité de standardisation.
@@ -84,3 +98,4 @@ C++FrUG (C++ French User Group) est  un lieu d’échange sur les évolutions fu
 ## Historique des mises à jour
 
 - 2026-11-11 — Création de l’article.
+- 2026-11-16 — Ajout des références cppreference et de résumés de conférences sur C++26.
