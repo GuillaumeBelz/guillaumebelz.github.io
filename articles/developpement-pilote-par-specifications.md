@@ -58,10 +58,9 @@ L’adoption dans un projet existant peut aussi demander un effort : le dépôt 
 ## Références complémentaires
 
 - Birgitta Böckeler, [« Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl »](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html), *Martin Fowler*, 15 octobre 2025. Analyse des définitions du SDD, des différents niveaux d’approche et des outils qui les mettent en œuvre.
-- Den Delimarsky, [« Spec-driven development with AI »](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/), *GitHub Blog*, 2 septembre 2025. Présentation du processus avec Spec Kit, à lire comme une source de première partie.
+- Den Delimarsky, [« Spec-driven development with AI »](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/), *GitHub Blog*, 2 septembre 2025. Présentation du processus avec Spec Kit.
 - Liu Shangqi, [« Spec-driven development: Unpacking one of 2025’s key new AI-assisted engineering practices »](https://www.thoughtworks.com/en-us/insights/blog/agile-engineering-practices/spec-driven-development-unpacking-2025-new-engineering-practices), *Thoughtworks*, 4 décembre 2025. Analyse des définitions et des choix de conception autour du SDD.
 - Rich Naszcyniec, [« How spec-driven development improves AI coding quality »](https://developers.redhat.com/articles/2025/10/22/how-spec-driven-development-improves-ai-coding-quality), *Red Hat Developer*, 22 octobre 2025. Présente une approche pratique où les humains définissent les besoins et valident le code produit par l’IA.
-- [« Behaviour-Driven Development »](https://cucumber.io/docs/bdd/), documentation Cucumber, consultée le 13 novembre 2026. Présente une pratique voisine fondée sur la collaboration et les exemples de comportement, distincte du SDD.
 
 ## Historique des mises à jour
 
