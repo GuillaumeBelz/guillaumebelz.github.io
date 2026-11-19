@@ -1,6 +1,7 @@
 
 ## Blog
 
+- **2026-11-15** — [Technology Radar vol. 35 : au-delà du modèle, l’ingénierie de l’IA](articles/technology-radar-volume-35.md)
 - **2026-11-13** — [Le développement piloté par les spécifications](articles/developpement-pilote-par-specifications.md)
 - **2026-11-12** — [Compatibilité ABI : pourquoi s’en soucier quand on crée une bibliothèque ?](articles/compatibilite-abi.md)
 - **2026-11-11** — [Les nouveautés envisagées pour C++26](articles/nouveautes-cpp26.md)
@@ -8,6 +9,10 @@
 - **2019-09-19** — [Sémantiques](articles/semantiques.md)
 - **2018-05-17** — [Sélections de ressources pour le C++, Qt et le développement en général](articles/ressources.md)
 - **2017-12-10** — [Entity Component System (ECS) : principes et usages](articles/ecs.md)
+
+## Idées d’articles
+
+- [Pistes pour de futurs articles](articles/idees-articles.md)
 
 ## Tutoriel Qt 6
 
