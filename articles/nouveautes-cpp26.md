@@ -1,7 +1,7 @@
 # Les nouveautés envisagées pour C++26
 
 - **Créé le :** 11 novembre 2026
-- **Dernière mise à jour :** 16 novembre 2026
+- **Dernière mise à jour :** 27 novembre 2026
 - **Rédaction :** avec l’aide de l’IA
 
 Quelques fonctionnalités majeures du projet C++26, avec des exemples courts.
@@ -11,7 +11,14 @@ Quelques fonctionnalités majeures du projet C++26, avec des exemples courts.
 La réflexion permet d’inspecter les types à la compilation et de générer du code. Ici, une énumération est convertie en son nom :
 
 ```cpp
+enum class Color {
+    red,
+    green,
+    blue
+};
+
 template<class E>
+    requires std::is_enum_v<E>
 constexpr std::string enum_to_string(E value) {
     template for (constexpr auto e : std::meta::enumerators_of(^^E)) {
         if (value == [:e:])
@@ -19,13 +26,37 @@ constexpr std::string enum_to_string(E value) {
     }
     return "<unknown>";
 }
+
+int main() {
+    return enum_to_string(Color::green) == "green" ? 0 : 1;
+}
 ```
 
 [Code complet](exemples/cpp26/reflection_enum.cpp) · [Réflexion P2996](https://isocpp.org/files/papers/P2996R13.html) · [Expansion P1306](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p1306r5.html)
 
+Dans cet exemple :
+
+- `template for` est une boucle d’expansion à la compilation : le compilateur répète le corps pour chaque élément de la séquence. Les comparaisons avec `value`, elles, s’exécutent à l’exécution.
+- `^^E` applique l’opérateur de réflexion au type `E` et produit une représentation réflexive de ce type.
+- `std::meta::enumerators_of(^^E)` renvoie les énumérateurs de `E`, chacun sous forme d’une représentation réflexive. `e` désigne successivement ces représentations.
+- `[:e:]` est une *splice* : elle réinjecte dans le code l’entité décrite par `e`. Ici, il s’agit de la valeur de l’énumérateur à comparer avec `value`.
+- `std::meta::identifier_of(e)` récupère le nom de l’énumérateur sous forme de texte, par exemple `"green"`.
+
+La fonction cherche donc l’énumérateur dont la valeur correspond à `value`, puis renvoie son nom.
+
+Il faut distinguer l’objet de réflexion de la *splice* qui l’utilise : `e` est une représentation réflexive, tandis que `[:e:]` réintroduit l’énumérateur décrit par `e` dans le code. La même syntaxe s’emploie dans un contexte de type. Par exemple, si `r` décrit le type `int`, `typename [:r:]` désigne ce type et `constexpr typename [:r:] x{42};` équivaut à déclarer `constexpr int x{42};`. Ainsi, `[:r:]` et `[:e:]` sont des splices ; leur résultat dépend du contexte, ici un type pour `r` et une expression désignant un énumérateur pour `e` (voir [P2996](https://isocpp.org/files/papers/P2996R13.html)).
+
 ## Contrats
 
-Une précondition documente et vérifie une condition requise avant l’appel :
+Les contrats du C++26 permettent d’exprimer des conditions attendues à différents moments de l’exécution. Au 27 novembre 2026, le modèle comprend trois formes :
+
+- **Précondition (`pre`)** : décrit une condition que l’appelant doit satisfaire avant l’appel. Dans l’exemple ci-dessous, le dénominateur doit être différent de zéro.
+- **Postcondition (`post`)** : décrit une propriété qui doit être vraie au retour normal de la fonction. Elle peut nommer la valeur retournée pour la référencer dans le prédicat.
+- **Assertion de contrat (`contract_assert`)** : vérifie une condition à un point précis du corps de la fonction, par exemple un invariant intermédiaire.
+
+La forme exacte de l’évaluation dépend des sémantiques de contrat choisies : une assertion peut notamment être ignorée, observée ou appliquée avec arrêt en cas de violation.
+
+Voici une fonction assortie d’une précondition :
 
 ```cpp
 int divide(int numerator, int denominator)
@@ -35,7 +66,7 @@ int divide(int numerator, int denominator)
 }
 ```
 
-[Code complet](exemples/cpp26/contracts.cpp) · [Proposition P2900](https://wg21.link/P2900R14)
+[Code complet](exemples/cpp26/contracts.cpp) · [Proposition P2900](https://wg21.link/P2900R14) · [Contrats C++26 sur cppreference](https://en.cppreference.com/w/cpp/language/contracts)
 
 ## Conteneur à capacité fixe
 
@@ -95,7 +126,10 @@ C++FrUG (C++ French User Group) est  un lieu d’échange sur les évolutions fu
 
 [Rejoindre C++FrUG sur Discord](https://discord.gg/YAgc4BsWVd).
 
+Retour au [README.md](../README.md).
+
 ## Historique des mises à jour
 
 - 2026-11-11 — Création de l’article.
 - 2026-11-16 — Ajout des références cppreference et de résumés de conférences sur C++26.
+- 2026-11-27 — Explication des notations, des objets réflexifs et du rôle des splices dans l’exemple de réflexion statique ; présentation des trois formes de contrats C++26.
